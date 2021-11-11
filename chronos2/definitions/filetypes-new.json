@@ -1,0 +1,1762 @@
+[ {
+  "name" : "robots_txt",
+  "query" : "name in -i {robots.txt}"
+}, {
+  "name" : "cURL_Config",
+  "query" : "name in -i {.curlrc, _curlrc}"
+}, {
+  "name" : "XCompose",
+  "query" : "name in -i {.XCompose, XCompose, xcompose}"
+}, {
+  "name" : "X_Font_Directory_Index",
+  "query" : "name in -i {encodings.dir, fonts.alias, fonts.dir, fonts.scale}"
+}, {
+  "name" : "Wget_Config",
+  "query" : "name in -i {.wgetrc}"
+}, {
+  "name" : "Singularity",
+  "query" : "name in -i {Singularity}"
+}, {
+  "name" : "SSH_Config",
+  "query" : "name in -i {ssh-config, ssh_config, sshconfig, sshconfig.snip, sshd-config, sshd_config}"
+}, {
+  "name" : "Redirect_Rules",
+  "query" : "name in -i {_redirects}"
+}, {
+  "name" : "Record_Jar",
+  "query" : "name in -i {language-subtag-registry.txt}"
+}, {
+  "name" : "Readline_Config",
+  "query" : "name in -i {.inputrc, inputrc}"
+}, {
+  "name" : "Quake",
+  "query" : "name in -i {m3makefile, m3overrides}"
+}, {
+  "name" : "NPM_Config",
+  "query" : "name in -i {.npmrc}"
+}, {
+  "name" : "Meson",
+  "query" : "name in -i {meson.build, meson_options.txt}"
+}, {
+  "name" : "Maven_POM",
+  "query" : "name in -i {pom.xml}"
+}, {
+  "name" : "Isabelle_ROOT",
+  "query" : "name in -i {ROOT}"
+}, {
+  "name" : "Git_Attributes",
+  "query" : "name in -i {.gitattributes}"
+}, {
+  "name" : "Gemfile_lock",
+  "query" : "name in -i {Gemfile.lock}"
+}, {
+  "name" : "EditorConfig",
+  "query" : "name in -i {.editorconfig}"
+}, {
+  "name" : "Cloud_Firestore_Security_Rules",
+  "query" : "name in -i {firestore.rules}"
+}, {
+  "name" : "CODEOWNERS",
+  "query" : "name in -i {CODEOWNERS}"
+}, {
+  "name" : "Browserslist",
+  "query" : "name in -i {.browserslistrc, browserslist}"
+}, {
+  "name" : "Ant_Build_System",
+  "query" : "name in -i {ant.xml, build.xml}"
+}, {
+  "name" : "Alpine_Abuild",
+  "query" : "name in -i {APKBUILD}"
+}, {
+  "name" : "ApacheConf",
+  "query" : "extension in -i {apacheconf, vhost} or name in -i {.htaccess, apache2.conf, httpd.conf}"
+}, {
+  "name" : "CMake",
+  "query" : "extension in -i {cmake, cmake.in} or name in -i {CMakeLists.txt}"
+}, {
+  "name" : "Cabal_Config",
+  "query" : "extension in -i {cabal} or name in -i {cabal.config, cabal.project}"
+}, {
+  "name" : "Clojure",
+  "query" : "extension in -i {clj, boot, cl2, cljc, cljs, cljs.hl, cljscm, cljx, hic} or name in -i {riemann.config}"
+}, {
+  "name" : "CoffeeScript",
+  "query" : "extension in -i {coffee, _coffee, cake, cjsx, iced} or name in -i {Cakefile}"
+}, {
+  "name" : "Dockerfile",
+  "query" : "extension in -i {dockerfile} or name in -i {Dockerfile}"
+}, {
+  "name" : "Elixir",
+  "query" : "extension in -i {ex, exs} or name in -i {mix.lock}"
+}, {
+  "name" : "Emacs_Lisp",
+  "query" : "extension in -i {el, emacs, emacs.desktop} or name in -i {.abbrev_defs, .emacs, .emacs.desktop, .gnus, .spacemacs, .viper, Cask, Project.ede, _emacs, abbrev_defs}"
+}, {
+  "name" : "Erlang",
+  "query" : "extension in -i {erl, app.src, es, escript, hrl, xrl, yrl} or name in -i {Emakefile, rebar.config, rebar.config.lock, rebar.lock}"
+}, {
+  "name" : "Factor",
+  "query" : "extension in -i {factor} or name in -i {.factor-boot-rc, .factor-rc}"
+}, {
+  "name" : "Fancy",
+  "query" : "extension in -i {fy, fancypack} or name in -i {Fakefile}"
+}, {
+  "name" : "GN",
+  "query" : "extension in -i {gn, gni} or name in -i {.gn}"
+}, {
+  "name" : "Git_Config",
+  "query" : "extension in -i {gitconfig} or name in -i {.gitconfig, .gitmodules}"
+}, {
+  "name" : "Groovy",
+  "query" : "extension in -i {groovy, grt, gtpl, gvy} or name in -i {Jenkinsfile}"
+}, {
+  "name" : "HAProxy",
+  "query" : "extension in -i {cfg} or name in -i {haproxy.cfg}"
+}, {
+  "name" : "INI",
+  "query" : "extension in -i {ini, cfg, dof, lektorproject, prefs, pro, properties} or name in -i {buildozer.spec}"
+}, {
+  "name" : "Ignore_List",
+  "query" : "extension in -i {gitignore} or name in -i {.atomignore, .babelignore, .bzrignore, .coffeelintignore, .cvsignore, .dockerignore, .eleventyignore, .eslintignore, .gitignore, .nodemonignore, .npmignore, .prettierignore, .stylelintignore, .vscodeignore, gitignore-global, gitignore_global}"
+}, {
+  "name" : "JSON",
+  "query" : "extension in -i {json, avsc, geojson, gltf, har, ice, JSON-tmLanguage, jsonl, mcmeta, tfstate, tfstate.backup, topojson, webapp, webmanifest, yy, yyp} or name in -i {.arcconfig, .htmlhintrc, .tern-config, .tern-project, .watchmanconfig, Pipfile.lock, composer.lock, mcmod.info}"
+}, {
+  "name" : "JSON_with_Comments",
+  "query" : "extension in -i {jsonc, sublime-build, sublime-commands, sublime-completions, sublime-keymap, sublime-macro, sublime-menu, sublime-mousemap, sublime-project, sublime-settings, sublime-theme, sublime-workspace, sublime_metrics, sublime_session} or name in -i {.babelrc, .eslintrc.json, .jscsrc, .jshintrc, .jslintrc, devcontainer.json, jsconfig.json, language-configuration.json, tsconfig.json, tslint.json}"
+}, {
+  "name" : "JavaScript",
+  "query" : "extension in -i {js, _js, bones, cjs, es, es6, frag, gs, jake, jsb, jscad, jsfl, jsm, jss, jsx, mjs, njs, pac, sjs, ssjs, xsjs, xsjslib} or name in -i {Jakefile}"
+}, {
+  "name" : "Jupyter_Notebook",
+  "query" : "extension in -i {ipynb} or name in -i {Notebook}"
+}, {
+  "name" : "KiCad_Layout",
+  "query" : "extension in -i {kicad_pcb, kicad_mod, kicad_wks} or name in -i {fp-lib-table}"
+}, {
+  "name" : "Lex",
+  "query" : "extension in -i {l, lex} or name in -i {Lexer.x, lexer.x}"
+}, {
+  "name" : "Linker_Script",
+  "query" : "extension in -i {ld, lds, x} or name in -i {ld.script}"
+}, {
+  "name" : "LiveScript",
+  "query" : "extension in -i {ls, _ls} or name in -i {Slakefile}"
+}, {
+  "name" : "Lua",
+  "query" : "extension in -i {lua, fcgi, nse, p8, pd_lua, rbxs, rockspec, wlua} or name in -i {.luacheckrc}"
+}, {
+  "name" : "M4Sugar",
+  "query" : "extension in -i {m4} or name in -i {configure.ac}"
+}, {
+  "name" : "Makefile",
+  "query" : "extension in -i {mak, d, make, mk, mkfile} or name in -i {BSDmakefile, GNUmakefile, Kbuild, Makefile, Makefile.am, Makefile.boot, Makefile.frag, Makefile.in, Makefile.inc, Makefile.wat, makefile, makefile.sco, mkfile}"
+}, {
+  "name" : "Markdown",
+  "query" : "extension in -i {md, markdown, mdown, mdwn, mdx, mkd, mkdn, mkdown, ronn, scd, workbook} or name in -i {contents.lr}"
+}, {
+  "name" : "Module_Management_System",
+  "query" : "extension in -i {mms, mmk} or name in -i {descrip.mmk, descrip.mms}"
+}, {
+  "name" : "Nextflow",
+  "query" : "extension in -i {nf} or name in -i {nextflow.config}"
+}, {
+  "name" : "Nginx",
+  "query" : "extension in -i {nginx, nginxconf, vhost} or name in -i {nginx.conf}"
+}, {
+  "name" : "Nim",
+  "query" : "extension in -i {nim, nim.cfg, nimble, nimrod, nims} or name in -i {nim.cfg}"
+}, {
+  "name" : "Nu",
+  "query" : "extension in -i {nu} or name in -i {Nukefile}"
+}, {
+  "name" : "PHP",
+  "query" : "extension in -i {php, aw, ctp, fcgi, inc, php3, php4, php5, phps, phpt} or name in -i {.php, .php_cs, .php_cs.dist, Phakefile}"
+}, {
+  "name" : "Perl",
+  "query" : "extension in -i {pl, al, cgi, fcgi, perl, ph, plx, pm, psgi, t} or name in -i {Makefile.PL, Rexfile, ack, cpanfile}"
+}, {
+  "name" : "Puppet",
+  "query" : "extension in -i {pp} or name in -i {Modulefile}"
+}, {
+  "name" : "Python",
+  "query" : "extension in -i {py, cgi, fcgi, gyp, gypi, lmi, py3, pyde, pyi, pyp, pyt, pyw, rpy, smk, spec, tac, wsgi, xpy} or name in -i {.gclient, DEPS, SConscript, SConstruct, Snakefile, wscript}"
+}, {
+  "name" : "Qt_Script",
+  "query" : "extension in -i {qs} or name in -i {installscript.qs, toolchain_installscript.qs}"
+}, {
+  "name" : "R",
+  "query" : "extension in -i {r, rd, rsx} or name in -i {.Rprofile, expr-dist}"
+}, {
+  "name" : "Roff",
+  "query" : "extension in -i {roff, 1, 1in, 1m, 1x, 2, 3, 3in, 3m, 3p, 3pm, 3qt, 3x, 4, 5, 6, 7, 8, 9, l, man, mdoc, me, ms, n, nr, rno, tmac} or name in -i {eqnrc, mmn, mmt, troffrc, troffrc-end}"
+}, {
+  "name" : "Ruby",
+  "query" : "extension in -i {rb, builder, eye, fcgi, gemspec, god, jbuilder, mspec, pluginspec, podspec, prawn, rabl, rake, rbi, rbuild, rbw, rbx, ru, ruby, spec, thor, watchr} or name in -i {.irbrc, .pryrc, .simplecov, Appraisals, Berksfile, Brewfile, Buildfile, Capfile, Dangerfile, Deliverfile, Fastfile, Gemfile, Guardfile, Jarfile, Mavenfile, Podfile, Puppetfile, Rakefile, Snapfile, Thorfile, Vagrantfile, buildfile}"
+}, {
+  "name" : "Shell",
+  "query" : "extension in -i {sh, bash, bats, cgi, command, env, fcgi, ksh, sh.in, tmux, tool, zsh} or name in -i {.bash_aliases, .bash_history, .bash_logout, .bash_profile, .bashrc, .cshrc, .env, .env.example, .flaskenv, .login, .profile, .zlogin, .zlogout, .zprofile, .zshenv, .zshrc, 9fs, PKGBUILD, bash_aliases, bash_logout, bash_profile, bashrc, cshrc, gradlew, login, man, profile, zlogin, zlogout, zprofile, zshenv, zshrc}"
+}, {
+  "name" : "Starlark",
+  "query" : "extension in -i {bzl} or name in -i {BUCK, BUILD, BUILD.bazel, Tiltfile, WORKSPACE}"
+}, {
+  "name" : "TOML",
+  "query" : "extension in -i {toml} or name in -i {Cargo.lock, Gopkg.lock, Pipfile, poetry.lock}"
+}, {
+  "name" : "Tcl",
+  "query" : "extension in -i {tcl, adp, tm} or name in -i {owh, starfield}"
+}, {
+  "name" : "Text",
+  "query" : "extension in -i {txt, fr, nb, ncl, no} or name in -i {COPYING, COPYING.regex, COPYRIGHT.regex, FONTLOG, INSTALL, INSTALL.mysql, LICENSE, LICENSE.mysql, NEWS, README.1ST, README.me, README.mysql, README.nss, click.me, delete.me, go.mod, go.sum, keep.me, package.mask, package.use.mask, package.use.stable.mask, read.me, readme.1st, test.me, use.mask, use.stable.mask}"
+}, {
+  "name" : "Vim_script",
+  "query" : "extension in -i {vim, vba, vmb} or name in -i {.exrc, .gvimrc, .nvimrc, .vimrc, _vimrc, gvimrc, nvimrc, vimrc}"
+}, {
+  "name" : "XML",
+  "query" : "extension in -i {xml, adml, admx, ant, axml, builds, ccproj, ccxml, clixml, cproject, cscfg, csdef, csl, csproj, ct, depproj, dita, ditamap, ditaval, dll.config, dotsettings, filters, fsproj, fxml, glade, gml, gmx, grxml, gst, iml, ivy, jelly, jsproj, kml, launch, mdpolicy, mjml, mm, mod, mxml, natvis, ncl, ndproj, nproj, nuspec, odd, osm, pkgproj, pluginspec, proj, props, ps1xml, psc1, pt, rdf, res, resx, rs, rss, sch, scxml, sfproj, shproj, srdf, storyboard, sublime-snippet, targets, tml, ts, tsx, ui, urdf, ux, vbproj, vcxproj, vsixmanifest, vssettings, vstemplate, vxml, wixproj, workflow, wsdl, wsf, wxi, wxl, wxs, x3d, xacro, xaml, xib, xlf, xliff, xmi, xml.dist, xmp, xproj, xsd, xspec, xul, zcml} or name in -i {.classpath, .cproject, .project, App.config, NuGet.config, Settings.StyleCop, Web.Debug.config, Web.Release.config, Web.config, packages.config}"
+}, {
+  "name" : "YAML",
+  "query" : "extension in -i {yml, mir, reek, rviz, sublime-syntax, syntax, yaml, yaml-tmlanguage, yaml.sed, yml.mysql} or name in -i {.clang-format, .clang-tidy, .gemrc, glide.lock, yarn.lock}"
+}, {
+  "name" : "dircolors",
+  "query" : "extension in -i {dircolors} or name in -i {.dir_colors, .dircolors, DIR_COLORS, _dir_colors, _dircolors, dir_colors}"
+}, {
+  "name" : "nanorc",
+  "query" : "extension in -i {nanorc} or name in -i {.nanorc, nanorc}"
+}, {
+  "name" : "1C_Enterprise",
+  "query" : "extension in -i {bsl, os}"
+}, {
+  "name" : "4D",
+  "query" : "extension in -i {4dm}"
+}, {
+  "name" : "ABAP",
+  "query" : "extension in -i {abap}"
+}, {
+  "name" : "ABAP_CDS",
+  "query" : "extension in -i {asddls}"
+}, {
+  "name" : "ABNF",
+  "query" : "extension in -i {abnf}"
+}, {
+  "name" : "AGS_Script",
+  "query" : "extension in -i {asc, ash}"
+}, {
+  "name" : "AL",
+  "query" : "extension in -i {al}"
+}, {
+  "name" : "AMPL",
+  "query" : "extension in -i {ampl, mod}"
+}, {
+  "name" : "ANTLR",
+  "query" : "extension in -i {g4}"
+}, {
+  "name" : "API_Blueprint",
+  "query" : "extension in -i {apib}"
+}, {
+  "name" : "APL",
+  "query" : "extension in -i {apl, dyalog}"
+}, {
+  "name" : "ASL",
+  "query" : "extension in -i {asl, dsl}"
+}, {
+  "name" : "ASN_1",
+  "query" : "extension in -i {asn, asn1}"
+}, {
+  "name" : "ASP_NET",
+  "query" : "extension in -i {asax, ascx, ashx, asmx, aspx, axd}"
+}, {
+  "name" : "ATS",
+  "query" : "extension in -i {dats, hats, sats}"
+}, {
+  "name" : "ActionScript",
+  "query" : "extension in -i {as}"
+}, {
+  "name" : "Ada",
+  "query" : "extension in -i {adb, ada, ads}"
+}, {
+  "name" : "Adobe_Font_Metrics",
+  "query" : "extension in -i {afm}"
+}, {
+  "name" : "Agda",
+  "query" : "extension in -i {agda}"
+}, {
+  "name" : "Alloy",
+  "query" : "extension in -i {als}"
+}, {
+  "name" : "Altium_Designer",
+  "query" : "extension in -i {OutJob, PcbDoc, PrjPCB, SchDoc}"
+}, {
+  "name" : "AngelScript",
+  "query" : "extension in -i {as, angelscript}"
+}, {
+  "name" : "Apex",
+  "query" : "extension in -i {cls}"
+}, {
+  "name" : "Apollo_Guidance_Computer",
+  "query" : "extension in -i {agc}"
+}, {
+  "name" : "AppleScript",
+  "query" : "extension in -i {applescript, scpt}"
+}, {
+  "name" : "Arc",
+  "query" : "extension in -i {arc}"
+}, {
+  "name" : "AsciiDoc",
+  "query" : "extension in -i {asciidoc, adoc, asc}"
+}, {
+  "name" : "AspectJ",
+  "query" : "extension in -i {aj}"
+}, {
+  "name" : "Assembly",
+  "query" : "extension in -i {asm, a51, i, inc, nasm}"
+}, {
+  "name" : "Asymptote",
+  "query" : "extension in -i {asy}"
+}, {
+  "name" : "Augeas",
+  "query" : "extension in -i {aug}"
+}, {
+  "name" : "AutoHotkey",
+  "query" : "extension in -i {ahk, ahkl}"
+}, {
+  "name" : "AutoIt",
+  "query" : "extension in -i {au3}"
+}, {
+  "name" : "Avro_IDL",
+  "query" : "extension in -i {avdl}"
+}, {
+  "name" : "Awk",
+  "query" : "extension in -i {awk, auk, gawk, mawk, nawk}"
+}, {
+  "name" : "Ballerina",
+  "query" : "extension in -i {bal}"
+}, {
+  "name" : "Batchfile",
+  "query" : "extension in -i {bat, cmd}"
+}, {
+  "name" : "Beef",
+  "query" : "extension in -i {bf}"
+}, {
+  "name" : "Befunge",
+  "query" : "extension in -i {befunge}"
+}, {
+  "name" : "BibTeX",
+  "query" : "extension in -i {bib, bibtex}"
+}, {
+  "name" : "Bison",
+  "query" : "extension in -i {bison}"
+}, {
+  "name" : "BitBake",
+  "query" : "extension in -i {bb}"
+}, {
+  "name" : "Blade",
+  "query" : "extension in -i {blade, blade.php}"
+}, {
+  "name" : "BlitzBasic",
+  "query" : "extension in -i {bb, decls}"
+}, {
+  "name" : "BlitzMax",
+  "query" : "extension in -i {bmx}"
+}, {
+  "name" : "Bluespec",
+  "query" : "extension in -i {bsv}"
+}, {
+  "name" : "Boo",
+  "query" : "extension in -i {boo}"
+}, {
+  "name" : "Boogie",
+  "query" : "extension in -i {bpl}"
+}, {
+  "name" : "Brainfuck",
+  "query" : "extension in -i {b, bf}"
+}, {
+  "name" : "Brightscript",
+  "query" : "extension in -i {brs}"
+}, {
+  "name" : "C",
+  "query" : "extension in -i {c, cats, h, idc}"
+}, {
+  "name" : "Csharp",
+  "query" : "extension in -i {cs, cake, csx, linq}"
+}, {
+  "name" : "C__",
+  "query" : "extension in -i {cpp, c++, cc, cp, cxx, h, h++, hh, hpp, hxx, inc, inl, ino, ipp, re, tcc, tpp}"
+}, {
+  "name" : "C-ObjDump",
+  "query" : "extension in -i {c-objdump}"
+}, {
+  "name" : "C2hs_Haskell",
+  "query" : "extension in -i {chs}"
+}, {
+  "name" : "CLIPS",
+  "query" : "extension in -i {clp}"
+}, {
+  "name" : "COBOL",
+  "query" : "extension in -i {cob, cbl, ccp, cobol, cpy}"
+}, {
+  "name" : "COLLADA",
+  "query" : "extension in -i {dae}"
+}, {
+  "name" : "CSON",
+  "query" : "extension in -i {cson}"
+}, {
+  "name" : "CSS",
+  "query" : "extension in -i {css}"
+}, {
+  "name" : "CSV",
+  "query" : "extension in -i {csv}"
+}, {
+  "name" : "CWeb",
+  "query" : "extension in -i {w}"
+}, {
+  "name" : "Cap_n_Proto",
+  "query" : "extension in -i {capnp}"
+}, {
+  "name" : "CartoCSS",
+  "query" : "extension in -i {mss}"
+}, {
+  "name" : "Ceylon",
+  "query" : "extension in -i {ceylon}"
+}, {
+  "name" : "Chapel",
+  "query" : "extension in -i {chpl}"
+}, {
+  "name" : "Charity",
+  "query" : "extension in -i {ch}"
+}, {
+  "name" : "ChucK",
+  "query" : "extension in -i {ck}"
+}, {
+  "name" : "Cirru",
+  "query" : "extension in -i {cirru}"
+}, {
+  "name" : "Clarion",
+  "query" : "extension in -i {clw}"
+}, {
+  "name" : "Classic_ASP",
+  "query" : "extension in -i {asp}"
+}, {
+  "name" : "Clean",
+  "query" : "extension in -i {icl, dcl}"
+}, {
+  "name" : "Click",
+  "query" : "extension in -i {click}"
+}, {
+  "name" : "Closure_Templates",
+  "query" : "extension in -i {soy}"
+}, {
+  "name" : "CoNLL-U",
+  "query" : "extension in -i {conllu, conll}"
+}, {
+  "name" : "CodeQL",
+  "query" : "extension in -i {ql, qll}"
+}, {
+  "name" : "ColdFusion",
+  "query" : "extension in -i {cfm, cfml}"
+}, {
+  "name" : "ColdFusion_CFC",
+  "query" : "extension in -i {cfc}"
+}, {
+  "name" : "Common_Lisp",
+  "query" : "extension in -i {lisp, asd, cl, l, lsp, ny, podsl, sexp}"
+}, {
+  "name" : "Common_Workflow_Language",
+  "query" : "extension in -i {cwl}"
+}, {
+  "name" : "Component_Pascal",
+  "query" : "extension in -i {cp, cps}"
+}, {
+  "name" : "Cool",
+  "query" : "extension in -i {cl}"
+}, {
+  "name" : "Coq",
+  "query" : "extension in -i {coq, v}"
+}, {
+  "name" : "Cpp-ObjDump",
+  "query" : "extension in -i {cppobjdump, c++-objdump, c++objdump, cpp-objdump, cxx-objdump}"
+}, {
+  "name" : "Creole",
+  "query" : "extension in -i {creole}"
+}, {
+  "name" : "Crystal",
+  "query" : "extension in -i {cr}"
+}, {
+  "name" : "Csound",
+  "query" : "extension in -i {orc, udo}"
+}, {
+  "name" : "Csound_Document",
+  "query" : "extension in -i {csd}"
+}, {
+  "name" : "Csound_Score",
+  "query" : "extension in -i {sco}"
+}, {
+  "name" : "Cuda",
+  "query" : "extension in -i {cu, cuh}"
+}, {
+  "name" : "Cycript",
+  "query" : "extension in -i {cy}"
+}, {
+  "name" : "Cython",
+  "query" : "extension in -i {pyx, pxd, pxi}"
+}, {
+  "name" : "D",
+  "query" : "extension in -i {d, di}"
+}, {
+  "name" : "D-ObjDump",
+  "query" : "extension in -i {d-objdump}"
+}, {
+  "name" : "DIGITAL_Command_Language",
+  "query" : "extension in -i {com}"
+}, {
+  "name" : "DM",
+  "query" : "extension in -i {dm}"
+}, {
+  "name" : "DNS_Zone",
+  "query" : "extension in -i {zone, arpa}"
+}, {
+  "name" : "DTrace",
+  "query" : "extension in -i {d}"
+}, {
+  "name" : "Dafny",
+  "query" : "extension in -i {dfy}"
+}, {
+  "name" : "Darcs_Patch",
+  "query" : "extension in -i {darcspatch, dpatch}"
+}, {
+  "name" : "Dart",
+  "query" : "extension in -i {dart}"
+}, {
+  "name" : "DataWeave",
+  "query" : "extension in -i {dwl}"
+}, {
+  "name" : "Dhall",
+  "query" : "extension in -i {dhall}"
+}, {
+  "name" : "Diff",
+  "query" : "extension in -i {diff, patch}"
+}, {
+  "name" : "DirectX_3D_File",
+  "query" : "extension in -i {x}"
+}, {
+  "name" : "Dogescript",
+  "query" : "extension in -i {djs}"
+}, {
+  "name" : "Dylan",
+  "query" : "extension in -i {dylan, dyl, intr, lid}"
+}, {
+  "name" : "E",
+  "query" : "extension in -i {E}"
+}, {
+  "name" : "EBNF",
+  "query" : "extension in -i {ebnf}"
+}, {
+  "name" : "ECL",
+  "query" : "extension in -i {ecl, eclxml}"
+}, {
+  "name" : "ECLiPSe",
+  "query" : "extension in -i {ecl}"
+}, {
+  "name" : "EJS",
+  "query" : "extension in -i {ejs, ect, jst}"
+}, {
+  "name" : "EML",
+  "query" : "extension in -i {eml, mbox}"
+}, {
+  "name" : "EQ",
+  "query" : "extension in -i {eq}"
+}, {
+  "name" : "Eagle",
+  "query" : "extension in -i {sch, brd}"
+}, {
+  "name" : "Easybuild",
+  "query" : "extension in -i {eb}"
+}, {
+  "name" : "Ecere_Projects",
+  "query" : "extension in -i {epj}"
+}, {
+  "name" : "Edje_Data_Collection",
+  "query" : "extension in -i {edc}"
+}, {
+  "name" : "Eiffel",
+  "query" : "extension in -i {e}"
+}, {
+  "name" : "Elm",
+  "query" : "extension in -i {elm}"
+}, {
+  "name" : "EmberScript",
+  "query" : "extension in -i {em, emberscript}"
+}, {
+  "name" : "Fsharp",
+  "query" : "extension in -i {fs, fsi, fsx}"
+}, {
+  "name" : "Fstar",
+  "query" : "extension in -i {fst}"
+}, {
+  "name" : "FIGlet_Font",
+  "query" : "extension in -i {flf}"
+}, {
+  "name" : "FLUX",
+  "query" : "extension in -i {fx, flux}"
+}, {
+  "name" : "Fantom",
+  "query" : "extension in -i {fan}"
+}, {
+  "name" : "Faust",
+  "query" : "extension in -i {dsp}"
+}, {
+  "name" : "Filebench_WML",
+  "query" : "extension in -i {f}"
+}, {
+  "name" : "Filterscript",
+  "query" : "extension in -i {fs}"
+}, {
+  "name" : "Formatted",
+  "query" : "extension in -i {for, eam.fs}"
+}, {
+  "name" : "Forth",
+  "query" : "extension in -i {fth, 4th, f, for, forth, fr, frt, fs}"
+}, {
+  "name" : "Fortran",
+  "query" : "extension in -i {f, f77, for, fpp}"
+}, {
+  "name" : "Fortran_Free_Form",
+  "query" : "extension in -i {f90, f03, f08, f95}"
+}, {
+  "name" : "FreeMarker",
+  "query" : "extension in -i {ftl}"
+}, {
+  "name" : "Frege",
+  "query" : "extension in -i {fr}"
+}, {
+  "name" : "Futhark",
+  "query" : "extension in -i {fut}"
+}, {
+  "name" : "G-code",
+  "query" : "extension in -i {g, cnc, gco, gcode}"
+}, {
+  "name" : "GAML",
+  "query" : "extension in -i {gaml}"
+}, {
+  "name" : "GAMS",
+  "query" : "extension in -i {gms}"
+}, {
+  "name" : "GAP",
+  "query" : "extension in -i {g, gap, gd, gi, tst}"
+}, {
+  "name" : "GCC_Machine_Description",
+  "query" : "extension in -i {md}"
+}, {
+  "name" : "GDB",
+  "query" : "extension in -i {gdb, gdbinit}"
+}, {
+  "name" : "GDScript",
+  "query" : "extension in -i {gd}"
+}, {
+  "name" : "GEDCOM",
+  "query" : "extension in -i {ged}"
+}, {
+  "name" : "GLSL",
+  "query" : "extension in -i {glsl, fp, frag, frg, fs, fsh, fshader, geo, geom, glslf, glslv, gs, gshader, shader, tesc, tese, vert, vrx, vsh, vshader}"
+}, {
+  "name" : "Game_Maker_Language",
+  "query" : "extension in -i {gml}"
+}, {
+  "name" : "Genie",
+  "query" : "extension in -i {gs}"
+}, {
+  "name" : "Genshi",
+  "query" : "extension in -i {kid}"
+}, {
+  "name" : "Gentoo_Ebuild",
+  "query" : "extension in -i {ebuild}"
+}, {
+  "name" : "Gentoo_Eclass",
+  "query" : "extension in -i {eclass}"
+}, {
+  "name" : "Gerber_Image",
+  "query" : "extension in -i {gbr, cmp, gbl, gbo, gbp, gbs, gko, gml, gpb, gpt, gtl, gto, gtp, gts, ncl, sol}"
+}, {
+  "name" : "Gettext_Catalog",
+  "query" : "extension in -i {po, pot}"
+}, {
+  "name" : "Gherkin",
+  "query" : "extension in -i {feature, story}"
+}, {
+  "name" : "Glyph",
+  "query" : "extension in -i {glf}"
+}, {
+  "name" : "Glyph_Bitmap_Distribution_Format",
+  "query" : "extension in -i {bdf}"
+}, {
+  "name" : "Gnuplot",
+  "query" : "extension in -i {gp, gnu, gnuplot, p, plot, plt}"
+}, {
+  "name" : "Go",
+  "query" : "extension in -i {go}"
+}, {
+  "name" : "Golo",
+  "query" : "extension in -i {golo}"
+}, {
+  "name" : "Gosu",
+  "query" : "extension in -i {gs, gst, gsx, vark}"
+}, {
+  "name" : "Grace",
+  "query" : "extension in -i {grace}"
+}, {
+  "name" : "Gradle",
+  "query" : "extension in -i {gradle}"
+}, {
+  "name" : "Grammatical_Framework",
+  "query" : "extension in -i {gf}"
+}, {
+  "name" : "Graph_Modeling_Language",
+  "query" : "extension in -i {gml}"
+}, {
+  "name" : "GraphQL",
+  "query" : "extension in -i {graphql, gql, graphqls}"
+}, {
+  "name" : "Graphviz__DOT_",
+  "query" : "extension in -i {dot, gv}"
+}, {
+  "name" : "Groovy_Server_Pages",
+  "query" : "extension in -i {gsp}"
+}, {
+  "name" : "HCL",
+  "query" : "extension in -i {hcl, nomad, tf, tfvars, workflow}"
+}, {
+  "name" : "HLSL",
+  "query" : "extension in -i {hlsl, cginc, fx, fxh, hlsli}"
+}, {
+  "name" : "HTML",
+  "query" : "extension in -i {html, htm, html.hl, inc, xht, xhtml}"
+}, {
+  "name" : "HTML_ECR",
+  "query" : "extension in -i {ecr}"
+}, {
+  "name" : "HTML_EEX",
+  "query" : "extension in -i {eex, html.leex}"
+}, {
+  "name" : "HTML_ERB",
+  "query" : "extension in -i {erb, erb.deface, rhtml}"
+}, {
+  "name" : "HTML_PHP",
+  "query" : "extension in -i {phtml}"
+}, {
+  "name" : "HTML_Razor",
+  "query" : "extension in -i {cshtml, razor}"
+}, {
+  "name" : "HTTP",
+  "query" : "extension in -i {http}"
+}, {
+  "name" : "HXML",
+  "query" : "extension in -i {hxml}"
+}, {
+  "name" : "Hack",
+  "query" : "extension in -i {hack, hh, hhi, php}"
+}, {
+  "name" : "Haml",
+  "query" : "extension in -i {haml, haml.deface}"
+}, {
+  "name" : "Handlebars",
+  "query" : "extension in -i {handlebars, hbs}"
+}, {
+  "name" : "Harbour",
+  "query" : "extension in -i {hb}"
+}, {
+  "name" : "Haskell",
+  "query" : "extension in -i {hs, hs-boot, hsc}"
+}, {
+  "name" : "Haxe",
+  "query" : "extension in -i {hx, hxsl}"
+}, {
+  "name" : "HiveQL",
+  "query" : "extension in -i {q, hql}"
+}, {
+  "name" : "HolyC",
+  "query" : "extension in -i {hc}"
+}, {
+  "name" : "Hy",
+  "query" : "extension in -i {hy}"
+}, {
+  "name" : "HyPhy",
+  "query" : "extension in -i {bf}"
+}, {
+  "name" : "IDL",
+  "query" : "extension in -i {pro, dlm}"
+}, {
+  "name" : "IGOR_Pro",
+  "query" : "extension in -i {ipf}"
+}, {
+  "name" : "IRC_log",
+  "query" : "extension in -i {irclog, weechatlog}"
+}, {
+  "name" : "Idris",
+  "query" : "extension in -i {idr, lidr}"
+}, {
+  "name" : "ImageJ_Macro",
+  "query" : "extension in -i {ijm}"
+}, {
+  "name" : "Inform_7",
+  "query" : "extension in -i {ni, i7x}"
+}, {
+  "name" : "Inno_Setup",
+  "query" : "extension in -i {iss, isl}"
+}, {
+  "name" : "Io",
+  "query" : "extension in -i {io}"
+}, {
+  "name" : "Ioke",
+  "query" : "extension in -i {ik}"
+}, {
+  "name" : "Isabelle",
+  "query" : "extension in -i {thy}"
+}, {
+  "name" : "J",
+  "query" : "extension in -i {ijs}"
+}, {
+  "name" : "JFlex",
+  "query" : "extension in -i {flex, jflex}"
+}, {
+  "name" : "JSON5",
+  "query" : "extension in -i {json5}"
+}, {
+  "name" : "JSONLD",
+  "query" : "extension in -i {jsonld}"
+}, {
+  "name" : "JSONiq",
+  "query" : "extension in -i {jq}"
+}, {
+  "name" : "Jasmin",
+  "query" : "extension in -i {j}"
+}, {
+  "name" : "Java",
+  "query" : "extension in -i {java}"
+}, {
+  "name" : "Java_Properties",
+  "query" : "extension in -i {properties}"
+}, {
+  "name" : "Java_Server_Pages",
+  "query" : "extension in -i {jsp}"
+}, {
+  "name" : "JavaScript_ERB",
+  "query" : "extension in -i {js.erb}"
+}, {
+  "name" : "Jinja",
+  "query" : "extension in -i {jinja, j2, jinja2}"
+}, {
+  "name" : "Jison",
+  "query" : "extension in -i {jison}"
+}, {
+  "name" : "Jison_Lex",
+  "query" : "extension in -i {jisonlex}"
+}, {
+  "name" : "Jolie",
+  "query" : "extension in -i {ol, iol}"
+}, {
+  "name" : "Jsonnet",
+  "query" : "extension in -i {jsonnet, libsonnet}"
+}, {
+  "name" : "Julia",
+  "query" : "extension in -i {jl}"
+}, {
+  "name" : "KRL",
+  "query" : "extension in -i {krl}"
+}, {
+  "name" : "Kaitai_Struct",
+  "query" : "extension in -i {ksy}"
+}, {
+  "name" : "KiCad_Legacy_Layout",
+  "query" : "extension in -i {brd}"
+}, {
+  "name" : "KiCad_Schematic",
+  "query" : "extension in -i {sch}"
+}, {
+  "name" : "Kit",
+  "query" : "extension in -i {kit}"
+}, {
+  "name" : "Kotlin",
+  "query" : "extension in -i {kt, ktm, kts}"
+}, {
+  "name" : "Kusto",
+  "query" : "extension in -i {csl}"
+}, {
+  "name" : "LFE",
+  "query" : "extension in -i {lfe}"
+}, {
+  "name" : "LLVM",
+  "query" : "extension in -i {ll}"
+}, {
+  "name" : "LOLCODE",
+  "query" : "extension in -i {lol}"
+}, {
+  "name" : "LSL",
+  "query" : "extension in -i {lsl, lslp}"
+}, {
+  "name" : "LTspice_Symbol",
+  "query" : "extension in -i {asy}"
+}, {
+  "name" : "LabVIEW",
+  "query" : "extension in -i {lvproj, lvlib}"
+}, {
+  "name" : "Lark",
+  "query" : "extension in -i {lark}"
+}, {
+  "name" : "Lasso",
+  "query" : "extension in -i {lasso, las, lasso8, lasso9}"
+}, {
+  "name" : "Latte",
+  "query" : "extension in -i {latte}"
+}, {
+  "name" : "Lean",
+  "query" : "extension in -i {lean, hlean}"
+}, {
+  "name" : "Less",
+  "query" : "extension in -i {less}"
+}, {
+  "name" : "LilyPond",
+  "query" : "extension in -i {ly, ily}"
+}, {
+  "name" : "Limbo",
+  "query" : "extension in -i {b, m}"
+}, {
+  "name" : "Linux_Kernel_Module",
+  "query" : "extension in -i {mod}"
+}, {
+  "name" : "Liquid",
+  "query" : "extension in -i {liquid}"
+}, {
+  "name" : "Literate_Agda",
+  "query" : "extension in -i {lagda}"
+}, {
+  "name" : "Literate_CoffeeScript",
+  "query" : "extension in -i {litcoffee, coffee.md}"
+}, {
+  "name" : "Literate_Haskell",
+  "query" : "extension in -i {lhs}"
+}, {
+  "name" : "Logos",
+  "query" : "extension in -i {xm, x, xi}"
+}, {
+  "name" : "Logtalk",
+  "query" : "extension in -i {lgt, logtalk}"
+}, {
+  "name" : "LookML",
+  "query" : "extension in -i {lookml, model.lkml, view.lkml}"
+}, {
+  "name" : "LoomScript",
+  "query" : "extension in -i {ls}"
+}, {
+  "name" : "M",
+  "query" : "extension in -i {mumps, m}"
+}, {
+  "name" : "M4",
+  "query" : "extension in -i {m4}"
+}, {
+  "name" : "MATLAB",
+  "query" : "extension in -i {matlab, m}"
+}, {
+  "name" : "MAXScript",
+  "query" : "extension in -i {ms, mcr}"
+}, {
+  "name" : "MLIR",
+  "query" : "extension in -i {mlir}"
+}, {
+  "name" : "MQL4",
+  "query" : "extension in -i {mq4, mqh}"
+}, {
+  "name" : "MQL5",
+  "query" : "extension in -i {mq5, mqh}"
+}, {
+  "name" : "MTML",
+  "query" : "extension in -i {mtml}"
+}, {
+  "name" : "MUF",
+  "query" : "extension in -i {muf, m}"
+}, {
+  "name" : "Macaulay2",
+  "query" : "extension in -i {m2}"
+}, {
+  "name" : "Mako",
+  "query" : "extension in -i {mako, mao}"
+}, {
+  "name" : "Marko",
+  "query" : "extension in -i {marko}"
+}, {
+  "name" : "Mask",
+  "query" : "extension in -i {mask}"
+}, {
+  "name" : "Mathematica",
+  "query" : "extension in -i {mathematica, cdf, m, ma, mt, nb, nbp, wl, wlt}"
+}, {
+  "name" : "Max",
+  "query" : "extension in -i {maxpat, maxhelp, maxproj, mxt, pat}"
+}, {
+  "name" : "MediaWiki",
+  "query" : "extension in -i {mediawiki, wiki}"
+}, {
+  "name" : "Mercury",
+  "query" : "extension in -i {m, moo}"
+}, {
+  "name" : "Metal",
+  "query" : "extension in -i {metal}"
+}, {
+  "name" : "Microsoft_Developer_Studio_Project",
+  "query" : "extension in -i {dsp}"
+}, {
+  "name" : "Microsoft_Visual_Studio_Solution",
+  "query" : "extension in -i {sln}"
+}, {
+  "name" : "MiniD",
+  "query" : "extension in -i {minid}"
+}, {
+  "name" : "Mirah",
+  "query" : "extension in -i {druby, duby, mirah}"
+}, {
+  "name" : "Modelica",
+  "query" : "extension in -i {mo}"
+}, {
+  "name" : "Modula-2",
+  "query" : "extension in -i {mod}"
+}, {
+  "name" : "Modula-3",
+  "query" : "extension in -i {i3, ig, m3, mg}"
+}, {
+  "name" : "Monkey",
+  "query" : "extension in -i {monkey, monkey2}"
+}, {
+  "name" : "Moocode",
+  "query" : "extension in -i {moo}"
+}, {
+  "name" : "MoonScript",
+  "query" : "extension in -i {moon}"
+}, {
+  "name" : "Motorola_68K_Assembly",
+  "query" : "extension in -i {asm, i, inc, s, x68}"
+}, {
+  "name" : "Muse",
+  "query" : "extension in -i {muse}"
+}, {
+  "name" : "Mustache",
+  "query" : "extension in -i {mustache}"
+}, {
+  "name" : "Myghty",
+  "query" : "extension in -i {myt}"
+}, {
+  "name" : "NASL",
+  "query" : "extension in -i {nasl, inc}"
+}, {
+  "name" : "NCL",
+  "query" : "extension in -i {ncl}"
+}, {
+  "name" : "NEON",
+  "query" : "extension in -i {neon}"
+}, {
+  "name" : "NL",
+  "query" : "extension in -i {nl}"
+}, {
+  "name" : "NSIS",
+  "query" : "extension in -i {nsi, nsh}"
+}, {
+  "name" : "NWScript",
+  "query" : "extension in -i {nss}"
+}, {
+  "name" : "Nearley",
+  "query" : "extension in -i {ne, nearley}"
+}, {
+  "name" : "Nemerle",
+  "query" : "extension in -i {n}"
+}, {
+  "name" : "NetLinx",
+  "query" : "extension in -i {axs, axi}"
+}, {
+  "name" : "NetLinx_ERB",
+  "query" : "extension in -i {axs.erb, axi.erb}"
+}, {
+  "name" : "NetLogo",
+  "query" : "extension in -i {nlogo}"
+}, {
+  "name" : "NewLisp",
+  "query" : "extension in -i {nl, lisp, lsp}"
+}, {
+  "name" : "Ninja",
+  "query" : "extension in -i {ninja}"
+}, {
+  "name" : "Nit",
+  "query" : "extension in -i {nit}"
+}, {
+  "name" : "Nix",
+  "query" : "extension in -i {nix}"
+}, {
+  "name" : "NumPy",
+  "query" : "extension in -i {numpy, numpyw, numsc}"
+}, {
+  "name" : "Nunjucks",
+  "query" : "extension in -i {njk}"
+}, {
+  "name" : "OCaml",
+  "query" : "extension in -i {ml, eliom, eliomi, ml4, mli, mll, mly}"
+}, {
+  "name" : "ObjDump",
+  "query" : "extension in -i {objdump}"
+}, {
+  "name" : "Object_Data_Instance_Notation",
+  "query" : "extension in -i {odin}"
+}, {
+  "name" : "ObjectScript",
+  "query" : "extension in -i {cls}"
+}, {
+  "name" : "Objective-C",
+  "query" : "extension in -i {m, h}"
+}, {
+  "name" : "Objective-C__",
+  "query" : "extension in -i {mm}"
+}, {
+  "name" : "Objective-J",
+  "query" : "extension in -i {j, sj}"
+}, {
+  "name" : "Odin",
+  "query" : "extension in -i {odin}"
+}, {
+  "name" : "Omgrofl",
+  "query" : "extension in -i {omgrofl}"
+}, {
+  "name" : "Opa",
+  "query" : "extension in -i {opa}"
+}, {
+  "name" : "Opal",
+  "query" : "extension in -i {opal}"
+}, {
+  "name" : "Open_Policy_Agent",
+  "query" : "extension in -i {rego}"
+}, {
+  "name" : "OpenCL",
+  "query" : "extension in -i {cl, opencl}"
+}, {
+  "name" : "OpenEdge_ABL",
+  "query" : "extension in -i {p, cls, w}"
+}, {
+  "name" : "OpenQASM",
+  "query" : "extension in -i {qasm}"
+}, {
+  "name" : "OpenSCAD",
+  "query" : "extension in -i {scad}"
+}, {
+  "name" : "OpenStep_Property_List",
+  "query" : "extension in -i {plist, glyphs}"
+}, {
+  "name" : "OpenType_Feature_File",
+  "query" : "extension in -i {fea}"
+}, {
+  "name" : "Org",
+  "query" : "extension in -i {org}"
+}, {
+  "name" : "Ox",
+  "query" : "extension in -i {ox, oxh, oxo}"
+}, {
+  "name" : "Oxygene",
+  "query" : "extension in -i {oxygene}"
+}, {
+  "name" : "Oz",
+  "query" : "extension in -i {oz}"
+}, {
+  "name" : "P4",
+  "query" : "extension in -i {p4}"
+}, {
+  "name" : "PLSQL",
+  "query" : "extension in -i {pls, bdy, ddl, fnc, pck, pkb, pks, plb, plsql, prc, spc, sql, tpb, tps, trg, vw}"
+}, {
+  "name" : "PLpgSQL",
+  "query" : "extension in -i {pgsql, sql}"
+}, {
+  "name" : "POV-Ray_SDL",
+  "query" : "extension in -i {pov, inc}"
+}, {
+  "name" : "Pan",
+  "query" : "extension in -i {pan}"
+}, {
+  "name" : "Papyrus",
+  "query" : "extension in -i {psc}"
+}, {
+  "name" : "Parrot",
+  "query" : "extension in -i {parrot}"
+}, {
+  "name" : "Parrot_Assembly",
+  "query" : "extension in -i {pasm}"
+}, {
+  "name" : "Parrot_Internal_Representation",
+  "query" : "extension in -i {pir}"
+}, {
+  "name" : "Pascal",
+  "query" : "extension in -i {pas, dfm, dpr, inc, lpr, pascal, pp}"
+}, {
+  "name" : "Pawn",
+  "query" : "extension in -i {pwn, inc, sma}"
+}, {
+  "name" : "Pep8",
+  "query" : "extension in -i {pep}"
+}, {
+  "name" : "Pic",
+  "query" : "extension in -i {pic, chem}"
+}, {
+  "name" : "Pickle",
+  "query" : "extension in -i {pkl}"
+}, {
+  "name" : "PicoLisp",
+  "query" : "extension in -i {l}"
+}, {
+  "name" : "PigLatin",
+  "query" : "extension in -i {pig}"
+}, {
+  "name" : "Pike",
+  "query" : "extension in -i {pike, pmod}"
+}, {
+  "name" : "PlantUML",
+  "query" : "extension in -i {puml, iuml, plantuml}"
+}, {
+  "name" : "Pod",
+  "query" : "extension in -i {pod}"
+}, {
+  "name" : "Pod_6",
+  "query" : "extension in -i {pod, pod6}"
+}, {
+  "name" : "PogoScript",
+  "query" : "extension in -i {pogo}"
+}, {
+  "name" : "Pony",
+  "query" : "extension in -i {pony}"
+}, {
+  "name" : "PostCSS",
+  "query" : "extension in -i {pcss, postcss}"
+}, {
+  "name" : "PostScript",
+  "query" : "extension in -i {ps, eps, epsi, pfa}"
+}, {
+  "name" : "PowerBuilder",
+  "query" : "extension in -i {pbt, sra, sru, srw}"
+}, {
+  "name" : "PowerShell",
+  "query" : "extension in -i {ps1, psd1, psm1}"
+}, {
+  "name" : "Prisma",
+  "query" : "extension in -i {prisma}"
+}, {
+  "name" : "Processing",
+  "query" : "extension in -i {pde}"
+}, {
+  "name" : "Proguard",
+  "query" : "extension in -i {pro}"
+}, {
+  "name" : "Prolog",
+  "query" : "extension in -i {pl, pro, prolog, yap}"
+}, {
+  "name" : "Propeller_Spin",
+  "query" : "extension in -i {spin}"
+}, {
+  "name" : "Protocol_Buffer",
+  "query" : "extension in -i {proto}"
+}, {
+  "name" : "Public_Key",
+  "query" : "extension in -i {asc, pub}"
+}, {
+  "name" : "Pug",
+  "query" : "extension in -i {jade, pug}"
+}, {
+  "name" : "Pure_Data",
+  "query" : "extension in -i {pd}"
+}, {
+  "name" : "PureBasic",
+  "query" : "extension in -i {pb, pbi}"
+}, {
+  "name" : "PureScript",
+  "query" : "extension in -i {purs}"
+}, {
+  "name" : "Python_traceback",
+  "query" : "extension in -i {pytb}"
+}, {
+  "name" : "Qsharp",
+  "query" : "extension in -i {qs}"
+}, {
+  "name" : "QML",
+  "query" : "extension in -i {qml, qbs}"
+}, {
+  "name" : "QMake",
+  "query" : "extension in -i {pro, pri}"
+}, {
+  "name" : "RAML",
+  "query" : "extension in -i {raml}"
+}, {
+  "name" : "RDoc",
+  "query" : "extension in -i {rdoc}"
+}, {
+  "name" : "REALbasic",
+  "query" : "extension in -i {rbbas, rbfrm, rbmnu, rbres, rbtbar, rbuistate}"
+}, {
+  "name" : "REXX",
+  "query" : "extension in -i {rexx, pprx, rex}"
+}, {
+  "name" : "RMarkdown",
+  "query" : "extension in -i {rmd}"
+}, {
+  "name" : "RPC",
+  "query" : "extension in -i {x}"
+}, {
+  "name" : "RPM_Spec",
+  "query" : "extension in -i {spec}"
+}, {
+  "name" : "RUNOFF",
+  "query" : "extension in -i {rnh, rno}"
+}, {
+  "name" : "Racket",
+  "query" : "extension in -i {rkt, rktd, rktl, scrbl}"
+}, {
+  "name" : "Ragel",
+  "query" : "extension in -i {rl}"
+}, {
+  "name" : "Raku",
+  "query" : "extension in -i {6pl, 6pm, nqp, p6, p6l, p6m, pl, pl6, pm, pm6, raku, rakumod, t}"
+}, {
+  "name" : "Rascal",
+  "query" : "extension in -i {rsc}"
+}, {
+  "name" : "Raw_token_data",
+  "query" : "extension in -i {raw}"
+}, {
+  "name" : "ReScript",
+  "query" : "extension in -i {res}"
+}, {
+  "name" : "Reason",
+  "query" : "extension in -i {re, rei}"
+}, {
+  "name" : "Rebol",
+  "query" : "extension in -i {reb, r, r2, r3, rebol}"
+}, {
+  "name" : "Red",
+  "query" : "extension in -i {red, reds}"
+}, {
+  "name" : "Redcode",
+  "query" : "extension in -i {cw}"
+}, {
+  "name" : "Regular_Expression",
+  "query" : "extension in -i {regexp, regex}"
+}, {
+  "name" : "Ren_Py",
+  "query" : "extension in -i {rpy}"
+}, {
+  "name" : "RenderScript",
+  "query" : "extension in -i {rs, rsh}"
+}, {
+  "name" : "Rich_Text_Format",
+  "query" : "extension in -i {rtf}"
+}, {
+  "name" : "Ring",
+  "query" : "extension in -i {ring}"
+}, {
+  "name" : "Riot",
+  "query" : "extension in -i {riot}"
+}, {
+  "name" : "RobotFramework",
+  "query" : "extension in -i {robot}"
+}, {
+  "name" : "Roff_Manpage",
+  "query" : "extension in -i {1, 1in, 1m, 1x, 2, 3, 3in, 3m, 3p, 3pm, 3qt, 3x, 4, 5, 6, 7, 8, 9, man, mdoc}"
+}, {
+  "name" : "Rouge",
+  "query" : "extension in -i {rg}"
+}, {
+  "name" : "Rust",
+  "query" : "extension in -i {rs, rs.in}"
+}, {
+  "name" : "SAS",
+  "query" : "extension in -i {sas}"
+}, {
+  "name" : "SCSS",
+  "query" : "extension in -i {scss}"
+}, {
+  "name" : "SMT",
+  "query" : "extension in -i {smt2, smt}"
+}, {
+  "name" : "SPARQL",
+  "query" : "extension in -i {sparql, rq}"
+}, {
+  "name" : "SQF",
+  "query" : "extension in -i {sqf, hqf}"
+}, {
+  "name" : "SQL",
+  "query" : "extension in -i {sql, cql, ddl, inc, mysql, prc, tab, udf, viw}"
+}, {
+  "name" : "SQLPL",
+  "query" : "extension in -i {sql, db2}"
+}, {
+  "name" : "SRecode_Template",
+  "query" : "extension in -i {srt}"
+}, {
+  "name" : "STON",
+  "query" : "extension in -i {ston}"
+}, {
+  "name" : "SVG",
+  "query" : "extension in -i {svg}"
+}, {
+  "name" : "SWIG",
+  "query" : "extension in -i {i}"
+}, {
+  "name" : "Sage",
+  "query" : "extension in -i {sage, sagews}"
+}, {
+  "name" : "SaltStack",
+  "query" : "extension in -i {sls}"
+}, {
+  "name" : "Sass",
+  "query" : "extension in -i {sass}"
+}, {
+  "name" : "Scala",
+  "query" : "extension in -i {scala, kojo, sbt, sc}"
+}, {
+  "name" : "Scaml",
+  "query" : "extension in -i {scaml}"
+}, {
+  "name" : "Scheme",
+  "query" : "extension in -i {scm, sch, sld, sls, sps, ss}"
+}, {
+  "name" : "Scilab",
+  "query" : "extension in -i {sci, sce, tst}"
+}, {
+  "name" : "Self",
+  "query" : "extension in -i {self}"
+}, {
+  "name" : "ShaderLab",
+  "query" : "extension in -i {shader}"
+}, {
+  "name" : "ShellSession",
+  "query" : "extension in -i {sh-session}"
+}, {
+  "name" : "Shen",
+  "query" : "extension in -i {shen}"
+}, {
+  "name" : "Sieve",
+  "query" : "extension in -i {sieve}"
+}, {
+  "name" : "Slash",
+  "query" : "extension in -i {sl}"
+}, {
+  "name" : "Slice",
+  "query" : "extension in -i {ice}"
+}, {
+  "name" : "Slim",
+  "query" : "extension in -i {slim}"
+}, {
+  "name" : "SmPL",
+  "query" : "extension in -i {cocci}"
+}, {
+  "name" : "Smali",
+  "query" : "extension in -i {smali}"
+}, {
+  "name" : "Smalltalk",
+  "query" : "extension in -i {st, cs}"
+}, {
+  "name" : "Smarty",
+  "query" : "extension in -i {tpl}"
+}, {
+  "name" : "Solidity",
+  "query" : "extension in -i {sol}"
+}, {
+  "name" : "SourcePawn",
+  "query" : "extension in -i {sp, inc}"
+}, {
+  "name" : "Spline_Font_Database",
+  "query" : "extension in -i {sfd}"
+}, {
+  "name" : "Squirrel",
+  "query" : "extension in -i {nut}"
+}, {
+  "name" : "Stan",
+  "query" : "extension in -i {stan}"
+}, {
+  "name" : "Standard_ML",
+  "query" : "extension in -i {ml, fun, sig, sml}"
+}, {
+  "name" : "Stata",
+  "query" : "extension in -i {do, ado, doh, ihlp, mata, matah, sthlp}"
+}, {
+  "name" : "StringTemplate",
+  "query" : "extension in -i {st}"
+}, {
+  "name" : "Stylus",
+  "query" : "extension in -i {styl}"
+}, {
+  "name" : "SubRip_Text",
+  "query" : "extension in -i {srt}"
+}, {
+  "name" : "SugarSS",
+  "query" : "extension in -i {sss}"
+}, {
+  "name" : "SuperCollider",
+  "query" : "extension in -i {sc, scd}"
+}, {
+  "name" : "Svelte",
+  "query" : "extension in -i {svelte}"
+}, {
+  "name" : "Swift",
+  "query" : "extension in -i {swift}"
+}, {
+  "name" : "SystemVerilog",
+  "query" : "extension in -i {sv, svh, vh}"
+}, {
+  "name" : "TI_Program",
+  "query" : "extension in -i {8xp, 8xk, 8xk.txt, 8xp.txt}"
+}, {
+  "name" : "TLA",
+  "query" : "extension in -i {tla}"
+}, {
+  "name" : "TSQL",
+  "query" : "extension in -i {sql}"
+}, {
+  "name" : "TSV",
+  "query" : "extension in -i {tsv}"
+}, {
+  "name" : "TSX",
+  "query" : "extension in -i {tsx}"
+}, {
+  "name" : "TXL",
+  "query" : "extension in -i {txl}"
+}, {
+  "name" : "Tcsh",
+  "query" : "extension in -i {tcsh, csh}"
+}, {
+  "name" : "TeX",
+  "query" : "extension in -i {tex, aux, bbx, cbx, cls, dtx, ins, lbx, ltx, mkii, mkiv, mkvi, sty, toc}"
+}, {
+  "name" : "Tea",
+  "query" : "extension in -i {tea}"
+}, {
+  "name" : "Terra",
+  "query" : "extension in -i {t}"
+}, {
+  "name" : "Texinfo",
+  "query" : "extension in -i {texinfo, texi, txi}"
+}, {
+  "name" : "Textile",
+  "query" : "extension in -i {textile}"
+}, {
+  "name" : "Thrift",
+  "query" : "extension in -i {thrift}"
+}, {
+  "name" : "Turing",
+  "query" : "extension in -i {t, tu}"
+}, {
+  "name" : "Turtle",
+  "query" : "extension in -i {ttl}"
+}, {
+  "name" : "Twig",
+  "query" : "extension in -i {twig}"
+}, {
+  "name" : "Type_Language",
+  "query" : "extension in -i {tl}"
+}, {
+  "name" : "TypeScript",
+  "query" : "extension in -i {ts}"
+}, {
+  "name" : "Unified_Parallel_C",
+  "query" : "extension in -i {upc}"
+}, {
+  "name" : "Unity3D_Asset",
+  "query" : "extension in -i {anim, asset, mask, mat, meta, prefab, unity}"
+}, {
+  "name" : "Unix_Assembly",
+  "query" : "extension in -i {s, ms}"
+}, {
+  "name" : "Uno",
+  "query" : "extension in -i {uno}"
+}, {
+  "name" : "UnrealScript",
+  "query" : "extension in -i {uc}"
+}, {
+  "name" : "UrWeb",
+  "query" : "extension in -i {ur, urs}"
+}, {
+  "name" : "V",
+  "query" : "extension in -i {v}"
+}, {
+  "name" : "VBA",
+  "query" : "extension in -i {bas, cls, frm, frx, vba}"
+}, {
+  "name" : "VBScript",
+  "query" : "extension in -i {vbs}"
+}, {
+  "name" : "VCL",
+  "query" : "extension in -i {vcl}"
+}, {
+  "name" : "VHDL",
+  "query" : "extension in -i {vhdl, vhd, vhf, vhi, vho, vhs, vht, vhw}"
+}, {
+  "name" : "Vala",
+  "query" : "extension in -i {vala, vapi}"
+}, {
+  "name" : "Verilog",
+  "query" : "extension in -i {v, veo}"
+}, {
+  "name" : "Vim_Help_File",
+  "query" : "extension in -i {txt}"
+}, {
+  "name" : "Vim_Snippet",
+  "query" : "extension in -i {snip, snippet, snippets}"
+}, {
+  "name" : "Visual_Basic__NET",
+  "query" : "extension in -i {vb, vbhtml}"
+}, {
+  "name" : "Volt",
+  "query" : "extension in -i {volt}"
+}, {
+  "name" : "Vue",
+  "query" : "extension in -i {vue}"
+}, {
+  "name" : "Wavefront_Material",
+  "query" : "extension in -i {mtl}"
+}, {
+  "name" : "Wavefront_Object",
+  "query" : "extension in -i {obj}"
+}, {
+  "name" : "Web_Ontology_Language",
+  "query" : "extension in -i {owl}"
+}, {
+  "name" : "WebAssembly",
+  "query" : "extension in -i {wast, wat}"
+}, {
+  "name" : "WebIDL",
+  "query" : "extension in -i {webidl}"
+}, {
+  "name" : "WebVTT",
+  "query" : "extension in -i {vtt}"
+}, {
+  "name" : "Windows_Registry_Entries",
+  "query" : "extension in -i {reg}"
+}, {
+  "name" : "Wollok",
+  "query" : "extension in -i {wlk}"
+}, {
+  "name" : "World_of_Warcraft_Addon_Data",
+  "query" : "extension in -i {toc}"
+}, {
+  "name" : "X_BitMap",
+  "query" : "extension in -i {xbm}"
+}, {
+  "name" : "X_PixMap",
+  "query" : "extension in -i {xpm, pm}"
+}, {
+  "name" : "X10",
+  "query" : "extension in -i {x10}"
+}, {
+  "name" : "XC",
+  "query" : "extension in -i {xc}"
+}, {
+  "name" : "XML_Property_List",
+  "query" : "extension in -i {plist, stTheme, tmCommand, tmLanguage, tmPreferences, tmSnippet, tmTheme}"
+}, {
+  "name" : "XPages",
+  "query" : "extension in -i {xsp-config, xsp.metadata}"
+}, {
+  "name" : "XProc",
+  "query" : "extension in -i {xpl, xproc}"
+}, {
+  "name" : "XQuery",
+  "query" : "extension in -i {xquery, xq, xql, xqm, xqy}"
+}, {
+  "name" : "XS",
+  "query" : "extension in -i {xs}"
+}, {
+  "name" : "XSLT",
+  "query" : "extension in -i {xslt, xsl}"
+}, {
+  "name" : "Xojo",
+  "query" : "extension in -i {xojo_code, xojo_menu, xojo_report, xojo_script, xojo_toolbar, xojo_window}"
+}, {
+  "name" : "Xonsh",
+  "query" : "extension in -i {xsh}"
+}, {
+  "name" : "Xtend",
+  "query" : "extension in -i {xtend}"
+}, {
+  "name" : "YANG",
+  "query" : "extension in -i {yang}"
+}, {
+  "name" : "YARA",
+  "query" : "extension in -i {yar, yara}"
+}, {
+  "name" : "YASnippet",
+  "query" : "extension in -i {yasnippet}"
+}, {
+  "name" : "Yacc",
+  "query" : "extension in -i {y, yacc, yy}"
+}, {
+  "name" : "ZAP",
+  "query" : "extension in -i {zap, xzap}"
+}, {
+  "name" : "ZIL",
+  "query" : "extension in -i {zil, mud}"
+}, {
+  "name" : "Zeek",
+  "query" : "extension in -i {zeek, bro}"
+}, {
+  "name" : "ZenScript",
+  "query" : "extension in -i {zs}"
+}, {
+  "name" : "Zephir",
+  "query" : "extension in -i {zep}"
+}, {
+  "name" : "Zig",
+  "query" : "extension in -i {zig}"
+}, {
+  "name" : "Zimpl",
+  "query" : "extension in -i {zimpl, zmpl, zpl}"
+}, {
+  "name" : "desktop",
+  "query" : "extension in -i {desktop, desktop.in}"
+}, {
+  "name" : "eC",
+  "query" : "extension in -i {ec, eh}"
+}, {
+  "name" : "edn",
+  "query" : "extension in -i {edn}"
+}, {
+  "name" : "fish",
+  "query" : "extension in -i {fish}"
+}, {
+  "name" : "jq",
+  "query" : "extension in -i {jq}"
+}, {
+  "name" : "mIRC_Script",
+  "query" : "extension in -i {mrc}"
+}, {
+  "name" : "mcfunction",
+  "query" : "extension in -i {mcfunction}"
+}, {
+  "name" : "mupad",
+  "query" : "extension in -i {mu}"
+}, {
+  "name" : "nesC",
+  "query" : "extension in -i {nc}"
+}, {
+  "name" : "ooc",
+  "query" : "extension in -i {ooc}"
+}, {
+  "name" : "q",
+  "query" : "extension in -i {q}"
+}, {
+  "name" : "reStructuredText",
+  "query" : "extension in -i {rst, rest, rest.txt, rst.txt}"
+}, {
+  "name" : "sed",
+  "query" : "extension in -i {sed}"
+}, {
+  "name" : "wdl",
+  "query" : "extension in -i {wdl}"
+}, {
+  "name" : "wisp",
+  "query" : "extension in -i {wisp}"
+}, {
+  "name" : "xBase",
+  "query" : "extension in -i {prg, ch, prw}"
+}, {
+  "name" : "Binary",
+  "query" : "extension in -i {3dm, 3ds, 3g2, 3gp, 7z, a, aac, adp, ai, aif, aiff, alz, ape, apk, appimage, ar, arj, asf, au, avi, bak, baml, bh, bin, bk, bmp, btif, bz2, bzip2, cab, caf, cgm, class, cmx, cpio, cr2, cur, dat, dcm, deb, dex, djvu, dll, dmg, dng, doc, docm, docx, dot, dotm, dra, DS_Store, dsk, dts, dtshd, dvb, dwg, dxf, ecelp4800, ecelp7470, ecelp9600, egg, eol, eot, epub, exe, f4v, fbs, fh, fla, flac, flatpak, fli, flv, fpx, fst, fvt, g3, gh, gif, graffle, gz, gzip, h261, h263, h264, icns, ico, ief, img, ipa, iso, jar, jpeg, jpg, jpgv, jpm, jxr, key, ktx, lha, lib, lvp, lz, lzh, lzma, lzo, m3u, m4a, m4v, mar, mdi, mht, mid, midi, mj2, mka, mkv, mmr, mng, mobi, mov, movie, mp3, mp4, mp4a, mpeg, mpg, mpga, mxu, nef, npx, numbers, nupkg, o, odp, ods, odt, oga, ogg, ogv, otf, ott, pages, pbm, pcx, pdb, pdf, pea, pgm, pic, png, pnm, pot, potm, potx, ppa, ppam, ppm, pps, ppsm, ppsx, ppt, pptm, pptx, psd, pya, pyc, pyo, pyv, qt, rar, ras, raw, resources, rgb, rip, rlc, rmf, rmvb, rpm, rtf, rz, s3m, s7z, scpt, sgi, shar, snap, sil, sketch, slk, smv, snk, so, stl, suo, sub, swf, tar, tbz, tbz2, tga, tgz, thmx, tif, tiff, tlz, ttc, ttf, txz, udf, uvh, uvi, uvm, uvp, uvs, uvu, viv, vob, war, wav, wax, wbmp, wdp, weba, webm, webp, whl, wim, wm, wma, wmv, wmx, woff, woff2, wrm, wvx, xbm, xif, xla, xlam, xls, xlsb, xlsm, xlsx, xlt, xltm, xltx, xm, xmind, xpi, xpm, xwd, xz, z, zip, zipx}"
+} ]

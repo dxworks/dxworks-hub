@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    "@dxworks/dev",
+    "@dxworks/voyenv",
+    "@dxworks/dx",
+    "@dxworks/honeydew",
+    "@dxworks/jafax",
+    "@dxworks/tables",
+    "@dxworks/studio",
+    "@dxworks/insider"
+  ]
+}

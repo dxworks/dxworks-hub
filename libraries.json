@@ -1,0 +1,4177 @@
+{
+  "outputFileName" : null,
+  "useProjectPrefix" : true,
+  "technologies" : [ {
+    "category" : "External Libraries",
+    "name" : "apache-camel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.camel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-sound",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.sound" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "junit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.junit", "junit.framework", "junit.extensions", "junit.textui" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "hamcrest",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "static org.hamcrest", "org.hamcrest", "uk.co.datumedge.hamcrest", "static uk.co.datumedge.hamcrest" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "reactor",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "reactor" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cassandraunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.cassandraunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "gherkin-formatter",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "gherkin.formatter" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "micrometer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.micrometer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sun-xml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.xml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mozilla-javascript",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mozilla.javascript" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "evosuite",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.evosuite" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-crypto",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.crypto" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "codahale-metrics",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.codahale.metrics" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "datastax",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.datastax" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "codebox",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.codebox" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "newrelic",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.newrelic" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "joptsimple",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "joptsimple" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ryantenney-metrics",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ryantenney.metrics" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "log4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.log4j", "org.apache.logging", "org.apache.logging.log4j", "clover.org.apache.log4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ojai",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.ojai" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "oauth2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.oltu.oauth2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-text",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.text" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-htrace",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.htrace" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "feign",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "feign" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tngtech",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.tngtech" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "activiti",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.activiti" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "okhttp3",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "okhttp3" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "logback",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.logstash.logback" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "swagger",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.swagger" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "retrofit2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "retrofit2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "springfox",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "springfox" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "netflix-hystrix",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.netflix.hystrix" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "netflix-ribbon",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.netflix.ribbon" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mapr",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.mapr" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jsonpath",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.jayway.jsonpath" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "restassured",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.jayway.restassured", "io.restassured" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "i18n",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.i18n", "com.neovisionaries.i18n" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "wnameless",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.wnameless" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jknack",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.jknack" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "docusign",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.docusign" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "auth0",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.auth0" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "amazonaws",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.amazonaws", "software.amazon.awssdk" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cryptonode",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.cryptonode" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jcifs",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "jcifs" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tibco-ontology",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.tibco" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jsonwebtoken",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.jsonwebtoken" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-bcel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.org.apache.bcel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sun-security",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "sun.security", "com.sun.security" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "infinispan",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.infinispan" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tempuri",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.tempuri" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tgio-rncryptor",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "tgio.rncryptor" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bonecp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.jolbox.bonecp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xhtmlrenderer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.xhtmlrenderer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "spongycastle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.spongycastle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-openejb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.openejb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bonigarcia",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.github.bonigarcia" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "reportng",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.uncommons" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "hsqldb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.hsqldb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-httpcomponents",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.httpcomponents" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "simple-xml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.simpleframework" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-reflection",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.lang.reflect" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Minidev-Json",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.minidev.json" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Betamax",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "co.freside.betamax" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jcraft",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.jcraft" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Barcodescanner",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.journeyapps.barcodescanner" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Android",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "android" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Elonen",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "fi.iki.elonen" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "rabbitmq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.rabbitmq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "microsoft-azure",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.microsoft.azure", "com.microsoft.windowsazure" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "microsoft-sqlserver",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.microsoft.sqlserver" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "microsoft-schemas",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.microsoft.schemas" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Symbol-EMDK",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.symbol.emdk" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ZXing",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.zxing" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Zip4J",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.lingala.zip4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Univocity-Parsers",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.univocity.parsers" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Nimbusds",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.nimbusds" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Mikephil-Charting",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.mikephil.charting" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Couchbase",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.couchbase.lite" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "XWalk",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.xwalk.core" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "XmlPull",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.xmlpull" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Honeywell-Aidc",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.honeywell.aidc" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Sun-Utils",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.rowset", "sun.print", "sun.misc", "sun.nio", "sun.reflect", "sun.util.resources" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Example",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.example" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Swing",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.swing", "com.sun.java.swing" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Databene",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.databene" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-tools",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.tools" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-xml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.xml", "org.apache.xmlbeans" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "asciidoctor",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.asciidoctor" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jcodings",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jcodings" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "assertj",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.assertj" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "thymeleaf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.thymeleaf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-openjpa",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.openjpa" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "batik-css-1.7",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.batik.css" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jndi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.jndi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "antlr",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.antlr", "antlr" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "corba",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.omg.CORBA" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "aopalliance",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.aopalliance" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "objectweb-asm",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.objectweb.asm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "wicket",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.wicket" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "aspectj",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.aspectj" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-axis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.axis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-axis2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.axis2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-axiom",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.axiom" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bouncycastle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.bouncycastle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "c3p0",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.mchange" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "testng",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "bsh", "org.testng" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cglib",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.cglib" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-beanutils",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.beanutils" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-codec",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.codec" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-collections",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.collections", "org.apache.commons.collections4" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-configuration",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.configuration" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-csv",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.csv" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-daemon",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.daemon" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-dbcp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.dbcp", "org.apache.commons.jocl" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-digester",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.digester" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-discovery",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.discovery" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-fileupload",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.fileupload" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-httpclient",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.httpclient" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-io",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.io" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-lang",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.lang" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-lang4",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.lang4" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-lang3",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.lang3", "wiremock.org.apache.commons.lang3" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-logging",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.logging" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-pool",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.pool", "org.apache.commons.pool2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-validator",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.validator" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-cxf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.cxf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "dozer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.dozer", "net.sf.dozer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ehcache",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.ehcache" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-common",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.common" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "wiremock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.tomakehurst.wiremock" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "findbugs",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.code.findbugs" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "json",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "flexjson", "net.sf.flexjson", "net.sf.json", "net.sf.oval", "org.json" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "modelmapper",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.modelmapper" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jsoup",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jsoup" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "geronimo",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.geronimo" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "opensymphony",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.opensymphony" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ognl",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ognl" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-collections",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.collections" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-gxp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.gxp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "gson",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.gson" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "h2database",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.h2", "com.h2database" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "virtuald",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.virtuald" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "directwebremoting",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.directwebremoting" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ha-api",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.glassfish.ha" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "glasnost-orika",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ma.glasnost.orika" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "hibernate",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.hibernate", "com.vladmihalcea.hibernate", "net.sf.hibernate" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibatis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibatis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-ibatis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.ibatis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-MDM",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "madison.mpi", "madison.header", "madison.util" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-ejs",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibm.icu" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-etools",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ibm.etools" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-mqjms",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibm.mq", "com.ibm.msg", "com.ibm.mqjms", "com.ibm.jms" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-websphere",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibm.websphere", "com.ibm.ws", "com.ibm.wsdl", "com.ibm.wsspi", "javax.wsdl" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "emory-mathcs",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "edu.emory.mathcs" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-xtq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibm.xtq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-xylem",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibm.xylem" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "itext",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.lowagie" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "itextpdf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.itextpdf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jacoco",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jacoco" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jackson",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.codehaus.jackson", "com.github.fge.jackson" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ksoap2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.ksoap2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "kxml2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.kxml2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "plexus",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.codehaous.plexus", "org.codehaus.plexus" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jmock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jmock" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "easymock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.easymock", "org.unitils" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jakarta-oro",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.oro" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jakarta-regexp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.regexp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jasperreports",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.jasperreports" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jasypt",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jasypt" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Javatuples",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.javatuples" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jwebunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sourceforge.jwebunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-sql",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.sql", "javax.sql" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javassist",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javassist" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-mail",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.mail" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-portelet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.portlet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-transaction",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.transaction" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-activation",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.activation" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-annotation",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.annotation" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-jms",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.jms" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-jndi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.naming" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-jws",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.jws" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-ejb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.ejb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-persistence",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.persistence" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-servlet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.servlet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-validation",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.validation" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-xml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.xml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xpath",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.org.apache.xpath)([a-zA-Z_0-9]*.)+(internal", "org.apache.xpath)([a-zA-Z_0-9]*.)+(internal", "com.sun.org.apache.xpath" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jaxws-spring",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jvnet.jax_ws_commons", "com.sun.xml.ws.transport" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jaxws-tools",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.tools" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jboss",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jboss" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jdbi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.skife.jdbi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Monitorjbl-XLSX",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.monitorjbl.xlsx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-felix",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.felix" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jettison",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.codehaus.jettison" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jetty",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mortaby", "org.eclipse.jetty", "wiremock.org.eclipse.jetty" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jfreechart",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jfree" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "freemaker",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "freemaker" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "joda-time",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.joda.time" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mysema-query",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.mysema.query" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "myfaces",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.myfaces" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sun-faces",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.faces" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "myfaces-jsf-api",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.faces" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "fest-assert",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.fest.assertions" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mockito",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mockito" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mockobjects",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.mockobjects" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mvel2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mvel2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mybatis-spring",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mybatis.spring" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-soap",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.soap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "objectlab-kit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.objectlab.kit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jdbc",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "oracle.jdbc", "oracle.security.o3logon", "oracle.sql", "oracle.net", "oracle.jpub", "com.oracle.ojdbc", "com.oracle.ojdbc6", "com.oracle.ojdbc7", "oracle.ucp.jdbc" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "opencsv",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.opencsv", "com.opencsv" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ooxml-schemas",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.openxmlformats.schemas" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "owasp-csrfguard",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.owasp.csrfguard" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "owasp-esapi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.owasp.esapi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-poi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.poi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "powermock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.powermock" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "quartz",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.quartz", "Quartz" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "saaj-api",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.xml.soap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "saxon",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.saxon", "net.sourceforge.saxon" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "slf4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.slf4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "spring",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.springframework" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "stax-ex",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jvnet.staxex" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "stax2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.codehaus.stax2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "struts",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.struts" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "surefire-junit4",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.maven.surefire" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tiles",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.tiles" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tridion",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.tridion" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "velocity",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.velocity" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "woodstox-core-asl",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ctc.wstx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jaxws-rs",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.ws.rs" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xalan",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.xalan", "com.sun.org.apache.xalan" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xbean-spring",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.xbean" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "getahead-dwr",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "uk.ltd.getahead.dwr" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "taglibs",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.taglibs" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xerces",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.xerces", "org.apache.xerces", "com.sun.org.apache.xerces" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xml-apis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.xml.sax", "org.w3c.dom" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-ws",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.ws" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xom",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "nu.xom" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xstream",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.thoughtworks.xstream" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-activemq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.activemq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tomcat",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.tomcat", "org.apache.catalina" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jxl",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "jxl" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "emma",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.vladium" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "dom4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.dom4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "displaytag",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.displaytag" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "eclipse-jdtcore",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.eclipse.jdtcore", "org.eclipse.jdt.core" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "eclipse-persistence",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.eclipse.persistence", "org.eclipse.persistence" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jersey",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.glassfish.jersey", "com.sun.jersey" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "fasterxml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.fasterxml", "wiremock.com.fasterxml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "reflections",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.reflections" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "openjdk-jmh",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.openjdk.jmh" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "argparse4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sourceforge.argparse4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "lz4",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.jpountz.lz4" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "rocksdb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.rocksdb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "zkclient",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.I0Itec.zkclient" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "selenium",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.openqa.selenium" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "lombok",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "lombok" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "dbunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.dbunit", "com.github.springtestdbunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "drools",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.drools" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "snmp4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.snmp4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "QOSLogback",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ch.qos.logback" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bytecode",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "au.com.bytecode" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "zaxxer-hikari",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.zaxxer.hikari" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jira-api",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.atlassian.jira" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "atlassian",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.atlassian.util", "com.atlassian.oai" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "quickfix",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "quickfix", "org.quickfixj.jmx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mongodb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.mongodb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "unboundid-scim",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.unboundid.scim" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "vaadin-sass",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.vaadin.sass" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mockserver",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mockserver" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "GWT",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.gwt" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "kafka",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.kafka", "kafka" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jena",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.hp.hpl.jena" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-http",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.http", "wiremock.org.apache.http" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-directory",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.directory" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-jxpath",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.jxpath" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-lucene",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.lucene" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "elasticsearch",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.elasticsearch", "org.codelibs.elasticsearch" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "isdc-wro",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ro.isdc.wro" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "groovy",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.codehaus.groovy", "groovy" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-pdfbox",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.pdfbox" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bson",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.bson" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "opensaml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.opensaml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "OSGI",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.osgi.framework" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-inject",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.inject" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "keycloak",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.keycloak" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ops4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.ops4j.pax" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jgrapht",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jgrapht" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "oauth",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.oauth" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "restlet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.restlet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "snakeyaml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.yaml.snakeyaml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "richfaces",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.richfaces" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-wink",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.wink" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "redis-clients",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "redis.clients" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javasimon",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.javasimon" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "htmlunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.gargoylesoftware.htmlunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "wikimodel-wem",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.wikimodel.wem" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "openhft-chronicle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.openhft.chronicle.queue" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Sematext-Hbase",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sematext.hbase.wd" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RX",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "rx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Alibaba-Fastjson",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.alibaba.fastjson" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Asynchttpclient",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.asynchttpclient" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FlapDoodle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "de.flapdoodle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Eclipse-Aether",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.eclipse.aether" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Ning-HttpClient",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ning.http.client" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Scala",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "scala" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Apache-Zookeeper",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.zookeeper" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Vertex-Core",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.vertx.core.http" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Alibaba-Druid",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.alibaba.druid" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "BugRegression",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "bug_regression_jdk7" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Netty",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.netty" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Squareup-OKHttp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.squareup.okhttp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Spy-Memcached",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.spy.memcached" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MariaDB4J",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ch.vorburger.mariadb4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Undertow",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.undertow" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Akka",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "akka.http" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "objenesis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.objenesis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jamm",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.github.jamm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "supercsv",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.supercsv" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "roaringbitmap",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.roaringbitmap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-cli",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.cli" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cucumber",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "cucumber.runtime", "cucumber.api", "io.cucumber", "net.masterthought.cucumber", "com.cucumber" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jpos",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jpos" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "args4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.kohsuke.args4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "joda-money",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.joda.money" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "dbsetup",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ninja_squad.dbsetup", "com.ninja-squad" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-awt",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.awt" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "flywaydb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.flywaydb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sshj",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.schmizz.sshj", "com.hierynomus" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-inject",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.enterprise.inject", "javax.inject" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-compress",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.compress" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "expectit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.expectit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "dockerjava",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.dockerjava" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "json-schema-validator",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.networknt" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "eclipse-microprofile",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.eclipse.microprofile" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "guava",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.guava" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jarchivelib",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.rauschig.jarchivelib" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "equalsverifier",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "nl.jqno.equalsverifier" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-derby",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.derby" ],
+    "wrapAsImports" : false
+  }, {
+    "category" : "External Libraries",
+    "name" : "owasp-html",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.owasp.html" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "awaitility",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.awaitility" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "okio",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "okio" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "prometheus",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.prometheus" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "carrotsearch",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.carrotsearch" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "avast-gradle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.avast.gradle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "unboundid-util",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.unboundid.util" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "relique",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.relique" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "h2gis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.h2gis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jline",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jline" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "hadoop",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.hadoop" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "tdunning",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.tdunning" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "spatial4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.locationtech.spatial4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ini4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.ini4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-kerby",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.kerby" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "HdrHistogram",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.HdrHistogram" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "threeten",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.threeten" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jts",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.locationtech.jts" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "thetaphi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "de.thetaphi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-cloud",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.cloud" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sun-net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sun-jna",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sun.jna" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "maxmind",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.maxmind" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "fixture",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "fixture" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "gradle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.gradle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "joni",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.joni" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "subethamail",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.subethamail" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "unboundid-ldap",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.unboundid.ldap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-tika",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.tika" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mustachejava",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.mustachejava" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "shibboleth-utilities",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.shibboleth.utilities" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ietf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.ietf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-auth",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.auth" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mimeutil",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "eu.medsea.mimeutil" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "eviware-soapui",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.eviware.soapui" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "netflix-config",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.netflix.config" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "rakugakibox",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.rakugakibox" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mockftpserver",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mockftpserver" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "oracle-xmlns",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.oracle.xmlns" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jmimemagic",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.jmimemagic" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jsafe",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.rsa.jsafe" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-api_youtube",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.api.services.youtube" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "favre-crypto",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "at.favre.lib.crypto" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "wix-mysql",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.wix.mysql" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "flapdoodle-embedprocess",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "de.flapdoodle.embed.process" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ahocorasick",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.ahocorasick" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "facebook-ads",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.facebook.ads" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jsonassert",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.skyscreamer.jsonassert", "com.toomuchcoding" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-crypto",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.crypto" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ooxi-phparser",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.ooxi.phparser" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "google-api_client",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.api.client" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "rigel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.isb.rigel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "nuodb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.nuodb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-management",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.management" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "iban4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.iban4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "greenmail",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.icegreen.greenmail" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javacrumbs-shedlock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.javacrumbs.shedlock" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-money",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.money" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bytebuddy-asm",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.bytebuddy.asm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-qpid",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.qpid" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "zonky-test",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.zonky.test" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xmlunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.xmlunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-websocket",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.websocket" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "hazelcast",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.hazelcast" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "brave-spring-web",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "brave.spring.web" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-el",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.el" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "pivotal-cfenv",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.pivotal.cfenv" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "redis-embedded",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "redis.embedded" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javamoney",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.javamoney" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "swift",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.prowidesoftware" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "beanio",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.beanio" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "fakesftpserver",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.stefanbirkner.fakesftpserver" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-sshd",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.sshd" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "lettuce",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.lettuce" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javacrumbs-jsonunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.javacrumbs.jsonunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mapstruct",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mapstruct" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "junitparams",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "junitparams" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cloudfoundry",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.cloudfoundry" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sftp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ghdiri.abdallah.sftp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-script",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.script" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jdk-nashorn",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "jdk.nashorn" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jpublish",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jpublish" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "odysseus-el",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "de.odysseus.el" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "objectweb-carol",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.objectweb.carol" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "concurrentlinkedhashmap",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.googlecode.concurrentlinkedhashmap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cyberneko-html",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.cyberneko.html" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-lang",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.lang" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "enhydra-jdbc",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.enhydra.jdbc" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "kyro",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.esotericsoftware.kryo" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "checkerframework",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.checkerframework" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "oswego-util",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "EDU.oswego.cs.dl.util" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "python-parser",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.python.parser" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-rmi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.rmi", "javax.rmi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-bsf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibm.bsf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-avalon",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.avalon" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-applet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.applet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "objectweb-transaction",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.objectweb.transaction" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javolution",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javolution.lang" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jimm-datavision",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "jimm.datavision" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-comm",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.comm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-cactus",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.cactus" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "barcode4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.krysalis.barcode4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "netscape-javascript",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "netscape.javascript" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "objectweb-jotm",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.objectweb.jotm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-util",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.util", "java.time", "java.math" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-security",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.security", "javax.security" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-text",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.text" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-io",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.io", "java.nio" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-fop",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.fop" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jibx",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jibx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jdom",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jdom" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "weblogic",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "weblogic", "com.bea.core" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "springmodules",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.springmodules" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RSA-CertJ",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.rsa.certj" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "BEAX-XBean",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.bea.xbean" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "BEA-XML",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.bea.xml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Avro",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "avro", "org.apache.avro" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "EasyRules",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.easyrules" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Kie-Api",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.kie.api" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "JSmart",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jsmart" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "CustomMonkey",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.custommonkey" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "JBPM",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jbpm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Jmeter",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.jmeter" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "XMLSOAP",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.xmlsoap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "JDesktop",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jdesktop" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Sikuli",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.sikuli" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Apache-Maven",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.maven" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Apache-XPath",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.xpath" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-lang",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.lang" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Confluent-Kafka",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.confluent.kafka" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-imageio",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.imageio" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cvsreader",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.csvreader" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "java-beans",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "java.beans" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Enterprisedt-FTP",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.enterprisedt.net.ftp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bytebuddy",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.bytebuddy" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jvnet-mock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jvnet.mock" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-json",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.json" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jtds",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sourceforge.jtds" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-enterprise",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.enterprise" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jasyptspringboot",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ulisesbocchio.jasyptspringboot" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "racic-testing",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ch.racic.testing" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "electric-xml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "electric.xml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-interceptor",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.interceptor" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-jcs",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.jcs" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-camel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.camel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ibm-db2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ibm.db2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "htmlcleaner",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.htmlcleaner" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sf-navigator",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.navigator" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-security",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.resource.spi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ostermiller-util",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.Ostermiller.util" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "parboiled",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.parboiled" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sf-jxls",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.jxls" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "meterware-httpunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.meterware.httpunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "oracle-core",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "oracle.core" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "octetstring",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.octetstring" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-cache",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.cache" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "concordion",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.concordion" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jooq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jooq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "chiknrice",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.chiknrice" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "castor-xml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.exolab.castor.xml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jetbrains-annotations",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jetbrains.annotations" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "io-confluent",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.confluent" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javafx-scene",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javafx.scene" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "clarkware-junitperf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.clarkware.junitperf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-ignite",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.ignite" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "bea-logging",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.bea.logging" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apollographql",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.apollographql" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-batch",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.batch" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "benmanes-gradle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.benmanes.gradle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "openid4java",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.openid4java" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "querydsl",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.com.querydsl", "com.querydsl" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "kotlin",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "kotlin.jvm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "spring-javaformat",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.spring.javaformat" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "reactivestreams",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.reactivestreams" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "commons-mail",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.commons.mail" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "openqa-grid",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.openqa.grid" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "laures-cewolf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "de.laures.cewolf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "python-util",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.python.util" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mysql",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.mysql" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ingrian-security",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ingrian.security" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "veracode-annotation",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.veracode.annotation" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ingrian",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ingrian.internal" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ultraq-thymeleaf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "nz.net.ultraq.thymeleaf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "SendGrid",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "SendGrid" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Threading",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Threading" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Text",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Text" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.ASPNetCore",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.AspNetCore" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Data",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Data" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Reflection",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Reflection" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Xml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Xml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Extensions",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Extensions" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Newtonsoft.Json",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Newtonsoft.Json" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Xunit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Xunit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NLog",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NLog" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Security",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Security" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MimeKit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MimeKit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.IO",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.IO" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Linq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Linq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.EntityFrameworkCore",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.EntityFrameworkCore" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Collections",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Collections" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Linq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "LinqKit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "IdentityModel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "IdentityModel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Data",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Data" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Diagnostics",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Diagnostics" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.ComponentModel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.ComponentModel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "IdentityServer4",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "IdentityServer4" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Dynamic",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Dynamic" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "SharpZipLib",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ICSharpCode.SharpZipLib" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MailKit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MailKit.Net.Smtp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ClosedXML.Excel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ClosedXML.Excel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "AutoMapper",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "AutoMapper" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Bogus",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Bogus" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "taglib-json",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "atg.taglib.json" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "onelogin",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.onelogin" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "paypal",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.paypal" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NUnit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NUnit.Framework" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.SqlServer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.SqlServer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.QualityTools",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.QualityTools" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.VisualStudio",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.VisualStudio" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "OpenQA.Selenium",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "OpenQA.Selenium" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Web",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Web" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ISNet.WebUI",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ISNet.WebUI" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "SharpSsh",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Tamir.SharpSsh" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Win32",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Win32" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FluentValidation",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "FluentValidation" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Swashbuckle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Swashbuckle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Experimental-System-Messaging",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Experimental.System.Messaging" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "CacheCow",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "CacheCow" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft-IO",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.IO" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Moq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Moq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Contracts-Framework",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Contracts.Framework" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Topshelf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Topshelf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "WebActivatorEx",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "WebActivatorEx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "SshNet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Renci.SshNet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Unity",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Practices.Unity", "Unity" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "CsvHelper",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "CsvHelper" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "OfficeOpenXml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "OfficeOpenXml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.ReportingServices",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.ReportingServices" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Office",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Office" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.VisualBasic",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.VisualBasic" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FlexCel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "FlexCel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.AnalysisServices",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.AnalysisServices" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Pdftools",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Pdftools" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Practices",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Practices" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "TechTalk",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "TechTalk" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Build",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Build" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Serilog",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Serilog" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.CSharp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.CSharp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "iTextSharp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "iTextSharp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "beasys",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.beasys" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "pzfilereader",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.pzfilereader" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sybase-jdbc4",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sybase.jdbc4" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.FSharp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.FSharp.Collections", "Microsoft.FSharp.Core", "Microsoft.FSharp.Reflection" ],
+    "wrapAsImports" : true
+  } ]
+}

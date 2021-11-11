@@ -1,0 +1,43 @@
+{
+  "commonPathPrefixes": [
+    "src/assembly",
+    "src/main/assembly",
+    "src/assets",
+    "src/main/assets",
+    "src/groovy",
+    "src/main/groovy",
+    "src/test/groovy",
+    "src/java",
+    "src/main/java",
+    "src/test/java",
+    "src/main/resources",
+    "src/test/resources",
+    "src/scripts",
+    "src/main/scripts",
+    "src/main/templates",
+    "src/templates",
+    "src/WEB-INF",
+    "src/webapp/WEB-INF",
+    "src/main/webapp/WEB-INF",
+    "src/test/webapp/WEB-INF"
+  ],
+  "relevantExtensions": [
+    "java",
+    "groovy",
+    "scala",
+    "kt"
+  ],
+  "structuringElements": [
+    {
+      "name": "component",
+      "depth": 1
+    },
+    {
+      "name": "module",
+      "depth": 1
+    },
+    {
+      "name": "submodule"
+    }
+  ]
+}

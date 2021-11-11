@@ -1,0 +1,367 @@
+[
+  {
+    "type": "numericClassifier",
+    "entity": "file",
+    "domain": "status",
+    "query": "count changes during last 6 timeframes",
+    "thresholds": [1],
+    "groups": ["idle", "active"]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "file",
+    "domain": "years",
+    "colorScheme": "6-years",
+    "groups": [
+      {
+         "label": "<=2016",
+         "query": "first change before 2017" 
+      },
+      {
+         "label": "2017",
+         "query": "first change during 2017" 
+      },
+      {
+         "label": "2018",
+         "query": "first change during 2018" 
+      },
+      {
+         "label": "2019",
+         "query": "first change during 2019" 
+      },      
+      {
+         "label": "2020",
+         "query": "first change during 2020" 
+      },
+      {
+         "label": "2021",
+         "query": "first change during 2021" 
+      }      
+    ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "file",
+    "domain": "language",
+    "groups": [
+     {
+         "label": "JavaStack",
+         "query": "extension in {java, kt, groovy}" 
+      },
+      {
+         "label": "DotNET",
+         "query": "extension in {cs, vb, vbs}" 
+      },
+      {
+         "label": "C++",
+         "query": "extension in -i {c, h, cc, hh, cpp, hpp}" 
+      },
+      {
+         "label": "JavaScript",
+         "query": "extension in {js, jsx, angular}" 
+      },
+      {
+         "label": "Typescript",
+         "query": "extension in {ts, tsx}" 
+      },
+      {
+         "label": "Database",
+         "query": "extension in {sql, cql}" 
+      },
+      {
+         "label": "Interpreted",
+         "query": "extension in {pl, py, php}" 
+      },
+      {
+         "label": "Others",
+         "query": "extension in {jsp, erl,hrl, cmd, sh, bat, ps1, feature, story, Feature, steps}" 
+      }
+     ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "file",
+    "domain": "type",
+    "groups": [
+     {
+         "label": "code",
+         "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps}" 
+      },
+      {
+         "label": "web",
+         "query": "extension in -i {less, css, xsl, scss, xss, xsd, html, xhtml, wsdl, xjb, disco, ftl}" 
+      },
+      {
+         "label": "data",
+         "query": "extension in -i {csv} or extension is json" 
+      },
+      {
+         "label": "resources",
+         "query": "path like */resources/*" 
+      },
+      {
+         "label": "configuration",
+         "query": "extension like insensitive *config or name like *gradle* or name is Jenkinsfile or name is pom.xml or extension like insensitive *settings or extension in {gradle, sbt, key, scr, pem, cer,pfx, ini,conf,cfg,project,header,targets,ruleset,yml,yaml,properties,prefs,props,Properties, avsc}" 
+      },
+      {
+         "label": "other",
+         "query": "extension in {xml, pwd, txt, jks}" 
+      }
+     ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "file",
+    "domain": "type.code",
+    "groups": [
+     {
+         "label": "backend",
+         "query": "extension in -i {cs,java,dart,sql,cql,kt,groovy,erl,hrl}" 
+      },
+      {
+         "label": "frontend",
+         "query": "extension in {js,angular,jsx,ts,tsx,jsp}" 
+      },
+      {
+         "label": "scripting",
+         "query": "extension in {py, pl, cmd, sh, bat, ps1, vbs}" 
+      },
+      {
+         "label": "bdd",
+         "query": "extension in {feature, story, Feature, steps}"
+      } 
+     ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "file",
+    "domain": "role",
+    "groups": [
+      {
+         "label": "functional",
+         "query": "not (path like insensitive *test/* or path like insensitive *tests/*)" 
+      },
+      {
+         "label": "test",
+         "query": "path like insensitive *test/* or path like insensitive *tests/*" 
+      }
+    ]
+  },
+  {
+    "type": "numericClassifier",
+    "entity": "author",
+    "domain": "status",
+    "query": "count changes during last 6 timeframes",
+    "thresholds": [1],
+    "groups": ["idle", "active"]
+  },         
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "author",
+    "domain": "seniority",
+    "groups": [
+      {
+         "label": "veteran",
+         "query": "first change before 2018-06" 
+      },
+      {
+         "label": "senior",
+         "query": "first change between 2018-06 and 2019-12" 
+      },
+      {
+         "label": "established",
+         "query": "first change between 2020-01 and 2020-06" 
+      },      
+      {
+         "label": "newcomer",
+         "query": "first change since 2020-07" 
+      }
+    ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "author",
+    "domain": "year",
+    "groups": [
+      {
+         "label": "<=2016",
+         "query": "first change before 2017" 
+      },
+      {
+         "label": "2017",
+         "query": "first change during 2017" 
+      },
+      {
+         "label": "2018",
+         "query": "first change during 2018" 
+      },
+      {
+         "label": "2019",
+         "query": "first change during 2019" 
+      },
+      {
+         "label": "2020",
+         "query": "first change during 2020" 
+      },
+      {
+         "label": "2021",
+         "query": "first change during 2021" 
+      }
+    ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "commit",
+    "domain": "year",
+    "groups": [
+      {
+         "label": "<=2016",
+         "query": "has date before 2017" 
+      },
+      {
+         "label": "2017",
+         "query": "has date during 2017" 
+      },
+      {
+         "label": "2018",
+         "query": "has date during 2018" 
+      },
+      {
+         "label": "2019",
+         "query": "has date during 2019" 
+      },      
+      {
+         "label": "2020",
+         "query": "has date during 2020" 
+      },
+      {
+         "label": "2021",
+         "query": "has date during 2021" 
+      }
+    ]
+  },
+  {
+    "type": "numericClassifier",
+    "entity": "commit",
+    "domain": "message.smartness",
+    "query": "count taskprefix.*",
+    "thresholds": [1],
+    "groups": ["dumb","smart"]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "commit",
+    "domain": "message.nature",
+    "groups": [
+      {
+         "label": "bugfix",
+         "query": "message containing ins {korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, mistake, wrong, typo, broken, crash}"
+      },
+      {
+         "label": "refactoring",
+         "query": "message containing ins {aufräumen, aufgeräumt, sanitize, sanitise, refact, restructur, clean, cleanup, rename, rework, umbennant, formatierung, reorgani, reinig}"
+      },
+      {
+         "label": "refinement",
+         "query": "message containing ins {improve, update, remove, review, angepasst, aktualisiert, anpassung, entfernt, modifi, geändert, adapt, improved, adjust, performance, refin, hack, work-around}" 
+      },
+      {
+         "label": "other",
+         "query": "message not containing ins {aufräumen, aufgeräumt, sanitize, sanitise, refact, restructur, clean, cleanup, rename, rework, umbennant, formatierung, reorgani, reinig, improve, update, remove, review, angepasst, aktualisiert, anpassung, entfernt, modifi, geändert, adapt, improved, adjust, performance, refin, hack, work-around, korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, crash, mistake, wrong, typo, broken, crash}" 
+      }      
+    ]
+  },    
+  {
+    "type": "numericClassifier",
+    "entity": "commit",
+    "domain": "message.size",
+    "query": "count words of message",
+    "thresholds": [1, 3, 6, 10, 20],
+    "groups": ["zero","very-short","short","medium","long","very-long"]
+  },  
+  {
+    "type": "numericClassifier",
+    "entity": "commit",
+    "domain": "volume.files",
+    "query": "count files",
+    "thresholds": [5, 20],
+    "groups": ["focused", "medium", "bulk"]
+  },
+  {
+    "type": "numericClassifier",
+    "entity": "commit",
+    "domain": "volume.churn",
+    "query": "sum churn of changes",
+    "thresholds": [250, 1000],
+    "groups": ["focused", "medium", "bulk"]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "commit",
+    "domain": "daytime",
+    "groups": [
+      {
+         "label": "early-morning",
+         "query": "moment.early_morning*"
+      },      
+      {
+         "label": "morning",
+         "query": "moment.morning*"
+      },      
+      {
+         "label": "early-afternoon",
+         "query": "moment.early-afternoon*"
+      },
+      {
+         "label": "afternoon",
+         "query": "moment.afternoon*"
+      },
+      {
+         "label": "evening",
+         "query": "moment.evening*"
+      },      
+      {
+         "label": "night",
+         "query": "moment.night*"
+      }      
+    ]
+  },    
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "commit",
+    "domain": "timezone",
+    "groups": [
+      {
+         "label": "Asia",
+         "query": "zone.asia"
+      },      
+      {
+         "label": "Europe",
+         "query": "zone.europe"
+      },      
+      {
+         "label": "America",
+         "query": "zone.america"
+      }
+    ]
+  },    
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "file",
+    "domain": "component",
+    "groups": [
+      {
+         "label": "default",
+         "query": "path like *"
+      }
+    ]
+  },
+  {
+    "type": "numericClassifier",
+    "entity": "commit",
+    "domain": "pattern",
+    "query": "growth",
+    "thresholds": [-20, 20, 1000],
+    "groups": ["refactoring", "refinement", "development", "import"]
+  }
+]

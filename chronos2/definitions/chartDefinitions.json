@@ -1,0 +1,649 @@
+[
+  {
+    "name": "OVR: Files changed each month (by techonology)",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files for commits",
+      "label": "Files (by technology)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "technology",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?)",
+    "orientation": "vertical"
+  },
+  {
+    "name": "OVR: Activity on main programming languages",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "language@file",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files having technology.code",
+      "label": "Source-Files (in Red files changed last year)",
+      "highlight": "changes during last year"
+    },
+    "oy2": {
+      "query": "count files having (technology.code and first change during last year)",
+      "label": "Source-Files created last year"
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "OVR: Dormant Code by component",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "component@file",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files having technology.code",
+      "label": "Source-Files (by year of last change)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "latestChangeYear",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "oy2": {
+      "query": "((files having (not changes during last 2 years and technology.code)) * 100) / (count files having technology.code)",
+      "label": "% Files unchanged for at least 2 years"
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "OVR: Recent changes (by file creation year) per month",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period",
+      "filter": "since last 12 months"
+    },
+    "oy1": {
+      "query": "count changes",
+      "label": "Count changes",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "fileCreationYear",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "This view helps you see if over the last year the files that were under active development represent new code, or changes to old files. This in turn helps you understand what type of development activity is happening\n",
+    "orientation": "vertical"
+  },
+  {
+    "name": "OVR: Filetypes by technology",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "filetype",
+      "label": "Filetype (by technology category)"
+    },
+    "oy1": {
+      "query": "count files",
+      "label": "Files",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "technology",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "The chart provides an overview of filetypes. The \"technology\" classifier is just meant to indicate how we classify a certain filetype, although in most cases this is quite obvious",
+    "orientation": "horizontal"
+  },
+  {
+    "name": "OVR: Growth (by repo) and overall size per month   ",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period"
+    },
+    "oy1": {
+      "query": "sum growth of commits",
+      "label": "Growth in Period (by repository) ",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "repo",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "oy2": {
+      "query": "sum size of files",
+      "label": "Overall Size (in LOC)"
+    },
+    "notes": "You can spot: (1) how old the codebase is; (2) the oldest and newest repos; (3) the repos with the highest recent growth, and repos that are inactive; (4) months with abrupt growth; (5) periods of standstill. Based on the duration of the project and the growth patterns you can get a solid indication on the project's current development phase: has the project started recently? or is it in vibrant growth? or in consolidation phase? or in maintenance? or close to standstill?",
+    "orientation": "vertical"
+  },
+  {
+    "name": "OVR: Churn (by volume type) per period ",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period"
+    },
+    "oy1": {
+      "query": "sum churn of commits",
+      "label": "Volume of Change (by commit size)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "volume.churn",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "The view indicates the impact that bulk commits  have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "orientation": "vertical"
+  },
+  {
+    "name": "SoC: Complex Files - Fraction of Activity Volume by Currently Active Developers ",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "file",
+      "label": "",
+      "filter": "sum strength of metric.atc >= 10 and changes >= 3"
+    },
+    "oy1": {
+      "query": "(sum churn of changes for authors having status.active) / (sum churn of changes)",
+      "label": "Fraction of Activity Volume by Currently Active Developers"
+    },
+    "notes": "Does the current team have enough experience on the most complex files?",
+    "orientation": "horizontal"
+  },
+  {
+    "name": "WoW: Smart and literate commits per month",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period"
+    },
+    "oy1": {
+      "query": "((count commits having message.smartness.smart) * 100) / (count commits)",
+      "label": "% Smart Commits"
+    },
+    "oy2": {
+      "query": "((count commits having (message.size.medium or message.size.*long)) * 100) / (count commits)",
+      "label": "% Literate Commits"
+    },
+    "target": 90,
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "WoW: Files (by component) and commits per task prefix",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "taskprefix",
+      "label": "Taskprefix",
+      "filter": ""
+    },
+    "oy1": {
+      "query": "count files for commits  having not taskprefix.@",
+      "label": "Files (w. task references in commits)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "repo",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "oy2": {
+      "query": "count commits  having not taskprefix.@",
+      "label": "Commits (w. task references)"
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "WoW: Task Prefix by repo",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "repo@commit",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Task Prefix)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "taskprefix",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "horizontal"
+  },
+  {
+    "name": "WoW: Task Prefixes used over time",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Task Prefix)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "taskprefix",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "WoW: Distribution of commits per work hours",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Day Part)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "daytime",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "WoW: Distribution of commits per week",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Day)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "weekday",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "Is the team frequently commiting during weekends? Is the team frequently commiting more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
+    "orientation": "vertical"
+  },
+   {
+    "name": "KNW: Files with Weak Ownership per Component (by year of last change)",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "component@file",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files having (technology.code and anomaly.*WeakOwner*)",
+      "label": "Source-Files with Weak Ownership (by year of last change)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "latestChangeYear",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "KNW: Changes by Author",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "",
+      "highlight": "status.active"
+    },
+    "oy1": {
+      "query": "count changes",
+      "label": "Changes",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "component",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "KNW: Continuity ",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Author's Seniority)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "seniority",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced authors?",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TEAM: Devs (by involvement) per month",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period"
+    },
+    "oy1": {
+      "query": "count authors for commits",
+      "label": "Authors",
+      "grouping": {
+        "entity": "author",
+        "by": {
+          "name": "count commits",
+          "type": "query"
+        },
+        "numberOfGroups": 4
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TEAM: Commits (by dev involvement) per month",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period"
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Count commits",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "dev.involvement",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TEAM: New Authors joining the team",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count authors having first commit during period",
+      "label": "New Authors"
+    },
+    "oy2": {
+      "query": "count authors for commits",
+      "label": "All Authors"
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TEAM: Commits (by dev involvement in month) per month",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count authors for commits",
+      "label": "Authors (by Commits during Month)",
+      "grouping": {
+        "entity": "author",
+        "by": {
+          "name": "count commits during period",
+          "type": "query"
+        },
+        "numberOfGroups": 4
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+   {
+    "name": "TST: Changed Test files over time",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files having technology.code for changes",
+      "label": "Source-Files (by Role)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "role",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TST: Changes on Test files over time",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count changes for files having technology.code",
+      "label": "Changes on Source-Files (by Role)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "role",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TST: Bug-fix percentage by period",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count changes for files",
+      "label": "Changes (by file Role)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "role",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "oy2": {
+      "query": "((count commits having message.nature.bugfix) * 100) / (count commits)",
+      "label": "% Bug-Fix"
+    },
+    "notes": "How has the Bug-fix percentage evolved over time? Does this correlate with an increase/decrease in test code changes?",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TST: Source-code files (by role) per component",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "component@file",
+      "label": "Component"
+    },
+    "oy1": {
+      "query": "count files having technology.code",
+      "label": "Source-Code Files (by role)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "role",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "horizontal"
+  },
+  {
+    "name": "ENC: Duplicate files (by changes made after initial development period)",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files having (anomaly.*Dup* and first change during period)",
+      "label": "New Files with Duplication (by changes made after initial development period)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "count changes having date after $first_activity_date plus three months",
+          "type": "query"
+        },
+        "numberOfGroups": 4
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "COHESION: High Impact Tasks (by component)",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "task",
+      "label": "Task",
+      "filter": "count files for commits >= 20 and commits >= 3"
+    },
+    "oy1": {
+      "query": "count files for commits",
+      "label": "Files (by component)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "component.spring-kafka",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TEAM: Knowledge per Component",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "Author",
+      "filter": "knowledge.spring-graphql*"
+    },
+    "oy1": {
+      "query": "(sum knowledge.spring-graphql*) / (count knowledge.spring-graphql*)",
+      "label": "Average PKS"
+    },
+    "oy2": {
+      "query": "sum knowledge.spring-graphql*",
+      "label": "Sum PKS (can be over 100)"
+    },
+    "notes": "",
+    "orientation": "vertical"
+  },
+  
+  {
+    "name": "STR: Concepts by component",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "concept",
+      "label": "Concept"
+    },
+    "oy1": {
+      "query": "count files",
+      "label": "Count files",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "component",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
+    "orientation": "horizontal"
+  }
+]

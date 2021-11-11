@@ -1,0 +1,295 @@
+[ {
+  "name" : "actionscript",
+  "query" : "extension in {as, mxml}"
+}, {
+  "name" : "apache-avro",
+  "query" : "extension in {avsc}"
+}, {
+  "name" : "apectj",
+  "query" : "extension in {aj}"
+}, {
+  "name" : "archive",
+  "query" : "extension in {zip, gz, gzip}"
+}, {
+  "name" : "asp",
+  "query" : "extension in {asax, cshtml, aspx, asmx, ascx}"
+}, {
+  "name" : "awk",
+  "query" : "extension in {awk}"
+}, {
+  "name" : "azure",
+  "query" : "extension in {hql}"
+}, {
+  "name" : "beanshell",
+  "query" : "extension in {bsh}"
+}, {
+  "name" : "binaries",
+  "query" : "extension in {dll, exe, pdb, so, DLL, cd, EXE, suo,jar,ear,war}"
+}, {
+  "name" : "build",
+  "query" : "extension in {gradle, sbt} or name contains gradle or name in {Jenkinsfile, pom.xml, buildconfig.yml, version.properties, hosts.yml, log-messages.xml, web.xml, features.json, buildconfig.yml, version.properties, build.xml, site.xml, maven_settings_sample.xml}"
+}, {
+  "name" : "businesrules",
+  "query" : "extension in {drl, bom, voc, brl, dta, dtr, fct, rfl, trl, dep, dop, qry, b2x, rulepackage, irl, syncEntries, ruleproject}"
+}, {
+  "name" : "c#",
+  "query" : "extension in {cs}"
+}, {
+  "name" : "c++",
+  "query" : "extension in {c, h, cpp, hpp, cc, hh, cxx, hxx, H, CPP, C, Cpp}"
+}, {
+  "name" : "certificate",
+  "query" : "extension in {key, scr, pem, cer}"
+}, {
+  "name" : "certificate-pwd",
+  "query" : "extension in {pwd}"
+}, {
+  "name" : "certificates",
+  "query" : "extension in {pfx}"
+}, {
+  "name" : "coldfusion",
+  "query" : "extension in {cfc, cfm}"
+}, {
+  "name" : "configuration",
+  "query" : "extension like insensitive *config or extension like insensitive *settings or extension in {ini, conf, cfg, project, header, targets, ruleset}"
+}, {
+  "name" : "csv",
+  "query" : "extension like insensitive csv"
+}, {
+  "name" : "cucumber",
+  "query" : "extension in {feature, story, Feature, steps}"
+}, {
+  "name" : "database",
+  "query" : "extension in {sql, cql, usql, sqlt, esql, sql', SQL}"
+}, {
+  "name" : "database_boilerplate",
+  "query" : "extension in {hbase, database,sqlite, db}"
+}, {
+  "name" : "docker",
+  "query" : "name in {Dockerfile,docker-env-vars}"
+}, {
+  "name" : "document",
+  "query" : "extension in {txt, doc, pdf, info, md, markdown, rst, xlsx, adoc, PDF, docx, rtf, TXT, pbix, p7s, xls, MD, pptx} or name in {LICENSE, license, NOTICE, HEADER, README}"
+}, {
+  "name" : "environment",
+  "query" : "extension in {deployment, factorypath, node-version, pubxml, manifest} or name in {feature.xml, release.xml}"
+}, {
+  "name" : "erlang",
+  "query" : "extension in {erl, hrl}"
+}, {
+  "name" : "extendscript",
+  "query" : "extension in {jsx}"
+}, {
+  "name" : "flow",
+  "query" : "extension in {msgflow, subflow}"
+}, {
+  "name" : "font",
+  "query" : "extension in {ttf, otf, woff, woff2, eot}"
+}, {
+  "name" : "freemarker",
+  "query" : "extension in {ftl}"
+}, {
+  "name" : "go",
+  "query" : "extension in {go}"
+}, {
+  "name" : "graphml",
+  "query" : "extension in {graphml}"
+}, {
+  "name" : "groovy",
+  "query" : "extension in {groovy, groovyb, grv}"
+}, {
+  "name" : "handlebars",
+  "query" : "extension in {hbs}"
+}, {
+  "name" : "html",
+  "query" : "extension in {html, htm, phtml}"
+}, {
+  "name" : "ignore_boilerplate",
+  "query" : "extension like insenitive:*ignore"
+}, {
+  "name" : "image",
+  "query" : "extension in {jpg, jpeg, png, gif, svg, ico, graffle, psd, psd1, cgi, gv}"
+}, {
+  "name" : "ios",
+  "query" : "extension in {ipa, ipsw, vcf, icns, plist, webarchive, scpt, pbxproj, strings, xib, storyboard, nib, entitlements, xcscheme, xcconfig}"
+}, {
+  "name" : "ipython",
+  "query" : "extension in {ipynb}"
+}, {
+  "name" : "jasperreports",
+  "query" : "extension in {jrxml, jasper}"
+}, {
+  "name" : "java",
+  "query" : "extension in {java}"
+}, {
+  "name" : "java_binaries",
+  "query" : "extension in {jar}"
+}, {
+  "name" : "java_boilerplate",
+  "query" : "extension is classpath or name is package-info.java"
+}, {
+  "name" : "javakeystore",
+  "query" : "extension in {jks}"
+}, {
+  "name" : "javascript",
+  "query" : "extension in {js, angular}"
+}, {
+  "name" : "jboss",
+  "query" : "extension in {jcs}"
+}, {
+  "name" : "jinja2",
+  "query" : "extension in {j2, jinja}"
+}, {
+  "name" : "jmeter",
+  "query" : "extension in {jmx}"
+}, {
+  "name" : "json",
+  "query" : "extension in {json, jws}"
+}, {
+  "name" : "jsp",
+  "query" : "extension in {jsp, tld, jspf}"
+}, {
+  "name" : "jsx",
+  "query" : "extension in {tsx}"
+}, {
+  "name" : "kotlin",
+  "query" : "extension in {kt}"
+}, {
+  "name" : "lock_boilerplate",
+  "query" : "extension like *lock or name is package-lock.json"
+}, {
+  "name" : "map",
+  "query" : "extension in {map}"
+}, {
+  "name" : "meta",
+  "query" : "extension in {meta}"
+}, {
+  "name" : "microsoftexpressionblend",
+  "query" : "extension in {xaml}"
+}, {
+  "name" : "multimedia",
+  "query" : "extension in {mp3, wav, mp4}"
+}, {
+  "name" : "noise",
+  "query" : "extension in {24px,betwixt,common,content,contrib,cpy,dat,diagram,enc,fmt,gen,hsp,hsw,in,index,jfm,log,Logger,lst,mako,md5,mex,mf,migration,msc,msg,multi,mymetadata,mystrutsdata,name,old,order,permutations,pkl,pklz,pp,Processor,refactorlog,rep,resources,rnc,rng,rsp,sas,sch,ser,service,template,tests,tmp,uat,user,wsgi,xdt} or extension like *javadoc* or extension like *core* or extension like *backup* or extension like js_* or extension like part* or extension like orig* or extension like pkl* or extension like *bak* or extension like insensitive *bak* or extension like *backup* or extension like insensitive *log*"
+}, {
+  "name" : "objectivec/c++",
+  "query" : "extension in {m, mm}"
+}, {
+  "name" : "oraclebpm",
+  "query" : "extension in {bpmn, bpel, mplan, jca, rules, jpr}"
+}, {
+  "name" : "perl",
+  "query" : "extension in {pl}"
+}, {
+  "name" : "php",
+  "query" : "extension in {php, phpt}"
+}, {
+  "name" : "precompiledc",
+  "query" : "extension in {pc, pcpp}"
+}, {
+  "name" : "proj_boilerplate",
+  "query" : "extension like *proj or extension is iml"
+}, {
+  "name" : "properties",
+  "query" : "extension in {properties, prefs, props, Properties}"
+}, {
+  "name" : "python",
+  "query" : "extension in {py}"
+}, {
+  "name" : "raydreamstudio",
+  "query" : "extension in {rds}"
+}, {
+  "name" : "rc_boilerplate",
+  "query" : "extension like *rc"
+}, {
+  "name" : "ruby",
+  "query" : "extension in {rb}"
+}, {
+  "name" : "scala",
+  "query" : "extension in {scala} or name is sca-processor"
+}, {
+  "name" : "scripts",
+  "query" : "extension in {sh, bat, ksh, bsh, cmd, ps1, script}"
+}, {
+  "name" : "simulink",
+  "query" : "extension in {mdl}"
+}, {
+  "name" : "smarty",
+  "query" : "extension in {tpl}"
+}, {
+  "name" : "sourcecontrol_boilerplate",
+  "query" : "extension in {svcinfo, svcmap, vssscc, vspscc, gitattributes, gitignore, gitkeep, gitmodules, scc} or name is gitattributes or extension like *svn*"
+}, {
+  "name" : "sqlserver",
+  "query" : "extension in {rdlc, rdl, dtsx, params, conmgr, edmx} or name is DatabaseSettings.xml"
+}, {
+  "name" : "stylesheet",
+  "query" : "extension in {less, css, xsl, scss, xss}"
+}, {
+  "name" : "swift",
+  "query" : "extension in {swift}"
+}, {
+  "name" : "t4",
+  "query" : "extension in {tt, ttinclude}"
+}, {
+  "name" : "tableau",
+  "query" : "extension in {twb, twbx}"
+}, {
+  "name" : "tcl/tk",
+  "query" : "extension in {tcl}"
+}, {
+  "name" : "templates",
+  "query" : "extension in {liquid}"
+}, {
+  "name" : "terraform",
+  "query" : "extension in {tf, tfvars}"
+}, {
+  "name" : "testfiles",
+  "query" : "extension in {tpp, txx, loadtest, webtestresult, webtest}"
+}, {
+  "name" : "thrift",
+  "query" : "extension in {thrift}"
+}, {
+  "name" : "tools_boilerplate",
+  "query" : "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties,coverity.conf,sonar.properties,lombok.config,descriptor.xml, override_java.security} or extension in {StyleCop,pmd} or name like *log4*"
+}, {
+  "name" : "twing",
+  "query" : "extension in {twing}"
+}, {
+  "name" : "typescript",
+  "query" : "extension in {ts}"
+}, {
+  "name" : "vagrant",
+  "query" : "extension like *vagrant* or name like insensitive *vagrant* "
+}, {
+  "name" : "velocity",
+  "query" : "extension in {VM, vm}"
+}, {
+  "name" : "visual-paradigm",
+  "query" : "extension in {swagger-codegen/VERSION, vpp}"
+}, {
+  "name" : "visualbasic",
+  "query" : "extension in {vb,vbs}"
+}, {
+  "name" : "visualstudio_boilerplate",
+  "query" : "extension in {vsext, sln, nupkg, nswag, nuspec, resx, datasource, myapp, licx, rsd, xsc, xsx, ssmssln, vsmdi, webinfo}"
+}, {
+  "name" : "vue",
+  "query" : "extension in {vue}"
+}, {
+  "name" : "webservices",
+  "query" : "extension in {wsdl, xjb, disco}"
+}, {
+  "name" : "xliff",
+  "query" : "extension in {xlf}"
+}, {
+  "name" : "xml",
+  "query" : "extension in {xml, xsd, dtd, xhtml, axml, xslt, XML, dacpac, xmi} and not name in {feature.xml, release.xml, descriptor.xml, pom.xml, DatabaseSettings.xml}"
+}, {
+  "name" : "xquery",
+  "query" : "extension in {xqy}"
+}, {
+  "name" : "yaml",
+  "query" : "extension in {yml, yaml}"
+} ]
