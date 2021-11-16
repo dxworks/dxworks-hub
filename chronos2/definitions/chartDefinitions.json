@@ -18,7 +18,7 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?)",
+    "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?).",
     "orientation": "vertical"
   },
   {
@@ -38,7 +38,7 @@
       "query": "count files having (technology.code and first change during last year)",
       "label": "Source-Files created last year"
     },
-    "notes": "",
+    "notes": "What are the filetypes that concentrate most of the recent changes? Is the ratio of recently changed files over all files consistent across technologies or is there a filetype that has been changed disproportionally (e.g. changes across most of the js files, perhaps signaling a major framework version upgrade)?",
     "orientation": "vertical"
   },
   {
@@ -65,7 +65,7 @@
       "query": "((files having (not changes during last 2 years and technology.code)) * 100) / (count files having technology.code)",
       "label": "% Files unchanged for at least 2 years"
     },
-    "notes": "",
+    "notes": "What are the components with the highest percentage of dormant code? Notice components where a high percentage of code is dormant (e.g., over 95%), since changing them could be risky.",
     "orientation": "vertical"
   },
   {
@@ -88,7 +88,7 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "This view helps you see if over the last year the files that were under active development represent new code, or changes to old files. This in turn helps you understand what type of development activity is happening\n",
+    "notes": "This view helps you see if over the last year the files that were under active development represent new code, or changes to old files. This in turn helps you understand what type of development activity is happening",
     "orientation": "vertical"
   },
   {
@@ -207,7 +207,7 @@
       "filter": ""
     },
     "oy1": {
-      "query": "count files for commits  having not taskprefix.@",
+      "query": "count files for commits having not taskprefix.@",
       "label": "Files (w. task references in commits)",
       "grouping": {
         "entity": "file",
@@ -219,7 +219,7 @@
       }
     },
     "oy2": {
-      "query": "count commits  having not taskprefix.@",
+      "query": "count commits having not taskprefix.@",
       "label": "Commits (w. task references)"
     },
     "notes": "",
@@ -244,7 +244,7 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "",
+    "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
     "orientation": "horizontal"
   },
   {
@@ -266,7 +266,7 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "",
+    "notes": "How has the usage of task prefixes evolved? This can correlate to changes in project priorities (e.g if there is a task prefixes per product).",
     "orientation": "vertical"
   },
   {
@@ -288,7 +288,7 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "",
+    "notes": "Is there a significant number of commits outside of working hours? What's the pattern (e.g., constant, every X months, sporadic)? Does it correlate with any important events (e.g. big release, started working from home because of Covid)?",
     "orientation": "vertical"
   },
   {
@@ -332,7 +332,7 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "",
+    "notes": "Are there many recently changed files with Weak Ownership? This poses the risk that the team does not have enough knowledge of these files, which in turn may lead to slower and more error-prone changes",
     "orientation": "vertical"
   },
   {
@@ -355,11 +355,11 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "",
+    "notes": "Do authors work across components? Are there any components with polarised ownership? Are the most prolific authors still active?",
     "orientation": "vertical"
   },
   {
-    "name": "KNW: Continuity ",
+    "name": "KNW: Continuity",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -440,11 +440,11 @@
       "query": "count authors for commits",
       "label": "All Authors"
     },
-    "notes": "",
+    "notes": "What's the ratio of new authors to existing authors? Is there a constant flux of new developers? Was there a complete team swap?",
     "orientation": "vertical"
   },
   {
-    "name": "TEAM: Commits (by dev involvement in month) per month",
+    "name": "TEAM: Authors (by dev involvement in month) per month",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -462,7 +462,7 @@
         "numberOfGroups": 4
       }
     },
-    "notes": "",
+    "notes": "This view is useful when there are many authors with few montly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
     "orientation": "vertical"
   },
    {
@@ -484,33 +484,11 @@
         "numberOfGroups": 2
       }
     },
-    "notes": "",
+    "notes": "Is the number of changed test files proportional to changed production files? Are test files updated each month or in batches? This indicates if automated testing is part of daily development work or something done infrequently.",
     "orientation": "vertical"
   },
   {
-    "name": "TST: Changes on Test files over time",
-    "graphTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count changes for files having technology.code",
-      "label": "Changes on Source-Files (by Role)",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "role",
-          "type": "classifier"
-        },
-        "numberOfGroups": 2
-      }
-    },
-    "notes": "",
-    "orientation": "vertical"
-  },
-  {
-    "name": "TST: Bug-fix percentage by period",
+    "name": "TST: Bug-fix percentage by period and changes by role",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "line-chart",
     "ox": {
@@ -577,7 +555,7 @@
         "numberOfGroups": 4
       }
     },
-    "notes": "",
+    "notes": "This view can help you understand if duplication is systematic and if it's an ongoing practice. For example, are new duplicate files created every year? Do they evolve after they are initially developed?",
     "orientation": "vertical"
   },
   {
@@ -594,7 +572,7 @@
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "component.spring-kafka",
+          "name": "component",
           "type": "classifier"
         },
         "numberOfGroups": 2
@@ -603,7 +581,7 @@
     "notes": "",
     "orientation": "vertical"
   },
-  {
+   {
     "name": "TEAM: Knowledge per Component",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
@@ -623,7 +601,6 @@
     "notes": "",
     "orientation": "vertical"
   },
-  
   {
     "name": "STR: Concepts by component",
     "graphTypeOy1": "bar-chart",
