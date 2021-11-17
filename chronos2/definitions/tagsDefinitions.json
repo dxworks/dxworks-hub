@@ -5,12 +5,12 @@
     "domain": "age",
     "groups": [
       {
-         "label": "new",
-         "query": "has first change during last year" 
+        "label": "new",
+        "query": "has first change during last year"
       },
       {
-         "label": "old",
-         "type": "default" 
+        "label": "old",
+        "type": "default"
       }
     ]
   },
@@ -59,29 +59,29 @@
     "colorScheme": "6-years",
     "groups": [
       {
-         "label": "<=2016",
-         "query": "first change before 2017" 
+        "label": "<=2016",
+        "query": "first change before 2017"
       },
       {
-         "label": "2017",
-         "query": "first change during 2017" 
+        "label": "2017",
+        "query": "first change during 2017"
       },
       {
-         "label": "2018",
-         "query": "first change during 2018" 
+        "label": "2018",
+        "query": "first change during 2018"
       },
       {
-         "label": "2019",
-         "query": "first change during 2019" 
-      },      
-      {
-         "label": "2020",
-         "query": "first change during 2020" 
+        "label": "2019",
+        "query": "first change during 2019"
       },
       {
-         "label": "2021",
-         "query": "first change during 2021" 
-      }      
+        "label": "2020",
+        "query": "first change during 2020"
+      },
+      {
+        "label": "2021",
+        "query": "first change during 2021"
+      }
     ]
   },
   {
@@ -119,29 +119,29 @@
     "colorScheme": "6-years",
     "groups": [
       {
-         "label": "<=2016",
-         "query": "files having first change before 2017" 
+        "label": "<=2016",
+        "query": "files having first change before 2017"
       },
       {
-         "label": "2017",
-         "query": "files having first change during 2017" 
+        "label": "2017",
+        "query": "files having first change during 2017"
       },
       {
-         "label": "2018",
-         "query": "files having first change during 2018" 
+        "label": "2018",
+        "query": "files having first change during 2018"
       },
       {
-         "label": "2019",
-         "query": "files having first change during 2019" 
-      },      
-      {
-         "label": "2020",
-         "query": "files having first change during 2020" 
+        "label": "2019",
+        "query": "files having first change during 2019"
       },
       {
-         "label": "2021",
-         "query": "files having first change during 2021" 
-      }      
+        "label": "2020",
+        "query": "files having first change during 2020"
+      },
+      {
+        "label": "2021",
+        "query": "files having first change during 2021"
+      }
     ]
   },
   {
@@ -149,58 +149,58 @@
     "entity": "file",
     "domain": "technology",
     "groups": [
-     {
-         "label": "code",
-         "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps}" 
+      {
+        "label": "code",
+        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps}"
       },
       {
-         "label": "web",
-         "query": "extension in -i {less, css, xsl, scss, xss, xsd, html, xhtml, wsdl, xjb, disco, ftl}" 
+        "label": "web",
+        "query": "extension in -i {less, css, xsl, scss, xss, xsd, html, xhtml, wsdl, xjb, disco, ftl}"
       },
       {
-         "label": "data",
-         "query": "extension in -i {csv} or extension is json" 
+        "label": "data",
+        "query": "extension in -i {csv} or extension is json"
       },
       {
-         "label": "resources",
-         "query": "path like */resources/*" 
+        "label": "resources",
+        "query": "path like */resources/*"
       },
       {
-         "label": "configuration",
-         "query": "extension like insensitive *config or name like *gradle* or name is Jenkinsfile or name is pom.xml or extension like insensitive *settings or extension in {gradle, sbt, key, scr, pem, cer,pfx, ini,conf,cfg,project,header,targets,ruleset,yml,yaml,properties,prefs,props,Properties, avsc}" 
+        "label": "configuration",
+        "query": "extension like insensitive *config or name like *gradle* or name is Jenkinsfile or name is pom.xml or extension like insensitive *settings or extension in {gradle, sbt, key, scr, pem, cer,pfx, ini,conf,cfg,project,header,targets,ruleset,yml,yaml,properties,prefs,props,Properties, avsc}"
       },
       {
-         "label": "other",
-         "type": "default" 
+        "label": "other",
+        "type": "default"
       }
-     ]
+    ]
   },
   {
     "type": "orderedQueriesClassifier",
     "entity": "file",
     "domain": "technology.code",
     "groups": [
-     {
-         "label": "backend",
-         "query": "extension in -i {cs,java,dart,sql,cql,kt,groovy,erl,hrl}" 
+      {
+        "label": "backend",
+        "query": "extension in -i {cs,java,dart,sql,cql,kt,groovy,erl,hrl}"
       },
       {
-         "label": "frontend",
-         "query": "extension in {js,angular,jsx,ts,tsx,jsp}" 
+        "label": "frontend",
+        "query": "extension in {js,angular,jsx,ts,tsx,jsp}"
       },
       {
-         "label": "scripting",
-         "query": "extension in {py, pl, cmd, sh, bat, ps1, vbs}" 
+        "label": "scripting",
+        "query": "extension in {py, pl, cmd, sh, bat, ps1, vbs}"
       },
       {
-         "label": "bdd",
-         "query": "extension in {feature, story, Feature, steps}"
-      }, 
+        "label": "bdd",
+        "query": "extension in {feature, story, Feature, steps}"
+      },
       {
-         "label": "other",
-         "type": "default" 
+        "label": "other",
+        "type": "default"
       }
-     ]
+    ]
   },
   {
     "type": "orderedQueriesClassifier",
@@ -208,12 +208,12 @@
     "domain": "role",
     "groups": [
       {
-         "label": "production",
-         "query": "not (path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test})" 
+        "label": "production",
+        "query": "not (path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test})"
       },
       {
-         "label": "test",
-         "query": "(path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test})" 
+        "label": "test",
+        "query": "(path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test})"
       }
     ]
   },
@@ -223,64 +223,64 @@
     "domain": "language",
     "groups": [
       {
-         "label": "java",
-         "query": "has extension is java" 
+        "label": "java",
+        "query": "has extension is java"
       },
       {
-         "label": "python",
-         "query": "has filetype.python*" 
+        "label": "python",
+        "query": "has filetype.python*"
       },
       {
-         "label": "sql",
-         "query": "has extension contains sql" 
+        "label": "sql",
+        "query": "has extension contains sql"
       },
       {
-         "label": "jsp",
-         "query": "has filetype.jsp*" 
+        "label": "jsp",
+        "query": "has filetype.jsp*"
       },
       {
-         "label": "perl",
-         "query": "has filetype.perl*" 
+        "label": "perl",
+        "query": "has filetype.perl*"
       },
       {
-         "label": "javascript",
-         "query": "has filetype.javascript*" 
-      },      
-      {
-         "label": "typescript",
-         "query": "has filetype.typescript*" 
-      },      
-      {
-         "label": "csharp",
-         "query": "has filetype.c#*" 
-      },      
-      {
-         "label": "html",
-         "query": "has filetype.html*" 
-      },      
-      {
-         "label": "scripts",
-         "query": "has filetype.scripts*" 
-      },      
-      {
-         "label": "yaml",
-         "query": "has filetype.yaml*" 
-      },      
-      {
-         "label": "terraform",
-         "query": "has filetype.terraform*" 
-      },      
-      {
-         "label": "json",
-         "query": "has filetype.json*" 
+        "label": "javascript",
+        "query": "has filetype.javascript*"
       },
       {
-         "label": "php",
-         "query": "has filetype.php*" 
+        "label": "typescript",
+        "query": "has filetype.typescript*"
       },
       {
-         "label": "markdown",
-         "query": "extension is md" 
+        "label": "csharp",
+        "query": "has filetype.c#*"
+      },
+      {
+        "label": "html",
+        "query": "has filetype.html*"
+      },
+      {
+        "label": "scripts",
+        "query": "has filetype.scripts*"
+      },
+      {
+        "label": "yaml",
+        "query": "has filetype.yaml*"
+      },
+      {
+        "label": "terraform",
+        "query": "has filetype.terraform*"
+      },
+      {
+        "label": "json",
+        "query": "has filetype.json*"
+      },
+      {
+        "label": "php",
+        "query": "has filetype.php*"
+      },
+      {
+        "label": "markdown",
+        "query": "extension is md"
       }
     ]
   },
@@ -290,44 +290,44 @@
     "domain": "language",
     "groups": [
       {
-         "label": "java",
-         "query": "files having extension is java" 
+        "label": "java",
+        "query": "files having extension is java"
       },
       {
-         "label": "python",
-         "query": "files having filetype.python*" 
+        "label": "python",
+        "query": "files having filetype.python*"
       },
       {
-         "label": "csharp",
-         "query": "files having filetype.c#*" 
-      },      
-      {
-         "label": "scripts",
-         "query": "files having filetype.scripts*" 
-      },      
-      {
-         "label": "yaml",
-         "query": "files having filetype.yaml*" 
-      },      
-      {
-         "label": "terraform",
-         "query": "files having filetype.terraform*" 
-      },      
-      {
-         "label": "json",
-         "query": "files having filetype.json*" 
+        "label": "csharp",
+        "query": "files having filetype.c#*"
       },
       {
-         "label": "javascript",
-         "query": "files having filetype.javascript" 
-      },      
+        "label": "scripts",
+        "query": "files having filetype.scripts*"
+      },
       {
-         "label": "typescript",
-         "query": "files having filetype.typescript" 
-      },            
+        "label": "yaml",
+        "query": "files having filetype.yaml*"
+      },
       {
-         "label": "markdown",
-         "query": "files having extension is md" 
+        "label": "terraform",
+        "query": "files having filetype.terraform*"
+      },
+      {
+        "label": "json",
+        "query": "files having filetype.json*"
+      },
+      {
+        "label": "javascript",
+        "query": "files having filetype.javascript"
+      },
+      {
+        "label": "typescript",
+        "query": "files having filetype.typescript"
+      },
+      {
+        "label": "markdown",
+        "query": "files having extension is md"
       }
     ]
   },
@@ -337,74 +337,74 @@
     "domain": "filesize",
     "groups": [
       {
-         "label": "S",
-         "query": "files having size < 100" 
+        "label": "S",
+        "query": "files having size < 100"
       },
       {
-         "label": "M",
-         "query": "files having size < 250" 
+        "label": "M",
+        "query": "files having size < 250"
       },
       {
-         "label": "L",
-         "query": "files having size < 500" 
-      },      
+        "label": "L",
+        "query": "files having size < 500"
+      },
       {
-         "label": "XL",
-         "query": "files having size < 1000" 
-      },      
+        "label": "XL",
+        "query": "files having size < 1000"
+      },
       {
-         "label": "XXL",
-         "query": "files having size >= 1000" 
-      }      
+        "label": "XXL",
+        "query": "files having size >= 1000"
+      }
     ]
-  },  
+  },
   {
     "type": "orderedQueriesClassifier",
     "entity": "file",
     "domain": "filesize",
     "groups": [
       {
-         "label": "S",
-         "query": "size < 100" 
+        "label": "S",
+        "query": "size < 100"
       },
       {
-         "label": "M",
-         "query": "size < 250" 
+        "label": "M",
+        "query": "size < 250"
       },
       {
-         "label": "L",
-         "query": "size < 500" 
-      },      
+        "label": "L",
+        "query": "size < 500"
+      },
       {
-         "label": "XL",
-         "query": "size < 1000" 
-      },      
+        "label": "XL",
+        "query": "size < 1000"
+      },
       {
-         "label": "XXL",
-         "query": "size >= 1000" 
-      }      
+        "label": "XXL",
+        "query": "size >= 1000"
+      }
     ]
-  },  
+  },
   {
     "type": "orderedQueriesClassifier",
     "entity": "author",
     "domain": "seniority",
     "groups": [
       {
-         "label": "newcomer",
-         "query": "first change during last 3 months" 
+        "label": "newcomer",
+        "query": "first change during last 3 months"
       },
       {
-         "label": "established",
-         "query": "first change during last 6 months" 
+        "label": "established",
+        "query": "first change during last 6 months"
       },
       {
-         "label": "senior",
-         "query": "first change during last 12 month" 
-      },      
+        "label": "senior",
+        "query": "first change during last 12 month"
+      },
       {
-         "label": "veteran",
-         "type": "default" 
+        "label": "veteran",
+        "type": "default"
       }
     ]
   },
@@ -414,51 +414,51 @@
     "domain": "seniority",
     "groups": [
       {
-         "label": "newcomer",
-         "query": "author having seniority.newcomer"
+        "label": "newcomer",
+        "query": "author having seniority.newcomer"
       },
       {
-         "label": "established",
-         "query": "author having seniority.established"
+        "label": "established",
+        "query": "author having seniority.established"
       },
       {
-         "label": "senior",
-         "query": "author having seniority.senior"
+        "label": "senior",
+        "query": "author having seniority.senior"
       },
       {
-         "label": "veteran",
-         "query": "author having seniority.veteran"
+        "label": "veteran",
+        "query": "author having seniority.veteran"
       }
     ]
-  },    
+  },
   {
     "type": "orderedQueriesClassifier",
     "entity": "author",
     "domain": "startYear",
     "groups": [
       {
-         "label": "<=2016",
-         "query": "first change before 2017" 
+        "label": "<=2016",
+        "query": "first change before 2017"
       },
       {
-         "label": "2017",
-         "query": "first change during 2017" 
+        "label": "2017",
+        "query": "first change during 2017"
       },
       {
-         "label": "2018",
-         "query": "first change during 2018" 
+        "label": "2018",
+        "query": "first change during 2018"
       },
       {
-         "label": "2019",
-         "query": "first change during 2019" 
+        "label": "2019",
+        "query": "first change during 2019"
       },
       {
-         "label": "2020",
-         "query": "first change during 2020" 
+        "label": "2020",
+        "query": "first change during 2020"
       },
       {
-         "label": "2021",
-         "query": "first change during 2021" 
+        "label": "2021",
+        "query": "first change during 2021"
       }
     ]
   },
@@ -468,28 +468,28 @@
     "domain": "year",
     "groups": [
       {
-         "label": "<=2016",
-         "query": "has date before 2017" 
+        "label": "<=2016",
+        "query": "has date before 2017"
       },
       {
-         "label": "2017",
-         "query": "has date during 2017" 
+        "label": "2017",
+        "query": "has date during 2017"
       },
       {
-         "label": "2018",
-         "query": "has date during 2018" 
+        "label": "2018",
+        "query": "has date during 2018"
       },
       {
-         "label": "2019",
-         "query": "has date during 2019" 
-      },      
-      {
-         "label": "2020",
-         "query": "has date during 2020" 
+        "label": "2019",
+        "query": "has date during 2019"
       },
       {
-         "label": "2021",
-         "query": "has date during 2021" 
+        "label": "2020",
+        "query": "has date during 2020"
+      },
+      {
+        "label": "2021",
+        "query": "has date during 2021"
       }
     ]
   },
@@ -499,12 +499,12 @@
     "domain": "message.smartness",
     "groups": [
       {
-         "label": "dumb",
-         "query": "has taskprefix.@" 
+        "label": "dumb",
+        "query": "has taskprefix.@"
       },
       {
-         "label": "smart",
-         "type": "default" 
+        "label": "smart",
+        "type": "default"
       }
     ]
   },
@@ -514,20 +514,20 @@
     "domain": "dev.involvement",
     "groups": [
       {
-         "label": "veryweak",
-         "query": "has author having commits < 10" 
+        "label": "veryweak",
+        "query": "has author having commits < 10"
       },
       {
-         "label": "weak",
-         "query": "has author having commits < 20" 
+        "label": "weak",
+        "query": "has author having commits < 20"
       },
       {
-         "label": "average",
-         "query": "has author having commits < 50" 
+        "label": "average",
+        "query": "has author having commits < 50"
       },
       {
-         "label": "strong",
-         "query": "has author having commits >= 50" 
+        "label": "strong",
+        "query": "has author having commits >= 50"
       }
     ]
   },
@@ -537,53 +537,53 @@
     "domain": "message.nature",
     "groups": [
       {
-         "label": "bugfix",
-         "query": "message containing ins {korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, mistake, wrong, typo, broken, crash}"
+        "label": "bugfix",
+        "query": "message containing ins {korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, mistake, wrong, typo, broken, crash}"
       },
       {
-         "label": "refactoring",
-         "query": "message containing ins {aufräumen, aufgeräumt, sanitize, sanitise, refact, restructur, clean, cleanup, rename, rework, umbennant, formatierung, reorgani, reinig}"
+        "label": "refactoring",
+        "query": "message containing ins {aufräumen, aufgeräumt, sanitize, sanitise, refact, restructur, clean, cleanup, rename, rework, umbennant, formatierung, reorgani, reinig}"
       },
       {
-         "label": "refinement",
-         "query": "message containing ins {improve, update, remove, review, angepasst, aktualisiert, anpassung, entfernt, modifi, geändert, adapt, improved, adjust, performance, refin, hack, work-around}" 
+        "label": "refinement",
+        "query": "message containing ins {improve, update, remove, review, angepasst, aktualisiert, anpassung, entfernt, modifi, geändert, adapt, improved, adjust, performance, refin, hack, work-around}"
       },
       {
-         "label": "other",
-         "query": "message not containing ins {aufräumen, aufgeräumt, sanitize, sanitise, refact, restructur, clean, cleanup, rename, rework, umbennant, formatierung, reorgani, reinig, improve, update, remove, review, angepasst, aktualisiert, anpassung, entfernt, modifi, geändert, adapt, improved, adjust, performance, refin, hack, work-around, korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, crash, mistake, wrong, typo, broken, crash}" 
-      }      
+        "label": "other",
+        "query": "message not containing ins {aufräumen, aufgeräumt, sanitize, sanitise, refact, restructur, clean, cleanup, rename, rework, umbennant, formatierung, reorgani, reinig, improve, update, remove, review, angepasst, aktualisiert, anpassung, entfernt, modifi, geändert, adapt, improved, adjust, performance, refin, hack, work-around, korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, crash, mistake, wrong, typo, broken, crash}"
+      }
     ]
-  },    
+  },
   {
     "type": "numericClassifier",
     "entity": "commit",
     "domain": "message.size",
     "query": "count words of message",
-    "thresholds": [1, 3, 6, 10, 20],
-    "groups": ["zero","very-short","short","medium","long","very-long"]
-  },  
+    "thresholds": [ 1, 3, 6, 10, 20 ],
+    "groups": [ "zero", "very-short", "short", "medium", "long", "very-long" ]
+  },
   {
     "type": "numericClassifier",
     "entity": "commit",
     "domain": "volume.files",
     "query": "count files",
-    "thresholds": [5, 20,100],
-    "groups": ["focused", "medium", "bulk","import"]
+    "thresholds": [ 5, 20, 100 ],
+    "groups": [ "focused", "medium", "bulk", "import" ]
   },
   {
     "type": "numericClassifier",
     "entity": "commit",
     "domain": "volume.churn",
     "query": "sum churn of changes",
-    "thresholds": [250, 1000],
-    "groups": ["focused", "medium", "bulk"]
+    "thresholds": [ 250, 1000 ],
+    "groups": [ "focused", "medium", "bulk" ]
   },
   {
     "type": "numericClassifier",
     "entity": "change",
     "domain": "intent",
     "query": "growth",
-    "thresholds": [-20, 20, 1000],
-    "groups": ["refactoring", "refinement", "development", "import"]
-  }  
+    "thresholds": [ -20, 20, 1000 ],
+    "groups": [ "refactoring", "refinement", "development", "import" ]
+  }
 ]
