@@ -114,7 +114,7 @@
     "orientation": "horizontal"
   },
   {
-    "name": "OVR: Growth (by repo) and overall size per month   ",
+    "name": "OVR: Growth (by repo) and overall size per month",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "line-chart",
     "ox": {
@@ -141,6 +141,33 @@
     "orientation": "vertical"
   },
   {
+    "name": "OVR: Changes and Size by period",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "sum churn of changes",
+      "label": "Volume of Change (grouped by component)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "component",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "oy2": {
+      "query": "sum size of files",
+      "label": "Lines of Code"
+    },
+    "notes": "Used together with a Growth chart, to compare growth and churn. This can help you spot differences in growth vs churn (which includes deleted lines)",
+    "orientation": "vertical"
+  },
+  {
     "name": "OVR: Churn (by volume type) per period ",
     "graphTypeOy1": "bar-chart",
     "ox": {
@@ -161,6 +188,28 @@
     },
     "notes": "The view indicates the impact that bulk commits  have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
     "orientation": "vertical"
+  },
+  {
+    "name": "SoC: Anomalies by Repository",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "anomaly",
+      "label": "Anomaly"
+    },
+    "oy1": {
+      "query": "count files",
+      "label": "Files with anomalies (grouped by repository)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "repo",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "What are the most widespread anomalies? What repositories to they affect?",
+    "orientation": "horizontal"
   },
   {
     "name": "SoC: Complex Files - Fraction of Activity Volume by Currently Active Developers ",
@@ -313,7 +362,7 @@
     "notes": "Is the team frequently commiting during weekends? Is the team frequently commiting more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
     "orientation": "vertical"
   },
-   {
+  {
     "name": "KNW: Files with Weak Ownership per Component (by year of last change)",
     "graphTypeOy1": "bar-chart",
     "ox": {
@@ -379,6 +428,50 @@
     },
     "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced authors?",
     "orientation": "vertical"
+  },
+  {
+    "name": "TEAM: Commits by Geozone",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Geozone)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "geozone",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "This chart helps you understand where is the team based. Was there a switch from one geozone to another? Are commits from two geozones done at the same time?",
+    "orientation": "vertical"
+  },
+  {
+    "name": "TEAM: Components (by Main Geozone)",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "component@file",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files",
+      "label": "Files (by Main Geozone)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "main-geozone",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "Is a component developed in two Geozones? This can be problematic, as syncing across timezones is more difficult and the preffered approach is for a team to fully own a component.",
+    "orientation": "horizontal"
   },
   {
     "name": "TEAM: Devs (by involvement) per month",
@@ -465,7 +558,7 @@
     "notes": "This view is useful when there are many authors with few montly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
     "orientation": "vertical"
   },
-   {
+  {
     "name": "TST: Changed Test files over time",
     "graphTypeOy1": "bar-chart",
     "ox": {
@@ -581,7 +674,7 @@
     "notes": "",
     "orientation": "vertical"
   },
-   {
+  {
     "name": "TEAM: Knowledge per Component",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
