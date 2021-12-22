@@ -19,9 +19,7 @@
     "entity": "file",
     "domain": "status",
     "query": "count changes during last 6 months",
-    "thresholds": [
-      1
-    ],
+    "thresholds": [1],
     "groups": [
       {
         "name": "standstill",
@@ -38,9 +36,7 @@
     "entity": "author",
     "domain": "status",
     "query": "count changes during last 3 months",
-    "thresholds": [
-      1
-    ],
+    "thresholds": [1],
     "groups": [
       {
         "name": "standstill",
@@ -81,6 +77,37 @@
       {
         "label": "2021",
         "query": "first change during 2021"
+      }
+    ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "change",
+    "domain": "pattern",
+    "groups": [
+      {
+        "label": "muddy",
+        "query": "added >= 10 and deleted >= 10 and churn >= 40"
+      },
+      {
+        "label": "pure-add",
+        "query": "added >= 20 and deleted = 0"
+      },
+      {
+        "label": "pure-delete",
+        "query": "deleted >= 20 and added = 0"
+      },
+      {
+        "label": "mainly-add",
+        "query": "added >= 30 and deleted < 10"
+      },
+      {
+        "label": "mainly-delete",
+        "query": "deleted >= 30 and added < 10"
+      },
+      {
+        "label": "tweak",
+        "query": "(growth between -20 and 20) or (churn < 40)"
       }
     ]
   },
@@ -209,11 +236,15 @@
     "groups": [
       {
         "label": "production",
-        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test})"
+        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or path contains -i {mocks, /mock}))"
       },
       {
         "label": "test",
-        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test})"
+        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test}) and (path contains not -i {mocks, /mock})"
+      },
+      {
+        "label": "mock",
+        "query": "path contains -i {mocks, /mock}"
       }
     ]
   },
@@ -232,7 +263,7 @@
       },
       {
         "label": "sql",
-        "query": "has extension contains sql"
+        "query": "has extension contains -i sql"
       },
       {
         "label": "jsp",
@@ -255,8 +286,20 @@
         "query": "has filetype.c#*"
       },
       {
+        "label": "aspnet",
+        "query": "has filetype.asp*"
+      },
+      {
+        "label": "sqlserver",
+        "query": "has filetype.sqlserver*"
+      },
+      {
         "label": "html",
         "query": "has filetype.html*"
+      },
+      {
+        "label": "stylesheets",
+        "query": "has filetype.stylesheets"
       },
       {
         "label": "scripts",
@@ -396,11 +439,11 @@
       },
       {
         "label": "established",
-        "query": "first change during last 6 months"
+        "query": "first change during last 12 months"
       },
       {
         "label": "senior",
-        "query": "first change during last 12 month"
+        "query": "first change during last 24 month"
       },
       {
         "label": "veteran",
@@ -538,7 +581,7 @@
     "groups": [
       {
         "label": "bugfix",
-        "query": "message containing ins {korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, mistake, wrong, typo, broken, crash}"
+        "query": "message containing ins {korr, bugfix, hotfix, fix, bug, error, issue, fehler, korrektur, correct, korrigier, workaround, mistake, wrong, typo, broken, crash,fout,tekort,vergissing,probleem,verkeerd,botsing,krach,correctie,kapot,defect}"
       },
       {
         "label": "refactoring",
@@ -559,31 +602,31 @@
     "entity": "commit",
     "domain": "message.size",
     "query": "count words of message",
-    "thresholds": [ 1, 3, 6, 10, 20 ],
-    "groups": [ "zero", "very-short", "short", "medium", "long", "very-long" ]
+    "thresholds": [1, 3, 6, 10, 20],
+    "groups": ["zero", "very-short", "short", "medium", "long", "very-long"]
   },
   {
     "type": "numericClassifier",
     "entity": "commit",
     "domain": "volume.files",
     "query": "count files",
-    "thresholds": [ 5, 20, 100 ],
-    "groups": [ "focused", "medium", "bulk", "import" ]
+    "thresholds": [5, 20, 100],
+    "groups": ["focused", "medium", "bulk", "import"]
   },
   {
     "type": "numericClassifier",
     "entity": "commit",
     "domain": "volume.churn",
     "query": "sum churn of changes",
-    "thresholds": [ 250, 1000 ],
-    "groups": [ "focused", "medium", "bulk" ]
+    "thresholds": [250, 1000],
+    "groups": ["focused", "medium", "bulk"]
   },
   {
     "type": "numericClassifier",
     "entity": "change",
     "domain": "intent",
     "query": "growth",
-    "thresholds": [ -20, 20, 1000 ],
-    "groups": [ "refactoring", "refinement", "development", "import" ]
+    "thresholds": [-20, 20, 1000],
+    "groups": ["refactoring", "refinement", "development", "import"]
   }
 ]
