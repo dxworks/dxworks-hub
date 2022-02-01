@@ -236,7 +236,7 @@
     "groups": [
       {
         "label": "production",
-        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or path contains -i {mocks, /mock}))"
+        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or path contains -i {mocks, /mock})"
       },
       {
         "label": "test",
@@ -299,7 +299,7 @@
       },
       {
         "label": "stylesheets",
-        "query": "has filetype.stylesheets"
+        "query": "has filetype.stylesheet"
       },
       {
         "label": "scripts",

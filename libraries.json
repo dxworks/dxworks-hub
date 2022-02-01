@@ -4173,5 +4173,124 @@
     "extensions" : [ ],
     "fingerprints" : [ "Microsoft.FSharp.Collections", "Microsoft.FSharp.Core", "Microsoft.FSharp.Reflection" ],
     "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javax-print",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javax.print" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cameronsystems",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.cameronsystems" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "freemarker",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "freemarker" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mockejb",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mockejb" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "quickfixj-spring-boot-starter",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.allune.quickfixj.spring.boot.starter" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "orcsoftware-util",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.orcsoftware.util" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "groovy-util",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.groovy.util" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "meanbean",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.meanbean" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "testcontainers",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.testcontainers" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ducttape",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.rnorth.ducttape" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mnadeem-TableNameParser",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.mnadeem.TableNameParser" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "oshi-core",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "oshi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "cal10n",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ch.qos.cal10n" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "wildfly",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.wildfly" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "findbugs-annotations",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "edu.umd.cs.findbugs.annotations" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jorphan",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.jorphan" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "kie-internal",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.kie.internal.io" ],
+    "wrapAsImports" : true
   } ]
 }
