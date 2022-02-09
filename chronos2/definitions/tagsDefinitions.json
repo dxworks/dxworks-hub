@@ -19,7 +19,7 @@
     "entity": "file",
     "domain": "status",
     "query": "count changes during last 6 months",
-    "thresholds": [1],
+    "thresholds": [ 1 ],
     "groups": [
       {
         "name": "standstill",
@@ -36,7 +36,7 @@
     "entity": "author",
     "domain": "status",
     "query": "count changes during last 3 months",
-    "thresholds": [1],
+    "thresholds": [ 1 ],
     "groups": [
       {
         "name": "standstill",
@@ -55,12 +55,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2016",
-        "query": "first change before 2017"
-      },
-      {
-        "label": "2017",
-        "query": "first change during 2017"
+        "label": "<=2017",
+        "query": "first change before 2018"
       },
       {
         "label": "2018",
@@ -77,6 +73,10 @@
       {
         "label": "2021",
         "query": "first change during 2021"
+      },
+      {
+        "label": "2022",
+        "query": "first change during 2022"
       }
     ]
   },
@@ -118,6 +118,10 @@
     "colorScheme": "6-years",
     "groups": [
       {
+        "label": "2022",
+        "query": "changes during 2022 > 0"
+      },
+      {
         "label": "2021",
         "query": "changes during 2021 > 0"
       },
@@ -130,11 +134,7 @@
         "query": "changes during 2019 > 0"
       },
       {
-        "label": "2018",
-        "query": "changes during 2018 > 0"
-      },
-      {
-        "label": "<=2017",
+        "label": "<=2018",
         "type": "default"
       }
     ]
@@ -146,12 +146,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2016",
-        "query": "files having first change before 2017"
-      },
-      {
-        "label": "2017",
-        "query": "files having first change during 2017"
+        "label": "<=2017",
+        "query": "files having first change before 2018"
       },
       {
         "label": "2018",
@@ -168,6 +164,10 @@
       {
         "label": "2021",
         "query": "files having first change during 2021"
+      },
+      {
+        "label": "2022",
+        "query": "files having first change during 2022"
       }
     ]
   },
@@ -480,12 +480,8 @@
     "domain": "startYear",
     "groups": [
       {
-        "label": "<=2016",
-        "query": "first change before 2017"
-      },
-      {
-        "label": "2017",
-        "query": "first change during 2017"
+        "label": "<=2017",
+        "query": "first change before 2018"
       },
       {
         "label": "2018",
@@ -502,6 +498,10 @@
       {
         "label": "2021",
         "query": "first change during 2021"
+      },
+      {
+        "label": "2022",
+        "query": "first change during 2022"
       }
     ]
   },
@@ -511,12 +511,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2016",
-        "query": "has date before 2017"
-      },
-      {
-        "label": "2017",
-        "query": "has date during 2017"
+        "label": "<=2017",
+        "query": "has date before 2018"
       },
       {
         "label": "2018",
@@ -533,6 +529,10 @@
       {
         "label": "2021",
         "query": "has date during 2021"
+      },
+      {
+        "label": "2022",
+        "query": "has date during 2022"
       }
     ]
   },
@@ -602,31 +602,31 @@
     "entity": "commit",
     "domain": "message.size",
     "query": "count words of message",
-    "thresholds": [1, 3, 6, 10, 20],
-    "groups": ["zero", "very-short", "short", "medium", "long", "very-long"]
+    "thresholds": [ 1, 3, 6, 10, 20 ],
+    "groups": [ "zero", "very-short", "short", "medium", "long", "very-long" ]
   },
   {
     "type": "numericClassifier",
     "entity": "commit",
     "domain": "volume.files",
     "query": "count files",
-    "thresholds": [5, 20, 100],
-    "groups": ["focused", "medium", "bulk", "import"]
+    "thresholds": [ 5, 20, 100 ],
+    "groups": [ "focused", "medium", "bulk", "import" ]
   },
   {
     "type": "numericClassifier",
     "entity": "commit",
     "domain": "volume.churn",
     "query": "sum churn of changes",
-    "thresholds": [250, 1000],
-    "groups": ["focused", "medium", "bulk"]
+    "thresholds": [ 250, 1000 ],
+    "groups": [ "focused", "medium", "bulk" ]
   },
   {
     "type": "numericClassifier",
     "entity": "change",
     "domain": "intent",
     "query": "growth",
-    "thresholds": [-20, 20, 1000],
-    "groups": ["refactoring", "refinement", "development", "import"]
+    "thresholds": [ -20, 20, 1000 ],
+    "groups": [ "refactoring", "refinement", "development", "import" ]
   }
 ]
