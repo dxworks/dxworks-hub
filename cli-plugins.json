@@ -8,6 +8,7 @@
     "@dxworks/tables",
     "@dxworks/studio",
     "@dxworks/insider",
-    "@dxworks/vis-puppet"
+    "@dxworks/vis-puppet",
+    "@dxworks/depminer"
   ]
 }
