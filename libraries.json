@@ -4292,5 +4292,180 @@
     "extensions" : [ ],
     "fingerprints" : [ "org.kie.internal.io" ],
     "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ocpsoft-pretty",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ocpsoft.pretty" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jcip-annotations",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.jcip.annotations" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "PrimeFaces",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.primefaces" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "clevertap-apns",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.clevertap.apns" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "randombeans",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.github.benas.randombeans" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jeasy-random",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jeasy.random" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jsqlparser",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.jsqlparser" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "apache-shiro",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.apache.shiro" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Jose4J",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.jose4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "diffplug",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.diffplug" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sf-jailer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.sf.jailer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "android-gcm",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.android.gcm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Optaplanner",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.optaplanner" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sap-conn-jco",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sap.conn.jco" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "sap-mw",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.sap.mw" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "htmlcompressor",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.googlecode.htmlcompressor" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ptvgroup-xserver",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ptvgroup.xserver" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "openstreetmap",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.openstreetmap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "iakovlev-timeshape",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.iakovlev.timeshape" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ical4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.fortuna.ical4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "benmanes-caffeine",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.benmanes.caffeine" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "mikael-urlbuilder",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.mikael.urlbuilder" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "javafx",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "javafx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jbcrypt",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.mindrot.jbcrypt" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "xeinfach-kafenio",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "de.xeinfach.kafenio" ],
+    "wrapAsImports" : true
   } ]
 }
