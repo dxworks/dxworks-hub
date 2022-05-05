@@ -61,15 +61,11 @@
   },
   {
     "name": "certificate",
-    "query": "extension in {key, scr, pem, cer}"
+    "query": "extension in {key, scr, pem, cer, pfx}"
   },
   {
     "name": "certificate-pwd",
     "query": "extension in {pwd}"
-  },
-  {
-    "name": "certificates",
-    "query": "extension in {pfx}"
   },
   {
     "name": "coldfusion",
@@ -237,7 +233,7 @@
   },
   {
     "name": "noise",
-    "query": "extension in {24px,betwixt,common,content,contrib,cpy,dat,diagram,enc,fmt,gen,hsp,hsw,in,index,jfm,log,Logger,lst,mako,md5,mex,mf,migration,msc,msg,multi,mymetadata,mystrutsdata,name,old,order,permutations,pkl,pklz,pp,Processor,refactorlog,rep,resources,rnc,rng,rsp,sas,sch,ser,service,template,tests,tmp,uat,user,wsgi,xdt} or extension like *javadoc* or extension like *core* or extension like *backup* or extension like js_* or extension like part* or extension like orig* or extension like pkl* or extension like *bak* or extension like insensitive *bak* or extension like *backup* or extension like insensitive *log*"
+    "query": "extension in {24px,betwixt,common,content,contrib,cpy,dat,enc,fmt,gen,hsp,hsw,in,index,jfm,log,Logger,lst,mako,md5,mex,mf,migration,msc,msg,multi,mymetadata,mystrutsdata,name,old,order,permutations,pkl,pklz,pp,Processor,refactorlog,rep,resources,rnc,rng,rsp,sas,sch,ser,service,template,tests,tmp,uat,user,wsgi,xdt} or extension like *javadoc* or extension like *core* or extension like *backup* or extension like js_* or extension like part* or extension like orig* or extension like pkl* or extension like *bak* or extension like insensitive *bak* or extension like *backup* or extension like insensitive *log*"
   },
   {
     "name": "objectivec/c++",
@@ -405,6 +401,6 @@
   },
   {
     "name": "diagrams",
-    "query": "extension in {drawio}"
+    "query": "extension in {drawio, diagram}"
   }
 ]
