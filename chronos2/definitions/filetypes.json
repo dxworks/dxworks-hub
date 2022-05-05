@@ -8,6 +8,10 @@
     "query": "extension in {avsc}"
   },
   {
+    "name": "protocol-buffers",
+    "query": "extension in {proto}"
+  },
+  {
     "name": "apectj",
     "query": "extension in {aj}"
   },
@@ -46,6 +50,10 @@
   {
     "name": "c#",
     "query": "extension in {cs}"
+  },
+  {
+    "name": "f#",
+    "query": "extension in {fs, fsx}"
   },
   {
     "name": "c++",
@@ -390,5 +398,13 @@
   {
     "name": "yaml",
     "query": "extension in {yml, yaml}"
+  },
+  {
+    "name": "diagrams-as-code",
+    "query": "extension in {dot, puml}"
+  },
+  {
+    "name": "diagrams",
+    "query": "extension in {drawio}"
   }
 ]
