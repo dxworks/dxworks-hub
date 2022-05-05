@@ -1,0 +1,34 @@
+[
+  {
+    "name": "status.active",
+    "query": "has changes during last 6 timeframes"
+  },
+  {
+    "name": "status.idle",
+    "query": "not has status.active"
+  },
+  {
+    "name": "programming",
+    "query": "filetype.java or filetype.scripts or filetype.javascript or filetype.typescript or filetype.jsp or filetype.c# or filetype.f# or filetype.php or filetype.c++ or filetype.go or filetype.visualbasic"
+  },
+  {
+    "name": "noise.hidden",
+    "query": "name like .* or path like */.*"
+  },
+  {
+    "name": "noise.negativeFileSize",
+    "query": "size <= 0"
+  },
+  {
+    "name": "noise.boilerplate",
+    "query": "filetype.*boilerplate or name contains -i README"
+  },
+  {
+    "name": "noise.generated",
+    "query": "name like -i *.Designer* or name like -i *AssemblyInfo*"
+  },
+  {
+    "name": "real",
+    "query": "not has (noise.generated or noise.hidden or noise.negativeFileSize or filetype.archive or filetype.binaries or filetype.font or filetype.image or filetype.noise or filetype.build)"
+  }
+]
