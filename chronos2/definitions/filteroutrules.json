@@ -1,22 +1,22 @@
-[ 
-    {
-      "name": "Generated Code",
-      "query": "name like *.Designer* or name like *AssemblyInfo*"
-    },
-    {
-      "name": "Hidden Files",
-      "query": "name like .* or path like */.*"
-    },
-    {
-      "name": "Binaries or Noise",
-      "query": "filetype.archive or filetype.binaries or filetype.font or filetype.image or filetype.*boilerplate or filetype.noise or size <= 0 or name contains -i README"
-    },
-    {
-      "name": "Build",
-      "query": "filetype.build"
-    },
-    {
-      "name": "Unchanged Non-Code Files",
-      "query": "changes = 1 and not (filetype.java or filetype.scripts or filetype.javascript or filetype.typescript or filetype.jsp) and status.idle"
-    }
+[
+  {
+    "name": "Generated Code",
+    "query": "noise.generated"
+  },
+  {
+    "name": "Hidden Files",
+    "query": "noise.hidden"
+  },
+  {
+    "name": "Binaries or Noise",
+    "query": "noise.boilerplate or filetype.archive or filetype.binaries or filetype.font or filetype.image or filetype.noise or noise.negativeFileSize"
+  },
+  {
+    "name": "Build",
+    "query": "filetype.build"
+  },
+  {
+    "name": "Unchanged Non-Code Files",
+    "query": "changes = 1 and not programming and status.idle"
+  }
 ]

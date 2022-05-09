@@ -4467,5 +4467,481 @@
     "extensions" : [ ],
     "fingerprints" : [ "de.xeinfach.kafenio" ],
     "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "SpecFlow",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "BoDi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Devart",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Devart" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "fluent-command-line-parser",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Fclp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Lucene.Net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Lucene.Net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Oracle.ManagedDataAccess",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Oracle.ManagedDataAccess" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FastMember",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "FastMember" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Telerik.Reporting",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Telerik.Reporting" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.AspNet.Identity",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.AspNet.Identity" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Grpc",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Grpc.Core", "Grpc.Net.Client" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "QuickGraph",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "QuickGraph" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.AspNet.SignalR",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.AspNet.SignalR" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Net.Http.Headers",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Net.Http.Headers" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Itenso.TimePeriod",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Itenso.TimePeriod" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "devDept.Geometry",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "devDept.Geometry" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NCalc",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NCalc" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Irony",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Irony" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Nito.AsyncEx",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Nito.AsyncEx" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NDesk.Options",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NDesk.Options" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Era",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Era" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.ServiceModel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.ServiceModel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RouteMagic",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "RouteMagic" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "devDept.Graphics",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "devDept.Graphics" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RazorTemplates.Core",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "RazorTemplates.Core" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ManyConsole",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ManyConsole" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Squirrel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Squirrel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Telerik.ReportViewer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Telerik.ReportViewer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "SpecFlow.Autofac",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "SpecFlow.Autofac" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MahApps.Metro",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MahApps.Metro" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "DocumentFormat.OpenXml",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "DocumentFormat.OpenXml" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Ninject",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Ninject" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MethodTimer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MethodTimer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "WebApi.OutputCache.V2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "WebApi.OutputCache.V2" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Prism.Modularity",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Prism.Modularity" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Google.Protobuf",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Google.Protobuf" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Telerik.Charting",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Telerik.Charting" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "LumenWorks.Framework",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "LumenWorks.Framework" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ApprovalUtilities.Utilities",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ApprovalUtilities.Utilities" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Reporting.WinForms",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Reporting.WinForms" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Transactions",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Transactions" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Nest",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Nest" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NSubstitute",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NSubstitute" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Owin",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Owin" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Ionic.Zip",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Ionic.Zip" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Humanizer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Humanizer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "DynamicExpresso",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "DynamicExpresso" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Dapper",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Dapper" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Oracle.DataAccess",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Oracle.DataAccess" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ExpectedObjects",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ExpectedObjects" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "log4net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "log4net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Autofac",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Autofac" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NuGet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NuGet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Kendo",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Kendo" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Telerik.Windows",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Telerik.Windows" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "GalaSoft.MvvmLight",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "GalaSoft.MvvmLight" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ApprovalTests",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ApprovalTests" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "AvalonEdit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ICSharpCode.AvalonEdit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "LinqToExcel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "LinqToExcel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Xceed.Wpf.Toolkit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Xceed.Wpf.Toolkit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FluentAssertions",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "FluentAssertions" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "DbUp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "DbUp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Castle",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Castle" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "devDept.Eyeshot",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "devDept.Eyeshot" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "graphstream",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.graphstream" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "maui",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.testmonkeys.maui" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "groovycsv",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.xlson.groovycsv" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "oracle-jms",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "oracle.jms" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "pooled-jms",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.messaginghub.pooled.jms" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "stateless4j",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.oxo42.stateless4j" ],
+    "wrapAsImports" : true
   } ]
 }
