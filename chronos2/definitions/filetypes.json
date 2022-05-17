@@ -4,6 +4,10 @@
     "query": "extension in {as, mxml}"
   },
   {
+    "name": "antlr",
+    "query": "extension in {g4}"
+  },
+  {
     "name": "apache-avro",
     "query": "extension in {avsc}"
   },
@@ -342,6 +346,10 @@
   {
     "name": "tools_boilerplate",
     "query": "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties,coverity.conf,sonar.properties,lombok.config,descriptor.xml, override_java.security} or extension in {StyleCop,pmd} or name like *log4*"
+  },
+  {
+    "name": "twig",
+    "query": "extension in {twig}"
   },
   {
     "name": "twing",

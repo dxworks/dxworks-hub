@@ -7,10 +7,23 @@
             "query": "changes",
             "numberOfGroups": 2,
             "thresholds": [
-                3
+                10
             ]
         },
         "notes": "When were most of the files created? Are there many new files created every year?"
+    },
+    {
+        "name": "OVR: Source code by latest change year",
+        "filter": "technology.code",
+        "domain": "latestChangeYear",
+        "perspective": {
+            "query": "changes",
+            "numberOfGroups": 2,
+            "thresholds": [
+                10
+            ]
+        },
+        "notes": "How does the creation year compare to the latest change year? Are many old files updated?"
     },
     {
         "name": "OVR: Source code by creation year - recent activity",
@@ -21,10 +34,28 @@
             "query": "changes",
             "numberOfGroups": 2,
             "thresholds": [
-                3
+                10
             ]
         },
         "notes": "How many files were touched in the last year? Was activity focused on some components or scattered across the codebase? How old are the changed files?"
+    },
+    {
+        "name": "Structuring: Source code by repo",
+        "domain": "repo",
+        "perspective": {
+            "query": "changes",
+            "numberOfGroups": 1
+        },
+        "notes": ""
+    },
+    {
+        "name": "Structuring: Source code by component",
+        "domain": "component",
+        "perspective": {
+            "query": "changes",
+            "numberOfGroups": 1
+        },
+        "notes": ""
     },
     {
         "name": "ENC: Duplicate code",
@@ -53,7 +84,91 @@
                 10
             ]
         },
-        "notes": "What are the most complex files in the codebase? Add other useful information in the table. For example, the following Metrics:\nstrength of metric.atc\nsum churn of changes during last year\nsum growth of changes during last year\nstrength of anomaly.testing.BugMagnet\nstrength of anomaly.testing.CriticalWeakCoverage\nstrength of anomaly.cohesion.tangling.PivotFile\nstrength of anomaly.cohesion.tangling.TasksBottleneck\nstrength of anomaly.cohesion.coordination.Bazaar\nstrength of anomaly.knowledge.lost.WeakOwnership\n\n"
+        "tableColumns": [
+            {
+                "type": "classifier",
+                "value": "component"
+            },  
+            {
+                "type": "classifier",
+                "value": "repo"
+            },
+            {
+                "type": "property",
+                "value": "name"
+            },
+            {
+                "type": "property",
+                "value": "path"
+            },
+            {
+                "type": "property",
+                "value": "extension"
+            },
+            {
+                "type": "metric",
+                "query": "count changes",
+                "label": "All Changes"
+            },
+            {
+                "type": "property",
+                "value": "first change"
+            },
+            {
+                "type": "property",
+                "value": "last change"
+            },
+            {
+                "type": "property",
+                "value": "size"
+            },
+            {
+                "type": "metric",
+                "query": "strength of metric.atc",
+                "label": "ATC"
+            },
+            {
+                "type": "metric",
+                "query": "sum churn of changes during last year",
+                "label": "Last Year Change Volume"
+            },
+            {
+                "type": "metric",
+                "query": "sum growth of changes during last year",
+                "label": "Last Yeart Growth"
+            },
+            {
+                "type": "metric",
+                "query": "strength of anomaly.testing.BugMagnet",
+                "label": "Bug Magnet"
+            },
+            {
+                "type": "metric",
+                "query": "strength of anomaly.cohesion.tangling.PivotFile",
+                "label": "Pivot File"
+            },
+            {
+                "type": "metric",
+                "query": "strength of anomaly.cohesion.tangling.TasksBottleneck",
+                "label": "Tasks Bottleneck"
+            },
+            {
+                "type": "metric",
+                "query": "strength of anomaly.cohesion.coordination.Bazaar",
+                "label": "Bazaar"
+            },
+            {
+                "type": "metric",
+                "query": "strength of anomaly.knowledge.lost.WeakOwnership",
+                "label": "Weak Ownership"
+            },
+            {
+                "type": "metric",
+                "query": "strength of anomaly.testing.CriticalWeakCoverage",
+                "label": "Critical Weak Coverage"
+            }
+        ],
+        "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have?"
     },
     {
         "name": "TST: Files by Role",
