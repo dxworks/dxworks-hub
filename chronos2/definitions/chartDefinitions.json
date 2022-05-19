@@ -73,7 +73,7 @@
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
-      "label": "Period",
+      "label": "",
       "filter": "since last 12 months"
     },
     "oy1": {
@@ -119,7 +119,7 @@
     "graphTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
-      "label": "Period"
+      "label": ""
     },
     "oy1": {
       "query": "sum growth of commits",
@@ -172,7 +172,7 @@
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
-      "label": "Period"
+      "label": ""
     },
     "oy1": {
       "query": "sum churn of commits",
@@ -187,6 +187,28 @@
       }
     },
     "notes": "The view indicates the impact that bulk commits  have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "orientation": "vertical"
+  },
+  {
+    "name": "OVR: Commits (by repo) per period ",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Repository)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "repo",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
     "orientation": "vertical"
   },
   {
@@ -232,7 +254,7 @@
     "graphTypeOy2": "bar-chart",
     "ox": {
       "entity": "period",
-      "label": "Period"
+      "label": ""
     },
     "oy1": {
       "query": "((count commits having message.smartness.smart) * 100) / (count commits)",
@@ -394,7 +416,7 @@
     },
     "oy1": {
       "query": "count changes",
-      "label": "Changes",
+      "label": "Changes (by Component)",
       "grouping": {
         "entity": "change",
         "by": {
@@ -405,6 +427,29 @@
       }
     },
     "notes": "Do authors work across components? Are there any components with polarised ownership? Are the most prolific authors still active?",
+    "orientation": "vertical"
+  },
+  {
+    "name": "KNW: Commits by Author",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "",
+      "highlight": "status.active"
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by Repository)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "repo",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "",
     "orientation": "vertical"
   },
   {
@@ -478,7 +523,7 @@
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
-      "label": "Period"
+      "label": ""
     },
     "oy1": {
       "query": "count authors for commits",
@@ -500,7 +545,7 @@
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
-      "label": "Period"
+      "label": ""
     },
     "oy1": {
       "query": "count commits",
@@ -552,7 +597,18 @@
           "name": "count commits during period",
           "type": "query"
         },
-        "numberOfGroups": 4
+        "numberOfGroups": 4,
+        "groupsLabels": [
+          "1",
+          "[1, 5)",
+          "[5, 15)",
+          ">= 15"
+      ],
+      "thresholds": [
+          2,
+          5,
+          15
+      ]
       }
     },
     "notes": "This view is useful when there are many authors with few montly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
