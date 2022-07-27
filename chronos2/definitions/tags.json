@@ -30,5 +30,21 @@
   {
     "name": "real",
     "query": "not has (noise.generated or noise.hidden or noise.negativeFileSize or filetype.archive or filetype.binaries or filetype.font or filetype.image or filetype.noise or filetype.build)"
+  },
+  {
+    "name": "dependencies.external.packagemanager.node",
+    "query": "name in -i {package.json, package-lock.json, yarn.lock}"
+  },
+  {
+    "name": "dependencies.external.packagemanager.pip",
+    "query": "name in -i {Pipfile, Pipfile.lock}"
+  },
+  {
+    "name": "dependencies.external.packagemanager.composer",
+    "query": "name in -i {composer.json, composer.lock}"
+  },
+  {
+    "name": "dependencies.external.packagemanager.nuget",
+    "query": "name in -i {packages.config}"
   }
 ]
