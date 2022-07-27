@@ -727,7 +727,7 @@
     "name" : "bouncycastle",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "org.bouncycastle" ],
+    "fingerprints" : [ "org.bouncycastle", "Org.BouncyCastle" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -902,7 +902,7 @@
     "name" : "ehcache",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "net.sf.ehcache" ],
+    "fingerprints" : [ "net.sf.ehcache", "com.googlecode.ehcache" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -3905,7 +3905,7 @@
     "name" : "paypal",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "com.paypal" ],
+    "fingerprints" : [ "com.paypal", "PayPal" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -4942,6 +4942,342 @@
     "languages" : [ "java" ],
     "extensions" : [ ],
     "fingerprints" : [ "com.github.oxo42.stateless4j" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RabbitMQ.Client",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "RabbitMQ.Client" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Google.Apis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Google.Apis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FluentResults",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "FluentResults" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "AutoFixture",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "AutoFixture" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Flurl",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Flurl" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "ServiceStack.Text",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "ServiceStack.Text" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Vertica.Data.VerticaClient",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Vertica.Data.VerticaClient" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RazorEngine",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "RazorEngine" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.OpenApi",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.OpenApi" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FluentNHibernate",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "FluentNHibernate" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.FeatureManagement",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.FeatureManagement" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NetArchTest",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NetArchTest" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "CloudinaryDotNet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "CloudinaryDotNet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Ajax.Utilities",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Ajax.Utilities" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.IdentityModel",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.IdentityModel" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NHibernate",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NHibernate" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Simple.OData.Client",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Simple.OData.Client" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Runscope",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Runscope" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "FuelSDK",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "FuelSDK" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MvcContrib",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MvcContrib" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "JetBrains.Annotations",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "JetBrains.Annotations" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Remotion.Re-linq",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Remotion.Linq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "HashidsNet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "HashidsNet" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "aws-sdk",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Amazon" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Polly",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Polly" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jose-jwt",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Jose" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "PayPalCheckoutSdk",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "PayPalCheckoutSdk" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Redis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "StackExchange.Redis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Nini.Config",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Nini.Config" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "EasyNetQ",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "EasyNetQ" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "IBAN4Net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "SinKien.IBAN4Net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "StructureMap",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "StructureMap" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "DistributedLock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Medallion.Threading.Sql" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "GreenPipes",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "GreenPipes" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "WebGrease",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "WebGrease" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RestSharp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "RestSharp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Lamar",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Lamar" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Elasticsearch.Net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Elasticsearch.Net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.CodeAnalysis",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.CodeAnalysis" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Geocoding",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Geocoding" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RedisMemoryCacheInvalidation",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "RedisMemoryCacheInvalidation" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "HtmlAgilityPack",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "HtmlAgilityPack" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MvcValidationExtensions",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MvcValidationExtensions" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MassTransit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MassTransit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "GoCardless-Client",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "GoCardless" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MvcSiteMapProvider",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MvcSiteMapProvider" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "vavr",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.vavr" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "datasource-proxy",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.ttddyy.dsproxy" ],
     "wrapAsImports" : true
   } ]
 }
