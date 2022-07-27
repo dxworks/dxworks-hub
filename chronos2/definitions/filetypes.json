@@ -65,11 +65,7 @@
   },
   {
     "name": "certificate",
-    "query": "extension in {key, scr, pem, cer, pfx}"
-  },
-  {
-    "name": "certificate-pwd",
-    "query": "extension in {pwd}"
+    "query": "extension in {key, scr, pem, cer, pfx, ppk}"
   },
   {
     "name": "coldfusion",
@@ -113,7 +109,7 @@
   },
   {
     "name": "extendscript",
-    "query": "extension in {jsx}"
+    "query": "extension in {jsx, tsx}"
   },
   {
     "name": "flow",
@@ -206,10 +202,6 @@
   {
     "name": "jsp",
     "query": "extension in {jsp, tld, jspf}"
-  },
-  {
-    "name": "jsx",
-    "query": "extension in {tsx}"
   },
   {
     "name": "kotlin",
@@ -305,7 +297,11 @@
   },
   {
     "name": "sqlserver",
-    "query": "extension in {rdlc, rdl, dtsx, params, conmgr, edmx} or name is DatabaseSettings.xml"
+    "query": "extension in {rdlc, rdl, dtsx, params, conmgr} or name is DatabaseSettings.xml"
+  },
+  {
+    "name": "entityframeworkdatamodel",
+    "query": "extension in {edmx}"
   },
   {
     "name": "stylesheet",
