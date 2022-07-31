@@ -135,7 +135,7 @@
             {
                 "type": "metric",
                 "query": "sum growth of changes during last year",
-                "label": "Last Yeart Growth"
+                "label": "Last Year Growth"
             },
             {
                 "type": "metric",
