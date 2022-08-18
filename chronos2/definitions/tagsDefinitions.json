@@ -178,7 +178,7 @@
     "groups": [
       {
         "label": "code",
-        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps}"
+        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml}"
       },
       {
         "label": "web",
@@ -209,11 +209,11 @@
     "groups": [
       {
         "label": "backend",
-        "query": "extension in -i {cs,java,dart,sql,cql,kt,groovy,erl,hrl}"
+        "query": "extension in -i {cs,fs,vb,java,dart,sql,cql,kt,groovy,erl,hrl}"
       },
       {
         "label": "frontend",
-        "query": "extension in {js,angular,jsx,ts,tsx,jsp}"
+        "query": "extension in {js,angular,jsx,ts,tsx,jsp,aspx,cshtml}"
       },
       {
         "label": "scripting",
@@ -286,6 +286,10 @@
         "query": "has filetype.c#*"
       },
       {
+        "label": "visualbasic",
+        "query": "has filetype.visualbasic*"
+      },
+      {
         "label": "aspnet",
         "query": "has filetype.asp*"
       },
@@ -343,6 +347,10 @@
       {
         "label": "csharp",
         "query": "files having filetype.c#*"
+      },
+      {
+        "label": "visualbasic",
+        "query": "files having filetype.visualbasic*"
       },
       {
         "label": "scripts",
