@@ -86,9 +86,13 @@
         },
         "tableColumns": [
             {
+                "type": "property",
+                "value": "path"
+            },
+            {
                 "type": "classifier",
                 "value": "component"
-            },  
+            },
             {
                 "type": "classifier",
                 "value": "repo"
@@ -96,27 +100,6 @@
             {
                 "type": "property",
                 "value": "name"
-            },
-            {
-                "type": "property",
-                "value": "path"
-            },
-            {
-                "type": "property",
-                "value": "extension"
-            },
-            {
-                "type": "metric",
-                "query": "count changes",
-                "label": "All Changes"
-            },
-            {
-                "type": "property",
-                "value": "first change"
-            },
-            {
-                "type": "property",
-                "value": "last change"
             },
             {
                 "type": "property",
@@ -128,9 +111,26 @@
                 "label": "ATC"
             },
             {
+                "type": "property",
+                "value": "extension"
+            },
+            {
+                "type": "property",
+                "value": "first change"
+            },
+            {
+                "type": "property",
+                "value": "last change"
+            },
+            {
                 "type": "metric",
-                "query": "sum churn of changes during last year",
-                "label": "Last Year Change Volume"
+                "query": "count changes",
+                "label": "All Changes"
+            },
+            {
+                "type": "metric",
+                "query": "count changes during last year",
+                "label": "Last Year Changes"
             },
             {
                 "type": "metric",
@@ -139,8 +139,13 @@
             },
             {
                 "type": "metric",
-                "query": "strength of anomaly.testing.BugMagnet",
-                "label": "Bug Magnet"
+                "query": "sum churn of changes during last year",
+                "label": "Last Year Change Volume"
+            },
+            {
+                "type": "metric",
+                "query": "count authors for commits during last year",
+                "label": "Last Year Authors"
             },
             {
                 "type": "metric",
@@ -156,6 +161,11 @@
                 "type": "metric",
                 "query": "strength of anomaly.cohesion.coordination.Bazaar",
                 "label": "Bazaar"
+            },
+            {
+                "type": "metric",
+                "query": "strength of anomaly.testing.BugMagnet",
+                "label": "Bug Magnet"
             },
             {
                 "type": "metric",
