@@ -430,6 +430,28 @@
     "orientation": "vertical"
   },
   {
+    "name": "KNW: Changes by Language",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count changes",
+      "label": "Changes (by Language)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "language",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "Are authors full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If authors work across technologies, is there a preferred tech per author or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
+    "orientation": "vertical"
+  },
+  {
     "name": "KNW: Commits by Author",
     "graphTypeOy1": "bar-chart",
     "ox": {
