@@ -92,11 +92,11 @@
     "orientation": "vertical"
   },
   {
-    "name": "OVR: Filetypes by technology",
+    "name": "OVR: Filetypes by creation year",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "filetype",
-      "label": "Filetype (by technology category)"
+      "label": "Filetype (by file creation year)"
     },
     "oy1": {
       "query": "count files",
@@ -104,13 +104,13 @@
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "technology",
+          "name": "creationYear",
           "type": "classifier"
         },
         "numberOfGroups": 2
       }
     },
-    "notes": "The chart provides an overview of filetypes. The \"technology\" classifier is just meant to indicate how we classify a certain filetype, although in most cases this is quite obvious",
+    "notes": "The chart provides an overview of filetypes. The file creation year can help you understand the phase of development. We also recommend grouping by latestChangeYear, to understand the change patterns.",
     "orientation": "horizontal"
   },
   {
@@ -430,6 +430,28 @@
     "orientation": "vertical"
   },
   {
+    "name": "KNW: Changes by Language",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count changes",
+      "label": "Changes (by Language)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "language",
+          "type": "classifier"
+        },
+        "numberOfGroups": 2
+      }
+    },
+    "notes": "Are authors full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If authors work across technologies, is there a preferred tech per author or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
+    "orientation": "vertical"
+  },
+  {
     "name": "KNW: Commits by Author",
     "graphTypeOy1": "bar-chart",
     "ox": {
@@ -603,12 +625,12 @@
           "[1, 5)",
           "[5, 15)",
           ">= 15"
-      ],
-      "thresholds": [
+        ],
+        "thresholds": [
           2,
           5,
           15
-      ]
+        ]
       }
     },
     "notes": "This view is useful when there are many authors with few montly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",

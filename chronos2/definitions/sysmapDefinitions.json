@@ -111,6 +111,11 @@
                 "label": "ATC"
             },
             {
+                "type": "metric",
+                "query": "strength of metric.cntFunctions",
+                "label": "Functions"
+            },
+            {
                 "type": "property",
                 "value": "extension"
             },
