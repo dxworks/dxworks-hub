@@ -1,6 +1,6 @@
 [
     {
-        "name": "OVR: Source code by creation year",
+        "name": "Source-code (by file creation year)",
         "filter": "technology.code",
         "domain": "creationYear",
         "perspective": {
@@ -10,10 +10,19 @@
                 10
             ]
         },
-        "notes": "When were most of the files created? Are there many new files created every year?"
+        "notes": "When were most of the files created? Are there many new files created every year? Are there patterns in the file creation year (e.g. focusing on set of components/modules each year)?",
+        "section": "overview",
+        "traits": [
+            "assessment.cqr",
+            "aspect.code-evolution",
+            "aspect.current-activity-hotspots",
+            "aspect.freshness",
+            "aspect.locality-of-changes",
+            "cqr-perspective.structuring"
+        ]
     },
     {
-        "name": "OVR: Source code by latest change year",
+        "name": "Source-code (by file latest change year)",
         "filter": "technology.code",
         "domain": "latestChangeYear",
         "perspective": {
@@ -23,10 +32,19 @@
                 10
             ]
         },
-        "notes": "How does the creation year compare to the latest change year? Are many old files updated?"
+        "notes": "How does the creation year compare to the latest change year? Are many old files updated? ",
+        "section": "overview",
+        "traits": [
+            "assessment.cqr",
+            "aspect.code-evolution",
+            "aspect.current-activity-hotspots",
+            "aspect.freshness",
+            "aspect.locality-of-changes",
+            "cqr-perspective.structuring"
+        ]
     },
     {
-        "name": "OVR: Source code by creation year - recent activity",
+        "name": "Source-code (by file creation year) - recent activity",
         "highlight": "has changes during last year",
         "filter": "technology.code",
         "domain": "creationYear",
@@ -37,28 +55,52 @@
                 10
             ]
         },
-        "notes": "How many files were touched in the last year? Was activity focused on some components or scattered across the codebase? How old are the changed files?"
+        "notes": "How many files were touched in the last year? Was activity focused on some components or scattered across the codebase? How old are the changed files?",
+        "section": "overview",
+        "traits": [
+            "assessment.cqr",
+            "aspect.current-activity-hotspots",
+            "aspect.freshness",
+            "cqr-perspective.structuring",
+            "report.include",
+            "aspect.locality-of-changes"
+        ]
     },
     {
-        "name": "Structuring: Source code by repo",
+        "name": "Codebase structure (by repo)",
         "domain": "repo",
         "perspective": {
             "query": "changes",
-            "numberOfGroups": 1
+            "numberOfGroups": 1,
+            "thresholds": []
         },
-        "notes": ""
+        "section": "code-organisation",
+        "traits": [
+            "assessment.cqr",
+            "cqr-perspective.structuring",
+            "report.include",
+            "aspect.cognitive-load",
+            "aspect.responsibility-balance"
+        ]
     },
     {
-        "name": "Structuring: Source code by component",
+        "name": "Codebase structure (by component)",
         "domain": "component",
         "perspective": {
             "query": "changes",
             "numberOfGroups": 1
         },
-        "notes": ""
+        "section": "code-organisation",
+        "traits": [
+            "assessment.cqr",
+            "cqr-perspective.structuring",
+            "report.include",
+            "aspect.cognitive-load",
+            "aspect.responsibility-balance"
+        ]
     },
     {
-        "name": "ENC: Duplicate code",
+        "name": "Duplicate code",
         "highlight": "anomaly.*Dup*",
         "filter": "technology.code",
         "domain": "creationYear",
@@ -70,11 +112,18 @@
                 10
             ]
         },
-        "notes": "How many files with duplicate code are there? Are there also many new files?"
+        "notes": "How many files with duplicate code are there? Are there also many new files?",
+        "section": "feature-encapsulation",
+        "traits": [
+            "aspect.duplication",
+            "assessment.cqr",
+            "cqr-perspective.duplication",
+            "report.include"
+        ]
     },
     {
-        "name": "SoC: Complex Files",
-        "highlight": "strength of metric.atc >= 10 and changes >= 3",
+        "name": "Complexity Hotspots",
+        "highlight": "strength of metric.atc >= 1 and size >= 500 and changes >= 20 and has changes during last year",
         "domain": "status",
         "perspective": {
             "query": "changes",
@@ -84,6 +133,7 @@
                 10
             ]
         },
+        "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have?",
         "tableColumns": [
             {
                 "type": "property",
@@ -183,10 +233,19 @@
                 "label": "Critical Weak Coverage"
             }
         ],
-        "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have?"
+        "section": "separation-of-concerns",
+        "traits": [
+            "aspect.responsibility-balance",
+            "aspect.cognitive-load",
+            "aspect.current-activity-hotspots",
+            "assessment.cqr",
+            "cqr-perspective.complexity",
+            "aspect.clean-code",
+            "aspect.testing-coverage"
+        ]
     },
     {
-        "name": "TST: Files by Role",
+        "name": "Files by Role",
         "filter": "technology.code",
         "domain": "role",
         "perspective": {
@@ -197,10 +256,17 @@
                 10
             ]
         },
-        "notes": "Is the test code proportional to the production code?"
+        "notes": "Is the test code proportional to the production code?",
+        "section": "quality-assurance",
+        "traits": [
+            "aspect.testing-coverage",
+            "assessment.cqr",
+            "cqr-perspective.overview",
+            "report.include"
+        ]
     },
     {
-        "name": "TST: Test Coverage ",
+        "name": "Test Coverage ",
         "highlight": "strength of metric.testReferences > 0",
         "filter": "technology.code and role.production",
         "domain": "component",
@@ -211,17 +277,11 @@
                 1,
                 3
             ]
-        }
-    },
-    {
-        "name": "Example: Anomaly by Technology",
-        "highlight": "anomaly.*Task*",
-        "domain": "technology",
-        "perspective": {
-            "query": "changes",
-            "numberOfGroups": 1,
-            "thresholds": []
         },
-        "notes": "What types of files cause a certain anomaly (e.g. TasksBottleneck, Bazaar, Wide Commits)? "
+        "notes": "How well covered is the codebase? Do large and complex files have better coverage than smaller ones? Are newer files better covered than old files?",
+        "section": "quality-assurance",
+        "traits": [
+            "aspect.testing-coverage"
+        ]
     }
 ]
