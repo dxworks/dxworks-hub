@@ -220,7 +220,7 @@
     "query": "extension in {meta}"
   },
   {
-    "name": "microsoftexpressionblend",
+    "name": "xaml",
     "query": "extension in {xaml}"
   },
   {

@@ -286,6 +286,10 @@
         "query": "has filetype.c#*"
       },
       {
+        "label": "cpp",
+        "query": "has filetype.c++*"
+      },
+      {
         "label": "visualbasic",
         "query": "has filetype.visualbasic*"
       },
@@ -347,6 +351,10 @@
       {
         "label": "csharp",
         "query": "files having filetype.c#*"
+      },
+      {
+        "label": "cpp",
+        "query": "files having filetype.c++*"
       },
       {
         "label": "visualbasic",
