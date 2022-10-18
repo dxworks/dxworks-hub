@@ -21,7 +21,7 @@
   },
   {
     "name": "noise.boilerplate",
-    "query": "filetype.*boilerplate or name contains -i README"
+    "query": "filetype.*boilerplate"
   },
   {
     "name": "noise.generated",
@@ -45,6 +45,6 @@
   },
   {
     "name": "dependencies.external.packagemanager.nuget",
-    "query": "name in -i {packages.config}"
+    "query": "name in -i {packages.config, project.json, project.lock.json, project.assets.json}"
   }
 ]

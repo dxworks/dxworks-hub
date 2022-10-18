@@ -133,7 +133,7 @@
         10
       ]
     },
-    "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have?",
+    "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have? Do complex files also have many collaborators (i.e., are also DataHubs and/or CallHubs)? ",
     "tableColumns": [
       {
         "type": "property",
@@ -231,6 +231,16 @@
         "type": "metric",
         "query": "strength of anomaly.testing.CriticalWeakCoverage",
         "label": "Critical Weak Coverage"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.cohesion.tangling.CallHub",
+        "label": "Call Hub"
+      },
+      {
+          "type": "metric",
+          "query": "strength of anomaly.cohesion.tangling.DataHub",
+          "label": "Data Hub"
       }
     ],
     "section": "separation-of-concerns",
@@ -240,6 +250,121 @@
       "aspect.current-activity-hotspots",
       "assessment.cqr",
       "cqr-perspective.complexity",
+      "aspect.clean-code",
+      "aspect.testing-coverage"
+    ]
+  },
+  {
+    "name": "Bug Magnets with duplication",
+    "highlight": "anomaly.*Duplication* and anomaly.*BugMagnet*",
+    "domain": "status",
+    "perspective": {
+      "query": "changes",
+      "numberOfGroups": 3,
+      "thresholds": [
+        3,
+        10
+      ]
+    },
+    "notes": "Are Bug Magnets also affected by duplication?",
+    "tableColumns": [
+      {
+        "type": "property",
+        "value": "path"
+      },
+      {
+        "type": "classifier",
+        "value": "component"
+      },
+      {
+        "type": "classifier",
+        "value": "repo"
+      },
+      {
+        "type": "property",
+        "value": "name"
+      },
+      {
+        "type": "property",
+        "value": "size"
+      },
+      {
+        "type": "property",
+        "value": "extension"
+      },
+      {
+        "type": "property",
+        "value": "first change"
+      },
+      {
+        "type": "property",
+        "value": "last change"
+      },
+      {
+        "type": "metric",
+        "query": "count changes",
+        "label": "All Changes"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.testing.BugMagnet",
+        "label": "Bug Magnet"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.structuring.ExternalDuplication",
+        "label": "External Duplication"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.codesmell.duplication.InternalDuplication",
+        "label": "Internal Duplication"
+      },
+      {
+        "type": "metric",
+        "query": "count changes during last year",
+        "label": "Last Year Changes"
+      },
+      {
+        "type": "metric",
+        "query": "sum growth of changes during last year",
+        "label": "Last Year Growth"
+      },
+      {
+        "type": "metric",
+        "query": "sum churn of changes during last year",
+        "label": "Last Year Change Volume"
+      },
+      {
+        "type": "metric",
+        "query": "count authors for commits during last year",
+        "label": "Last Year Authors"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.cohesion.tangling.PivotFile",
+        "label": "Pivot File"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.cohesion.tangling.TasksBottleneck",
+        "label": "Tasks Bottleneck"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.cohesion.coordination.Bazaar",
+        "label": "Bazaar"
+      },
+      {
+        "type": "metric",
+        "query": "strength of anomaly.knowledge.lost.WeakOwnership",
+        "label": "Weak Ownership"
+      }
+    ],
+    "section": "quality-assurance",
+    "traits": [
+      "aspect.testing-efficacy",
+      "aspect.duplication",
       "aspect.clean-code",
       "aspect.testing-coverage"
     ]
