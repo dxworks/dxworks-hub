@@ -162,6 +162,38 @@
     ]
   },
   {
+    "name": "Commits (by repository) and authors per month",
+    "graphTypeOy1": "bar-chart",
+    "graphTypeOy2": "line-chart",
+    "ox": {
+        "entity": "period",
+        "label": "Period"
+    },
+    "oy1": {
+        "query": "count commits",
+        "label": "Commits (by repository)",
+        "grouping": {
+            "entity": "commit",
+            "by": {
+                "name": "repo",
+                "type": "classifier"
+            },
+            "numberOfGroups": 2
+        }
+    },
+    "oy2": {
+        "query": "count authors for commits",
+        "label": "Authors"
+    },
+    "notes": "Is there any correlation between the number of authors and the number of commits (or churn) over the codebase's history?",
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+        "aspect.team-evolution",
+        "aspect.code-evolution"
+    ]
+}
+  {
     "name": "Knowledge continuity",
     "graphTypeOy1": "bar-chart",
     "ox": {
