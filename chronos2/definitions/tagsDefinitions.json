@@ -134,7 +134,11 @@
         "query": "changes during 2019 > 0"
       },
       {
-        "label": "<=2018",
+        "label": "2018",
+        "query": "changes during 2018 > 0"
+      },
+      {
+        "label": "<=2017",
         "type": "default"
       }
     ]
@@ -236,11 +240,11 @@
     "groups": [
       {
         "label": "production",
-        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or path contains -i {mocks, /mock})"
+        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or path contains -i {mocks, /mock})"
       },
       {
         "label": "test",
-        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test}) and (path contains not -i {mocks, /mock})"
+        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts) and (path contains not -i {mocks, /mock})"
       },
       {
         "label": "mock",
@@ -280,6 +284,10 @@
       {
         "label": "typescript",
         "query": "has filetype.typescript*"
+      },
+      {
+        "label": "tsx",
+        "query": "has filetype.extendscript*"
       },
       {
         "label": "csharp",
@@ -383,6 +391,10 @@
       {
         "label": "typescript",
         "query": "files having filetype.typescript*"
+      },
+      {
+        "label": "tsx",
+        "query": "files having filetype.extendscript*"
       },
       {
         "label": "markdown",
@@ -518,6 +530,37 @@
       {
         "label": "2022",
         "query": "first change during 2022"
+      }
+    ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "commit",
+    "domain": "year",
+    "groups": [
+      {
+        "label": "<=2017",
+        "query": "has date before 2018"
+      },
+      {
+        "label": "2018",
+        "query": "has date during 2018"
+      },
+      {
+        "label": "2019",
+        "query": "has date during 2019"
+      },
+      {
+        "label": "2020",
+        "query": "has date during 2020"
+      },
+      {
+        "label": "2021",
+        "query": "has date during 2021"
+      },
+      {
+        "label": "2022",
+        "query": "has date during 2022"
       }
     ]
   },
