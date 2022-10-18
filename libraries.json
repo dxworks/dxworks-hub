@@ -916,7 +916,7 @@
     "name" : "wiremock",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "com.github.tomakehurst.wiremock" ],
+    "fingerprints" : [ "com.github.tomakehurst.wiremock", "WireMock" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -1105,7 +1105,7 @@
     "name" : "itext",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "com.lowagie" ],
+    "fingerprints" : [ "com.lowagie", "iText" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -3863,7 +3863,7 @@
     "name" : "MailKit",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "MailKit.Net.Smtp" ],
+    "fingerprints" : [ "MailKit.Net.Smtp", "MailKit" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -5137,7 +5137,7 @@
     "name" : "Redis",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "StackExchange.Redis" ],
+    "fingerprints" : [ "StackExchange.Redis", "Redis" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -5278,6 +5278,335 @@
     "languages" : [ "java" ],
     "extensions" : [ ],
     "fingerprints" : [ "net.ttddyy.dsproxy" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NUglify",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NUglify" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RxBinding",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.jakewharton.rxbinding3" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "CWAC-SafeRoom",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.commonsware.cwac.saferoom" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RxJava",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.reactivex.Completable", "io.reactivex" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Identity.Client",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Identity.Client" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "DotLiquid",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "DotLiquid" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "andorid-sdk-fabric",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "io.fabric.sdk" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "AutoValue",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.auto.value.AutoValue" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "AngleSharp",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "AngleSharp" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "auto-value-gson",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.ryanharter.auto.value.gson" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NodaTime",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NodaTime" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "timber",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "timber.log.Timber" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Npgsql",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Npgsql" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "firebase.messaging",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.google.firebase.messaging" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Stateless",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Stateless" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "jakewharton-retrofit2",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.jakewharton.retrofit2.adapter" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "DotNetSeleniumExtras",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "SeleniumExtras" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Azure.Identity",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Azure.Identity" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Crashlytics",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.crashlytics.android.Crashlytics" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "EnumsNET",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "EnumsNET" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "LoadingButtonAndroid",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "br.com.simplepass.loading_button_lib" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Atlassian.Jira",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Atlassian.Jira" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "RestEase",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "RestEase" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Microsoft.Graph",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.Graph" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "AspNetCoreRateLimit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "AspNetCoreRateLimit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "App.Metrics.Health",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "App.Metrics.Health" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Dagger",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "dagger" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "LeakCanary",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.squareup.leakcanary.LeakCanary" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Stetho",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.facebook.stetho.Stetho" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Mailhog",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Mailhog" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "pusher-http-dotnet",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "PusherServer" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "push-notifications-android",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.pusher.pushnotifications" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "prettytime",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.ocpsoft.prettytime.PrettyTime" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "multiline-collapsingtoolbar",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "net.opacapp.multilinecollapsingtoolbar" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "CommandLineParser",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "CommandLineParser.Arguments" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "BCrypt.Net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "BCrypt.Net" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MimeMapping",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MimeMapping" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "version-compare",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.g00fy2.versioncompare.Version" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "MediatR",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "MediatR" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Hangfire",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Hangfire" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Destructurama",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Destructurama" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Refit",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Refit" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "matomo-sdk-android",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.matomo.sdk" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "odata.net",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Microsoft.OData.Edm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "pusher-client",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.pusher.client" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "System.Management.Automation",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "System.Management.Automation" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "HtmlSanitizer",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Ganss.XSS" ],
     "wrapAsImports" : true
   } ]
 }
