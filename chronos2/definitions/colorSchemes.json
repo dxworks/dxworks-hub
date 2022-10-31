@@ -1,5 +1,482 @@
 [
   {
+    "name": "main",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#3f51b5"
+      },
+      {
+        "color": "#9CE159"
+      },
+      {
+        "color": "#ff6022"
+      },
+      {
+        "color": "#4EA1F2"
+      },
+      {
+        "color": "#5E35B1"
+      },
+      {
+        "color": "#006F00"
+      },
+      {
+        "color": "#a7b61a"
+      },
+      {
+        "color": "#ff22ee"
+      },
+      {
+        "color": "#f3e562"
+      },
+      {
+        "color": "#ff2222"
+      },
+      {
+        "color": "#523A34"
+      },
+      {
+        "color": "#FFBFB7"
+      },
+      {
+        "color": "#708D81"
+      },
+      {
+        "color": "#F76C5E"
+      },
+      {
+        "color": "#B33951"
+      }
+    ]
+  },
+    {
+    "name": "sysmap",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#A5E463"
+      },
+      {
+        "color": "#59ABF4"
+      },
+      {
+        "color": "#ff6022"
+      },
+      {
+        "color": "#ff22ee"
+      },
+      {
+        "color": "#f3e562"
+      },
+      {
+        "color": "#1ab693"
+      },
+      {
+        "color": "#B93B59"
+      },
+      {
+        "color": "#5E35B1"
+      },
+      {
+        "color": "#006f24"
+      },
+      {
+        "color": "#626262"
+      },
+      {
+        "color": "#FFBFB7"
+      },
+      {
+        "color": "#3f51b5"
+      },
+      {
+        "color": "#523A34"
+      },
+      {
+        "color": "#8f0f28"
+      },
+      {
+        "color": "#31595e"
+      }
+    ]
+  },
+  {
+    "name": "fileAge",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#3f51b5"
+      },
+      {
+        "color": "#5e35b1"
+      },
+      {
+        "color": "#4ea1f2"
+      },
+      {
+        "color": "#f3e562"
+      },
+      {
+        "color": "#37dec6"
+      },
+      {
+        "color": "#006f00"
+      },
+      {
+        "color": "#ff743d"
+      },
+      {
+        "color": "#ef5315"
+      },
+      {
+        "color": "#ff1010"
+      },
+      {
+        "color": "#b33951"
+      },
+      {
+        "color": "#8f0f28"
+      },
+      {
+        "color": "#718c6a"
+      },
+      {
+        "color": "#31595e"
+      },
+      {
+        "color": "#868282"
+      },
+      {
+        "color": "#606060"
+      }
+    ],
+    "colorSelection": {
+      "2": [
+        0,
+        5
+      ],
+      "3": [
+        0,
+        3,
+        5
+      ],
+      "4": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "5": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "name": "air",
+    "type": "linear",
+    "values": [
+      {
+        "color": "#e1f5fe"
+      },
+      {
+        "color": "#b3e5fc"
+      },
+      {
+        "color": "#81d4fa"
+      },
+      {
+        "color": "#4fc3f7"
+      },
+      {
+        "color": "#29b6f6"
+      },
+      {
+        "color": "#03a9f4"
+      },
+      {
+        "color": "#039be5"
+      },
+      {
+        "color": "#0288d1"
+      },
+      {
+        "color": "#0277bd"
+      },
+      {
+        "color": "#0256bd"
+      },
+      {
+        "color": "#0231bd"
+      },
+      {
+        "color": "#3300a9"
+      },
+      {
+        "color": "#48008f"
+      },
+      {
+        "color": "#55006a"
+      },
+      {
+        "color": "#31003d"
+      }
+    ],
+    "colorSelection": {
+      "2": [
+        3,
+        7
+      ],
+      "3": [
+        2,
+        5,
+        8
+      ],
+      "4": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "5": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "6": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        9
+      ]
+    }
+  },
+  {
+    "name": "solar",
+    "type": "linear",
+    "values": [
+      {
+        "color": "#fff8e1"
+      },
+      {
+        "color": "#ffecb3"
+      },
+      {
+        "color": "#ffe082"
+      },
+      {
+        "color": "#ffd54f"
+      },
+      {
+        "color": "#ffca28"
+      },
+      {
+        "color": "#ffc107"
+      },
+      {
+        "color": "#ffb300"
+      },
+      {
+        "color": "#ffa000"
+      },
+      {
+        "color": "#ff8f00"
+      },
+      {
+        "color": "#ff6f00"
+      },
+      {
+        "color": "#e76500"
+      },
+      {
+        "color": "#cd5a00"
+      },
+      {
+        "color": "#b65000"
+      },
+      {
+        "color": "#853a00"
+      },
+      {
+        "color": "#6d3000"
+      }
+    ],
+    "colorSelection": {
+      "2": [
+        3,
+        7
+      ],
+      "3": [
+        2,
+        5,
+        8
+      ],
+      "4": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "5": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "6": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        9
+      ]
+    }
+  },
+  {
+    "name": "candy",
+    "type": "linear",
+    "values": [
+      {
+        "color": "#FBB1BF"
+      },
+      {
+        "color": "#F98B9F"
+      },
+      {
+        "color": "#F7647F"
+      },
+      {
+        "color": "#F53D5F"
+      },
+      {
+        "color": "#F3163F"
+      },
+      {
+        "color": "#D50B30"
+      },
+      {
+        "color": "#AE0927"
+      },
+      {
+        "color": "#88071F"
+      },
+      {
+        "color": "#610516"
+      },
+      {
+        "color": "#3A030D"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      }
+    ],
+    "colorSelection": {
+      "2": [
+        3,
+        7
+      ],
+      "3": [
+        2,
+        5,
+        8
+      ],
+      "4": [
+        1,
+        3,
+        6,
+        8
+      ],
+      "5": [
+        1,
+        3,
+        5,
+        7,
+        9
+      ],
+      "6": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        9
+      ]
+    }
+  },
+  {
+    "name": "forest",
+    "type": "linear",
+    "values": [
+      {
+        "color": "#BEEECA"
+      },
+      {
+        "color": "#9EE6B0"
+      },
+      {
+        "color": "#7DDE95"
+      },
+      {
+        "color": "#5CD67A"
+      },
+      {
+        "color": "#3BCE60"
+      },
+      {
+        "color": "#2DB44F"
+      },
+      {
+        "color": "#259340"
+      },
+      {
+        "color": "#1D7232"
+      },
+      {
+        "color": "#19612B"
+      },
+      {
+        "color": "#11411D"
+      },
+      {
+        "color": "#0a3113"
+      },
+      {
+        "color": "#072f10"
+      },
+      {
+        "color": "#072f10"
+      },
+      {
+        "color": "#072f10"
+      },
+      {
+        "color": "#072f10"
+      }
+    ]
+  },
+  {
     "name": "tableau",
     "type": "ordinal",
     "values": [
@@ -62,27 +539,6 @@
       {"color": "#92ae31"}   
     ]
   },
-  {
-    "name": "sysmap",
-    "type": "ordinal",
-    "values": [
-      {"color": "#A5E463"},
-      {"color": "#59ABF4"},
-      {"color": "#ff6022"},
-      {"color": "#ff22ee"},
-      {"color": "#f3e562"},
-      {"color": "#1ab693"},
-      {"color": "#B93B59"},
-      {"color": "#5E35B1"},
-      {"color": "#006f24"},
-      {"color": "#626262"},
-      {"color": "#FFBFB7"},
-      {"color": "#3f51b5"},
-      {"color": "#523A34"},
-      {"color": "#8f0f28"},
-      {"color": "#31595e"}
-    ]
-  },  
   {
     "name": "mixed",
     "type": "ordinal",
