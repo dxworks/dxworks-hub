@@ -240,11 +240,11 @@
     "groups": [
       {
         "label": "production",
-        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or path contains -i {mocks, /mock})"
+        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx or path contains -i {mocks, /mock})"
       },
       {
         "label": "test",
-        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts) and (path contains not -i {mocks, /mock})"
+        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx) and (path contains not -i {mocks, /mock})"
       },
       {
         "label": "mock",
