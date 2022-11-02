@@ -208,10 +208,6 @@
     "query": "extension in {kt}"
   },
   {
-    "name": "lock_boilerplate",
-    "query": "extension like *lock or name is package-lock.json"
-  },
-  {
     "name": "map",
     "query": "extension in {map}"
   },

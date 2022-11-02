@@ -37,7 +37,7 @@
   },
   {
     "name": "dependencies.external.packagemanager.pip",
-    "query": "name in -i {Pipfile, Pipfile.lock}"
+    "query": "name in -i {Pipfile, Pipfile.lock, requirements.txt}"
   },
   {
     "name": "dependencies.external.packagemanager.composer",
