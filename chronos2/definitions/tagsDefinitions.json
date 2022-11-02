@@ -118,28 +118,28 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "2022",
-        "query": "changes during 2022 > 0"
-      },
-      {
-        "label": "2021",
-        "query": "changes during 2021 > 0"
-      },
-      {
-        "label": "2020",
-        "query": "changes during 2020 > 0"
-      },
-      {
-        "label": "2019",
-        "query": "changes during 2019 > 0"
+        "label": "<=2017",
+        "query": "last change before 2018"
       },
       {
         "label": "2018",
-        "query": "changes during 2018 > 0"
+        "query": "last change before 2019"
       },
       {
-        "label": "<=2017",
-        "type": "default"
+        "label": "2019",
+        "query": "last change before 2020"
+      },
+      {
+        "label": "2020",
+        "query": "last change before 2021"
+      },
+      {
+        "label": "2021",
+        "query": "last change before 2022"
+      },
+      {
+        "label": "2022",
+        "query": "last change before 2023"
       }
     ]
   },
