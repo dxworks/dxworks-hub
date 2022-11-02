@@ -1,6 +1,7 @@
 [
   {
     "name": "Task prefixes used over time",
+    "slug": "task-prefixes-used-over-time",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -14,8 +15,7 @@
         "by": {
           "name": "taskprefix",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "How has the usage of task prefixes evolved? This can correlate to changes in project priorities (e.g if there is a task prefixes per product). This could also indicate a team with a high cognitive load that is spread too thin (e.g. working on many projects/task prefixes in parallel).",
@@ -30,6 +30,7 @@
   },
   {
     "name": "Task prefix (by repo)",
+    "slug": "task-prefix-by-repo",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "repo@commit",
@@ -42,12 +43,17 @@
         "entity": "commit",
         "by": {
           "name": "taskprefix",
-          "type": "classifier"
-        },
-        "numberOfGroups": 2
+          "type": "classifier",
+          "sort": "by value"
+        }
       }
     },
     "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "horizontal",
     "section": "feature-traceability",
     "traits": [
@@ -59,6 +65,7 @@
   },
   {
     "name": "Source-files (by role) per component",
+    "slug": "source-files-by-role-per-component",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "component@file",
@@ -71,12 +78,17 @@
         "entity": "file",
         "by": {
           "name": "role",
-          "type": "classifier"
-        },
-        "numberOfGroups": 2
+          "type": "classifier",
+          "sort": "by value"
+        }
       }
     },
     "notes": "",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "horizontal",
     "section": "quality-assurance",
     "traits": [
@@ -85,6 +97,7 @@
   },
   {
     "name": "Smart and literate commits per month",
+    "slug": "smart-and-literate-commits-per-month",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
     "ox": {
@@ -93,14 +106,22 @@
     },
     "oy1": {
       "query": "((count commits having message.smartness.smart) * 100) / (count commits)",
-      "label": "% Smart commits"
+      "label": "% Smart commits",
+      "valuesRange": {
+        "minim": 0,
+        "maxim": 100
+      }
     },
     "oy2": {
       "query": "((count commits having (message.size.medium or message.size.*long)) * 100) / (count commits)",
-      "label": "% Literate commits"
+      "label": "% Literate commits",
+      "valuesRange": {
+        "minim": 0,
+        "maxim": 100
+      }
     },
     "target": 90,
-    "notes": "",
+    "notes": "Is the team consistently using smart commits and literare commits?",
     "orientation": "vertical",
     "section": "feature-traceability",
     "traits": [
@@ -111,6 +132,7 @@
   },
   {
     "name": "Recent changes (by file creation year) per month",
+    "slug": "recent-changes-by-file-creation-year-per-month",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -119,14 +141,15 @@
     },
     "oy1": {
       "query": "count changes",
-      "label": "Recent Changes",
+      "label": "Recent changes (by file creation year)",
       "grouping": {
         "entity": "change",
         "by": {
           "name": "fileCreationYear",
-          "type": "classifier"
+          "type": "classifier",
+          "sort": "alphabetical"
         },
-        "numberOfGroups": 2
+        "colorScheme": "5-years"
       }
     },
     "notes": "This view helps you see if over the last year the files that were under active development represent new code, or changes to old files. This in turn helps you understand what type of development activity is happening.",
@@ -139,6 +162,7 @@
   },
   {
     "name": "New authors joining the team",
+    "slug": "new-authors-joining-the-team",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
     "ox": {
@@ -163,6 +187,7 @@
   },
   {
     "name": "Commits (by repository) and authors per month",
+    "slug": "commits-by-repository-and-authors-per-month",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "line-chart",
     "ox": {
@@ -176,9 +201,9 @@
             "entity": "commit",
             "by": {
                 "name": "repo",
-                "type": "classifier"
-            },
-            "numberOfGroups": 2
+                "type": "classifier",
+                "sort": "by value"
+            }
         }
     },
     "oy2": {
@@ -195,6 +220,7 @@
   },
   {
     "name": "Knowledge continuity",
+    "slug": "knowledge-continuity",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -207,9 +233,9 @@
         "entity": "commit",
         "by": {
           "name": "seniority",
-          "type": "classifier"
-        },
-        "numberOfGroups": 2
+          "type": "classifier",
+          "sort": "by definition"
+        }
       }
     },
     "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced authors?",
@@ -221,6 +247,7 @@
   },
   {
     "name": "Files Changed (by technology) and churn per author",
+    "slug": "files-changed-by-technology-and-churn-per-author",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
     "ox": {
@@ -235,9 +262,9 @@
         "entity": "change",
         "by": {
           "name": "language",
-          "type": "classifier"
-        },
-        "numberOfGroups": 2
+          "type": "classifier",
+          "sort": "by value"
+        }
       }
     },
     "oy2": {
@@ -245,6 +272,10 @@
       "label": "Volume of change in the past 2 years"
     },
     "notes": "This view aims at estimating the cognitive load of authors: How much code do they need understand in order to make a change?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -253,6 +284,7 @@
   },
   {
     "name": "High impact tasks (by component)",
+    "slug": "high-impact-tasks-by-component",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "task",
@@ -267,11 +299,15 @@
         "by": {
           "name": "component",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "Analyse the impact of scattered tasks. Do they affect multiple components (in which case they could increase the team's cognitive load)? Does implementing tasks require changes to components owned by different teams (in which case they would require high coordination costs?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "feature-encapsulation",
     "traits": [
@@ -282,6 +318,7 @@
   },
   {
     "name": "Growth (by repo) and overall size per period",
+    "slug": "growth-by-repo-and-overall-size-per-period",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "line-chart",
     "ox": {
@@ -289,15 +326,14 @@
       "label": ""
     },
     "oy1": {
-      "query": "sum growth of commits",
+      "query": "sum growth of commits having growth > 0",
       "label": "Growth in period (by repository) ",
       "grouping": {
         "entity": "commit",
         "by": {
           "name": "repo",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "oy2": {
@@ -316,7 +352,44 @@
     ]
   },
   {
+    "name": "Filetypes (by component)",
+    "slug": "filetypes-by-component",
+    "graphTypeOy1": "bar-chart",
+    "ox": {
+        "entity": "filetype",
+        "label": "File type (by component)"
+    },
+    "oy1": {
+        "query": "count files",
+        "label": "Files",
+        "grouping": {
+            "entity": "file",
+            "by": {
+                "name": "component",
+                "type": "classifier",
+                "sort": "by value"
+            }
+        }
+    },
+    "notes": "Understand in what component each technology is used.",
+    "sort": {
+        "by": "oy",
+        "order": "descending"
+    },
+    "showAbsoluteValues": true,
+    "orientation": "horizontal",
+    "section": "overview",
+    "traits": [
+        "assessment.cqr",
+        "aspect.technology-stack",
+        "cqr-perspective.structuring",
+        "aspect.technology-coherence",
+        "aspect.technology-freshness"
+    ]
+  },
+  {
     "name": "Filetypes (by file creation year)",
+    "slug": "filetypes-by-file-creation-year",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "filetype",
@@ -329,12 +402,18 @@
         "entity": "file",
         "by": {
           "name": "creationYear",
-          "type": "classifier"
+          "type": "classifier",
+          "sort": "alphabetical"
         },
-        "numberOfGroups": 2
+        "colorScheme": "5-years"
       }
     },
     "notes": "Understand the main technologies used in the project. The file creation year can help you understand the phase of development. We also recommend grouping by latestChangeYear, to understand the change patterns.",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "horizontal",
     "section": "overview",
     "traits": [
@@ -350,6 +429,7 @@
   },
   {
     "name": "Files (by component) and commits per task prefix",
+    "slug": "files-by-component-and-commits-per-task-prefix",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
     "ox": {
@@ -365,8 +445,7 @@
         "by": {
           "name": "repo",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "oy2": {
@@ -374,6 +453,11 @@
       "label": "Commits (w. task references)"
     },
     "notes": "Get an overview of task prefixes and their usage across the various repositories",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "feature-traceability",
     "traits": [
@@ -383,6 +467,7 @@
   },
   {
     "name": "Dormant code (by component)",
+    "slug": "dormant-code-by-component",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
     "ox": {
@@ -396,9 +481,10 @@
         "entity": "file",
         "by": {
           "name": "latestChangeYear",
-          "type": "classifier"
+          "type": "classifier",
+          "sort": "alphabetical"
         },
-        "numberOfGroups": 2
+        "colorScheme": "5-years"
       }
     },
     "oy2": {
@@ -406,6 +492,11 @@
       "label": "% Files unchanged for at least 2 years"
     },
     "notes": "What are the components with the highest percentage of dormant code? Components that are completely dormant are less of an issue, since the data shows that there is a low probability of needing to change them. Notice components where a high percentage of code is dormant (e.g., over 95%), since changing them could be risky.",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "overview",
     "traits": [
@@ -416,6 +507,7 @@
   },
   {
     "name": "Distribution of commits per work hours",
+    "slug": "distribution-of-commits-per-work-hours",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -430,7 +522,7 @@
           "name": "daytime",
           "type": "classifier"
         },
-        "numberOfGroups": 2
+        "colorScheme": "dayparts"
       }
     },
     "notes": "Is there a significant number of commits outside of working hours? What's the pattern (e.g., constant, every X months, sporadic)? Does it correlate with any important events (e.g. big release, started working from home because of Covid)?",
@@ -443,6 +535,7 @@
   },
   {
     "name": "Distribution of commits per week",
+    "slug": "distribution-of-commits-per-week",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -457,7 +550,7 @@
           "name": "weekday",
           "type": "classifier"
         },
-        "numberOfGroups": 2
+        "colorScheme": "weekdays"
       }
     },
     "notes": "Is the team frequently commiting during weekends? Is the team frequently commiting more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
@@ -470,6 +563,7 @@
   },
   {
     "name": "Components (by main geozone)",
+    "slug": "components-by-main-geozone",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "component@file",
@@ -483,11 +577,15 @@
         "by": {
           "name": "main-geozone",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "Is a component developed in two Geozones? This can be problematic, as syncing across timezones is more difficult and the preffered approach is for a team to fully own a component.",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "horizontal",
     "section": "knowledge",
     "traits": [
@@ -505,10 +603,24 @@
       "filter": "sum strength of metric.atc >= 10 and changes >= 3"
     },
     "oy1": {
-      "query": "(sum churn of changes for authors having status.active) / (sum churn of changes)",
-      "label": "Fraction of activity volume by currently active authors"
+      "query": "((sum churn of changes for authors having status.active) * 100) / (sum churn of changes)",
+      "label": "% Activity volume by currently active authors",
+      "valuesRange": {
+          "minim": 0,
+          "maxim": 100
+      }
     },
+    "target": 25,
     "notes": "Does the current team have enough experience on the most complex files?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+        "maxLength": 25,
+        "trimFrom": "end",
+        "orientationAngle": 90
+    },
     "orientation": "horizontal",
     "section": "separation-of-concerns",
     "traits": [
@@ -518,10 +630,11 @@
   },
   {
     "name": "Commits (by task prefix) per author",
+    "slug": "commits-by-task-prefix-per-author",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "Author"
+      "label": ""
     },
     "oy1": {
       "query": "count commits",
@@ -531,11 +644,14 @@
         "by": {
           "name": "taskprefix",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "How are task prefixes assigned to authors/teams? ",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -548,6 +664,7 @@
   },
   {
     "name": "Commits (by repository) per author",
+    "slug": "commits-by-repository-per-author",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
@@ -562,11 +679,14 @@
         "by": {
           "name": "repo",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "Do authors work across repositories? Are there any repositories with polarised ownership? Are the most prolific authors still active?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -578,7 +698,8 @@
     ]
   },
   {
-    "name": "Commits (by repo) per period ",
+    "name": "Commits (by repo) per period",
+    "slug": "commits-by-repo-per-period",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -592,8 +713,7 @@
         "by": {
           "name": "repo",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
@@ -620,8 +740,7 @@
         "by": {
           "name": "geozone",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "This chart helps you understand where is the team based. Was there a switch from one geozone to another? Are commits from two geozones done at the same time?",
@@ -634,10 +753,12 @@
   },
   {
     "name": "Changes (by technology) per author",
+    "slug": "changes-by-technology-per-author",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": ""
+      "label": "",
+      "highlight": "status.active"
     },
     "oy1": {
       "query": "count changes",
@@ -648,10 +769,14 @@
           "name": "language",
           "type": "classifier"
         },
-        "numberOfGroups": 2
+        "colorScheme": "tableau"
       }
     },
     "notes": "Are authors full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If authors work across technologies, is there a preferred tech per author or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -663,6 +788,7 @@
   },
   {
     "name": "Changes (by component) per author",
+    "slug": "changes-by-component-per-author",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
@@ -677,11 +803,14 @@
         "by": {
           "name": "component",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "Do authors work across components? Are there any components with polarised ownership? Are the most prolific authors still active?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -693,7 +822,8 @@
     ]
   },
   {
-    "name": "Changes (by component) and size ",
+    "name": "Changes (by component) and size",
+    "slug": "changes-by-component-and-size",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "line-chart",
     "ox": {
@@ -708,8 +838,7 @@
         "by": {
           "name": "component",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "oy2": {
@@ -729,6 +858,7 @@
   },
   {
     "name": "Changed test files over time",
+    "slug": "changed-test-files-over-time"
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -742,8 +872,7 @@
         "by": {
           "name": "role",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "Is the number of changed test files proportional to changed production files? Are test files updated each month or in batches? This indicates if automated testing is part of daily development work or something done infrequently.",
@@ -755,6 +884,7 @@
   },
   {
     "name": "Bug-fix percentage and changes (by file role) by period",
+    "slug": "bug-fix-percentage-and-changes-by-file-role-by-period",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "line-chart",
     "ox": {
@@ -769,8 +899,7 @@
         "by": {
           "name": "role",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "oy2": {
@@ -790,6 +919,7 @@
   },
   {
     "name": "Authors (by dev involvement in month) per month",
+    "slug": "authors-by-dev-involvement-in-month-per-month",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -815,10 +945,12 @@
           2,
           5,
           15
-        ]
+        ],
+        "colorScheme": "authorinvolvement"
       }
     },
     "notes": "This view is useful when there are many authors with few montly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
+    "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -828,6 +960,7 @@
   },
   {
     "name": "Anomalies by repository",
+    "slug": "anomalies-by-repository",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "anomaly",
@@ -841,11 +974,19 @@
         "by": {
           "name": "repo",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "What are the most widespread anomalies? What repositories to they affect?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 40,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
     "orientation": "horizontal",
     "section": "separation-of-concerns",
     "traits": [
@@ -855,6 +996,7 @@
   },
   {
     "name": "Activity on main programming languages",
+    "slug": "activity-on-main-programming-languages",
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "bar-chart",
     "ox": {
@@ -871,6 +1013,11 @@
       "label": "Source-files created last year"
     },
     "notes": "What are the filetypes that concentrate most of the recent changes? Is the ratio of recently changed files over all files consistent across technologies or is there a filetype that has been changed disproportionally (e.g. changes across most of the js files, perhaps signaling a major framework version upgrade)?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "overview",
     "traits": [
@@ -881,6 +1028,7 @@
   },
   {
     "name": "Files with weak ownership (by year of last change) per component",
+    "slug": "files-with-weak-ownership-by-year-of-last-change-per-component",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "component@file",
@@ -893,12 +1041,18 @@
         "entity": "file",
         "by": {
           "name": "latestChangeYear",
-          "type": "classifier"
+          "type": "classifier",
+          "sort": "by definition"
         },
-        "numberOfGroups": 2
+        "colorScheme": "3-years"
       }
     },
     "notes": "Are there many recently changed files with Weak Ownership? This poses the risk that the team does not have enough knowledge of these files, which in turn may lead to slower and more error-prone changes",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -907,6 +1061,7 @@
   },
   {
     "name": "Files changed each month (by techonology)",
+    "slug": "files-changed-each-month-by-techonology",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -920,8 +1075,7 @@
         "by": {
           "name": "technology",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?).",
@@ -933,6 +1087,7 @@
   },
   {
     "name": "Duplicate files (by changes made after initial development period)",
+    "slug": "duplicate-files-by-changes-made-after-initial-development-period",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -959,6 +1114,7 @@
   },
   {
     "name": "Concepts by component",
+    "slug": "concepts-by-component",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "concept",
@@ -966,14 +1122,13 @@
     },
     "oy1": {
       "query": "count files",
-      "label": "Files",
+      "label": "Files (by component)",
       "grouping": {
         "entity": "file",
         "by": {
           "name": "component",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "Are important concepts spread over many components?",
@@ -987,6 +1142,7 @@
   },
   {
     "name": "Commits (by author involvement) per month",
+    "slug": "commits-by-author-involvement-per-month",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -999,9 +1155,9 @@
         "entity": "commit",
         "by": {
           "name": "dev.involvement",
-          "type": "classifier"
-        },
-        "numberOfGroups": 2
+          "type": "classifier",
+          "sort": "by definition"
+        }
       }
     },
     "notes": "Is there a large percentage of commits done by authors with a weak involvement (i.e. less than 20 commits) in the codebase (up to that point)?",
@@ -1013,7 +1169,8 @@
     ]
   },
   {
-    "name": "Churn (by volume type) per period ",
+    "name": "Churn (by volume type) per period",
+    "slug": "churn-by-volume-type-per-period",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -1027,8 +1184,7 @@
         "by": {
           "name": "volume.churn",
           "type": "classifier"
-        },
-        "numberOfGroups": 2
+        }
       }
     },
     "notes": "The view indicates the impact that bulk commits  have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",

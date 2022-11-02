@@ -1192,5 +1192,71 @@
         "color": "#072f10"
       }
     ]
+  },
+  {
+    "name": "dayparts",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#ffbfb7"
+      },
+      {
+        "color": "#9ce159"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#e0988e"
+      },
+      {
+        "color": "#b33951"
+      }
+    ]
+  },
+  {
+    "name": "weekdays",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#1f77b4"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#ff7f0e"
+      },
+      {
+        "color": "#bcbd22"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#ff9896"
+      },
+      {
+        "color": "#b33951"
+      }
+    ]
+  },
+  {
+    "name": "authorinvolvement",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#ff2222"
+      },
+      {
+        "color": "#f3e562"
+      },
+      {
+        "color": "#9ce159"
+      },
+      {
+        "color": "#006f00"
+      }
+    ]
   }
 ]
