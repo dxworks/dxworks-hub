@@ -50,7 +50,7 @@
       }
     ]
   },
-    {
+  {
     "name": "sysmap",
     "type": "ordinal",
     "values": [
@@ -480,283 +480,783 @@
     "name": "tableau",
     "type": "ordinal",
     "values": [
-      {"color": "#1f77b4"},
-      {"color": "#2ca02c"},
-      {"color": "#ff7f0e"},
-      {"color": "#8c564b"},
-      {"color": "#ffd400"},
-      {"color": "#ff9896"},
-      {"color": "#bcbd22"},
-      {"color": "#9467bd"},
-      {"color": "#17becf"},
-      {"color": "#ffbb78"},
-      {"color": "#aec7e8"},
-      {"color": "#e3b6d2"},
-      {"color": "#98df8a"},
-      {"color": "#c49c94"},
-      {"color": "#7f7f7f"},
-      {"color": "#d62728"},
-      {"color": "#dbdb8d"},
-      {"color": "#d485b2"},
-      {"color": "#9edae5"},
-      {"color": "#f7b6d2"},
-      {"color": "#c7c7c7"}      
+      {
+        "color": "#1f77b4"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#ff7f0e"
+      },
+      {
+        "color": "#8c564b"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#ff9896"
+      },
+      {
+        "color": "#bcbd22"
+      },
+      {
+        "color": "#9467bd"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#ffbb78"
+      },
+      {
+        "color": "#aec7e8"
+      },
+      {
+        "color": "#e3b6d2"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#c49c94"
+      },
+      {
+        "color": "#7f7f7f"
+      },
+      {
+        "color": "#d62728"
+      },
+      {
+        "color": "#dbdb8d"
+      },
+      {
+        "color": "#d485b2"
+      },
+      {
+        "color": "#9edae5"
+      },
+      {
+        "color": "#f7b6d2"
+      },
+      {
+        "color": "#c7c7c7"
+      }
     ]
-  },  
+  },
   {
     "name": "kelly",
     "type": "ordinal",
     "values": [
-      {"color": "#23628f"},
-      {"color": "#4f8f23"},
-      {"color": "#ff7f00"},
-      {"color": "#ffd400"},
-      {"color": "#d485b2"},
-      {"color": "#8f6a23"},
-      {"color": "#6b238f"},
-      {"color": "#D62728"},
-      {"color": "#b9d7ed"},
-      {"color": "#98DF8A"},
-      {"color": "#FFBB78"},
-      {"color": "#0040ff"},
-      {"color": "#bfff00"},
-      {"color": "#ffff00"},
-      {"color": "#cccccc"},      
-      {"color": "#aa00ff"},
-      {"color": "#FF9896"},
-      {"color": "#0040ff"},
-      {"color": "#bfff00"},
-      {"color": "#e1a11a"},
-      {"color": "#ff0000"},
-      {"color": "#8f2323"},
-      {"color": "#dcb9ed"},
-      {"color": "#e7e9b9"},
-      {"color": "#00eaff"},
-      {"color": "#2b3514"},
-      {"color": "#b9ede0"},
-      {"color": "#ebce2b"},
-      {"color": "#463397"},
-      {"color": "#92ae31"}   
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#4f8f23"
+      },
+      {
+        "color": "#ff7f00"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#d485b2"
+      },
+      {
+        "color": "#8f6a23"
+      },
+      {
+        "color": "#6b238f"
+      },
+      {
+        "color": "#D62728"
+      },
+      {
+        "color": "#b9d7ed"
+      },
+      {
+        "color": "#98DF8A"
+      },
+      {
+        "color": "#FFBB78"
+      },
+      {
+        "color": "#0040ff"
+      },
+      {
+        "color": "#bfff00"
+      },
+      {
+        "color": "#ffff00"
+      },
+      {
+        "color": "#cccccc"
+      },
+      {
+        "color": "#aa00ff"
+      },
+      {
+        "color": "#FF9896"
+      },
+      {
+        "color": "#0040ff"
+      },
+      {
+        "color": "#bfff00"
+      },
+      {
+        "color": "#e1a11a"
+      },
+      {
+        "color": "#ff0000"
+      },
+      {
+        "color": "#8f2323"
+      },
+      {
+        "color": "#dcb9ed"
+      },
+      {
+        "color": "#e7e9b9"
+      },
+      {
+        "color": "#00eaff"
+      },
+      {
+        "color": "#2b3514"
+      },
+      {
+        "color": "#b9ede0"
+      },
+      {
+        "color": "#ebce2b"
+      },
+      {
+        "color": "#463397"
+      },
+      {
+        "color": "#92ae31"
+      }
     ]
   },
   {
     "name": "mixed",
     "type": "ordinal",
     "values": [
-      {"color": "#4277b6"},
-      {"color": "#5fa641"},
-      {"color": "#db6917"},
-      {"color": "#96cde6"},
-      {"color": "#91218c"},
-      {"color": "#e8e948"},
-      {"color": "#7e1510"},
-      {"color": "#c0bd7f"},
-      {"color": "#d485b2"},
-      {"color": "#92ae31"},
-      {"color": "#2b3514"},
-      {"color": "#463397"},
-      {"color": "#db6917"},
-      {"color": "#ba1c30"},
-      {"color": "#7f7e80"},
-      {"color": "#ebce2b"},
-      {"color": "#6f340d"},
-      {"color": "#d32b1e"},
-      {"color": "#df8461"},
-      {"color": "#e1a11a"},
-      {"color": "#1d1d1d"},
-      {"color": "#702c8c"},
-      {"color": "#23628f"},
-      {"color": "#4f8f23"},
-      {"color": "#ff7f00"},
-      {"color": "#8f6a23"},
-      {"color": "#ff00aa"},
-      {"color": "#ffd400"},
-      {"color": "#6aff00"},
-      {"color": "#0040ff"},
-      {"color": "#edb9b9"},
-      {"color": "#b9d7ed"},
-      {"color": "#e7e9b9"},
-      {"color": "#dcb9ed"},
-      {"color": "#b9ede0"},
-      {"color": "#8f2323"},
-      {"color": "#737373"},
-      {"color": "#ff0000"},
-      {"color": "#ffff00"},
-      {"color": "#00eaff"},
-      {"color": "#aa00ff"},
-      {"color": "#bfff00"},
-      {"color": "#0095ff"},
-      {"color": "#6b238f"},
-      {"color": "#000000"},
-      {"color": "#cccccc"}       
+      {
+        "color": "#4277b6"
+      },
+      {
+        "color": "#5fa641"
+      },
+      {
+        "color": "#db6917"
+      },
+      {
+        "color": "#96cde6"
+      },
+      {
+        "color": "#91218c"
+      },
+      {
+        "color": "#e8e948"
+      },
+      {
+        "color": "#7e1510"
+      },
+      {
+        "color": "#c0bd7f"
+      },
+      {
+        "color": "#d485b2"
+      },
+      {
+        "color": "#92ae31"
+      },
+      {
+        "color": "#2b3514"
+      },
+      {
+        "color": "#463397"
+      },
+      {
+        "color": "#db6917"
+      },
+      {
+        "color": "#ba1c30"
+      },
+      {
+        "color": "#7f7e80"
+      },
+      {
+        "color": "#ebce2b"
+      },
+      {
+        "color": "#6f340d"
+      },
+      {
+        "color": "#d32b1e"
+      },
+      {
+        "color": "#df8461"
+      },
+      {
+        "color": "#e1a11a"
+      },
+      {
+        "color": "#1d1d1d"
+      },
+      {
+        "color": "#702c8c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#4f8f23"
+      },
+      {
+        "color": "#ff7f00"
+      },
+      {
+        "color": "#8f6a23"
+      },
+      {
+        "color": "#ff00aa"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#6aff00"
+      },
+      {
+        "color": "#0040ff"
+      },
+      {
+        "color": "#edb9b9"
+      },
+      {
+        "color": "#b9d7ed"
+      },
+      {
+        "color": "#e7e9b9"
+      },
+      {
+        "color": "#dcb9ed"
+      },
+      {
+        "color": "#b9ede0"
+      },
+      {
+        "color": "#8f2323"
+      },
+      {
+        "color": "#737373"
+      },
+      {
+        "color": "#ff0000"
+      },
+      {
+        "color": "#ffff00"
+      },
+      {
+        "color": "#00eaff"
+      },
+      {
+        "color": "#aa00ff"
+      },
+      {
+        "color": "#bfff00"
+      },
+      {
+        "color": "#0095ff"
+      },
+      {
+        "color": "#6b238f"
+      },
+      {
+        "color": "#000000"
+      },
+      {
+        "color": "#cccccc"
+      }
     ]
   },
   {
     "name": "3-years",
     "type": "ordinal",
     "values": [
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#2ca02c"}
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#2ca02c"
+      }
     ]
   },
   {
     "name": "4-years",
     "type": "ordinal",
     "values": [
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"},
-      {"color":"#98df8a"},
-      {"color":"#23628f"},
-      {"color":"#ffd400"}
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#ffd400"
+      }
     ]
   },
   {
     "name": "5-years",
     "type": "ordinal",
     "values": [
-      {"color":"#23628f"},
-      {"color":"#17becf"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#17becf"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#17becf"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"}
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      }
     ]
-  },  
+  },
   {
     "name": "6-years",
     "type": "ordinal",
     "values": [
-      {"color":"#23628f"},
-      {"color":"#17becf"},
-      {"color":"#aec7e8"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#17becf"},
-      {"color":"#aec7e8"},
-      {"color":"#ffd400"},
-      {"color":"#98df8a"},
-      {"color":"#2ca02c"},
-      {"color":"#23628f"},
-      {"color":"#17becf"},
-      {"color":"#aec7e8"}
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#aec7e8"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#aec7e8"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#23628f"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#aec7e8"
+      }
     ]
-  },  
+  },
   {
     "name": "blue-gradient",
     "type": "linear",
     "values": [
-      {"color": "#e1f5fe"},
-      {"color": "#b3e5fc"},
-      {"color": "#81d4fa"},
-      {"color": "#4fc3f7"},
-      {"color": "#29b6f6"},
-      {"color": "#03a9f4"},
-      {"color": "#039be5"},
-      {"color": "#0288d1"},
-      {"color": "#0277bd"},
-      {"color": "#0256bd"},
-      {"color": "#0231bd"},
-      {"color": "#3300a9"},
-      {"color": "#48008f"},
-      {"color": "#55006a"},
-      {"color": "#31003d"}
+      {
+        "color": "#e1f5fe"
+      },
+      {
+        "color": "#b3e5fc"
+      },
+      {
+        "color": "#81d4fa"
+      },
+      {
+        "color": "#4fc3f7"
+      },
+      {
+        "color": "#29b6f6"
+      },
+      {
+        "color": "#03a9f4"
+      },
+      {
+        "color": "#039be5"
+      },
+      {
+        "color": "#0288d1"
+      },
+      {
+        "color": "#0277bd"
+      },
+      {
+        "color": "#0256bd"
+      },
+      {
+        "color": "#0231bd"
+      },
+      {
+        "color": "#3300a9"
+      },
+      {
+        "color": "#48008f"
+      },
+      {
+        "color": "#55006a"
+      },
+      {
+        "color": "#31003d"
+      }
     ]
   },
   {
     "name": "orange-gradient",
     "type": "linear",
     "values": [
-      {"color": "#fff8e1"},
-      {"color": "#ffecb3"},
-      {"color": "#ffe082"},
-      {"color": "#ffd54f"},
-      {"color": "#ffca28"},
-      {"color": "#ffc107"},
-      {"color": "#ffb300"},
-      {"color": "#ffa000"},
-      {"color": "#ff8f00"},
-      {"color": "#ff6f00"},
-      {"color": "#e76500"},
-      {"color": "#cd5a00"},
-      {"color": "#b65000"},
-      {"color": "#853a00"},
-      {"color": "#6d3000"}
+      {
+        "color": "#fff8e1"
+      },
+      {
+        "color": "#ffecb3"
+      },
+      {
+        "color": "#ffe082"
+      },
+      {
+        "color": "#ffd54f"
+      },
+      {
+        "color": "#ffca28"
+      },
+      {
+        "color": "#ffc107"
+      },
+      {
+        "color": "#ffb300"
+      },
+      {
+        "color": "#ffa000"
+      },
+      {
+        "color": "#ff8f00"
+      },
+      {
+        "color": "#ff6f00"
+      },
+      {
+        "color": "#e76500"
+      },
+      {
+        "color": "#cd5a00"
+      },
+      {
+        "color": "#b65000"
+      },
+      {
+        "color": "#853a00"
+      },
+      {
+        "color": "#6d3000"
+      }
     ]
   },
   {
     "name": "red-gradient",
     "type": "linear",
     "values": [
-      {"color": "#FBB1BF"},
-      {"color": "#F98B9F"},
-      {"color": "#F7647F"},
-      {"color": "#F53D5F"},
-      {"color": "#F3163F"},
-      {"color": "#D50B30"},
-      {"color": "#AE0927"},
-      {"color": "#88071F"},
-      {"color": "#610516"},
-      {"color": "#3A030D"},
-      {"color": "#290108"},
-      {"color": "#290108"},
-      {"color": "#290108"},
-      {"color": "#290108"},
-      {"color": "#290108"}
+      {
+        "color": "#FBB1BF"
+      },
+      {
+        "color": "#F98B9F"
+      },
+      {
+        "color": "#F7647F"
+      },
+      {
+        "color": "#F53D5F"
+      },
+      {
+        "color": "#F3163F"
+      },
+      {
+        "color": "#D50B30"
+      },
+      {
+        "color": "#AE0927"
+      },
+      {
+        "color": "#88071F"
+      },
+      {
+        "color": "#610516"
+      },
+      {
+        "color": "#3A030D"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      },
+      {
+        "color": "#290108"
+      }
     ]
   },
   {
     "name": "green-gradient",
     "type": "linear",
     "values": [
-      {"color": "#BEEECA"},
-      {"color": "#9EE6B0"},
-      {"color": "#7DDE95"},
-      {"color": "#5CD67A"},
-      {"color": "#3BCE60"},
-      {"color": "#2DB44F"},
-      {"color": "#259340"},
-      {"color": "#1D7232"},
-      {"color": "#19612B"},
-      {"color": "#11411D"},
-      {"color": "#0a3113"},
-      {"color": "#072f10"},
-      {"color": "#072f10"},
-      {"color": "#072f10"},
-      {"color": "#072f10"}
+      {
+        "color": "#BEEECA"
+      },
+      {
+        "color": "#9EE6B0"
+      },
+      {
+        "color": "#7DDE95"
+      },
+      {
+        "color": "#5CD67A"
+      },
+      {
+        "color": "#3BCE60"
+      },
+      {
+        "color": "#2DB44F"
+      },
+      {
+        "color": "#259340"
+      },
+      {
+        "color": "#1D7232"
+      },
+      {
+        "color": "#19612B"
+      },
+      {
+        "color": "#11411D"
+      },
+      {
+        "color": "#0a3113"
+      },
+      {
+        "color": "#072f10"
+      },
+      {
+        "color": "#072f10"
+      },
+      {
+        "color": "#072f10"
+      },
+      {
+        "color": "#072f10"
+      }
+    ]
+  },
+  {
+    "name": "dayparts",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#ffbfb7"
+      },
+      {
+        "color": "#9ce159"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#e0988e"
+      },
+      {
+        "color": "#b33951"
+      }
+    ]
+  },
+  {
+    "name": "weekdays",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#1f77b4"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#ff7f0e"
+      },
+      {
+        "color": "#bcbd22"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#ff9896"
+      },
+      {
+        "color": "#b33951"
+      }
+    ]
+  },
+  {
+    "name": "authorinvolvement",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#ff2222"
+      },
+      {
+        "color": "#f3e562"
+      },
+      {
+        "color": "#9ce159"
+      },
+      {
+        "color": "#006f00"
+      }
     ]
   }
 ]

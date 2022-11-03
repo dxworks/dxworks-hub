@@ -1,6 +1,7 @@
 [
   {
     "name": "Source-code (by file creation year)",
+    "slug": "source-code-by-file-creation-year",
     "filter": "technology.code",
     "domain": "creationYear",
     "perspective": {
@@ -23,6 +24,7 @@
   },
   {
     "name": "Source-code (by file latest change year)",
+    "slug": "source-code-by-file-latest-change-year",
     "filter": "technology.code",
     "domain": "latestChangeYear",
     "perspective": {
@@ -45,6 +47,7 @@
   },
   {
     "name": "Source-code (by file creation year) - recent activity",
+    "slug": "source-code-by-file-creation-year-recent-activity",
     "highlight": "has changes during last year",
     "filter": "technology.code",
     "domain": "creationYear",
@@ -68,6 +71,8 @@
   },
   {
     "name": "Codebase structure (by repo)",
+    "slug": "codebase-structure-by-repo",
+    "colorScheme": "tableau",
     "domain": "repo",
     "perspective": {
       "query": "changes",
@@ -85,6 +90,8 @@
   },
   {
     "name": "Codebase structure (by component)",
+    "slug": "codebase-structure-by-component",
+    "colorScheme": "tableau",
     "domain": "component",
     "perspective": {
       "query": "changes",
@@ -101,6 +108,7 @@
   },
   {
     "name": "Duplicate code",
+    "slug": "duplicate-code",
     "highlight": "anomaly.*Dup*",
     "filter": "technology.code",
     "domain": "creationYear",
@@ -123,6 +131,7 @@
   },
   {
     "name": "Complexity Hotspots",
+    "slug": "complexity-hotspots",
     "highlight": "strength of metric.atc >= 1 and size >= 500 and changes >= 20 and has changes during last year",
     "domain": "status",
     "perspective": {
@@ -238,9 +247,9 @@
         "label": "Call Hub"
       },
       {
-          "type": "metric",
-          "query": "strength of anomaly.cohesion.tangling.DataHub",
-          "label": "Data Hub"
+        "type": "metric",
+        "query": "strength of anomaly.cohesion.tangling.DataHub",
+        "label": "Data Hub"
       }
     ],
     "section": "separation-of-concerns",
@@ -256,6 +265,7 @@
   },
   {
     "name": "Bug Magnets with duplication",
+    "slug": "bug-magnets-with-duplication",
     "highlight": "anomaly.*Duplication* and anomaly.*BugMagnet*",
     "domain": "status",
     "perspective": {
@@ -371,6 +381,7 @@
   },
   {
     "name": "Files by Role",
+    "slug": "files-by-role",
     "filter": "technology.code",
     "domain": "role",
     "perspective": {
