@@ -178,6 +178,7 @@
       "label": "All authors"
     },
     "notes": "What's the ratio of new authors to existing authors? Is there a constant flux of new developers? Was there a complete team swap?",
+    "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -192,7 +193,7 @@
     "graphTypeOy2": "line-chart",
     "ox": {
         "entity": "period",
-        "label": "Period"
+        "label": ""
     },
     "oy1": {
         "query": "count commits",
@@ -668,7 +669,7 @@
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "",
+      "label": "Authors (active authors are highlighted)",
       "highlight": "status.active"
     },
     "oy1": {
@@ -757,7 +758,7 @@
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "",
+      "label": "Authors (active authors are highlighted)",
       "highlight": "status.active"
     },
     "oy1": {
@@ -792,7 +793,7 @@
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "",
+      "label": "Authors (active authors are highlighted)",
       "highlight": "status.active"
     },
     "oy1": {
@@ -858,7 +859,7 @@
   },
   {
     "name": "Changed test files over time",
-    "slug": "changed-test-files-over-time"
+    "slug": "changed-test-files-over-time",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -1157,7 +1158,8 @@
           "name": "dev.involvement",
           "type": "classifier",
           "sort": "by definition"
-        }
+        },
+        "colorScheme": "authorinvolvement"
       }
     },
     "notes": "Is there a large percentage of commits done by authors with a weak involvement (i.e. less than 20 commits) in the codebase (up to that point)?",

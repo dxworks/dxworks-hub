@@ -265,7 +265,7 @@
   },
   {
     "name": "Bug Magnets with duplication",
-    "slug" "bug-magnets-with-duplication",
+    "slug": "bug-magnets-with-duplication",
     "highlight": "anomaly.*Duplication* and anomaly.*BugMagnet*",
     "domain": "status",
     "perspective": {
