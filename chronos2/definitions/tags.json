@@ -60,16 +60,8 @@
     "query": "path like -i *event* or path like -i *command* or path like -i *request* or path like -i *response*  or path like -i *saga* or path like -i *processmanager*  or path like -i *projection* or path like -i *handler* or path like -i *message*"
   },
   {
-    "name": "patterns.messaging.strict",
-    "query": "path like -i *event* or path like -i *command* or path like -i *saga* or path like -i *processmanager* or path like -i *projection* or path like -i *message*"
-  },
-  {
     "name": "patterns.ddd",
     "query": "path like -i *applicationservice* or path like -i *domainservice* or path like -i *repositor* or path like -i *valueobject* or name like -i *aggregateroot* or path like *domainevent*"
-  },
-  {
-    "name": "patterns.ddd.strict",
-    "query": "path like -i *applicationservice* or path like -i *domainservice* or path like -i *valueobject* or name like -i *aggregateroot* or path like *domainevent*"
   },
   {
     "name": "patterns.gof",

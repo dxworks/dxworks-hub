@@ -1198,6 +1198,7 @@
   },
   {
     "name": "Authors (by involvement) per month",
+    "slug": "authors-by-involvement-per-month",
     "graphTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
