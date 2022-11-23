@@ -32,6 +32,10 @@
     "query": "not has (noise.generated or noise.hidden or noise.negativeFileSize or filetype.archive or filetype.binaries or filetype.font or filetype.image or filetype.noise or filetype.build)"
   },
   {
+    "name": "dependencies.external.automated-updates",
+    "query": "name in -i {renovate.json, renovate.json5, dependabot.yml}"
+  },
+  {
     "name": "dependencies.external.packagemanager.node",
     "query": "name in -i {package.json, package-lock.json, yarn.lock}"
   },
@@ -46,5 +50,41 @@
   {
     "name": "dependencies.external.packagemanager.nuget",
     "query": "name in -i {packages.config, project.json, project.lock.json, project.assets.json}"
+  },
+  {
+    "name": "patterns.mvc",
+    "query": "path like -i *controller* or path like -i *view*"
+  },
+  {
+    "name": "patterns.messaging",
+    "query": "path like -i *event* or path like -i *command* or path like -i *request* or path like -i *response*  or path like -i *saga* or path like -i *processmanager*  or path like -i *projection* or path like -i *handler* or path like -i *message*"
+  },
+  {
+    "name": "patterns.messaging.strict",
+    "query": "path like -i *event* or path like -i *command* or path like -i *saga* or path like -i *processmanager* or path like -i *projection* or path like -i *message*"
+  },
+  {
+    "name": "patterns.ddd",
+    "query": "path like -i *applicationservice* or path like -i *domainservice* or path like -i *repositor* or path like -i *valueobject* or name like -i *aggregateroot* or path like *domainevent*"
+  },
+  {
+    "name": "patterns.ddd.strict",
+    "query": "path like -i *applicationservice* or path like -i *domainservice* or path like -i *valueobject* or name like -i *aggregateroot* or path like *domainevent*"
+  },
+  {
+    "name": "patterns.gof",
+    "query": "name like -i *singleton* or name like -i *factory* or name like -i *builder* or name like -i *prototype* or name like -i *adapter* or name like -i *facade* or name like -i *bridge* or name like -i *decorator* or name like -i *mediator* or name like -i *observ* or name like -i *strategy* or name like -i *visitor*"
+  },
+  {
+    "name": "patterns.publishedinterface",
+    "query": "path like -i *(.|/)contract* or path like -i *(.|/)interface*"
+  },
+  {
+    "name": "antipatterns.utils",
+    "query": "path like -i *util* or path like -i *helper*"
+  },
+  {
+    "name": "architecture",
+    "query": "path like -i *architecture* or path like -i *c4* or path like -i *adr*"
   }
 ]

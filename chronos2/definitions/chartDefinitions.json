@@ -192,31 +192,31 @@
     "graphTypeOy1": "bar-chart",
     "graphTypeOy2": "line-chart",
     "ox": {
-        "entity": "period",
-        "label": ""
+      "entity": "period",
+      "label": ""
     },
     "oy1": {
-        "query": "count commits",
-        "label": "Commits (by repository)",
-        "grouping": {
-            "entity": "commit",
-            "by": {
-                "name": "repo",
-                "type": "classifier",
-                "sort": "by value"
-            }
+      "query": "count commits",
+      "label": "Commits (by repository)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
         }
+      }
     },
     "oy2": {
-        "query": "count authors for commits",
-        "label": "Authors"
+      "query": "count authors for commits",
+      "label": "Authors"
     },
     "notes": "Is there any correlation between the number of authors and the number of commits (or churn) over the codebase's history?",
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
-        "aspect.team-evolution",
-        "aspect.code-evolution"
+      "aspect.team-evolution",
+      "aspect.code-evolution"
     ]
   },
   {
@@ -357,35 +357,35 @@
     "slug": "filetypes-by-component",
     "graphTypeOy1": "bar-chart",
     "ox": {
-        "entity": "filetype",
-        "label": "File type (by component)"
+      "entity": "filetype",
+      "label": "File type (by component)"
     },
     "oy1": {
-        "query": "count files",
-        "label": "Files",
-        "grouping": {
-            "entity": "file",
-            "by": {
-                "name": "component",
-                "type": "classifier",
-                "sort": "by value"
-            }
+      "query": "count files",
+      "label": "Files",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "component",
+          "type": "classifier",
+          "sort": "by value"
         }
+      }
     },
     "notes": "Understand in what component each technology is used.",
     "sort": {
-        "by": "oy",
-        "order": "descending"
+      "by": "oy",
+      "order": "descending"
     },
     "showAbsoluteValues": true,
     "orientation": "horizontal",
     "section": "overview",
     "traits": [
-        "assessment.cqr",
-        "aspect.technology-stack",
-        "cqr-perspective.structuring",
-        "aspect.technology-coherence",
-        "aspect.technology-freshness"
+      "assessment.cqr",
+      "aspect.technology-stack",
+      "cqr-perspective.structuring",
+      "aspect.technology-coherence",
+      "aspect.technology-freshness"
     ]
   },
   {
@@ -607,8 +607,8 @@
       "query": "((sum churn of changes for authors having status.active) * 100) / (sum churn of changes)",
       "label": "% Activity volume by currently active authors",
       "valuesRange": {
-          "minim": 0,
-          "maxim": 100
+        "minim": 0,
+        "maxim": 100
       }
     },
     "target": 25,
@@ -618,9 +618,9 @@
       "order": "descending"
     },
     "labels": {
-        "maxLength": 25,
-        "trimFrom": "end",
-        "orientationAngle": 90
+      "maxLength": 25,
+      "trimFrom": "end",
+      "orientationAngle": 90
     },
     "orientation": "horizontal",
     "section": "separation-of-concerns",
@@ -1220,6 +1220,32 @@
     "section": "knowledge",
     "traits": [
       "aspect.knowledge-continuity"
+    ]
+  },
+  {
+    "name": "Volume of Activity per Active Developer",
+    "slug": "volume-of-activity-per-active-developer",
+    "graphTypeOy1": "line-chart",
+    "graphTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "(sum churn of commits not having (volume.*.bulk or volume.*.import)) / (count authors for commits not having (volume.*.bulk or volume.*.import))",
+      "label": "Churn / Dev (only non-bulk commits)"
+    },
+    "oy2": {
+      "query": "(sum growth of commits not having (volume.*.bulk or volume.*.import)) / (count authors for commits not having (volume.*.bulk or volume.*.import))",
+      "label": "Growth / Dev (only non-bulk commits)"
+    },
+    "notes": "Many times, the output per developer decreases as the time evolves (because of the increasing technical debt and architecture viscosity). Is this the case here? Were there any software modernisation efforts? Did they pay off (note: many times modernisation efforts make things worse before they get better, so be sure to look over a longer time horizon)",
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.cognitive-load",
+      "aspect.team-evolution",
+      "aspect.code-evolution"
     ]
   }
 ]
