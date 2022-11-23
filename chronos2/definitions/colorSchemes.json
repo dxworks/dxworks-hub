@@ -4,6 +4,75 @@
     "type": "ordinal",
     "values": [
       {
+        "color": "#1f77b4"
+      },
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#ff7f0e"
+      },
+      {
+        "color": "#8c564b"
+      },
+      {
+        "color": "#ffd400"
+      },
+      {
+        "color": "#ff9896"
+      },
+      {
+        "color": "#bcbd22"
+      },
+      {
+        "color": "#9467bd"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#ffbb78"
+      },
+      {
+        "color": "#aec7e8"
+      },
+      {
+        "color": "#e3b6d2"
+      },
+      {
+        "color": "#98df8a"
+      },
+      {
+        "color": "#c49c94"
+      },
+      {
+        "color": "#7f7f7f"
+      },
+      {
+        "color": "#d62728"
+      },
+      {
+        "color": "#dbdb8d"
+      },
+      {
+        "color": "#d485b2"
+      },
+      {
+        "color": "#9edae5"
+      },
+      {
+        "color": "#f7b6d2"
+      },
+      {
+        "color": "#c7c7c7"
+      }
+    ]
+  },
+  {
+    "name": "main-old",
+    "type": "ordinal",
+    "values": [
+      {
         "color": "#3f51b5"
       },
       {
