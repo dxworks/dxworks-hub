@@ -1,0 +1,35 @@
+slug: software-assessment
+name: Software Assessment
+description: Software Assessment Description
+
+license: Apache-2.0
+
+repositories:
+  - https://github.com/dxworks/software-assessment-scriptbee-plugin
+
+
+issues:
+  - https://github.com/dxworks/software-assessment-scriptbee-plugin/issues
+
+docs:
+  - https://github.com/dxworks/software-assessment-scriptbee-plugin/tree/master/README.md
+
+technologies:
+  - C#
+
+tags:
+  - Analysis
+
+authors:
+  - name: Andrei Timar
+    github: https://github.com/andrei2699
+
+scriptBee:
+  id: software-assessment
+  type: bundle
+  versions:
+    - version: 1.0.0
+      name: dxworks/software-assessment-scriptbee-plugin
+      sourceCode: https://github.com/dxworks/software-assessment-scriptbee-plugin/tree/v1.0.0/DxWorks.ScriptBee.Plugins.SoftwareAssessment
+      manifest: https://raw.githubusercontent.com/dxworks/software-assessment-scriptbee-plugin/v1.0.0/manifest.yaml
+      asset: software-assessment-scriptbee.zip
