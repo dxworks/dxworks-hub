@@ -5,10 +5,11 @@ description: JiraMiner Description
 license: Apache-2.0
 
 repositories:
+  - https://github.com/dxworks/jira-miner
   - https://github.com/dxworks/jira-scriptbee-plugin
 
-
 issues:
+  - https://github.com/dxworks/jira-miner/issues
   - https://github.com/dxworks/jira-scriptbee-plugin/issues
 
 docs:

@@ -5,10 +5,11 @@ description: Inspector Git Description
 license: Apache-2.0
 
 repositories:
+  - https://github.com/dxworks/inspector-git
   - https://github.com/dxworks/inspector-git-scriptbee-plugin
 
-
 issues:
+  - https://github.com/dxworks/inspector-git/issues
   - https://github.com/dxworks/inspector-git-scriptbee-plugin/issues
 
 docs:

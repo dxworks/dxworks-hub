@@ -1,12 +1,11 @@
 slug: software-assessment
 name: Software Assessment
-description: Software Assessment Description
+description: A bundle of Scriptbee plugins and a linker for all Scriptbee plugins related to Software Assessment developed in dxworks
 
 license: Apache-2.0
 
 repositories:
   - https://github.com/dxworks/software-assessment-scriptbee-plugin
-
 
 issues:
   - https://github.com/dxworks/software-assessment-scriptbee-plugin/issues
