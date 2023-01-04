@@ -1,0 +1,41 @@
+slug: inspector-git
+name: Inspector Git
+description: Inspector Git Description
+
+license: Apache-2.0
+
+repositories:
+  - https://github.com/dxworks/inspector-git
+  - https://github.com/dxworks/inspector-git-scriptbee-plugin
+
+issues:
+  - https://github.com/dxworks/inspector-git/issues
+  - https://github.com/dxworks/inspector-git-scriptbee-plugin/issues
+
+docs:
+  - https://github.com/dxworks/inspector-git-scriptbee-plugin/tree/main/README.md
+
+technologies:
+  - C#
+  - Git
+
+tags:
+  - Analysis
+
+authors:
+  - name: Andrei Timar
+    github: https://github.com/andrei2699
+  - name: Mario Rivis
+    github: https://github.com/MarioRivis
+  - name: Darius Nagy
+    github: https://github.com/nagyDarius
+
+scriptBee:
+  id: inspector-git
+  type: plugin
+  versions:
+    - version: 1.0.0
+      name: dxworks/inspector-git-scriptbee-plugin
+      sourceCode: https://github.com/dxworks/inspector-git-scriptbee-plugin/tree/v1.0.0/Dxworks.ScriptBee.Plugins.InspectorGit
+      manifest: https://raw.githubusercontent.com/dxworks/inspector-git-scriptbee-plugin/v1.0.0/manifest.yaml
+      asset: inspector-git-scriptbee.zip
