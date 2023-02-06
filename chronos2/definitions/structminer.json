@@ -9,6 +9,7 @@
     "src/test/groovy",
     "src/java",
     "src/main/java",
+    "src/it/java",
     "src/test/java",
     "src/main/resources",
     "src/test/resources",

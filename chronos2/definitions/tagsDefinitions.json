@@ -59,12 +59,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2017",
-        "query": "first change before 2018"
-      },
-      {
-        "label": "2018",
-        "query": "first change during 2018"
+        "label": "<=2018",
+        "query": "first change before 2019"
       },
       {
         "label": "2019",
@@ -81,6 +77,10 @@
       {
         "label": "2022",
         "query": "first change during 2022"
+      },
+      {
+        "label": "2023",
+        "query": "first change during 2023"
       }
     ]
   },
@@ -122,11 +122,7 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2017",
-        "query": "last change before 2018"
-      },
-      {
-        "label": "2018",
+        "label": "<=2018",
         "query": "last change before 2019"
       },
       {
@@ -144,6 +140,10 @@
       {
         "label": "2022",
         "query": "last change before 2023"
+      },
+      {
+        "label": "2023",
+        "query": "last change before 2024"
       }
     ]
   },
@@ -154,12 +154,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2017",
-        "query": "files having first change before 2018"
-      },
-      {
-        "label": "2018",
-        "query": "files having first change during 2018"
+        "label": "<=2018",
+        "query": "files having first change before 2019"
       },
       {
         "label": "2019",
@@ -176,6 +172,10 @@
       {
         "label": "2022",
         "query": "files having first change during 2022"
+      },
+      {
+        "label": "2023",
+        "query": "files having first change during 2023"
       }
     ]
   },
@@ -244,11 +244,11 @@
     "groups": [
       {
         "label": "production",
-        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx or path contains -i {mocks, /mock})"
+        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__ or path contains -i {mocks, /mock})"
       },
       {
         "label": "test",
-        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx) and (path contains not -i {mocks, /mock})"
+        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__) and (path contains not -i {mocks, /mock})"
       },
       {
         "label": "mock",
@@ -512,12 +512,8 @@
     "domain": "startYear",
     "groups": [
       {
-        "label": "<=2017",
-        "query": "first change before 2018"
-      },
-      {
-        "label": "2018",
-        "query": "first change during 2018"
+        "label": "<=2018",
+        "query": "first change before 2019"
       },
       {
         "label": "2019",
@@ -534,6 +530,10 @@
       {
         "label": "2022",
         "query": "first change during 2022"
+      },
+      {
+        "label": "2023",
+        "query": "first change during 2023"
       }
     ]
   },
@@ -543,12 +543,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2017",
-        "query": "has date before 2018"
-      },
-      {
-        "label": "2018",
-        "query": "has date during 2018"
+        "label": "<=2018",
+        "query": "has date before 2019"
       },
       {
         "label": "2019",
@@ -565,6 +561,41 @@
       {
         "label": "2022",
         "query": "has date during 2022"
+      },
+      {
+        "label": "2023",
+        "query": "has date during 2023"
+      }
+    ]
+  },
+  {
+    "type": "orderedQueriesClassifier",
+    "entity": "change",
+    "domain": "year",
+    "groups": [
+      {
+        "label": "<=2018",
+        "query": "has date before 2019"
+      },
+      {
+        "label": "2019",
+        "query": "has date during 2019"
+      },
+      {
+        "label": "2020",
+        "query": "has date during 2020"
+      },
+      {
+        "label": "2021",
+        "query": "has date during 2021"
+      },
+      {
+        "label": "2022",
+        "query": "has date during 2022"
+      },
+      {
+        "label": "2023",
+        "query": "has date during 2023"
       }
     ]
   },
