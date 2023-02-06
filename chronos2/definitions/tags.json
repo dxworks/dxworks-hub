@@ -25,7 +25,7 @@
   },
   {
     "name": "noise.generated",
-    "query": "name like -i *.Designer* or name like -i *AssemblyInfo*"
+    "query": "name like -i *.Designer* or name like -i *AssemblyInfo* or name like -i *.min.js or name like -i *.min.css or name like -i *.d.ts"
   },
   {
     "name": "real",
