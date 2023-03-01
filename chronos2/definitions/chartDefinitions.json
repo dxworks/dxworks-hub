@@ -2,7 +2,7 @@
   {
     "name": "Task prefixes used over time",
     "slug": "task-prefixes-used-over-time",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -31,7 +31,7 @@
   {
     "name": "Task prefix (by repo)",
     "slug": "task-prefix-by-repo",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "repo@commit",
       "label": ""
@@ -66,7 +66,7 @@
   {
     "name": "Source-files (by role) per component",
     "slug": "source-files-by-role-per-component",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "component@file",
       "label": "Component"
@@ -98,8 +98,8 @@
   {
     "name": "Smart and literate commits per month",
     "slug": "smart-and-literate-commits-per-month",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "bar-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -133,7 +133,7 @@
   {
     "name": "Recent changes (by file creation year) per month",
     "slug": "recent-changes-by-file-creation-year-per-month",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": "",
@@ -163,8 +163,8 @@
   {
     "name": "New authors joining the team",
     "slug": "new-authors-joining-the-team",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "bar-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -189,8 +189,8 @@
   {
     "name": "Commits (by repository) and authors per month",
     "slug": "commits-by-repository-and-authors-per-month",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "line-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -222,7 +222,7 @@
   {
     "name": "Knowledge continuity",
     "slug": "knowledge-continuity",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -249,8 +249,8 @@
   {
     "name": "Files Changed (by technology) and churn per author",
     "slug": "files-changed-by-technology-and-churn-per-author",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "bar-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
       "entity": "author",
       "label": "",
@@ -286,7 +286,7 @@
   {
     "name": "High impact tasks (by component)",
     "slug": "high-impact-tasks-by-component",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "task",
       "label": "Task",
@@ -320,8 +320,8 @@
   {
     "name": "Growth (by repo) and overall size per period",
     "slug": "growth-by-repo-and-overall-size-per-period",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "line-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -355,7 +355,7 @@
   {
     "name": "Filetypes (by component)",
     "slug": "filetypes-by-component",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "filetype",
       "label": "File type (by component)"
@@ -391,7 +391,7 @@
   {
     "name": "Filetypes (by file creation year)",
     "slug": "filetypes-by-file-creation-year",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "filetype",
       "label": "File type (by file creation year)"
@@ -431,8 +431,8 @@
   {
     "name": "Files (by component) and commits per task prefix",
     "slug": "files-by-component-and-commits-per-task-prefix",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "bar-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
       "entity": "taskprefix",
       "label": "Task prefix",
@@ -469,8 +469,8 @@
   {
     "name": "Dormant code (by component)",
     "slug": "dormant-code-by-component",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "bar-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
       "entity": "component@file",
       "label": ""
@@ -509,7 +509,7 @@
   {
     "name": "Distribution of commits per work hours",
     "slug": "distribution-of-commits-per-work-hours",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -537,7 +537,7 @@
   {
     "name": "Distribution of commits per week",
     "slug": "distribution-of-commits-per-week",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -565,7 +565,7 @@
   {
     "name": "Components (by main geozone)",
     "slug": "components-by-main-geozone",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "component@file",
       "label": ""
@@ -597,7 +597,7 @@
   },
   {
     "name": "Complex files - fraction of activity volume by currently active authors",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "file",
       "label": "",
@@ -632,7 +632,7 @@
   {
     "name": "Commits (by task prefix) per author",
     "slug": "commits-by-task-prefix-per-author",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
       "label": ""
@@ -666,7 +666,7 @@
   {
     "name": "Commits (by repository) per author",
     "slug": "commits-by-repository-per-author",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
       "label": "Authors (active authors are highlighted)",
@@ -701,7 +701,7 @@
   {
     "name": "Commits (by repo) per period",
     "slug": "commits-by-repo-per-period",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -728,7 +728,7 @@
   },
   {
     "name": "Commits (by geozone)",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -755,7 +755,7 @@
   {
     "name": "Changes (by technology) per author",
     "slug": "changes-by-technology-per-author",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
       "label": "Authors (active authors are highlighted)",
@@ -790,7 +790,7 @@
   {
     "name": "Changes (by component) per author",
     "slug": "changes-by-component-per-author",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
       "label": "Authors (active authors are highlighted)",
@@ -825,8 +825,8 @@
   {
     "name": "Changes (by component) and size",
     "slug": "changes-by-component-and-size",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "line-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -860,7 +860,7 @@
   {
     "name": "Changed test files over time",
     "slug": "changed-test-files-over-time",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -886,8 +886,8 @@
   {
     "name": "Bug-fix percentage and changes (by file role) by period",
     "slug": "bug-fix-percentage-and-changes-by-file-role-by-period",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "line-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -921,7 +921,7 @@
   {
     "name": "Authors (by dev involvement in month) per month",
     "slug": "authors-by-dev-involvement-in-month-per-month",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -962,7 +962,7 @@
   {
     "name": "Anomalies by repository",
     "slug": "anomalies-by-repository",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "anomaly",
       "label": "Anomaly"
@@ -998,8 +998,8 @@
   {
     "name": "Activity on main programming languages",
     "slug": "activity-on-main-programming-languages",
-    "graphTypeOy1": "bar-chart",
-    "graphTypeOy2": "bar-chart",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
       "entity": "language@file",
       "label": ""
@@ -1030,7 +1030,7 @@
   {
     "name": "Files with weak ownership (by year of last change) per component",
     "slug": "files-with-weak-ownership-by-year-of-last-change-per-component",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "component@file",
       "label": ""
@@ -1063,7 +1063,7 @@
   {
     "name": "Files changed each month (by techonology)",
     "slug": "files-changed-each-month-by-techonology",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -1089,7 +1089,7 @@
   {
     "name": "Duplicate files (by changes made after initial development period)",
     "slug": "duplicate-files-by-changes-made-after-initial-development-period",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -1116,7 +1116,7 @@
   {
     "name": "Concepts by component",
     "slug": "concepts-by-component",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "concept",
       "label": "Concept"
@@ -1144,7 +1144,7 @@
   {
     "name": "Commits (by author involvement) per month",
     "slug": "commits-by-author-involvement-per-month",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -1173,7 +1173,7 @@
   {
     "name": "Churn (by volume type) per period",
     "slug": "churn-by-volume-type-per-period",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -1199,7 +1199,7 @@
   {
     "name": "Authors (by involvement) per month",
     "slug": "authors-by-involvement-per-month",
-    "graphTypeOy1": "bar-chart",
+    "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
       "label": ""
@@ -1226,8 +1226,8 @@
   {
     "name": "Volume of Activity per Active Developer",
     "slug": "volume-of-activity-per-active-developer",
-    "graphTypeOy1": "line-chart",
-    "graphTypeOy2": "line-chart",
+    "chartTypeOy1": "line-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
       "label": ""
