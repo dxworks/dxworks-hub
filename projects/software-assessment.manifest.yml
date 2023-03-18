@@ -28,6 +28,7 @@ scriptBee:
   type: bundle
   versions:
     - version: 1.0.0
+      tag: v1.0.0
       name: dxworks/software-assessment-scriptbee-plugin
       sourceCode: https://github.com/dxworks/software-assessment-scriptbee-plugin/tree/v1.0.0/DxWorks.ScriptBee.Plugins.SoftwareAssessment
       manifest: https://raw.githubusercontent.com/dxworks/software-assessment-scriptbee-plugin/v1.0.0/manifest.yaml

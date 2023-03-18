@@ -35,6 +35,7 @@ scriptBee:
   type: plugin
   versions:
     - version: 1.0.0
+      tag: v1.0.0
       name: dxworks/inspector-git-scriptbee-plugin
       sourceCode: https://github.com/dxworks/inspector-git-scriptbee-plugin/tree/v1.0.0/Dxworks.ScriptBee.Plugins.InspectorGit
       manifest: https://raw.githubusercontent.com/dxworks/inspector-git-scriptbee-plugin/v1.0.0/manifest.yaml
