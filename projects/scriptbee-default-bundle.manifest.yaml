@@ -38,12 +38,20 @@ scriptBee:
   type: bundle
   versions:
     - version: 1.0.0
+      tag: v1.0.0
       name: dxworks/scriptbee
       sourceCode: https://github.com/dxworks/scriptbee/tree/v1.0.0/Plugins
       manifest: https://raw.githubusercontent.com/dxworks/scriptbee/v1.0.0/Plugins/manifest.yaml
       asset: scriptbee-default-bundle.zip
     - version: 1.1.0
+      tag: 1.1.0
       name: dxworks/scriptbee
       sourceCode: https://github.com/dxworks/scriptbee/tree/1.1.0/Plugins
       manifest: https://raw.githubusercontent.com/dxworks/scriptbee/1.1.0/Plugins/manifest.yaml
+      asset: scriptbee-default-bundle.zip
+    - version: 1.1.1
+      tag: 1.1.1
+      name: dxworks/scriptbee
+      sourceCode: https://github.com/dxworks/scriptbee/tree/1.1.1/Plugins
+      manifest: https://raw.githubusercontent.com/dxworks/scriptbee/1.1.1/Plugins/manifest.yaml
       asset: scriptbee-default-bundle.zip

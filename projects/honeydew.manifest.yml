@@ -50,16 +50,19 @@ scriptBee:
   type: plugin
   versions:
     - version: 3.0.0
+      tag: v3.0.0
       name: dxworks/honeydew
       sourceCode: https://github.com/dxworks/honeydew/tree/v3.0.0/DxWorks.ScriptBee.Plugins.Honeydew
       manifest: https://raw.githubusercontent.com/dxworks/honeydew/v3.0.0/manifest.yaml
       asset: honeydew@3.0.0.zip
     - version: 3.0.1
+      tag: v3.0.1
       name: dxworks/honeydew
       sourceCode: https://github.com/dxworks/honeydew/tree/v3.0.1/DxWorks.ScriptBee.Plugins.Honeydew
       manifest: https://raw.githubusercontent.com/dxworks/honeydew/v3.0.1/manifest.yaml
       asset: honeydew-scriptbee.zip
     - version: 3.0.2
+      tag: v3.0.2
       name: dxworks/honeydew
       sourceCode: https://github.com/dxworks/honeydew/tree/v3.0.2/DxWorks.ScriptBee.Plugins.Honeydew
       manifest: https://raw.githubusercontent.com/dxworks/honeydew/v3.0.2/manifest.yaml
