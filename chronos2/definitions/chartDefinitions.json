@@ -229,11 +229,11 @@
     },
     "oy1": {
       "query": "count commits",
-      "label": "Commits (by author's seniority)",
+      "label": "Commits (by author's tenure)",
       "grouping": {
         "entity": "commit",
         "by": {
-          "name": "seniority",
+          "name": "tenure",
           "type": "classifier",
           "sort": "by definition"
         }
@@ -1189,7 +1189,33 @@
         }
       }
     },
-    "notes": "The view indicates the impact that bulk commits  have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "notes": "The view indicates the impact that bulk commits have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "orientation": "vertical",
+    "section": "feature-traceability",
+    "traits": [
+      "aspect.cohesive-changes"
+    ]
+  },
+  {
+    "name": "Commits (by volume type) per period",
+    "slug": "commits-by-volume-type-per-period",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by commit size)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "volume.churn",
+          "type": "classifier"
+        }
+      }
+    },
+    "notes": "The view indicates the number of commits, in order to see how many bulk commits are done monthly. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
     "orientation": "vertical",
     "section": "feature-traceability",
     "traits": [
