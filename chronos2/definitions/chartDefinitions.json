@@ -121,7 +121,7 @@
       }
     },
     "target": 90,
-    "notes": "Is the team consistently using smart commits and literare commits?",
+    "notes": "Is the team consistently using smart commits and literate commits?",
     "orientation": "vertical",
     "section": "feature-traceability",
     "traits": [
@@ -554,7 +554,7 @@
         "colorScheme": "weekdays"
       }
     },
-    "notes": "Is the team frequently commiting during weekends? Is the team frequently commiting more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
+    "notes": "Is the team frequently committing during weekends? Is the team frequently committing more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
     "orientation": "vertical",
     "section": "quality-assurance",
     "traits": [
@@ -581,7 +581,7 @@
         }
       }
     },
-    "notes": "Is a component developed in two Geozones? This can be problematic, as syncing across timezones is more difficult and the preffered approach is for a team to fully own a component.",
+    "notes": "Is a component developed in two Geozones? This can be problematic, as syncing across timezones is more difficult and the preferred approach is for a team to fully own a component.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -950,7 +950,7 @@
         "colorScheme": "authorinvolvement"
       }
     },
-    "notes": "This view is useful when there are many authors with few montly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
+    "notes": "This view is useful when there are many authors with few monthly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
     "showAbsoluteValues": true,
     "orientation": "vertical",
     "section": "knowledge",
@@ -1061,8 +1061,8 @@
     ]
   },
   {
-    "name": "Files changed each month (by techonology)",
-    "slug": "files-changed-each-month-by-techonology",
+    "name": "Files changed each month (by technology)",
+    "slug": "files-changed-each-month-by-technology",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
