@@ -68,7 +68,7 @@
     "slug": "source-files-by-role-per-component",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "component@file",
+      "entity": "struct@file",
       "label": "Component"
     },
     "oy1": {
@@ -298,7 +298,7 @@
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "component",
+          "name": "struct",
           "type": "classifier"
         }
       }
@@ -366,7 +366,7 @@
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "component",
+          "name": "struct",
           "type": "classifier",
           "sort": "by value"
         }
@@ -472,7 +472,7 @@
     "chartTypeOy1": "bar-chart",
     "chartTypeOy2": "bar-chart",
     "ox": {
-      "entity": "component@file",
+      "entity": "struct@file",
       "label": ""
     },
     "oy1": {
@@ -567,7 +567,7 @@
     "slug": "components-by-main-geozone",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "component@file",
+      "entity": "struct@file",
       "label": ""
     },
     "oy1": {
@@ -802,7 +802,7 @@
       "grouping": {
         "entity": "change",
         "by": {
-          "name": "component",
+          "name": "struct",
           "type": "classifier"
         }
       }
@@ -837,7 +837,7 @@
       "grouping": {
         "entity": "change",
         "by": {
-          "name": "component",
+          "name": "struct",
           "type": "classifier"
         }
       }
@@ -1032,7 +1032,7 @@
     "slug": "files-with-weak-ownership-by-year-of-last-change-per-component",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "component@file",
+      "entity": "struct@file",
       "label": ""
     },
     "oy1": {
@@ -1127,7 +1127,7 @@
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "component",
+          "name": "struct",
           "type": "classifier"
         }
       }

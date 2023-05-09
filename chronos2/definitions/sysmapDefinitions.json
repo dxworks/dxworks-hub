@@ -92,7 +92,7 @@
     "name": "Codebase structure (by component)",
     "slug": "codebase-structure-by-component",
     "colorScheme": "tableau",
-    "domain": "component",
+    "domain": "struct",
     "perspective": {
       "query": "changes",
       "numberOfGroups": 1
@@ -150,7 +150,7 @@
       },
       {
         "type": "classifier",
-        "value": "component"
+        "value": "struct"
       },
       {
         "type": "classifier",
@@ -284,7 +284,7 @@
       },
       {
         "type": "classifier",
-        "value": "component"
+        "value": "struct"
       },
       {
         "type": "classifier",
@@ -405,7 +405,7 @@
     "name": "Test Coverage ",
     "highlight": "strength of metric.testReferences > 0",
     "filter": "technology.code and role.production",
-    "domain": "component",
+    "domain": "struct",
     "perspective": {
       "query": "strength of metric.testReferences",
       "numberOfGroups": 3,
