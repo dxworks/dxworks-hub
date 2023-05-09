@@ -463,7 +463,7 @@
   {
     "type": "orderedQueriesClassifier",
     "entity": "author",
-    "domain": "seniority",
+    "domain": "tenure",
     "groups": [
       {
         "label": "newcomer",
@@ -486,23 +486,23 @@
   {
     "type": "orderedQueriesClassifier",
     "entity": "commit",
-    "domain": "seniority",
+    "domain": "tenure",
     "groups": [
       {
         "label": "newcomer",
-        "query": "author having seniority.newcomer"
+        "query": "author having tenure.newcomer"
       },
       {
         "label": "established",
-        "query": "author having seniority.established"
+        "query": "author having tenure.established"
       },
       {
         "label": "senior",
-        "query": "author having seniority.senior"
+        "query": "author having tenure.senior"
       },
       {
         "label": "veteran",
-        "query": "author having seniority.veteran"
+        "query": "author having tenure.veteran"
       }
     ]
   },
