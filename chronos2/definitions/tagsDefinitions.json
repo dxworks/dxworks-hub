@@ -306,6 +306,10 @@
         "query": "has filetype.visualbasic*"
       },
       {
+        "label": "cucumber",
+        "query": "has filetype.cucumber*"
+      },
+      {
         "label": "aspnet",
         "query": "has filetype.asp*"
       },
@@ -371,6 +375,10 @@
       {
         "label": "visualbasic",
         "query": "files having filetype.visualbasic*"
+      },
+      {
+        "label": "cucumber",
+        "query": "files having filetype.cucumber*"
       },
       {
         "label": "scripts",
