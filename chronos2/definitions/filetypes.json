@@ -24,8 +24,8 @@
     "query": "extension in {zip, gz, gzip}"
   },
   {
-    "name": "asp",
-    "query": "extension in {asax, cshtml, aspx, asmx, ascx}"
+    "name": "aspnet",
+    "query": "extension in {asax, cshtml, aspx, asmx, ascx, ashx}"
   },
   {
     "name": "awk",

@@ -186,7 +186,7 @@
     "groups": [
       {
         "label": "code",
-        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml}"
+        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml, kt, rb, erb, swift}"
       },
       {
         "label": "web",
@@ -217,11 +217,11 @@
     "groups": [
       {
         "label": "backend",
-        "query": "extension in -i {cs,fs,vb,java,dart,sql,cql,kt,groovy,erl,hrl}"
+        "query": "extension in -i {cs,fs,vb,java,dart,sql,cql,kt,groovy,erl,hrl,swift,rb}"
       },
       {
         "label": "frontend",
-        "query": "extension in {js,angular,jsx,ts,tsx,jsp,aspx,cshtml}"
+        "query": "extension in {js,angular,jsx,ts,tsx,jsp,aspx,cshtml,erb}"
       },
       {
         "label": "scripting",
@@ -244,11 +244,11 @@
     "groups": [
       {
         "label": "production",
-        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__ or path contains -i {mocks, /mock})"
+        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.js or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__ or path contains -i {mocks, /mock})"
       },
       {
         "label": "test",
-        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__) and (path contains not -i {mocks, /mock})"
+        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.js or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__) and (path contains not -i {mocks, /mock})"
       },
       {
         "label": "mock",
