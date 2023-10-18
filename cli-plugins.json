@@ -1,6 +1,5 @@
 {
   "plugins": [
-    "@dxworks/dev",
     "@dxworks/voyenv",
     "@dxworks/dx",
     "@dxworks/honeydew",
