@@ -1,7 +1,7 @@
 [
   {
     "name": "status.active",
-    "query": "has changes during last 6 timeframes"
+    "query": "has changes during last 6 months"
   },
   {
     "name": "status.idle",

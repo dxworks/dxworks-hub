@@ -37,7 +37,7 @@
     "type": "numericClassifier",
     "entity": "author",
     "domain": "status",
-    "query": "count changes during last 3 months",
+    "query": "count changes during last 6 months",
     "thresholds": [
       1
     ],

@@ -1,296 +1,12 @@
 [
   {
-    "name": "Task prefixes used over time",
-    "slug": "task-prefixes-used-over-time",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by task prefix)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "taskprefix",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "How has the usage of task prefixes evolved? This can correlate to changes in project priorities (e.g if there is a task prefixes per product). This could also indicate a team with a high cognitive load that is spread too thin (e.g. working on many projects/task prefixes in parallel).",
-    "orientation": "vertical",
-    "section": "feature-traceability",
-    "traits": [
-      "aspect.code-evolution",
-      "aspect.current-activity-hotspots",
-      "aspect.traceable-changes",
-      "aspect.cognitive-load"
-    ]
-  },
-  {
-    "name": "Task prefix (by repo)",
-    "slug": "task-prefix-by-repo",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "repo@commit",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by task prefix)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "taskprefix",
-          "type": "classifier",
-          "sort": "by value"
-        }
-      }
-    },
-    "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "showAbsoluteValues": true,
-    "orientation": "horizontal",
-    "section": "feature-traceability",
-    "traits": [
-      "aspect.cognitive-load",
-      "aspect.coordination-costs",
-      "aspect.functional-cohesion",
-      "architecture.microservices"
-    ]
-  },
-  {
-    "name": "Source-files (by role) per component",
-    "slug": "source-files-by-role-per-component",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "component@file",
-      "label": "Component"
-    },
-    "oy1": {
-      "query": "count files having technology.code",
-      "label": "Source-files (by role)",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "role",
-          "type": "classifier",
-          "sort": "by value"
-        }
-      }
-    },
-    "notes": "",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "showAbsoluteValues": true,
-    "orientation": "horizontal",
-    "section": "quality-assurance",
-    "traits": [
-      "aspect.testing-coverage"
-    ]
-  },
-  {
-    "name": "Smart and literate commits per month",
-    "slug": "smart-and-literate-commits-per-month",
-    "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "((count commits having message.smartness.smart) * 100) / (count commits)",
-      "label": "% Smart commits",
-      "valuesRange": {
-        "minim": 0,
-        "maxim": 100
-      }
-    },
-    "oy2": {
-      "query": "((count commits having (message.size.medium or message.size.*long)) * 100) / (count commits)",
-      "label": "% Literate commits",
-      "valuesRange": {
-        "minim": 0,
-        "maxim": 100
-      }
-    },
-    "target": 90,
-    "notes": "Is the team consistently using smart commits and literate commits?",
-    "orientation": "vertical",
-    "section": "feature-traceability",
-    "traits": [
-      "aspect.traceable-changes",
-      "assessment.cqr",
-      "cqr-perspective.overview"
-    ]
-  },
-  {
-    "name": "Recent changes (by file creation year) per month",
-    "slug": "recent-changes-by-file-creation-year-per-month",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": "",
-      "filter": "since last 12 months"
-    },
-    "oy1": {
-      "query": "count changes",
-      "label": "Recent changes (by file creation year)",
-      "grouping": {
-        "entity": "change",
-        "by": {
-          "name": "fileCreationYear",
-          "type": "classifier",
-          "sort": "alphabetical"
-        },
-        "colorScheme": "5-years"
-      }
-    },
-    "notes": "This view helps you see if over the last year the files that were under active development represent new code, or changes to old files. This in turn helps you understand what type of development activity is happening.",
-    "orientation": "vertical",
-    "section": "overview",
-    "traits": [
-      "aspect.code-evolution",
-      "aspect.freshness"
-    ]
-  },
-  {
-    "name": "New authors joining the team",
-    "slug": "new-authors-joining-the-team",
-    "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count authors having first commit during period",
-      "label": "New authors"
-    },
-    "oy2": {
-      "query": "count authors for commits",
-      "label": "All authors"
-    },
-    "notes": "What's the ratio of new authors to existing authors? Is there a constant flux of new developers? Was there a complete team swap?",
-    "showAbsoluteValues": true,
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.knowledge-continuity",
-      "aspect.team-evolution"
-    ]
-  },
-  {
-    "name": "Commits (by repository) and authors per month",
-    "slug": "commits-by-repository-and-authors-per-month",
-    "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "line-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by repository)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "repo",
-          "type": "classifier",
-          "sort": "by value"
-        }
-      }
-    },
-    "oy2": {
-      "query": "count authors for commits",
-      "label": "Authors"
-    },
-    "notes": "Is there any correlation between the number of authors and the number of commits (or churn) over the codebase's history?",
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.team-evolution",
-      "aspect.code-evolution"
-    ]
-  },
-  {
-    "name": "Knowledge continuity",
-    "slug": "knowledge-continuity",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by author's tenure)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "tenure",
-          "type": "classifier",
-          "sort": "by definition"
-        }
-      }
-    },
-    "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced authors?",
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.knowledge-continuity"
-    ]
-  },
-  {
-    "name": "Files Changed (by technology) and churn per author",
-    "slug": "files-changed-by-technology-and-churn-per-author",
-    "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "bar-chart",
-    "ox": {
-      "entity": "author",
-      "label": "",
-      "filter": "changes during last 2 years"
-    },
-    "oy1": {
-      "query": "sum size of files for changes during last 2 years",
-      "label": "Size of files changed in the past 2 years (by technology)",
-      "grouping": {
-        "entity": "change",
-        "by": {
-          "name": "language",
-          "type": "classifier",
-          "sort": "by value"
-        }
-      }
-    },
-    "oy2": {
-      "query": "sum churn of changes during last 2 years",
-      "label": "Volume of change in the past 2 years"
-    },
-    "notes": "This view aims at estimating the cognitive load of authors: How much code do they need understand in order to make a change?",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.cognitive-load"
-    ]
-  },
-  {
-    "name": "High impact tasks (by component)",
+    "name": "Tasks - High impact tasks (by component)",
     "slug": "high-impact-tasks-by-component",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "task",
       "label": "Task",
-      "filter": "count files for commits >= 20 and commits >= 3"
+      "filter": "count files for commits >= 50 and commits >= 3"
     },
     "oy1": {
       "query": "count files for commits",
@@ -299,8 +15,10 @@
         "entity": "file",
         "by": {
           "name": "component",
-          "type": "classifier"
-        }
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
       }
     },
     "notes": "Analyse the impact of scattered tasks. Do they affect multiple components (in which case they could increase the team's cognitive load)? Does implementing tasks require changes to components owned by different teams (in which case they would require high coordination costs?",
@@ -308,7 +26,21 @@
       "by": "oy",
       "order": "descending"
     },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
     "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
     "section": "feature-encapsulation",
     "traits": [
@@ -318,39 +50,207 @@
     ]
   },
   {
-    "name": "Growth (by repo) and overall size per period",
-    "slug": "growth-by-repo-and-overall-size-per-period",
+    "name": "Task prefixes - Files (by repo) and commits",
+    "slug": "files-by-component-and-commits-per-task-prefix",
     "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "line-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
-      "entity": "period",
-      "label": "",
-      "momentOfTime": "last day of period"
+      "entity": "taskprefix",
+      "label": "Task prefix",
+      "filter": ""
     },
     "oy1": {
-      "query": "sum growth of commits having growth > 0",
-      "label": "Growth in period (by repository) ",
+      "query": "count files for commits not having taskprefix.@",
+      "label": "Files (w. task references in commits)",
       "grouping": {
-        "entity": "commit",
+        "entity": "file",
         "by": {
           "name": "repo",
-          "type": "classifier"
-        }
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
       }
     },
     "oy2": {
-      "query": "sum size of files",
-      "label": "Overall size (in LOC)"
+      "query": "count commits not having taskprefix.@",
+      "label": "Commits (w. task references)"
     },
-    "notes": "You can spot: (1) how old the codebase is; (2) the oldest and newest repos; (3) the repos with the highest recent growth, and repos that are inactive; (4) months with abrupt growth; (5) periods of standstill. Based on the duration of the project and the growth patterns you can get a solid indication on the project's current development phase: has the project started recently? or is it in vibrant growth? or in consolidation phase? or in maintenance? or close to standstill?",
+    "notes": "Get an overview of task prefixes and their usage across the various repositories",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "feature-traceability",
+    "traits": [
+      "aspect.traceable-changes",
+      "aspect.functional-cohesion"
+    ]
+  },
+  {
+    "name": "Repositories (by task prefixes)",
+    "slug": "task-prefix-by-repo",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "repo@change",
+      "label": "Repository"
+    },
+    "oy1": {
+      "query": "count commits for changes",
+      "label": "Commits (by task prefix)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "taskprefix",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "feature-traceability",
+    "traits": [
+      "aspect.cognitive-load",
+      "aspect.coordination-costs",
+      "aspect.functional-cohesion",
+      "architecture.microservices"
+    ]
+  },
+  {
+    "name": "Languages - Overall and recent activity",
+    "slug": "activity-on-main-programming-languages",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "language@file",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count files having technology.code",
+      "label": "Source-files (in red files changed last year)",
+      "highlight": "changes during last year"
+    },
+    "oy2": {
+      "query": "count files having (technology.code and first change during last year)",
+      "label": "Source-files created last year",
+      "equalizeRanges": true
+    },
+    "notes": "What are the filetypes that concentrate most of the recent changes? Is the ratio of recently changed files over all files consistent across technologies or is there a filetype that has been changed disproportionally (e.g. changes across most of the js files, perhaps signaling a major framework version upgrade)?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
     "section": "overview",
     "traits": [
       "assessment.cqr",
-      "aspect.code-evolution",
-      "aspect.current-activity-hotspots",
+      "aspect.technology-stack",
+      "aspect.freshness"
+    ]
+  },
+  {
+    "name": "Filetypes (by creation year)",
+    "slug": "filetypes-by-file-creation-year",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "filetype",
+      "label": "File type (by file creation year)"
+    },
+    "oy1": {
+      "query": "count files",
+      "label": "Files",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "creationYear",
+          "type": "classifier",
+          "sort": "by definition"
+        },
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "Understand the main technologies used in the project. The file creation year can help you understand the phase of development. We also recommend grouping by latestChangeYear, to understand the change patterns.",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "horizontal",
+    "section": "overview",
+    "traits": [
+      "assessment.cqr",
+      "aspect.technology-stack",
+      "cqr-perspective.structuring",
+      "report.include",
       "aspect.freshness",
-      "cqr-perspective.overview"
+      "aspect.code-evolution",
+      "aspect.technology-coherence",
+      "aspect.technology-freshness"
     ]
   },
   {
@@ -370,7 +270,8 @@
           "name": "component",
           "type": "classifier",
           "sort": "by value"
-        }
+        },
+        "colorScheme": "default"
       }
     },
     "notes": "Understand in what component each technology is used.",
@@ -378,7 +279,21 @@
       "by": "oy",
       "order": "descending"
     },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
     "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "horizontal",
     "section": "overview",
     "traits": [
@@ -390,219 +305,13 @@
     ]
   },
   {
-    "name": "Filetypes (by file creation year)",
-    "slug": "filetypes-by-file-creation-year",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "filetype",
-      "label": "File type (by file creation year)"
-    },
-    "oy1": {
-      "query": "count files",
-      "label": "Files",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "creationYear",
-          "type": "classifier",
-          "sort": "alphabetical"
-        },
-        "colorScheme": "5-years"
-      }
-    },
-    "notes": "Understand the main technologies used in the project. The file creation year can help you understand the phase of development. We also recommend grouping by latestChangeYear, to understand the change patterns.",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "showAbsoluteValues": true,
-    "orientation": "horizontal",
-    "section": "overview",
-    "traits": [
-      "assessment.cqr",
-      "aspect.technology-stack",
-      "cqr-perspective.structuring",
-      "report.include",
-      "aspect.freshness",
-      "aspect.code-evolution",
-      "aspect.technology-coherence",
-      "aspect.technology-freshness"
-    ]
-  },
-  {
-    "name": "Files (by component) and commits per task prefix",
-    "slug": "files-by-component-and-commits-per-task-prefix",
-    "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "bar-chart",
-    "ox": {
-      "entity": "taskprefix",
-      "label": "Task prefix",
-      "filter": ""
-    },
-    "oy1": {
-      "query": "count files for commits having not taskprefix.@",
-      "label": "Files (w. task references in commits)",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "repo",
-          "type": "classifier"
-        }
-      }
-    },
-    "oy2": {
-      "query": "count commits having not taskprefix.@",
-      "label": "Commits (w. task references)"
-    },
-    "notes": "Get an overview of task prefixes and their usage across the various repositories",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "showAbsoluteValues": true,
-    "orientation": "vertical",
-    "section": "feature-traceability",
-    "traits": [
-      "aspect.traceable-changes",
-      "aspect.functional-cohesion"
-    ]
-  },
-  {
-    "name": "Dormant code (by component)",
-    "slug": "dormant-code-by-component",
-    "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "bar-chart",
-    "ox": {
-      "entity": "component@file",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count files having technology.code",
-      "label": "Source-files (by year of last change)",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "latestChangeYear",
-          "type": "classifier",
-          "sort": "alphabetical"
-        },
-        "colorScheme": "5-years"
-      }
-    },
-    "oy2": {
-      "query": "((files having (not changes during last 2 years and technology.code)) * 100) / (count files having technology.code)",
-      "label": "% Files unchanged for at least 2 years"
-    },
-    "notes": "What are the components with the highest percentage of dormant code? Components that are completely dormant are less of an issue, since the data shows that there is a low probability of needing to change them. Notice components where a high percentage of code is dormant (e.g., over 95%), since changing them could be risky.",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "showAbsoluteValues": true,
-    "orientation": "vertical",
-    "section": "overview",
-    "traits": [
-      "assessment.cqr",
-      "aspect.freshness",
-      "cqr-perspective.structuring"
-    ]
-  },
-  {
-    "name": "Distribution of commits per work hours",
-    "slug": "distribution-of-commits-per-work-hours",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by day part)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "daytime",
-          "type": "classifier"
-        },
-        "colorScheme": "dayparts"
-      }
-    },
-    "notes": "Is there a significant number of commits outside of working hours? What's the pattern (e.g., constant, every X months, sporadic)? Does it correlate with any important events (e.g. big release, started working from home because of Covid)?",
-    "orientation": "vertical",
-    "section": "quality-assurance",
-    "traits": [
-      "aspect.clean-code",
-      "aspect.team-evolution"
-    ]
-  },
-  {
-    "name": "Distribution of commits per week",
-    "slug": "distribution-of-commits-per-week",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by day of week)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "weekday",
-          "type": "classifier"
-        },
-        "colorScheme": "weekdays"
-      }
-    },
-    "notes": "Is the team frequently committing during weekends? Is the team frequently committing more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
-    "orientation": "vertical",
-    "section": "quality-assurance",
-    "traits": [
-      "aspect.clean-code",
-      "aspect.team-evolution"
-    ]
-  },
-  {
-    "name": "Components (by main geozone)",
-    "slug": "components-by-main-geozone",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "component@file",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count files",
-      "label": "Files (by main geozone)",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "main-geozone",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "Is a component developed in two Geozones? This can be problematic, as syncing across timezones is more difficult and the preferred approach is for a team to fully own a component.",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "showAbsoluteValues": true,
-    "orientation": "horizontal",
-    "section": "knowledge",
-    "traits": [
-      "aspect.cognitive-load",
-      "aspect.knowledge-continuity",
-      "aspect.coordination-costs"
-    ]
-  },
-  {
-    "name": "Complex files - fraction of activity volume by currently active authors",
+    "name": "Files - Active knowledge on complexity hotspots ",
+    "slug": "complex-files-fraction-of-activity-volume-by-currently-active-authors",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "file",
       "label": "",
-      "filter": "sum strength of metric.atc >= 10 and changes >= 3"
+      "filter": "sum strength of metric.atc >= 1 and changes >= 20 and size >= 500"
     },
     "oy1": {
       "query": "((sum churn of changes for authors having status.active) * 100) / (sum churn of changes)",
@@ -619,9 +328,18 @@
       "order": "descending"
     },
     "labels": {
-      "maxLength": 25,
+      "maxLength": 30,
       "trimFrom": "end",
-      "orientationAngle": 90
+      "orientationAngle": 0
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
     },
     "orientation": "horizontal",
     "section": "separation-of-concerns",
@@ -631,12 +349,13 @@
     ]
   },
   {
-    "name": "Commits (by task prefix) per author",
-    "slug": "commits-by-task-prefix-per-author",
+    "name": "Evolution - Task prefixes",
+    "slug": "task-prefixes-used-over-time",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "author",
-      "label": ""
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
     },
     "oy1": {
       "query": "count commits",
@@ -645,80 +364,656 @@
         "entity": "commit",
         "by": {
           "name": "taskprefix",
-          "type": "classifier"
-        }
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
       }
     },
-    "notes": "How are task prefixes assigned to authors/teams? ",
+    "notes": "How has the usage of task prefixes evolved? This can correlate to changes in project priorities (e.g if there is a task prefixes per product). This could also indicate a team with a high cognitive load that is spread too thin (e.g. working on many projects/task prefixes in parallel).",
     "sort": {
-      "by": "oy",
-      "order": "descending"
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
     },
     "orientation": "vertical",
-    "section": "knowledge",
+    "section": "feature-traceability",
     "traits": [
-      "architecture.microservices",
-      "aspect.cognitive-load",
-      "aspect.knowledge-sharing",
-      "aspect.knowledge-availability",
-      "aspect.traceable-changes"
-    ]
-  },
-  {
-    "name": "Commits (by repository) per author",
-    "slug": "commits-by-repository-per-author",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "author",
-      "label": "Authors (active authors are highlighted)",
-      "highlight": "status.active"
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by repository)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "repo",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "Do authors work across repositories? Are there any repositories with polarised ownership? Are the most prolific authors still active?",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.knowledge-sharing",
-      "aspect.knowledge-availability",
-      "assessment.cqr",
-      "cqr-perspective.overview",
+      "aspect.code-evolution",
+      "aspect.current-activity-hotspots",
+      "aspect.traceable-changes",
       "aspect.cognitive-load"
     ]
   },
   {
-    "name": "Commits (by repo) per period",
+    "name": "Evolution - Periodic growth (by repo) and overall size",
+    "slug": "growth-by-repo-and-overall-size-per-period",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period",
+      "momentOfTime": "last day of period"
+    },
+    "oy1": {
+      "query": "sum growth of changes for commits having growth > 0",
+      "label": "Sum growth of changes for commits",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "oy2": {
+      "query": "sum size of files",
+      "label": "Sum size of files"
+    },
+    "notes": "You can spot: (1) how old the codebase is; (2) the oldest and newest repos; (3) the repos with the highest recent growth, and repos that are inactive; (4) months with abrupt growth; (5) periods of standstill. Based on the duration of the project and the growth patterns you can get a solid indication on the project's current development phase: has the project started recently? or is it in vibrant growth? or in consolidation phase? or in maintenance? or close to standstill?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "overview",
+    "traits": [
+      "assessment.cqr",
+      "aspect.code-evolution",
+      "aspect.current-activity-hotspots",
+      "aspect.freshness",
+      "cqr-perspective.overview"
+    ]
+  },
+  {
+    "name": "Evolution - New files with code duplication (by changes)",
+    "slug": "duplicate-files-by-changes-made-after-initial-development-period",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count files having (anomaly.*Dup* and first change during period)",
+      "label": "New files with duplication (by changes)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "count changes having type.modify",
+          "type": "query"
+        },
+        "numberOfGroups": 3,
+        "groupsLabels": [
+          "No Changes",
+          "Few Changes",
+          "Many Changes"
+        ],
+        "thresholds": [
+          1,
+          5
+        ],
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "This view can help you understand if duplication is systematic and if it's an ongoing practice. For example, are new duplicate files created every year? Do they evolve after they are initially developed?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "feature-encapsulation",
+    "traits": [
+      "aspect.duplication"
+    ]
+  },
+  {
+    "name": "Evolution - New developers joining",
+    "slug": "new-authors-joining-the-team",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count authors having commits during period",
+      "label": "All Developers (in red new developers)",
+      "highlight": "first commit during period"
+    },
+    "notes": "What's the ratio of new authors to existing authors? Is there a constant flux of new developers? Was there a complete team swap?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-continuity",
+      "aspect.team-evolution"
+    ]
+  },
+  {
+    "name": "Evolution - Last year changes (by creation year)",
+    "slug": "recent-changes-by-file-creation-year-per-month",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "filter": "since last 12 months",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count changes",
+      "label": "Recent changes (by file creation year)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "fileCreationYear",
+          "type": "classifier",
+          "sort": "by definition"
+        },
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "This view helps you see if over the last year the files that were under active development represent new code, or changes to old files. This in turn helps you understand what type of development activity is happening.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "overview",
+    "traits": [
+      "aspect.code-evolution",
+      "aspect.freshness"
+    ]
+  },
+  {
+    "name": "Evolution - Files (test versus production)",
+    "slug": "changed-test-files-over-time",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count files having technology.code for changes",
+      "label": "Source-files (by role)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "role",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "Is the number of changed test files proportional to changed production files? Are test files updated each month or in batches? This indicates if automated testing is part of daily development work or something done infrequently.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "quality-assurance",
+    "traits": [
+      "aspect.testing-coverage"
+    ]
+  },
+  {
+    "name": "Evolution - Files (by technology)",
+    "slug": "files-changed-each-month-by-technology",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count files for commits",
+      "label": "Files (by technology)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "technology",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?).",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "overview",
+    "traits": [
+      "aspect.code-evolution"
+    ]
+  },
+  {
+    "name": "Evolution - Developers (by overall contribution)",
+    "slug": "authors-by-involvement-per-month",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count authors for commits",
+      "label": "Authors",
+      "grouping": {
+        "entity": "author",
+        "by": {
+          "name": "count commits",
+          "type": "query"
+        },
+        "numberOfGroups": 4,
+        "groupsLabels": [
+          "Accidental-Dev",
+          "Minor-Dev",
+          "Major-Dev",
+          "Core-Dev"
+        ],
+        "thresholds": [
+          4,
+          322,
+          5271
+        ],
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "Are there \"satellite\" authors that make few overall changes? If there are many such authors, the conceptual integrity of the code base could suffer.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-continuity"
+    ]
+  },
+  {
+    "name": "Evolution - Developers (by monthly pace)",
+    "slug": "authors-by-dev-involvement-in-month-per-month",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count authors for commits",
+      "label": "Developers (by commits during month)",
+      "grouping": {
+        "entity": "author",
+        "by": {
+          "name": "count commits during period",
+          "type": "query"
+        },
+        "numberOfGroups": 4,
+        "groupsLabels": [
+          "1 commit",
+          "[2, 5) commits",
+          "[5, 15) commits",
+          ">= 15 commits"
+        ],
+        "thresholds": [
+          2,
+          5,
+          15
+        ],
+        "colorScheme": "authorinvolvement"
+      }
+    },
+    "notes": "This view is useful when there are many authors with few monthly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.cohesive-changes",
+      "aspect.cognitive-load"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (smart and literate fractions)",
+    "slug": "smart-and-literate-commits-per-month",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "((count commits having message.smartness.smart) * 100) / (count commits)",
+      "label": "% Smart commits",
+      "valuesRange": {
+        "minim": 0,
+        "maxim": 100
+      }
+    },
+    "oy2": {
+      "query": "((count commits having (message.size.medium or message.size.*long)) * 100) / (count commits)",
+      "label": "% Literate commits",
+      "valuesRange": {
+        "minim": 0,
+        "maxim": 100
+      }
+    },
+    "target": 90,
+    "notes": "Is the team consistently using smart commits and literate commits?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "chartMargin": {
+      "bottom": 180,
+      "left": 75,
+      "right": 40,
+      "top": 50
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "feature-traceability",
+    "traits": [
+      "aspect.traceable-changes",
+      "assessment.cqr",
+      "cqr-perspective.overview"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (by weekday)",
+    "slug": "distribution-of-commits-per-week",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by day of week)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "weekday",
+          "type": "classifier",
+          "sort": "by definition"
+        },
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "Is the team frequently committing during weekends? Is the team frequently committing more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "quality-assurance",
+    "traits": [
+      "aspect.clean-code",
+      "aspect.team-evolution"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (by repo) and developers",
+    "slug": "commits-by-repository-and-authors-per-month",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count commits for changes",
+      "label": "Commits (by repository)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "oy2": {
+      "query": "count authors for commits",
+      "label": "Developers"
+    },
+    "notes": "Is there any correlation between the number of authors and the number of commits (or churn) over the codebase's history?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.team-evolution",
+      "aspect.code-evolution"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (by repo)",
     "slug": "commits-by-repo-per-period",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
-      "label": ""
+      "label": "Period",
+      "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count commits",
-      "label": "Commits (by repository)",
+      "query": "count commits for changes",
+      "label": "Commits (by repo)",
       "grouping": {
-        "entity": "commit",
+        "entity": "change",
         "by": {
           "name": "repo",
-          "type": "classifier"
-        }
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
       }
     },
     "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
     "section": "overview",
     "traits": [
@@ -728,11 +1023,61 @@
     ]
   },
   {
-    "name": "Commits (by geozone)",
+    "name": "Evolution - Commits (by part-of-day)",
+    "slug": "distribution-of-commits-per-work-hours",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
-      "label": ""
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by part-of-day)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "daytime",
+          "type": "classifier",
+          "sort": "by definition"
+        },
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "Is there a significant number of commits outside of working hours? What's the pattern (e.g., constant, every X months, sporadic)? Does it correlate with any important events (e.g. big release, started working from home because of Covid)?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "quality-assurance",
+    "traits": [
+      "aspect.clean-code",
+      "aspect.team-evolution"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (by geozone)",
+    "slug": "commits-by-geozone",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
     },
     "oy1": {
       "query": "count commits",
@@ -741,11 +1086,31 @@
         "entity": "commit",
         "by": {
           "name": "geozone",
-          "type": "classifier"
-        }
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "custom"
       }
     },
     "notes": "This chart helps you understand where is the team based. Was there a switch from one geozone to another? Are commits from two geozones done at the same time?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -754,77 +1119,252 @@
     ]
   },
   {
-    "name": "Changes (by technology) per author",
-    "slug": "changes-by-technology-per-author",
+    "name": "Evolution - Commits (by developer's project influence)",
+    "slug": "commits-by-author-involvement-per-month",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "author",
-      "label": "Authors (active authors are highlighted)",
-      "highlight": "status.active"
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count changes",
-      "label": "Changes (by technology)",
+      "query": "count commits",
+      "label": "Commits (by author involvement)",
       "grouping": {
-        "entity": "change",
+        "entity": "commit",
         "by": {
-          "name": "language",
-          "type": "classifier"
+          "name": "dev.involvement",
+          "type": "classifier",
+          "sort": "by definition"
         },
-        "colorScheme": "tableau"
+        "colorScheme": "custom"
       }
     },
-    "notes": "Are authors full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If authors work across technologies, is there a preferred tech per author or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
+    "notes": "Is there a large percentage of commits done by authors with a weak involvement (i.e. less than 20 commits) in the codebase (up to that point)?",
     "sort": {
-      "by": "oy",
-      "order": "descending"
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
     },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
-      "aspect.knowledge-availability",
-      "aspect.author-skills",
-      "assessment.cqr",
-      "viewset.default"
+      "aspect.knowledge-continuity",
+      "aspect.team-evolution"
     ]
   },
   {
-    "name": "Changes (by component) per author",
-    "slug": "changes-by-component-per-author",
+    "name": "Evolution - Commits (by developer tenure)",
+    "slug": "knowledge-continuity",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "author",
-      "label": "Authors (active authors are highlighted)",
-      "highlight": "status.active"
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count changes",
-      "label": "Changes (by component)",
+      "query": "count commits",
+      "label": "Commits (by developers' tenure)",
       "grouping": {
-        "entity": "change",
+        "entity": "commit",
         "by": {
-          "name": "component",
-          "type": "classifier"
-        }
+          "name": "tenure",
+          "type": "classifier",
+          "sort": "by definition"
+        },
+        "colorScheme": "custom"
       }
     },
-    "notes": "Do authors work across components? Are there any components with polarised ownership? Are the most prolific authors still active?",
+    "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced authors?",
     "sort": {
-      "by": "oy",
-      "order": "descending"
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
     },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
-      "aspect.knowledge-sharing",
-      "aspect.knowledge-availability",
+      "aspect.knowledge-continuity"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (by change volume)",
+    "slug": "commits-by-volume-type-per-period",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by commit size)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "volume.churn",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "The view indicates the number of commits, in order to see how many bulk commits are done monthly. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "feature-traceability",
+    "traits": [
+      "aspect.cohesive-changes"
+    ]
+  },
+  {
+    "name": "Evolution - Code churn (by change volume)",
+    "slug": "churn-by-volume-type-per-period",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "last day of period"
+    },
+    "oy1": {
+      "query": "sum churn of commits",
+      "label": "Volume of change (by commit size)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "volume.churn",
+          "type": "classifier",
+          "sort": "by definition"
+        },
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "The view indicates the impact that bulk commits have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "feature-traceability",
+    "traits": [
+      "aspect.cohesive-changes"
+    ]
+  },
+  {
+    "name": "Evolution - Changes (by file role) and bug-fixing rate",
+    "slug": "bug-fix-percentage-and-changes-by-file-role-by-period",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count changes for files",
+      "label": "Changes (by file role)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "role",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "oy2": {
+      "query": "((count commits having message.nature.bugfix) * 100) / (count commits)",
+      "label": "% Bug-Fix"
+    },
+    "notes": "How has the Bug-fix percentage evolved over time? Does this correlate with an increase/decrease in test code changes?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "quality-assurance",
+    "traits": [
+      "aspect.testing-coverage",
+      "aspect.testing-efficacy",
       "assessment.cqr",
       "cqr-perspective.overview",
       "report.include"
     ]
   },
   {
-    "name": "Changes (by component) and size",
+    "name": "Evolution - Changes (by component) and overall size",
     "slug": "changes-by-component-and-size",
     "chartTypeOy1": "bar-chart",
     "chartTypeOy2": "line-chart",
@@ -840,8 +1380,10 @@
         "entity": "change",
         "by": {
           "name": "component",
-          "type": "classifier"
-        }
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
       }
     },
     "oy2": {
@@ -849,6 +1391,24 @@
       "label": "Lines of code"
     },
     "notes": "How has the codebase grown over time: (i) is there a low or a high growth rate? (ii) has the growth rate changed over the codebase's history (e.g. signaling a change from development to maintenance)? \nNOTE: Look for extremely high growth in a single period. This can signal an import event, which could be marked on the chart.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
     "section": "overview",
     "traits": [
@@ -860,177 +1420,354 @@
     ]
   },
   {
-    "name": "Changed test files over time",
-    "slug": "changed-test-files-over-time",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count files having technology.code for changes",
-      "label": "Source-files (by role)",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "role",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "Is the number of changed test files proportional to changed production files? Are test files updated each month or in batches? This indicates if automated testing is part of daily development work or something done infrequently.",
-    "orientation": "vertical",
-    "section": "quality-assurance",
-    "traits": [
-      "aspect.testing-coverage"
-    ]
-  },
-  {
-    "name": "Bug-fix percentage and changes (by file role) by period",
-    "slug": "bug-fix-percentage-and-changes-by-file-role-by-period",
-    "chartTypeOy1": "bar-chart",
+    "name": "Evolution - Change volume per developer",
+    "slug": "volume-of-activity-per-active-developer",
+    "chartTypeOy1": "line-chart",
     "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
-      "label": ""
+      "label": "",
+      "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count changes for files",
-      "label": "Changes (by file role)",
+      "query": "(sum churn of commits not having (volume.*.bulk or volume.*.import)) / (count authors for commits not having (volume.*.bulk or volume.*.import))",
+      "label": "Churn / Dev (only non-bulk commits)"
+    },
+    "oy2": {
+      "query": "(sum growth of commits not having (volume.*.bulk or volume.*.import)) / (count authors for commits not having (volume.*.bulk or volume.*.import))",
+      "label": "Growth / Dev (only non-bulk commits)"
+    },
+    "notes": "Many times, the output per developer decreases as the time evolves (because of the increasing technical debt and architecture viscosity). Is this the case here? Were there any software modernisation efforts? Did they pay off (note: many times modernisation efforts make things worse before they get better, so be sure to look over a longer time horizon)",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.cognitive-load",
+      "aspect.team-evolution",
+      "aspect.code-evolution"
+    ]
+  },
+  {
+    "name": "Developers - Recent files (by language) and code churn",
+    "slug": "files-changed-by-technology-and-churn-per-author",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "Author",
+      "filter": "changes during last 2 years for files having technology.code"
+    },
+    "oy1": {
+      "query": "sum size of files for changes having (date during last 2 years and files having technology.code) ",
+      "label": "Sum size of files for changes",
       "grouping": {
-        "entity": "file",
+        "entity": "change",
         "by": {
-          "name": "role",
-          "type": "classifier"
-        }
+          "name": "language",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "custom"
       }
     },
     "oy2": {
-      "query": "((count commits having message.nature.bugfix) * 100) / (count commits)",
-      "label": "% Bug-Fix"
+      "query": "sum churn of changes during last 2 years for files having technology.code",
+      "label": "Sum churn of changes for files"
     },
-    "notes": "How has the Bug-fix percentage evolved over time? Does this correlate with an increase/decrease in test code changes?",
+    "notes": "This view aims at estimating the cognitive load of authors: How much code do they need understand in order to make a change?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
-    "section": "quality-assurance",
+    "section": "knowledge",
     "traits": [
-      "aspect.testing-coverage",
-      "aspect.testing-efficacy",
+      "aspect.cognitive-load"
+    ]
+  },
+  {
+    "name": "Developers - Commits (by task prefix)",
+    "slug": "commits-by-task-prefix-per-author",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": ""
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by task prefix)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "taskprefix",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "How are task prefixes assigned to authors/teams? ",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "architecture.microservices",
+      "aspect.cognitive-load",
+      "aspect.knowledge-sharing",
+      "aspect.knowledge-availability",
+      "aspect.traceable-changes"
+    ]
+  },
+  {
+    "name": "Developers - Commits (by repos)",
+    "slug": "commits-by-repository-per-author",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "Author"
+    },
+    "oy1": {
+      "query": "count commits for changes",
+      "label": "Count commits for changes",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "Do authors work across repositories? Are there any repositories with polarised ownership? Are the most prolific authors still active?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-sharing",
+      "aspect.knowledge-availability",
+      "assessment.cqr",
+      "cqr-perspective.overview",
+      "aspect.cognitive-load"
+    ]
+  },
+  {
+    "name": "Developers - Changes (by technology)",
+    "slug": "changes-by-technology-per-author",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "Authors (active authors are highlighted)",
+      "highlight": "status.active"
+    },
+    "oy1": {
+      "query": "count changes not having language.@",
+      "label": "Changes (by technology)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "language",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "tableau"
+      }
+    },
+    "notes": "Are authors full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If authors work across technologies, is there a preferred tech per author or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-availability",
+      "aspect.author-skills",
+      "assessment.cqr",
+      "viewset.default"
+    ]
+  },
+  {
+    "name": "Developers - Changes (by component)",
+    "slug": "changes-by-component-per-author",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "Authors (active authors are highlighted)",
+      "filter": "",
+      "highlight": "status.active"
+    },
+    "oy1": {
+      "query": "count changes",
+      "label": "Changes (by component)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "component",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "Do authors work across components? Are there any components with polarised ownership? Are the most prolific authors still active?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-sharing",
+      "aspect.knowledge-availability",
       "assessment.cqr",
       "cqr-perspective.overview",
       "report.include"
     ]
   },
   {
-    "name": "Authors (by dev involvement in month) per month",
-    "slug": "authors-by-dev-involvement-in-month-per-month",
+    "name": "Concepts by component",
+    "slug": "concepts-by-component",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count authors for commits",
-      "label": "Authors (by commits during month)",
-      "grouping": {
-        "entity": "author",
-        "by": {
-          "name": "count commits during period",
-          "type": "query"
-        },
-        "numberOfGroups": 4,
-        "groupsLabels": [
-          "1",
-          "[1, 5)",
-          "[5, 15)",
-          ">= 15"
-        ],
-        "thresholds": [
-          2,
-          5,
-          15
-        ],
-        "colorScheme": "authorinvolvement"
-      }
-    },
-    "notes": "This view is useful when there are many authors with few monthly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
-    "showAbsoluteValues": true,
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.cohesive-changes",
-      "aspect.cognitive-load"
-    ]
-  },
-  {
-    "name": "Anomalies by repository",
-    "slug": "anomalies-by-repository",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "anomaly",
-      "label": "Anomaly"
+      "entity": "concept",
+      "label": "Concept"
     },
     "oy1": {
       "query": "count files",
-      "label": "Files with anomalies (grouped by repository)",
+      "label": "Files (by component)",
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "repo",
-          "type": "classifier"
-        }
+          "name": "component",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
       }
     },
-    "notes": "What are the most widespread anomalies? What repositories to they affect?",
+    "notes": "Are important concepts spread over many components?",
     "sort": {
-      "by": "oy",
-      "order": "descending"
+      "by": "ox",
+      "order": "ascending"
     },
     "labels": {
-      "maxLength": 40,
+      "maxLength": 15,
       "trimFrom": "end",
       "orientationAngle": 90
     },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "horizontal",
-    "section": "separation-of-concerns",
+    "section": "feature-encapsulation",
     "traits": [
-      "aspect.clean-code",
-      "aspect.responsibility-balance"
+      "aspect.locality-of-changes",
+      "aspect.cognitive-load",
+      "aspect.functional-cohesion"
     ]
   },
   {
-    "name": "Activity on main programming languages",
-    "slug": "activity-on-main-programming-languages",
-    "chartTypeOy1": "bar-chart",
-    "chartTypeOy2": "bar-chart",
-    "ox": {
-      "entity": "language@file",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count files having technology.code",
-      "label": "Source-files (in red files changed last year)",
-      "highlight": "changes during last year"
-    },
-    "oy2": {
-      "query": "count files having (technology.code and first change during last year)",
-      "label": "Source-files created last year"
-    },
-    "notes": "What are the filetypes that concentrate most of the recent changes? Is the ratio of recently changed files over all files consistent across technologies or is there a filetype that has been changed disproportionally (e.g. changes across most of the js files, perhaps signaling a major framework version upgrade)?",
-    "sort": {
-      "by": "oy",
-      "order": "descending"
-    },
-    "showAbsoluteValues": true,
-    "orientation": "vertical",
-    "section": "overview",
-    "traits": [
-      "assessment.cqr",
-      "aspect.technology-stack",
-      "aspect.freshness"
-    ]
-  },
-  {
-    "name": "Files with weak ownership (by year of last change) per component",
+    "name": "Components - Weak ownership files (by last change)",
     "slug": "files-with-weak-ownership-by-year-of-last-change-per-component",
     "chartTypeOy1": "bar-chart",
     "ox": {
@@ -1055,7 +1792,21 @@
       "by": "oy",
       "order": "descending"
     },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
     "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
@@ -1063,219 +1814,199 @@
     ]
   },
   {
-    "name": "Files changed each month (by technology)",
-    "slug": "files-changed-each-month-by-technology",
+    "name": "Components - Source-files (test vs. production)",
+    "slug": "source-files-by-role-per-component",
     "chartTypeOy1": "bar-chart",
     "ox": {
-      "entity": "period",
-      "label": ""
+      "entity": "component@file",
+      "label": "Component"
     },
     "oy1": {
-      "query": "count files for commits",
-      "label": "Files (by technology)",
+      "query": "count files having technology.code",
+      "label": "Source-files (by role)",
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "technology",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?).",
-    "orientation": "vertical",
-    "section": "overview",
-    "traits": [
-      "aspect.code-evolution"
-    ]
-  },
-  {
-    "name": "Duplicate files (by changes made after initial development period)",
-    "slug": "duplicate-files-by-changes-made-after-initial-development-period",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count files having (anomaly.*Dup* and first change during period)",
-      "label": "New files with duplication (by changes made after initial development period)",
-      "grouping": {
-        "entity": "file",
-        "by": {
-          "name": "count changes having date after $first_activity_date plus three months",
-          "type": "query"
+          "name": "role",
+          "type": "classifier",
+          "sort": "by value"
         },
-        "numberOfGroups": 4
+        "colorScheme": "default"
       }
     },
-    "notes": "This view can help you understand if duplication is systematic and if it's an ongoing practice. For example, are new duplicate files created every year? Do they evolve after they are initially developed?",
-    "orientation": "vertical",
-    "section": "feature-encapsulation",
+    "notes": "",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 25,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "horizontal",
+    "section": "quality-assurance",
     "traits": [
-      "aspect.duplication"
+      "aspect.testing-coverage"
     ]
   },
   {
-    "name": "Concepts by component",
-    "slug": "concepts-by-component",
+    "name": "Components - Dormant code fraction",
+    "slug": "dormant-code-by-component",
     "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
     "ox": {
-      "entity": "concept",
-      "label": "Concept"
+      "entity": "component@file",
+      "label": "Component"
     },
     "oy1": {
-      "query": "count files",
-      "label": "Files (by component)",
+      "query": "count files having technology.code",
+      "label": "Source-files (by year of last change)",
       "grouping": {
         "entity": "file",
         "by": {
-          "name": "component",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "Are important concepts spread over many components?",
-    "orientation": "horizontal",
-    "section": "feature-encapsulation",
-    "traits": [
-      "aspect.locality-of-changes",
-      "aspect.cognitive-load",
-      "aspect.functional-cohesion"
-    ]
-  },
-  {
-    "name": "Commits (by author involvement) per month",
-    "slug": "commits-by-author-involvement-per-month",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by author involvement)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "dev.involvement",
+          "name": "latestChangeYear",
           "type": "classifier",
           "sort": "by definition"
         },
-        "colorScheme": "authorinvolvement"
+        "colorScheme": "custom"
       }
-    },
-    "notes": "Is there a large percentage of commits done by authors with a weak involvement (i.e. less than 20 commits) in the codebase (up to that point)?",
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.knowledge-continuity",
-      "aspect.team-evolution"
-    ]
-  },
-  {
-    "name": "Churn (by volume type) per period",
-    "slug": "churn-by-volume-type-per-period",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": "",
-      "momentOfTime": "last day of period"
-    },
-    "oy1": {
-      "query": "sum churn of commits",
-      "label": "Volume of change (by commit size)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "volume.churn",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "The view indicates the impact that bulk commits have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
-    "orientation": "vertical",
-    "section": "feature-traceability",
-    "traits": [
-      "aspect.cohesive-changes"
-    ]
-  },
-  {
-    "name": "Commits (by volume type) per period",
-    "slug": "commits-by-volume-type-per-period",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count commits",
-      "label": "Commits (by commit size)",
-      "grouping": {
-        "entity": "commit",
-        "by": {
-          "name": "volume.churn",
-          "type": "classifier"
-        }
-      }
-    },
-    "notes": "The view indicates the number of commits, in order to see how many bulk commits are done monthly. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
-    "orientation": "vertical",
-    "section": "feature-traceability",
-    "traits": [
-      "aspect.cohesive-changes"
-    ]
-  },
-  {
-    "name": "Authors (by involvement) per month",
-    "slug": "authors-by-involvement-per-month",
-    "chartTypeOy1": "bar-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "count authors for commits",
-      "label": "Authors",
-      "grouping": {
-        "entity": "author",
-        "by": {
-          "name": "count commits",
-          "type": "query"
-        },
-        "numberOfGroups": 4
-      }
-    },
-    "notes": "Are there \"satellite\" authors that make few overall changes? If there are many such authors, the conceptual integrity of the code base could suffer.",
-    "orientation": "vertical",
-    "section": "knowledge",
-    "traits": [
-      "aspect.knowledge-continuity"
-    ]
-  },
-  {
-    "name": "Volume of Activity per Active Developer",
-    "slug": "volume-of-activity-per-active-developer",
-    "chartTypeOy1": "line-chart",
-    "chartTypeOy2": "line-chart",
-    "ox": {
-      "entity": "period",
-      "label": ""
-    },
-    "oy1": {
-      "query": "(sum churn of commits not having (volume.*.bulk or volume.*.import)) / (count authors for commits not having (volume.*.bulk or volume.*.import))",
-      "label": "Churn / Dev (only non-bulk commits)"
     },
     "oy2": {
-      "query": "(sum growth of commits not having (volume.*.bulk or volume.*.import)) / (count authors for commits not having (volume.*.bulk or volume.*.import))",
-      "label": "Growth / Dev (only non-bulk commits)"
+      "query": "((files having (not changes during last 2 years and technology.code)) * 100) / (count files having technology.code)",
+      "label": "% Files unchanged for at least 2 years"
     },
-    "notes": "Many times, the output per developer decreases as the time evolves (because of the increasing technical debt and architecture viscosity). Is this the case here? Were there any software modernisation efforts? Did they pay off (note: many times modernisation efforts make things worse before they get better, so be sure to look over a longer time horizon)",
+    "notes": "What are the components with the highest percentage of dormant code? Components that are completely dormant are less of an issue, since the data shows that there is a low probability of needing to change them. Notice components where a high percentage of code is dormant (e.g., over 95%), since changing them could be risky.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "overview",
+    "traits": [
+      "assessment.cqr",
+      "aspect.freshness",
+      "cqr-perspective.structuring"
+    ]
+  },
+  {
+    "name": "Components (by main geozone)",
+    "slug": "components-by-main-geozone",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "component@file",
+      "label": "Component"
+    },
+    "oy1": {
+      "query": "count files",
+      "label": "Filles (by main region where it was developed)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "main-geozone",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "custom"
+      }
+    },
+    "notes": "Is a component developed in two Geozones? This can be problematic, as syncing across timezones is more difficult and the preferred approach is for a team to fully own a component.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
       "aspect.cognitive-load",
-      "aspect.team-evolution",
-      "aspect.code-evolution"
+      "aspect.knowledge-continuity",
+      "aspect.coordination-costs"
+    ]
+  },
+  {
+    "name": "Code Anomalies (by repository)",
+    "slug": "anomalies-by-repository",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "anomaly",
+      "label": "Anomaly"
+    },
+    "oy1": {
+      "query": "count files",
+      "label": "Files with anomalies (grouped by repository)",
+      "grouping": {
+        "entity": "file",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "What are the most widespread anomalies? What repositories to they affect?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 40,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "horizontal",
+    "section": "separation-of-concerns",
+    "traits": [
+      "aspect.clean-code",
+      "aspect.responsibility-balance"
     ]
   }
 ]
