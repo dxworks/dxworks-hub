@@ -894,7 +894,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Is the team frequently committing during weekends? Is the team frequently committing more at the end of the sprint (e.g. on a Friday) - this could lead to a drop in code quality.",
+    "notes": "Is the team frequently committing during weekends? Is the team frequently committing more at the end of the sprint (e.g. on Fridays) - this could lead to a drop in code quality.",
     "sort": {
       "by": "ox",
       "order": "ascending"

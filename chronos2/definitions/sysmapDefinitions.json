@@ -144,7 +144,7 @@
         10
       ]
     },
-    "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have? Do complex files also have many collaborators (i.e., are also DataHubs and/or CallHubs)? ",
+    "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have? Do complex files also have many collaborators (i.e., are also DataHubs and/or CallHubs)?",
     "tableColumns": [
       {
         "type": "property",
