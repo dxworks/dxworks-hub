@@ -122,7 +122,7 @@
         "value": "column12"
       }
     ],
-    "section": "quality-assurance",
+    "section": "test-automation",
     "traits": [
       "aspect.testing-efficacy",
       "aspect.duplication",
@@ -407,7 +407,7 @@
         "value": "perspectiveValue"
       }
     ],
-    "section": "quality-assurance",
+    "section": "test-automation",
     "traits": [
       "aspect.testing-coverage",
       "assessment.cqr",
@@ -547,6 +547,7 @@
       "aspect.freshness",
       "cqr-perspective.structuring",
       "report.include",
+      "aspect.recent-activity-patterns",
       "aspect.locality-of-changes"
     ]
   },
@@ -676,7 +677,7 @@
         "value": "perspectiveValue"
       }
     ],
-    "section": "quality-assurance",
+    "section": "test-automation",
     "traits": [
       "aspect.testing-coverage"
     ]

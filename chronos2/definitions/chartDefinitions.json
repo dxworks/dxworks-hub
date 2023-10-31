@@ -192,10 +192,9 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "overview",
+    "section": "technology-stack",
     "traits": [
       "assessment.cqr",
-      "aspect.technology-stack",
       "aspect.freshness"
     ]
   },
@@ -241,10 +240,9 @@
       "points": true
     },
     "orientation": "horizontal",
-    "section": "overview",
+    "section": "technology-stack",
     "traits": [
       "assessment.cqr",
-      "aspect.technology-stack",
       "cqr-perspective.structuring",
       "report.include",
       "aspect.freshness",
@@ -295,10 +293,9 @@
       "points": true
     },
     "orientation": "horizontal",
-    "section": "overview",
+    "section": "technology-stack",
     "traits": [
       "assessment.cqr",
-      "aspect.technology-stack",
       "cqr-perspective.structuring",
       "aspect.technology-coherence",
       "aspect.technology-freshness"
@@ -445,10 +442,11 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "overview",
+    "section": "nature-of-changes",
     "traits": [
       "assessment.cqr",
       "aspect.code-evolution",
+      "aspect.stage-of-evolution",
       "aspect.current-activity-hotspots",
       "aspect.freshness",
       "cqr-perspective.overview"
@@ -642,7 +640,7 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "quality-assurance",
+    "section": "test-automation",
     "traits": [
       "aspect.testing-coverage"
     ]
@@ -914,7 +912,7 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "quality-assurance",
+    "section": "nature-of-changes",
     "traits": [
       "aspect.clean-code",
       "aspect.team-evolution"
@@ -1064,7 +1062,7 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "quality-assurance",
+    "section": "nature-of-changes",
     "traits": [
       "aspect.clean-code",
       "aspect.team-evolution"
@@ -1302,9 +1300,10 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "feature-traceability",
+    "section": "nature-of-changes",
     "traits": [
-      "aspect.cohesive-changes"
+      "aspect.cohesive-changes",
+      "aspect.stage-of-evolution"
     ]
   },
   {
@@ -1354,7 +1353,7 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "quality-assurance",
+    "section": "test-automation",
     "traits": [
       "aspect.testing-coverage",
       "aspect.testing-efficacy",
@@ -1855,7 +1854,7 @@
       "points": true
     },
     "orientation": "horizontal",
-    "section": "quality-assurance",
+    "section": "test-automation",
     "traits": [
       "aspect.testing-coverage"
     ]
