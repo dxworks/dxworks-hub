@@ -681,5 +681,42 @@
     "traits": [
       "aspect.testing-coverage"
     ]
+  },
+  {
+    "name": "Files (by repository)",
+    "slug": "codebase-structure-by-repo",
+    "colorScheme": "tableau",
+    "domain": "repo",
+    "perspective": {
+      "query": "changes",
+      "numberOfGroups": 1,
+      "thresholds": []
+    },
+    "section": "code-organisation",
+    "traits": [
+      "assessment.cqr",
+      "cqr-perspective.structuring",
+      "report.include",
+      "aspect.cognitive-load",
+      "aspect.responsibility-balance"
+    ]
+  },
+  {
+    "name": "Files (by component)",
+    "slug": "codebase-structure-by-component",
+    "colorScheme": "tableau",
+    "domain": "component",
+    "perspective": {
+      "query": "changes",
+      "numberOfGroups": 1
+    },
+    "section": "code-organisation",
+    "traits": [
+      "assessment.cqr",
+      "cqr-perspective.structuring",
+      "report.include",
+      "aspect.cognitive-load",
+      "aspect.responsibility-balance"
+    ]
   }
 ]
