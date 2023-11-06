@@ -365,6 +365,10 @@
         "query": "files having filetype.python*"
       },
       {
+        "label": "sql",
+        "query": "files having extension contains -i sql"
+      },
+      {
         "label": "csharp",
         "query": "files having filetype.c#*"
       },
