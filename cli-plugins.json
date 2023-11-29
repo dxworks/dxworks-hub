@@ -9,6 +9,7 @@
     "@dxworks/insider",
     "@dxworks/vis-puppet",
     "@dxworks/depminer",
+    "@dxworks/depinder",
     "@dxworks/inspector-git"
   ]
 }
