@@ -1,0 +1,137 @@
+[
+    {
+        "name": "Bulk commits",
+        "slug": "bulk-commits",
+        "entity": {
+            "name": "commit",
+            "filter": "volume.*.bulk or volume.*.import"
+        },
+        "columns": [
+            {
+                "type": "date",
+                "label": "Date",
+                "query": "date"
+            },
+            {
+                "type": "string",
+                "label": "Message",
+                "query": "message",
+                "sort": "ascending"
+            },
+            {
+                "type": "numeric",
+                "label": "Files",
+                "query": "count files"
+            },
+            {
+                "type": "numeric",
+                "label": "Volume of change",
+                "query": "sum churn of changes"
+            },
+            {
+                "type": "string",
+                "label": "Revision",
+                "query": "revision"
+            },
+            {
+                "type": "list of strings",
+                "label": "Authors",
+                "query": "authors"
+            }
+        ],
+        "pageSize": 10,
+        "notes": "",
+        "section": "nature-of-changes",
+        "traits": [
+            "aspect.cohesive-changes"
+        ]
+    },
+    {
+        "name": "Bug-fixing commits",
+        "slug": "bug-fixing-commits",
+        "entity": {
+            "name": "commit",
+            "filter": "message.nature.bugfix"
+        },
+        "columns": [
+            {
+                "type": "date",
+                "label": "Date",
+                "query": "date",
+                "sort": "descending"
+            },
+            {
+                "type": "string",
+                "label": "Message",
+                "query": "message"
+            },
+            {
+                "type": "numeric",
+                "label": "Files",
+                "query": "count files"
+            },
+            {
+                "type": "list of strings",
+                "label": "File Names",
+                "query": "files"
+            },
+            {
+                "type": "numeric",
+                "label": "Volume of change",
+                "query": "sum churn of changes"
+            },
+            {
+                "type": "list of strings",
+                "label": "Authors",
+                "query": "authors"
+            },
+            {
+                "type": "string",
+                "label": "Revision",
+                "query": "revision"
+            }
+        ],
+        "pageSize": 10,
+        "notes": "",
+        "section": "test-automation",
+        "traits": [
+            "aspect.testing-efficacy"
+        ]
+    },
+    {
+        "name": "Authors table",
+        "slug": "authors-table",
+        "entity": {
+            "name": "author"
+        },
+        "columns": [
+            {
+                "type": "string",
+                "label": "Name",
+                "query": "name",
+                "sort": "ascending"
+            },
+            {
+                "type": "numeric",
+                "label": "Commits",
+                "query": "count commits"
+            },
+            {
+                "type": "date",
+                "label": "First commit",
+                "query": "date of first commit"
+            },
+            {
+                "type": "date",
+                "label": "Last commit",
+                "query": "date of last commit"
+            }
+        ],
+        "pageSize": 10,
+        "notes": "",
+        "section": "knowledge",
+        "traits": [
+            "aspect.team-evolution"
+        ]
+    }
+]
