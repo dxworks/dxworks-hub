@@ -59,12 +59,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2018",
-        "query": "first change before 2019"
-      },
-      {
-        "label": "2019",
-        "query": "first change during 2019"
+        "label": "<=2019",
+        "query": "first change before 2020"
       },
       {
         "label": "2020",
@@ -81,6 +77,10 @@
       {
         "label": "2023",
         "query": "first change during 2023"
+      },
+      {
+        "label": "2024",
+        "query": "first change during 2024"
       }
     ]
   },
@@ -122,11 +122,7 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2018",
-        "query": "last change before 2019"
-      },
-      {
-        "label": "2019",
+        "label": "<=2019",
         "query": "last change before 2020"
       },
       {
@@ -144,6 +140,10 @@
       {
         "label": "2023",
         "query": "last change before 2024"
+      },
+      {
+        "label": "2024",
+        "query": "last change before 2025"
       }
     ]
   },
@@ -154,12 +154,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2018",
-        "query": "files having first change before 2019"
-      },
-      {
-        "label": "2019",
-        "query": "files having first change during 2019"
+        "label": "<=2019",
+        "query": "files having first change before 2020"
       },
       {
         "label": "2020",
@@ -176,6 +172,10 @@
       {
         "label": "2023",
         "query": "files having first change during 2023"
+      },
+      {
+        "label": "2024",
+        "query": "files having first change during 2024"
       }
     ]
   },
@@ -264,6 +264,14 @@
       {
         "label": "java",
         "query": "has extension is java"
+      },
+      {
+        "label": "kotlin",
+        "query": "has extension is kt"
+      },
+      {
+        "label": "swift",
+        "query": "has filetype.swift*"
       },
       {
         "label": "python",
@@ -361,8 +369,20 @@
         "query": "files having extension is java"
       },
       {
+        "label": "kotlin",
+        "query": "files having extension is kt"
+      },
+      {
+        "label": "swift",
+        "query": "files having filetype.swift*"
+      },
+      {
         "label": "python",
         "query": "files having filetype.python*"
+      },
+      {
+        "label": "php",
+        "query": "files having filetype.php*"
       },
       {
         "label": "sql",
@@ -524,12 +544,8 @@
     "domain": "startYear",
     "groups": [
       {
-        "label": "<=2018",
-        "query": "first change before 2019"
-      },
-      {
-        "label": "2019",
-        "query": "first change during 2019"
+        "label": "<=2019",
+        "query": "first change before 2020"
       },
       {
         "label": "2020",
@@ -546,6 +562,10 @@
       {
         "label": "2023",
         "query": "first change during 2023"
+      },
+      {
+        "label": "2024",
+        "query": "first change during 2024"
       }
     ]
   },
@@ -555,12 +575,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2018",
-        "query": "has date before 2019"
-      },
-      {
-        "label": "2019",
-        "query": "has date during 2019"
+        "label": "<=2019",
+        "query": "has date before 2020"
       },
       {
         "label": "2020",
@@ -577,6 +593,10 @@
       {
         "label": "2023",
         "query": "has date during 2023"
+      },
+      {
+        "label": "2024",
+        "query": "has date during 2024"
       }
     ]
   },
@@ -586,12 +606,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2018",
-        "query": "has date before 2019"
-      },
-      {
-        "label": "2019",
-        "query": "has date during 2019"
+        "label": "<=2019",
+        "query": "has date before 2020"
       },
       {
         "label": "2020",
@@ -608,6 +624,10 @@
       {
         "label": "2023",
         "query": "has date during 2023"
+      },
+      {
+        "label": "2024",
+        "query": "has date during 2024"
       }
     ]
   },
