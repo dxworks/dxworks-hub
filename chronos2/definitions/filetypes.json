@@ -24,8 +24,12 @@
     "query": "extension in {zip, gz, gzip}"
   },
   {
-    "name": "aspnet",
-    "query": "extension in {asax, cshtml, aspx, asmx, ascx, ashx}"
+    "name": "aspnet_webforms",
+    "query": "extension in -i {asax, aspx, asmx, ascx, ashx}"
+  },
+  {
+    "name": "aspnet_razor",
+    "query": "extension in -i {cshtml, razor}"
   },
   {
     "name": "awk",

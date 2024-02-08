@@ -318,8 +318,12 @@
         "query": "has filetype.cucumber*"
       },
       {
-        "label": "aspnet",
-        "query": "has filetype.asp*"
+        "label": "aspnet_webforms",
+        "query": "has filetype.aspnet_webforms*"
+      },
+      {
+        "label": "aspnet_razor",
+        "query": "has filetype.aspnet_razor*"
       },
       {
         "label": "sqlserver",
@@ -403,6 +407,14 @@
       {
         "label": "cucumber",
         "query": "files having filetype.cucumber*"
+      },
+      {
+        "label": "aspnet_webforms",
+        "query": "files having filetype.aspnet_webforms*"
+      },
+      {
+        "label": "aspnet_razor",
+        "query": "files having filetype.aspnet_razor*"
       },
       {
         "label": "scripts",
