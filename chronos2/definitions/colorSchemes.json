@@ -1327,5 +1327,23 @@
         "color": "#006f00"
       }
     ]
+  },
+  {
+    "name": "tenure",
+    "type": "ordinal",
+    "values": [
+      {
+        "color": "#2ca02c"
+      },
+      {
+        "color": "#bcbd22"
+      },
+      {
+        "color": "#17becf"
+      },
+      {
+        "color": "#1f77b4"
+      }
+    ]
   }
 ]
