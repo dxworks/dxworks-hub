@@ -1882,7 +1882,7 @@
     "name" : "mongodb",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "com.mongodb" ],
+    "fingerprints" : [ "com.mongodb", "MongoDB" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -1917,7 +1917,7 @@
     "name" : "kafka",
     "languages" : [ "java" ],
     "extensions" : [ ],
-    "fingerprints" : [ "org.apache.kafka", "kafka" ],
+    "fingerprints" : [ "org.apache.kafka", "kafka", "Confluent.Kafka" ],
     "wrapAsImports" : true
   }, {
     "category" : "External Libraries",
@@ -6391,6 +6391,69 @@
     "languages" : [ "java" ],
     "extensions" : [ ],
     "fingerprints" : [ "MoreLinq" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "NBomber",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "NBomber" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "McMaster-NETCore-Plugins",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "McMaster.NETCore.Plugins" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Elastic-Apm",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Elastic.Apm" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "Confluent-SchemaRegistry",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "Confluent.SchemaRegistry" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "spock",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "spock" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "camunda-engine",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.camunda.bpm.engine" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "camunda-spring-boot-starter",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "org.camunda.bpm.spring.boot.starter" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "posjsonhelper",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.github.starnowski.posjsonhelper" ],
+    "wrapAsImports" : true
+  }, {
+    "category" : "External Libraries",
+    "name" : "selenide",
+    "languages" : [ "java" ],
+    "extensions" : [ ],
+    "fingerprints" : [ "com.codeborne.selenide" ],
     "wrapAsImports" : true
   } ]
 }
