@@ -186,7 +186,7 @@
     "groups": [
       {
         "label": "code",
-        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml, kt, rb, erb, swift}"
+        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml, kt, rb, erb, swift,vue}"
       },
       {
         "label": "web",
@@ -221,7 +221,7 @@
       },
       {
         "label": "frontend",
-        "query": "extension in {js,angular,jsx,ts,tsx,jsp,aspx,cshtml,erb}"
+        "query": "extension in {js,angular,jsx,ts,tsx,vue,jsp,aspx,cshtml,erb}"
       },
       {
         "label": "scripting",
@@ -300,6 +300,10 @@
       {
         "label": "tsx",
         "query": "has filetype.extendscript*"
+      },
+      {
+        "label": "vue",
+        "query": "has filetype.vue*"
       },
       {
         "label": "csharp",
@@ -443,6 +447,10 @@
       {
         "label": "tsx",
         "query": "files having filetype.extendscript*"
+      },
+      {
+        "label": "vue",
+        "query": "files having filetype.vue*"
       },
       {
         "label": "markdown",
