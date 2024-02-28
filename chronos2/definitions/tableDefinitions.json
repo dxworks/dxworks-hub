@@ -98,40 +98,86 @@
             "aspect.testing-efficacy"
         ]
     },
-    {
-        "name": "Authors table",
-        "slug": "authors-table",
-        "entity": {
-            "name": "author"
-        },
-        "columns": [
-            {
-                "type": "string",
-                "label": "Name",
-                "query": "name",
-                "sort": "ascending"
-            },
-            {
-                "type": "numeric",
-                "label": "Commits",
-                "query": "count commits"
-            },
-            {
-                "type": "date",
-                "label": "First commit",
-                "query": "date of first commit"
-            },
-            {
-                "type": "date",
-                "label": "Last commit",
-                "query": "date of last commit"
-            }
-        ],
-        "pageSize": 10,
-        "notes": "",
-        "section": "knowledge",
-        "traits": [
-            "aspect.team-evolution"
-        ]
-    }
+  {
+    "name": "Authors table",
+    "slug": "authors-table",
+    "entity": {
+      "name": "author"
+    },
+    "columns": [
+      {
+        "type": "string",
+        "label": "Name",
+        "query": "name",
+        "sort": "ascending",
+        "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Commits",
+        "query": "count commits",
+        "format": {}
+      },
+      {
+        "type": "date",
+        "label": "First commit",
+        "query": "date of first commit",
+        "format": {}
+      },
+      {
+        "type": "date",
+        "label": "Last commit",
+        "query": "date of last commit",
+        "format": {}
+      },
+      {
+        "type": "boolean",
+        "label": "Active",
+        "query": "status.active",
+        "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Changes",
+        "query": "count changes",
+        "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Volume of change",
+        "query": "sum churn of changes",
+        "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Growth",
+        "query": "sum growth of changes having growth > 0",
+        "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Volume of recent source-code non bulk changes",
+        "query": "sum churn of commits having (date since 2023 and not volume.*.bulk and not volume.*.import) for files having technology.code",
+        "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Volume of recent source-code changes",
+        "query": "sum churn of changes since 2023 for files having technology.code",
+        "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Recent source-code growth",
+        "query": "sum growth of changes having (date since 2023 and growth > 0) for files having technology.code",
+        "format": {}
+      }
+    ],
+    "pageSize": 10,
+    "notes": "",
+    "section": "knowledge",
+    "traits": [
+      "aspect.team-evolution"
+    ]
+  }
 ]
