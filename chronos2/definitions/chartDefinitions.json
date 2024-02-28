@@ -550,6 +550,51 @@
     ]
   },
   {
+    "name": "Evolution - Developers joining and leaving",
+    "slug": "evolution-developers-joining-and-leaving",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count authors having first commit during period",
+      "label": "Developers joining"
+    },
+    "oy2": {
+      "query": "count authors having last commit during period",
+      "label": "Developers leaving",
+      "equalizeRanges": true
+    },
+    "notes": "Look at the pattern of developers joining and leaving. Disregard at least the last 2-3 month.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-continuity",
+      "aspect.team-evolution"
+    ]
+  },
+  {
     "name": "Evolution - Last year changes (by creation year)",
     "slug": "recent-changes-by-file-creation-year-per-month",
     "chartTypeOy1": "bar-chart",
@@ -1300,7 +1345,7 @@
       "points": true
     },
     "orientation": "vertical",
-    "section": "nature-of-changes",
+    "section": "feature-traceability",
     "traits": [
       "aspect.cohesive-changes",
       "aspect.stage-of-evolution"
@@ -1887,8 +1932,8 @@
     },
     "notes": "What are the components with the highest percentage of dormant code? Components that are completely dormant are less of an issue, since the data shows that there is a low probability of needing to change them. Notice components where a high percentage of code is dormant (e.g., over 95%), since changing them could be risky.",
     "sort": {
-      "by": "ox",
-      "order": "ascending"
+      "by": "oy",
+      "order": "descending"
     },
     "labels": {
       "maxLength": 15,
