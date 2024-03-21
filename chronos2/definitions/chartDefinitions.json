@@ -104,8 +104,8 @@
     ]
   },
   {
-    "name": "Repositories (by task prefixes)",
-    "slug": "task-prefix-by-repo",
+    "name": "Repositories (by task prefixes) - by change",
+    "slug": "task-prefix-by-repo-change",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "repo@change",
@@ -113,6 +113,55 @@
     },
     "oy1": {
       "query": "count commits for changes",
+      "label": "Commits (by task prefix)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "taskprefix",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "feature-traceability",
+    "traits": [
+      "aspect.cognitive-load",
+      "aspect.coordination-costs",
+      "aspect.functional-cohesion",
+      "architecture.microservices"
+    ]
+  },
+  {
+    "name": "Repositories (by task prefixes)",
+    "slug": "task-prefix-by-repo",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "repo@commit",
+      "label": "Repository"
+    },
+    "oy1": {
+      "query": "count commits",
       "label": "Commits (by task prefix)",
       "grouping": {
         "entity": "commit",
@@ -1155,8 +1204,8 @@
     ]
   },
   {
-    "name": "Evolution - Commits (by repo)",
-    "slug": "commits-by-repo-per-period",
+    "name": "Evolution - Commits by changes (by repo)",
+    "slug": "commits-for-changes-by-repo-per-period",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -1168,6 +1217,55 @@
       "label": "Commits (by repo)",
       "grouping": {
         "entity": "change",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "overview",
+    "traits": [
+      "assessment.cqr",
+      "aspect.code-evolution",
+      "aspect.current-activity-hotspots"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (by repo)",
+    "slug": "commits-by-repo-per-period",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (by repo)",
+      "grouping": {
+        "entity": "commit",
         "by": {
           "name": "repo",
           "type": "classifier",
@@ -1750,6 +1848,57 @@
     ]
   },
   {
+    "name": "Developers - Commits for changes (by repos)",
+    "slug": "commits-for-changes-by-repository-per-author",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "Author",
+      "filter": "not name starts with _"
+    },
+    "oy1": {
+      "query": "count commits for changes",
+      "label": "Commit (by repo)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "notes": "Do authors work across repositories? Are there any repositories with polarised ownership? Are the most prolific authors still active?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-sharing",
+      "aspect.knowledge-availability",
+      "assessment.cqr",
+      "cqr-perspective.overview",
+      "aspect.cognitive-load"
+    ]
+  },
+  {
     "name": "Developers - Commits (by repos)",
     "slug": "commits-by-repository-per-author",
     "chartTypeOy1": "bar-chart",
@@ -1759,10 +1908,10 @@
       "filter": "not name starts with _"
     },
     "oy1": {
-      "query": "count commits for changes",
-      "label": "Count commits for changes",
+      "query": "count commits",
+      "label": "Commits (by repository)",
       "grouping": {
-        "entity": "change",
+        "entity": "commit",
         "by": {
           "name": "repo",
           "type": "classifier",
