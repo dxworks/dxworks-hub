@@ -311,7 +311,7 @@
       "filter": "sum strength of metric.atc >= 1 and changes >= 20 and size >= 500"
     },
     "oy1": {
-      "query": "((sum churn of changes for authors having status.active) * 100) / (sum churn of changes)",
+      "query": "((sum churn of changes for authors having (status.active and name not starts with _)) * 100) / (sum churn of changes for authors having name not starts with _)",
       "label": "% Activity volume by currently active authors",
       "valuesRange": {
         "minim": 0,
@@ -1112,7 +1112,7 @@
       "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count commits for changes",
+      "query": "count commits having author having not name starts with _ for changes",
       "label": "Commits (by repository)",
       "grouping": {
         "entity": "change",
@@ -1357,7 +1357,7 @@
       "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count commits",
+      "query": "count commits having author having not name starts with _",
       "label": "Commits (by developers' tenure)",
       "grouping": {
         "entity": "commit",
@@ -1704,6 +1704,7 @@
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
+      "filter": "not name starts with _",
       "label": ""
     },
     "oy1": {
