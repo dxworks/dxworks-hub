@@ -346,6 +346,144 @@
     ]
   },
   {
+    "name": "Evolution - Growth of code vs growth of complexity hotspots",
+    "slug": "evolution-growth-of-code-vs-growth-of-complexity-hotspots",
+    "chartTypeOy1": "line-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "sum size of files having technology.code",
+      "label": "Size of code"
+    },
+    "oy2": {
+      "query": "sum size of files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500)",
+      "label": "Size of complexity hotspots",
+      "equalizeRanges": true
+    },
+    "notes": "How does the growth of the complexity hotsptos compare with the overall source-code growth? ",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "separation-of-concerns",
+    "traits": [
+      "aspect.clean-code",
+      "aspect.cognitive-load",
+      "aspect.code-evolution"
+    ]
+  },
+  {
+    "name": "Evolution - Commits on complexity hotspots",
+    "slug": "evolution-commits-on-complexity-hotspots",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "last day of period"
+    },
+    "oy1": {
+      "query": "count commits",
+      "label": "Commits (in red commits on complexiity hotspots)",
+      "highlight": "has file having (sum strength of metric.atc >= 1 and changes >= 20 and size >= 500)"
+    },
+    "oy2": {
+      "query": "(count commits for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500) * 100) / (count commits)",
+      "label": "% Commits on complexity hotspots"
+    },
+    "notes": "",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "separation-of-concerns",
+    "traits": [
+      "aspect.clean-code",
+      "aspect.cognitive-load",
+      "aspect.current-activity-hotspots"
+    ]
+  },
+  {
+    "name": "Evolution - Change volume on complexity hotspots",
+    "slug": "evolution-change-volume-on-complexity-hotspots",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "last day of period"
+    },
+    "oy1": {
+      "query": "sum churn of changes for files having technology.code",
+      "label": "Volume of change (in red changes on complexity hotspots)",
+      "highlight": "has file having (sum strength of metric.atc >= 1 and changes >= 20 and size >= 500)"
+    },
+    "oy2": {
+      "query": "((sum churn of changes for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500)) * 100) / (sum churn of changes for files having technology.code)",
+      "label": "% Change on complexity hotspots"
+    },
+    "notes": "This chart helps to see how much of the volume of change is in the complexity hotspots",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "separation-of-concerns",
+    "traits": [
+      "aspect.clean-code",
+      "aspect.cognitive-load",
+      "aspect.current-activity-hotspots"
+    ]
+  },
+  {
     "name": "Evolution - Task prefixes",
     "slug": "task-prefixes-used-over-time",
     "chartTypeOy1": "bar-chart",
