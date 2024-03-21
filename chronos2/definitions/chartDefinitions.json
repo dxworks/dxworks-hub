@@ -656,7 +656,7 @@
       "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count authors having commits during period",
+      "query": "count authors having (commits during period and not name starts with _)",
       "label": "All Developers (in red new developers)",
       "highlight": "first commit during period"
     },
@@ -698,11 +698,11 @@
       "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count authors having first commit during period",
+      "query": "count authors having (first commit during period and not name starts with _)",
       "label": "Developers joining"
     },
     "oy2": {
-      "query": "count authors having last commit during period",
+      "query": "count authors having (last commit during period and not name starts with _)",
       "label": "Developers leaving",
       "equalizeRanges": true
     },
@@ -885,7 +885,7 @@
       "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count authors for commits",
+      "query": "count authors having not name starts with _ for commits",
       "label": "Authors",
       "grouping": {
         "entity": "author",
@@ -943,7 +943,7 @@
       "momentOfTime": "now"
     },
     "oy1": {
-      "query": "count authors for commits",
+      "query": "count authors having not name starts with _ for commits",
       "label": "Developers (by commits during month)",
       "grouping": {
         "entity": "author",
@@ -1125,7 +1125,7 @@
       }
     },
     "oy2": {
-      "query": "count authors for commits",
+      "query": "count authors having not name starts with _ for commits",
       "label": "Developers"
     },
     "notes": "Is there any correlation between the number of authors and the number of commits (or churn) over the codebase's history?",
@@ -1654,7 +1654,7 @@
     "ox": {
       "entity": "author",
       "label": "Author",
-      "filter": "changes during last 2 years for files having technology.code"
+      "filter": "not name starts with _ and changes during last 2 years for files having technology.code"
     },
     "oy1": {
       "query": "sum size of files for changes having (date during last 2 years and files having technology.code) ",
@@ -1754,7 +1754,8 @@
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "Author"
+      "label": "Author",
+      "filter": "not name starts with _"
     },
     "oy1": {
       "query": "count commits for changes",
@@ -1804,6 +1805,7 @@
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
+      "filter": "not name starts with _",
       "label": "Authors (active authors are highlighted)",
       "highlight": "status.active"
     },
@@ -1855,7 +1857,7 @@
     "ox": {
       "entity": "author",
       "label": "Authors (active authors are highlighted)",
-      "filter": "",
+      "filter": "not name starts with _",
       "highlight": "status.active"
     },
     "oy1": {

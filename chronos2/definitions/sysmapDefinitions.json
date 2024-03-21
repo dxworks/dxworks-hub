@@ -93,7 +93,7 @@
       },
       {
         "type": "metric",
-        "query": "count authors for commits during last year",
+        "query": "count authors having not name starts with _ for commits during last year",
         "label": "Last Year Authors",
         "value": "column8"
       },
@@ -135,6 +135,7 @@
     "slug": "complexity-hotspots",
     "highlight": "strength of metric.atc >= 1 and size >= 500 and changes >= 20 and has changes during last year",
     "domain": "status",
+    "filter": "technology.code",
     "colorScheme": "default",
     "perspective": {
       "query": "changes",
@@ -218,7 +219,7 @@
       },
       {
         "type": "metric",
-        "query": "count authors for commits during last year",
+        "query": "count authors having not name starts with _ for commits during last year",
         "label": "Last Year Authors",
         "value": "column7"
       },
