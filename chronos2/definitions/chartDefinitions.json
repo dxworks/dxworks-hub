@@ -304,13 +304,14 @@
     "name": "Filetypes (by component)",
     "slug": "filetypes-by-component",
     "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "filetype",
-      "label": "File type (by component)"
+      "label": ""
     },
     "oy1": {
       "query": "count files",
-      "label": "Files",
+      "label": "Files (by component)",
       "grouping": {
         "entity": "file",
         "by": {
@@ -320,6 +321,10 @@
         },
         "colorScheme": "default"
       }
+    },
+    "oy2": {
+      "query": "sum size of files",
+      "label": "Size"
     },
     "notes": "Understand in what component each technology is used.",
     "sort": {
@@ -341,7 +346,7 @@
       "axis": true,
       "points": true
     },
-    "orientation": "horizontal",
+    "orientation": "vertical",
     "section": "technology-stack",
     "traits": [
       "assessment.cqr",
@@ -2451,6 +2456,49 @@
     "traits": [
       "aspect.clean-code",
       "aspect.responsibility-balance"
+    ]
+  },
+  {
+    "name": "Evolution - Deletes and Total size",
+    "slug": "evolution-deletes-and-total-size",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "last day of period"
+    },
+    "oy1": {
+      "query": "count changes having type.delete",
+      "label": "Deletes"
+    },
+    "oy2": {
+      "query": "sum size of files",
+      "label": "Size"
+    },
+    "notes": "For this chart to work, make sure that the \"Keep only alive files\" checkbox in unchecked in config. This chart can help you investigate cases of deleted files. This is useful, for example, when checking if functionality has been migrated.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "nature-of-changes",
+    "traits": [
+      "aspect.code-evolution"
     ]
   }
 ]
