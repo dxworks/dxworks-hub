@@ -352,7 +352,7 @@
   },
   {
     "name": "Files - Active knowledge on complexity hotspots ",
-    "slug": "complex-files-fraction-of-activity-volume-by-currently-active-authors",
+    "slug": "complex-files-fraction-of-activity-volume-by-currently-active-developers",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "file",
@@ -361,7 +361,7 @@
     },
     "oy1": {
       "query": "((sum churn of changes for authors having (status.active and name not starts with _)) * 100) / (sum churn of changes for authors having name not starts with _)",
-      "label": "% Activity volume by currently active authors",
+      "label": "% Activity volume by currently active developers",
       "valuesRange": {
         "minim": 0,
         "maxim": 100
@@ -583,8 +583,8 @@
     ]
   },
   {
-    "name": "Evolution - Periodic growth (by repo) and overall size",
-    "slug": "growth-by-repo-and-overall-size-per-period",
+    "name": "Evolution - Periodic growth (by repo) and overall size - changes",
+    "slug": "growth-by-repo-and-overall-size-per-period-changes",
     "chartTypeOy1": "bar-chart",
     "chartTypeOy2": "line-chart",
     "ox": {
@@ -608,6 +608,63 @@
     "oy2": {
       "query": "sum size of files",
       "label": "Sum size of files"
+    },
+    "notes": "You can spot: (1) how old the codebase is; (2) the oldest and newest repos; (3) the repos with the highest recent growth, and repos that are inactive; (4) months with abrupt growth; (5) periods of standstill. Based on the duration of the project and the growth patterns you can get a solid indication on the project's current development phase: has the project started recently? or is it in vibrant growth? or in consolidation phase? or in maintenance? or close to standstill?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "nature-of-changes",
+    "traits": [
+      "assessment.cqr",
+      "aspect.code-evolution",
+      "aspect.stage-of-evolution",
+      "aspect.current-activity-hotspots",
+      "aspect.freshness",
+      "cqr-perspective.overview"
+    ]
+  },
+  {
+    "name": "Evolution - Periodic growth (by repo) and overall size -",
+    "slug": "growth-by-repo-and-overall-size-per-period",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period",
+      "momentOfTime": "last day of period"
+    },
+    "oy1": {
+      "query": "sum growth of commits having growth > 0",
+      "label": "Growth (by repository)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "oy2": {
+      "query": "sum size of files",
+      "label": "Size"
     },
     "notes": "You can spot: (1) how old the codebase is; (2) the oldest and newest repos; (3) the repos with the highest recent growth, and repos that are inactive; (4) months with abrupt growth; (5) periods of standstill. Based on the duration of the project and the growth patterns you can get a solid indication on the project's current development phase: has the project started recently? or is it in vibrant growth? or in consolidation phase? or in maintenance? or close to standstill?",
     "sort": {
@@ -697,7 +754,7 @@
   },
   {
     "name": "Evolution - New developers joining",
-    "slug": "new-authors-joining-the-team",
+    "slug": "new-developers-joining-the-team",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -709,7 +766,7 @@
       "label": "All Developers (in red new developers)",
       "highlight": "first commit during period"
     },
-    "notes": "What's the ratio of new authors to existing authors? Is there a constant flux of new developers? Was there a complete team swap?",
+    "notes": "What's the ratio of new developers to existing developers? Is there a constant flux of new developers? Was there a complete team swap?",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -926,7 +983,7 @@
   },
   {
     "name": "Evolution - Developers (by overall contribution)",
-    "slug": "authors-by-involvement-per-month",
+    "slug": "developers-by-involvement-per-month",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -935,7 +992,7 @@
     },
     "oy1": {
       "query": "count authors having not name starts with _ for commits",
-      "label": "Authors",
+      "label": "Developers",
       "grouping": {
         "entity": "author",
         "by": {
@@ -957,7 +1014,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Are there \"satellite\" authors that make few overall changes? If there are many such authors, the conceptual integrity of the code base could suffer.",
+    "notes": "Are there \"satellite\" developers that make few overall changes? If there are many such developers, the conceptual integrity of the code base could suffer.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -984,7 +1041,7 @@
   },
   {
     "name": "Evolution - Developers (by monthly pace)",
-    "slug": "authors-by-dev-involvement-in-month-per-month",
+    "slug": "developers-by-dev-involvement-in-month-per-month",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -1015,7 +1072,7 @@
         "colorScheme": "authorinvolvement"
       }
     },
-    "notes": "This view is useful when there are many authors with few monthly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
+    "notes": "This view is useful when there are many developers with few monthly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1151,8 +1208,8 @@
     ]
   },
   {
-    "name": "Evolution - Commits (by repo) and developers",
-    "slug": "commits-by-repository-and-authors-per-month",
+    "name": "Evolution - Commits (by repo) and developers - changes",
+    "slug": "commits-by-repository-and-developers-per-month-changes",
     "chartTypeOy1": "bar-chart",
     "chartTypeOy2": "line-chart",
     "ox": {
@@ -1177,7 +1234,60 @@
       "query": "count authors having not name starts with _ for commits",
       "label": "Developers"
     },
-    "notes": "Is there any correlation between the number of authors and the number of commits (or churn) over the codebase's history?",
+    "notes": "Is there any correlation between the number of developers and the number of commits (or churn) over the codebase's history?",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.team-evolution",
+      "aspect.code-evolution"
+    ]
+  },
+  {
+    "name": "Evolution - Commits (by repo) and developers",
+    "slug": "commits-by-repository-and-developers-per-month",
+    "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "Period",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count commits having author having not name starts with _",
+      "label": "Commits (by repository)",
+      "grouping": {
+        "entity": "commit",
+        "by": {
+          "name": "repo",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "default"
+      }
+    },
+    "oy2": {
+      "query": "count authors having not name starts with _ for commits",
+      "label": "Developers"
+    },
+    "notes": "Is there any correlation between the number of developers and the number of commits (or churn) over the codebase's history?",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1399,7 +1509,7 @@
   },
   {
     "name": "Evolution - Commits (by developer's project influence)",
-    "slug": "commits-by-author-involvement-per-month",
+    "slug": "commits-by-developers-involvement-per-month",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -1408,7 +1518,7 @@
     },
     "oy1": {
       "query": "count commits",
-      "label": "Commits (by author involvement)",
+      "label": "Commits (by developer involvement)",
       "grouping": {
         "entity": "commit",
         "by": {
@@ -1419,7 +1529,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Is there a large percentage of commits done by authors with a weak involvement (i.e. less than 20 commits) in the codebase (up to that point)?",
+    "notes": "Is there a large percentage of commits done by developers with a weak involvement (i.e. less than 20 commits) in the codebase (up to that point)?",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1467,7 +1577,7 @@
         "colorScheme": "tenure"
       }
     },
-    "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced authors?",
+    "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced developers?",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1746,12 +1856,12 @@
   },
   {
     "name": "Developers - Recent files (by language) and code churn",
-    "slug": "files-changed-by-technology-and-churn-per-author",
+    "slug": "files-changed-by-technology-and-churn-per-developer",
     "chartTypeOy1": "bar-chart",
     "chartTypeOy2": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "Author",
+      "label": "Developer",
       "filter": "not name starts with _ and changes during last 2 years for files having technology.code"
     },
     "oy1": {
@@ -1771,7 +1881,7 @@
       "query": "sum churn of changes during last 2 years for files having technology.code",
       "label": "Sum churn of changes for files"
     },
-    "notes": "This view aims at estimating the cognitive load of authors: How much code do they need understand in order to make a change?",
+    "notes": "This view aims at estimating the cognitive load of developers: How much code do they need understand in order to make a change?",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -1798,7 +1908,7 @@
   },
   {
     "name": "Developers - Commits (by task prefix)",
-    "slug": "commits-by-task-prefix-per-author",
+    "slug": "commits-by-task-prefix-per-developer",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
@@ -1818,7 +1928,7 @@
         "colorScheme": "default"
       }
     },
-    "notes": "How are task prefixes assigned to authors/teams? ",
+    "notes": "How are task prefixes assigned to developers/teams? ",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -1849,11 +1959,11 @@
   },
   {
     "name": "Developers - Commits for changes (by repos)",
-    "slug": "commits-for-changes-by-repository-per-author",
+    "slug": "commits-for-changes-by-repository-per-developer",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "Author",
+      "label": "Developer",
       "filter": "not name starts with _"
     },
     "oy1": {
@@ -1869,7 +1979,7 @@
         "colorScheme": "default"
       }
     },
-    "notes": "Do authors work across repositories? Are there any repositories with polarised ownership? Are the most prolific authors still active?",
+    "notes": "Do developers work across repositories? Are there any repositories with polarised ownership? Are the most prolific developers still active?",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1900,11 +2010,11 @@
   },
   {
     "name": "Developers - Commits (by repos)",
-    "slug": "commits-by-repository-per-author",
+    "slug": "commits-by-repository-per-developer",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "Author",
+      "label": "Developer",
       "filter": "not name starts with _"
     },
     "oy1": {
@@ -1920,7 +2030,7 @@
         "colorScheme": "default"
       }
     },
-    "notes": "Do authors work across repositories? Are there any repositories with polarised ownership? Are the most prolific authors still active?",
+    "notes": "Do developers work across repositories? Are there any repositories with polarised ownership? Are the most prolific developers still active?",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1950,18 +2060,18 @@
     ]
   },
   {
-    "name": "Developers - Changes (by technology)",
-    "slug": "changes-by-technology-per-author",
+    "name": "Developers - Volume of change (by technology)",
+    "slug": "volume-of-change-by-technology-per-developer",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
       "filter": "not name starts with _",
-      "label": "Authors (active authors are highlighted)",
+      "label": "Developers (active developers are highlighted)",
       "highlight": "status.active"
     },
     "oy1": {
-      "query": "count changes not having language.@",
-      "label": "Changes (by technology)",
+      "query": "sum churn of changes not having language.@",
+      "label": "Volume of change (by technology)",
       "grouping": {
         "entity": "change",
         "by": {
@@ -1972,7 +2082,7 @@
         "colorScheme": "tableau"
       }
     },
-    "notes": "Are authors full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If authors work across technologies, is there a preferred tech per author or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
+    "notes": "Are developers full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If developers work across technologies, is there a preferred tech per developer or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2001,17 +2111,17 @@
     ]
   },
   {
-    "name": "Developers - Changes (by component)",
-    "slug": "changes-by-component-per-author",
+    "name": "Developers - Volume of Change (by component)",
+    "slug": "volume-of-change-by-component-per-developer",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "author",
-      "label": "Authors (active authors are highlighted)",
+      "label": "Developers (active developers are highlighted)",
       "filter": "not name starts with _",
       "highlight": "status.active"
     },
     "oy1": {
-      "query": "count changes",
+      "query": "sum churn of changes",
       "label": "Changes (by component)",
       "grouping": {
         "entity": "change",
@@ -2023,7 +2133,7 @@
         "colorScheme": "default"
       }
     },
-    "notes": "Do authors work across components? Are there any components with polarised ownership? Are the most prolific authors still active?",
+    "notes": "Do developers work across components? Are there any components with polarised ownership? Are the most prolific developers still active?",
     "sort": {
       "by": "oy",
       "order": "descending"

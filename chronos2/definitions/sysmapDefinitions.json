@@ -94,7 +94,7 @@
       {
         "type": "metric",
         "query": "count authors having not name starts with _ for commits during last year",
-        "label": "Last Year Authors",
+        "label": "Last Year Developers",
         "value": "column8"
       },
       {
@@ -220,7 +220,7 @@
       {
         "type": "metric",
         "query": "count authors having not name starts with _ for commits during last year",
-        "label": "Last Year Authors",
+        "label": "Last Year Developers",
         "value": "column7"
       },
       {

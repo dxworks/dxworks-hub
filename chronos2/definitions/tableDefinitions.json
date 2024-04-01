@@ -35,7 +35,7 @@
             },
             {
                 "type": "list of strings",
-                "label": "Authors",
+                "label": "Developers",
                 "query": "authors"
             }
         ],
@@ -82,7 +82,7 @@
             },
             {
                 "type": "list of strings",
-                "label": "Authors",
+                "label": "Developers",
                 "query": "authors"
             },
             {
@@ -99,8 +99,8 @@
         ]
     },
   {
-    "name": "Authors table",
-    "slug": "authors-table",
+    "name": "Developers table",
+    "slug": "developers-table",
     "entity": {
       "name": "author",
       "filter": "not name starts with _"
