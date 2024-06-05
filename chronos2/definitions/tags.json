@@ -37,7 +37,7 @@
   },
   {
     "name": "dependencies.external.packagemanager.node",
-    "query": "name in -i {package.json, package-lock.json, yarn.lock}"
+    "query": "name in -i {package.json, package-lock.json, yarn.lock, pnpm-lock.yaml}"
   },
   {
     "name": "dependencies.external.packagemanager.pip",

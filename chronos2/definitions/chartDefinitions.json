@@ -2127,7 +2127,7 @@
     },
     "oy1": {
       "query": "sum churn of changes",
-      "label": "Changes (by component)",
+      "label": "Volume of change (by component)",
       "grouping": {
         "entity": "change",
         "by": {
