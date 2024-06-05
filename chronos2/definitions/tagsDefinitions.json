@@ -186,7 +186,7 @@
     "groups": [
       {
         "label": "code",
-        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml, kt, rb, erb, swift,vue}"
+        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml, kt, rb, erb, swift,vue, go, scala}"
       },
       {
         "label": "web",
@@ -217,7 +217,7 @@
     "groups": [
       {
         "label": "backend",
-        "query": "extension in -i {cs,fs,vb,java,dart,sql,cql,kt,groovy,erl,hrl,swift,rb}"
+        "query": "extension in -i {cs,fs,vb,java,dart,sql,cql,kt,groovy,erl,hrl,swift,rb,go,scala}"
       },
       {
         "label": "frontend",
@@ -276,6 +276,14 @@
       {
         "label": "python",
         "query": "has filetype.python*"
+      },
+      {
+        "label": "go",
+        "query": "has filetype.go*"
+      },
+      {
+        "label": "scala",
+        "query": "has filetype.scala*"
       },
       {
         "label": "sql",
@@ -391,6 +399,14 @@
       {
         "label": "php",
         "query": "files having filetype.php*"
+      },
+      {
+        "label": "go",
+        "query": "files having filetype.go*"
+      },
+      {
+        "label": "scala",
+        "query": "files having filetype.scala*"
       },
       {
         "label": "sql",
