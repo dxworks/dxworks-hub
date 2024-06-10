@@ -44,6 +44,10 @@
     "query": "extension in {bsh}"
   },
   {
+    "name": "bicep",
+    "query": "extension in {bicep}"
+  },
+  {
     "name": "binaries",
     "query": "extension in {dll, exe, pdb, so, DLL, cd, EXE, suo,jar,ear,war}"
   },
@@ -201,7 +205,7 @@
   },
   {
     "name": "json",
-    "query": "extension in {json, jws}"
+    "query": "extension in {json, jws, jsonc}"
   },
   {
     "name": "jsp",

@@ -13,7 +13,7 @@
   },
   {
     "name": "noise.hidden",
-    "query": "(name like .* or path like */.*) and not path contains '.github/'"
+    "query": "(name like .* or path like */.*) and not path contains -i '.github/'"
   },
   {
     "name": "noise.negativeFileSize",
