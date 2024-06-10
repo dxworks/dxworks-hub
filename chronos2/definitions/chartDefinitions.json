@@ -645,7 +645,7 @@
     ]
   },
   {
-    "name": "Evolution - Periodic growth (by repo) and overall size -",
+    "name": "Evolution - Periodic growth (by repo) and overall size",
     "slug": "growth-by-repo-and-overall-size-per-period",
     "chartTypeOy1": "bar-chart",
     "chartTypeOy2": "line-chart",
