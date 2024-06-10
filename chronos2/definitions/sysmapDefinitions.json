@@ -719,5 +719,45 @@
       "aspect.cognitive-load",
       "aspect.responsibility-balance"
     ]
+  },
+  {
+    "name": "Files - Flat Structures",
+    "slug": "files-flat-structures",
+    "foldersHighlight": "has more than 100 direct children and size > 10000",
+    "domain": {
+      "classifier": "component",
+      "sort": "by value"
+    },
+    "colorScheme": "main",
+    "perspective": {
+      "query": "changes",
+      "numberOfGroups": 1,
+      "thresholds": []
+    },
+    "section": "code-organisation",
+    "traits": [
+      "aspect.responsibility-balance"
+    ]
+  },
+  {
+    "name": "Files - Ungrouped (Orphaned) classes",
+    "slug": "files-ungrouped-orphaned-classes",
+    "foldersHighlight": "has direct subfolders having files having technology.code.backend and has direct files having technology.code.backend",
+    "domain": "status",
+    "colorScheme": "default",
+    "perspective": {
+      "query": "changes",
+      "numberOfGroups": 3,
+      "thresholds": [
+        3,
+        10
+      ]
+    },
+    "notes": "An ungrouped (orphaned) class is one that exists in a root namespace. A root namespace is defined as any namespace that is extended by another element in that namespace.",
+    "section": "code-organisation",
+    "traits": [
+      "aspect.responsibility-balance",
+      "aspect.uniformity"
+    ]
   }
 ]
