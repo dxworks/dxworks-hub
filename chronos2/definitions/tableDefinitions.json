@@ -172,6 +172,12 @@
         "label": "Recent source-code growth",
         "query": "sum growth of changes having (date since 2023 and growth > 0) for files having technology.code",
         "format": {}
+      },
+      {
+        "type": "numeric",
+        "label": "Recent Files Count",
+        "query": "count files for changes having date since 2023",
+        "format": {}
       }
     ],
     "pageSize": 10,
