@@ -1759,6 +1759,52 @@
     ]
   },
   {
+    "name": "Evolution - Bug-fixing rate (commits vs volume of change)",
+    "slug": "bug-fixing",
+    "chartTypeOy1": "line-chart",
+    "chartTypeOy2": "line-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "filter": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "((count commits having (message.nature.bugfix)) * 100) / (count commits)",
+      "label": "% Bug-Fix commits"
+    },
+    "oy2": {
+      "query": "((sum churn of commits having (message.nature.bugfix)) * 100) / (sum churn of commits)",
+      "label": "% Volume of change in Bug-Fix commits",
+      "equalizeRanges": true
+    },
+    "notes": "It's useful to see how does the percentage of bug-fixing commits compares to the percentage of volume of change in these commits. There might be cases when there are many small bug-fixing commits after a large feature commit.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "test-automation",
+    "traits": [
+      "aspect.testing-efficacy"
+    ]
+  },
+  {
     "name": "Evolution - Changes (by component) and overall size",
     "slug": "changes-by-component-and-size",
     "chartTypeOy1": "bar-chart",
