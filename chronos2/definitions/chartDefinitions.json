@@ -418,7 +418,7 @@
       "label": "Size of complexity hotspots",
       "equalizeRanges": true
     },
-    "notes": "How does the growth of the complexity hotsptos compare with the overall source-code growth? ",
+    "notes": "How does the growth of the complexity hotsptos compare with the overall source-code growth? Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -464,7 +464,7 @@
       "query": "(count commits for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500) * 100) / (count commits)",
       "label": "% Commits on complexity hotspots"
     },
-    "notes": "",
+    "notes": "Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -510,7 +510,7 @@
       "query": "((sum churn of changes for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500)) * 100) / (sum churn of changes for files having technology.code)",
       "label": "% Change on complexity hotspots"
     },
-    "notes": "This chart helps to see how much of the volume of change is in the complexity hotspots",
+    "notes": "This chart helps to see how much of the volume of change is in the complexity hotspots. Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1760,7 +1760,7 @@
   },
   {
     "name": "Evolution - Bug-fixing rate (commits vs volume of change)",
-    "slug": "bug-fixing",
+    "slug": "bug-fixing-rate-commits-vs-volume-of-change",
     "chartTypeOy1": "line-chart",
     "chartTypeOy2": "line-chart",
     "ox": {
