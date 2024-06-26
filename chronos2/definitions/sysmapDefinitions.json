@@ -742,8 +742,10 @@
   {
     "name": "Files - Ungrouped (Orphaned) classes",
     "slug": "files-ungrouped-orphaned-classes",
+    "highlight": "has technology.code.backend and has direct parent having direct subfolders having files having technology.code.backend",
     "foldersHighlight": "has direct subfolders having files having technology.code.backend and has direct files having technology.code.backend",
     "domain": "status",
+    "filter": "technology.code and role.production",
     "colorScheme": "default",
     "perspective": {
       "query": "changes",
