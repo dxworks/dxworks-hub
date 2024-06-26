@@ -1168,6 +1168,7 @@
     "name": "Evolution - Commits (by weekday)",
     "slug": "distribution-of-commits-per-week",
     "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
       "label": "",
@@ -1183,8 +1184,12 @@
           "type": "classifier",
           "sort": "by definition"
         },
-        "colorScheme": "custom"
+        "colorScheme": "weekdays"
       }
+    },
+    "oy2": {
+      "query": "((count commits having (weekday.saturday or weekday.sunday)) * 100) / (count commits)",
+      "label": "% Commits during weekend"
     },
     "notes": "Is the team frequently committing during weekends? Is the team frequently committing more at the end of the sprint (e.g. on Fridays) - this could lead to a drop in code quality.",
     "sort": {
@@ -1201,6 +1206,7 @@
       "sortLabels": false,
       "width": 210
     },
+    "showAbsoluteValues": true,
     "formatNumericValues": {
       "axis": true,
       "points": true
@@ -1917,7 +1923,7 @@
     },
     "oy1": {
       "query": "sum size of files for changes having (date during last 2 years and files having technology.code) ",
-      "label": "Sum size of files for changes",
+      "label": "Size of recently chnaged files (by technology)",
       "grouping": {
         "entity": "change",
         "by": {
@@ -1930,7 +1936,7 @@
     },
     "oy2": {
       "query": "sum churn of changes during last 2 years for files having technology.code",
-      "label": "Sum churn of changes for files"
+      "label": "Volume of recent change"
     },
     "notes": "This view aims at estimating the cognitive load of developers: How much code do they need understand in order to make a change?",
     "sort": {
@@ -2083,8 +2089,8 @@
     },
     "notes": "Do developers work across repositories? Are there any repositories with polarised ownership? Are the most prolific developers still active?",
     "sort": {
-      "by": "ox",
-      "order": "ascending"
+      "by": "oy",
+      "order": "descending"
     },
     "labels": {
       "maxLength": 15,
