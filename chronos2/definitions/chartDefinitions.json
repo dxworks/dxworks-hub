@@ -2220,6 +2220,58 @@
     ]
   },
   {
+    "name": "Developers - Volume of Change during last year (by component)",
+    "slug": "volume-of-change-during-last-year-by-component-per-developer",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "author",
+      "label": "Developers (active developers are highlighted)",
+      "filter": "not name starts with _ and has changes during last year",
+      "highlight": "status.active"
+    },
+    "oy1": {
+      "query": "sum churn of changes during last year",
+      "label": "Volume of change during last year (by component)",
+      "grouping": {
+        "entity": "change",
+        "by": {
+          "name": "component",
+          "type": "classifier",
+          "sort": "by value"
+        },
+        "colorScheme": "main"
+      }
+    },
+    "notes": "Where there any shifts in development patterns during the last year? Also, is developer contribution long tailed?",
+    "sort": {
+      "by": "oy",
+      "order": "descending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-sharing",
+      "aspect.knowledge-availability",
+      "assessment.cqr",
+      "cqr-perspective.overview",
+      "report.include"
+    ]
+  },
+  {
     "name": "Concepts by component",
     "slug": "concepts-by-component",
     "chartTypeOy1": "bar-chart",
