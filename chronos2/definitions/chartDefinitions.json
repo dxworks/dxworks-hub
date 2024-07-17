@@ -18,7 +18,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "Analyse the impact of scattered tasks. Do they affect multiple components (in which case they could increase the team's cognitive load)? Does implementing tasks require changes to components owned by different teams (in which case they would require high coordination costs?",
@@ -69,7 +69,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -121,7 +121,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
@@ -170,7 +170,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
@@ -319,7 +319,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -556,7 +556,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "How has the usage of task prefixes evolved? This can correlate to changes in project priorities (e.g if there is a task prefixes per product). This could also indicate a team with a high cognitive load that is spread too thin (e.g. working on many projects/task prefixes in parallel).",
@@ -607,7 +607,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -664,7 +664,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -911,7 +911,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "Is the number of changed test files proportional to changed production files? Are test files updated each month or in batches? This indicates if automated testing is part of daily development work or something done infrequently.",
@@ -958,7 +958,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?).",
@@ -1238,7 +1238,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -1291,7 +1291,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -1343,7 +1343,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
@@ -1392,7 +1392,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
@@ -1728,7 +1728,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -1830,7 +1830,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "oy2": {
@@ -1982,7 +1982,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "How are task prefixes assigned to developers/teams? ",
@@ -2033,7 +2033,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "Do developers work across repositories? Are there any repositories with polarised ownership? Are the most prolific developers still active?",
@@ -2084,7 +2084,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "Do developers work across repositories? Are there any repositories with polarised ownership? Are the most prolific developers still active?",
@@ -2187,7 +2187,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "Do developers work across components? Are there any components with polarised ownership? Are the most prolific developers still active?",
@@ -2237,7 +2237,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "Are important concepts spread over many components?",
@@ -2332,7 +2332,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "",
@@ -2481,7 +2481,7 @@
           "type": "classifier",
           "sort": "by value"
         },
-        "colorScheme": "default"
+        "colorScheme": "main"
       }
     },
     "notes": "What are the most widespread anomalies? What repositories to they affect?",
