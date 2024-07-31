@@ -1053,8 +1053,8 @@
     ]
   },
   {
-    "name": "Evolution - Developers (by monthly pace)",
-    "slug": "developers-by-dev-involvement-in-month-per-month",
+    "name": "Evolution - Developers (by monthly commits)",
+    "slug": "evolution-developers-by-monthly-commits",
     "chartTypeOy1": "bar-chart",
     "ox": {
       "entity": "period",
@@ -1063,7 +1063,7 @@
     },
     "oy1": {
       "query": "count authors having not name starts with _ for commits",
-      "label": "Developers (by commits during month)",
+      "label": "Developers (by monthly commits)",
       "grouping": {
         "entity": "author",
         "by": {
@@ -1073,9 +1073,9 @@
         "numberOfGroups": 4,
         "groupsLabels": [
           "1 commit",
-          "[2, 5) commits",
-          "[5, 15) commits",
-          ">= 15 commits"
+          "1-4 commits",
+          "5-14 commits",
+          "15+ commits"
         ],
         "thresholds": [
           2,
@@ -1086,6 +1086,66 @@
       }
     },
     "notes": "This view is useful when there are many developers with few monthly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
+    "sort": {
+      "by": "ox",
+      "order": "ascending"
+    },
+    "labels": {
+      "maxLength": 15,
+      "trimFrom": "end",
+      "orientationAngle": 90
+    },
+    "legendProperties": {
+      "labelLength": 20,
+      "sortLabels": false,
+      "width": 210
+    },
+    "showAbsoluteValues": true,
+    "formatNumericValues": {
+      "axis": true,
+      "points": true
+    },
+    "orientation": "vertical",
+    "section": "knowledge",
+    "traits": [
+      "aspect.cohesive-changes",
+      "aspect.cognitive-load"
+    ]
+  },
+  {
+    "name": "Evolution - Developers (by monthly volume of change)",
+    "slug": "evolution-developers-by-monthly-volume-of-change",
+    "chartTypeOy1": "bar-chart",
+    "ox": {
+      "entity": "period",
+      "label": "",
+      "momentOfTime": "now"
+    },
+    "oy1": {
+      "query": "count authors having not name starts with _ for commits",
+      "label": "Developers (by monthly volume of change)",
+      "grouping": {
+        "entity": "author",
+        "by": {
+          "name": "sum churn of changes during period",
+          "type": "query"
+        },
+        "numberOfGroups": 4,
+        "groupsLabels": [
+          "1-99 lines",
+          "100-299 lines",
+          "300-999",
+          "1000+"
+        ],
+        "thresholds": [
+          100,
+          300,
+          1000
+        ],
+        "colorScheme": "authorinvolvement"
+      }
+    },
+    "notes": "This view is useful when there are many developers a low volume of change. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase. Since this view is based on volume of change, it should be oblivious to each author's commit patterns. Also, if there is a very small volume of change, it could be useful to group by quarter or year.'",
     "sort": {
       "by": "ox",
       "order": "ascending"
