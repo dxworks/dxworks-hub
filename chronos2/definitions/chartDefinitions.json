@@ -462,11 +462,7 @@
     },
     "oy2": {
       "query": "(count commits for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500) * 100) / (count commits)",
-      "label": "% Commits on complexity hotspots",
-      "valuesRange": {
-        "minim": 0,
-        "maxim": 100
-      }
+      "label": "% Commits on complexity hotspots"
     },
     "notes": "Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
@@ -512,11 +508,7 @@
     },
     "oy2": {
       "query": "((sum churn of changes for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500)) * 100) / (sum churn of changes for files having technology.code)",
-      "label": "% Change on complexity hotspots",
-      "valuesRange": {
-        "minim": 0,
-        "maxim": 100
-      }
+      "label": "% Change on complexity hotspots"
     },
     "notes": "This chart helps to see how much of the volume of change is in the complexity hotspots. Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
@@ -1073,7 +1065,7 @@
         "numberOfGroups": 4,
         "groupsLabels": [
           "1 commit",
-          "1-4 commits",
+          "2-4 commits",
           "5-14 commits",
           "15+ commits"
         ],
@@ -1134,8 +1126,8 @@
         "groupsLabels": [
           "1-99 lines",
           "100-299 lines",
-          "300-999",
-          "1000+"
+          "300-999 lines",
+          "1000+ lines"
         ],
         "thresholds": [
           100,
