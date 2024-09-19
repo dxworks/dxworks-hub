@@ -1,27 +1,27 @@
 [
   {
     "name": "actionscript",
-    "query": "extension in {as, mxml}"
+    "query": "extension in -i {as, mxml}"
   },
   {
     "name": "antlr",
-    "query": "extension in {g4}"
+    "query": "extension in -i {g4}"
   },
   {
     "name": "apache-avro",
-    "query": "extension in {avsc}"
+    "query": "extension in -i {avsc}"
   },
   {
     "name": "protocol-buffers",
-    "query": "extension in {proto}"
+    "query": "extension in -i {proto}"
   },
   {
     "name": "apectj",
-    "query": "extension in {aj}"
+    "query": "extension in -i {aj}"
   },
   {
     "name": "archive",
-    "query": "extension in {zip, gz, gzip}"
+    "query": "extension in -i {zip, gz, gzip}"
   },
   {
     "name": "aspnet_webforms",
@@ -33,55 +33,55 @@
   },
   {
     "name": "awk",
-    "query": "extension in {awk}"
+    "query": "extension in -i {awk}"
   },
   {
     "name": "azure",
-    "query": "extension in {hql}"
+    "query": "extension in -i {hql}"
   },
   {
     "name": "beanshell",
-    "query": "extension in {bsh}"
+    "query": "extension in -i {bsh}"
   },
   {
     "name": "bicep",
-    "query": "extension in {bicep}"
+    "query": "extension in -i {bicep}"
   },
   {
     "name": "binaries",
-    "query": "extension in {dll, exe, pdb, so, DLL, cd, EXE, suo,jar,ear,war}"
+    "query": "extension in -i {dll, exe, pdb, so, DLL, cd, EXE, suo,jar,ear,war}"
   },
   {
     "name": "build",
-    "query": "extension in {gradle, sbt} or name contains gradle or name in {Jenkinsfile, pom.xml, buildconfig.yml, version.properties, hosts.yml, log-messages.xml, web.xml, features.json, buildconfig.yml, version.properties, build.xml, site.xml, maven_settings_sample.xml}"
+    "query": "extension in -i {gradle, sbt} or name contains gradle or name in {Jenkinsfile, pom.xml, buildconfig.yml, version.properties, hosts.yml, log-messages.xml, web.xml, features.json, buildconfig.yml, version.properties, build.xml, site.xml, maven_settings_sample.xml}"
   },
   {
     "name": "businesrules",
-    "query": "extension in {drl, bom, voc, brl, dta, dtr, fct, rfl, trl, dep, dop, qry, b2x, rulepackage, irl, syncEntries, ruleproject}"
+    "query": "extension in -i {drl, bom, voc, brl, dta, dtr, fct, rfl, trl, dep, dop, qry, b2x, rulepackage, irl, syncEntries, ruleproject}"
   },
   {
     "name": "c#",
-    "query": "extension in {cs}"
+    "query": "extension in -i {cs}"
   },
   {
     "name": "f#",
-    "query": "extension in {fs, fsx}"
+    "query": "extension in -i {fs, fsx}"
   },
   {
     "name": "c++",
-    "query": "extension in {c, h, cpp, hpp, cc, hh, cxx, hxx, H, CPP, C, Cpp}"
+    "query": "extension in -i {c, h, cpp, hpp, cc, hh, cxx, hxx, H, CPP, C, Cpp}"
   },
   {
     "name": "certificate",
-    "query": "extension in {key, scr, pem, cer, pfx, ppk}"
+    "query": "extension in -i {key, scr, pem, cer, pfx, ppk}"
   },
   {
     "name": "coldfusion",
-    "query": "extension in {cfc, cfm}"
+    "query": "extension in -i {cfc, cfm}"
   },
   {
     "name": "configuration",
-    "query": "extension like insensitive *config or extension like insensitive *settings or extension in {ini, conf, cfg, project, header, targets, ruleset}"
+    "query": "extension like insensitive *config or extension like insensitive *settings or extension in -i {ini, conf, cfg, project, header, targets, ruleset}"
   },
   {
     "name": "csv",
@@ -89,15 +89,15 @@
   },
   {
     "name": "cucumber",
-    "query": "extension in {feature, story, Feature, steps}"
+    "query": "extension in -i {feature, story, Feature, steps}"
   },
   {
     "name": "database",
-    "query": "extension in {sql, cql, usql, sqlt, esql, sql', SQL}"
+    "query": "extension in -i {sql, cql, usql, sqlt, esql, sql', SQL}"
   },
   {
     "name": "database_boilerplate",
-    "query": "extension in {hbase, database,sqlite, db}"
+    "query": "extension in -i {hbase, database,sqlite, db}"
   },
   {
     "name": "docker",
@@ -105,51 +105,51 @@
   },
   {
     "name": "document",
-    "query": "extension in {txt, doc, pdf, info, md, markdown, rst, xlsx, adoc, PDF, docx, rtf, TXT, pbix, p7s, xls, MD, pptx} or name in {LICENSE, license, NOTICE, HEADER, README}"
+    "query": "extension in -i {txt, doc, pdf, info, md, markdown, rst, xlsx, adoc, PDF, docx, rtf, TXT, pbix, p7s, xls, MD, pptx} or name in {LICENSE, license, NOTICE, HEADER, README}"
   },
   {
     "name": "environment",
-    "query": "extension in {deployment, factorypath, node-version, pubxml, manifest} or name in {feature.xml, release.xml}"
+    "query": "extension in -i {deployment, factorypath, node-version, pubxml, manifest} or name in {feature.xml, release.xml}"
   },
   {
     "name": "erlang",
-    "query": "extension in {erl, hrl}"
+    "query": "extension in -i {erl, hrl}"
   },
   {
     "name": "extendscript",
-    "query": "extension in {jsx, tsx}"
+    "query": "extension in -i {jsx, tsx}"
   },
   {
     "name": "flow",
-    "query": "extension in {msgflow, subflow}"
+    "query": "extension in -i {msgflow, subflow}"
   },
   {
     "name": "font",
-    "query": "extension in {ttf, otf, woff, woff2, eot}"
+    "query": "extension in -i {ttf, otf, woff, woff2, eot}"
   },
   {
     "name": "freemarker",
-    "query": "extension in {ftl}"
+    "query": "extension in -i {ftl}"
   },
   {
     "name": "go",
-    "query": "extension in {go}"
+    "query": "extension in -i {go}"
   },
   {
     "name": "graphml",
-    "query": "extension in {graphml}"
+    "query": "extension in -i {graphml}"
   },
   {
     "name": "groovy",
-    "query": "extension in {groovy, groovyb, grv}"
+    "query": "extension in -i {groovy, groovyb, grv}"
   },
   {
     "name": "handlebars",
-    "query": "extension in {hbs}"
+    "query": "extension in -i {hbs}"
   },
   {
     "name": "html",
-    "query": "extension in {html, htm, phtml}"
+    "query": "extension in -i {html, htm, phtml}"
   },
   {
     "name": "ignore_boilerplate",
@@ -157,258 +157,258 @@
   },
   {
     "name": "image",
-    "query": "extension in {jpg, jpeg, png, gif, svg, ico, graffle, psd, psd1, cgi, gv}"
+    "query": "extension in -i {jpg, jpeg, png, gif, svg, ico, graffle, psd, psd1, cgi, gv}"
   },
   {
     "name": "ios",
-    "query": "extension in {ipa, ipsw, vcf, icns, plist, webarchive, scpt, pbxproj, strings, xib, storyboard, nib, entitlements, xcscheme, xcconfig}"
+    "query": "extension in -i {ipa, ipsw, vcf, icns, plist, webarchive, scpt, pbxproj, strings, xib, storyboard, nib, entitlements, xcscheme, xcconfig}"
   },
   {
     "name": "ipython",
-    "query": "extension in {ipynb}"
+    "query": "extension in -i {ipynb}"
   },
   {
     "name": "jasperreports",
-    "query": "extension in {jrxml, jasper}"
+    "query": "extension in -i {jrxml, jasper}"
   },
   {
     "name": "java",
-    "query": "extension in {java}"
+    "query": "extension in -i {java}"
   },
   {
     "name": "java_binaries",
-    "query": "extension in {jar}"
+    "query": "extension in -i {jar}"
   },
   {
     "name": "java_boilerplate",
-    "query": "extension is classpath or name is package-info.java"
+    "query": "extension is -i classpath or name is -i package-info.java"
   },
   {
     "name": "javakeystore",
-    "query": "extension in {jks}"
+    "query": "extension in -i {jks}"
   },
   {
     "name": "javascript",
-    "query": "extension in {js, angular}"
+    "query": "extension in -i {js, angular}"
   },
   {
     "name": "jboss",
-    "query": "extension in {jcs}"
+    "query": "extension in -i {jcs}"
   },
   {
     "name": "jinja2",
-    "query": "extension in {j2, jinja}"
+    "query": "extension in -i {j2, jinja}"
   },
   {
     "name": "jmeter",
-    "query": "extension in {jmx}"
+    "query": "extension in -i {jmx}"
   },
   {
     "name": "json",
-    "query": "extension in {json, jws, jsonc}"
+    "query": "extension in -i {json, jws, jsonc}"
   },
   {
     "name": "jsp",
-    "query": "extension in {jsp, tld, jspf}"
+    "query": "extension in -i {jsp, tld, jspf}"
   },
   {
     "name": "kotlin",
-    "query": "extension in {kt}"
+    "query": "extension in -i {kt}"
   },
   {
     "name": "map",
-    "query": "extension in {map}"
+    "query": "extension in -i {map}"
   },
   {
     "name": "meta",
-    "query": "extension in {meta}"
+    "query": "extension in -i {meta}"
   },
   {
     "name": "xaml",
-    "query": "extension in {xaml}"
+    "query": "extension in -i {xaml}"
   },
   {
     "name": "multimedia",
-    "query": "extension in {mp3, wav, mp4}"
+    "query": "extension in -i {mp3, wav, mp4}"
   },
   {
     "name": "noise",
-    "query": "extension in {24px,betwixt,common,content,contrib,cpy,dat,enc,fmt,gen,hsp,hsw,in,index,jfm,log,Logger,lst,mako,md5,mex,mf,migration,msc,msg,multi,mymetadata,mystrutsdata,name,old,order,permutations,pkl,pklz,pp,Processor,refactorlog,rep,resources,rnc,rng,rsp,sas,sch,ser,service,template,tests,tmp,uat,user,wsgi,xdt} or extension like *javadoc* or extension like *core* or extension like *backup* or extension like js_* or extension like part* or extension like orig* or extension like pkl* or extension like *bak* or extension like insensitive *bak* or extension like *backup* or extension like insensitive *log*"
+    "query": "extension in -i {24px,betwixt,common,content,contrib,cpy,dat,enc,fmt,gen,hsp,hsw,in,index,jfm,log,Logger,lst,mako,md5,mex,mf,migration,msc,msg,multi,mymetadata,mystrutsdata,name,old,order,permutations,pkl,pklz,pp,Processor,refactorlog,rep,resources,rnc,rng,rsp,sas,sch,ser,service,template,tests,tmp,uat,user,wsgi,xdt} or extension like -i *javadoc* or extension like -i *core* or extension like -i *backup* or extension like -i js_* or extension like -i part* or extension like -i orig* or extension like -i pkl* or extension like -i *bak* or extension like insensitive *bak* or extension like -i *backup* or extension like insensitive *log*"
   },
   {
     "name": "objectivec/c++",
-    "query": "extension in {m, mm}"
+    "query": "extension in -i {m, mm}"
   },
   {
     "name": "oraclebpm",
-    "query": "extension in {bpmn, bpel, mplan, jca, rules, jpr}"
+    "query": "extension in -i {bpmn, bpel, mplan, jca, rules, jpr}"
   },
   {
     "name": "perl",
-    "query": "extension in {pl}"
+    "query": "extension in -i {pl}"
   },
   {
     "name": "php",
-    "query": "extension in {php, phpt}"
+    "query": "extension in -i {php, phpt}"
   },
   {
     "name": "precompiledc",
-    "query": "extension in {pc, pcpp}"
+    "query": "extension in -i {pc, pcpp}"
   },
   {
     "name": "proj_boilerplate",
-    "query": "extension like *proj or extension is iml"
+    "query": "extension like -i *proj or extension is -i iml"
   },
   {
     "name": "properties",
-    "query": "extension in {properties, prefs, props, Properties}"
+    "query": "extension in -i {properties, prefs, props, Properties}"
   },
   {
     "name": "python",
-    "query": "extension in {py}"
+    "query": "extension in -i {py}"
   },
   {
     "name": "raydreamstudio",
-    "query": "extension in {rds}"
+    "query": "extension in -i {rds}"
   },
   {
     "name": "rc_boilerplate",
-    "query": "extension like *rc"
+    "query": "extension like -i *rc"
   },
   {
     "name": "ruby",
-    "query": "extension in {rb}"
+    "query": "extension in -i {rb}"
   },
   {
     "name": "scala",
-    "query": "extension in {scala} or name is sca-processor"
+    "query": "extension in -i {scala} or name is sca-processor"
   },
   {
     "name": "scripts",
-    "query": "extension in {sh, bat, ksh, bsh, cmd, ps1, script}"
+    "query": "extension in -i {sh, bat, ksh, bsh, cmd, ps1, script}"
   },
   {
     "name": "simulink",
-    "query": "extension in {mdl}"
+    "query": "extension in -i {mdl}"
   },
   {
     "name": "smarty",
-    "query": "extension in {tpl}"
+    "query": "extension in -i {tpl}"
   },
   {
     "name": "sourcecontrol_boilerplate",
-    "query": "extension in {svcinfo, svcmap, vssscc, vspscc, gitattributes, gitignore, gitkeep, gitmodules, scc} or name is gitattributes or extension like *svn*"
+    "query": "extension in -i {svcinfo, svcmap, vssscc, vspscc, gitattributes, gitignore, gitkeep, gitmodules, scc} or name is -i gitattributes or extension like -i *svn*"
   },
   {
     "name": "sqlserver",
-    "query": "extension in {rdlc, rdl, dtsx, params, conmgr} or name is DatabaseSettings.xml"
+    "query": "extension in -i {rdlc, rdl, dtsx, params, conmgr} or name is DatabaseSettings.xml"
   },
   {
     "name": "entityframeworkdatamodel",
-    "query": "extension in {edmx}"
+    "query": "extension in -i {edmx}"
   },
   {
     "name": "stylesheet",
-    "query": "extension in {less, css, xsl, scss, xss}"
+    "query": "extension in -i {less, css, xsl, scss, xss}"
   },
   {
     "name": "swift",
-    "query": "extension in {swift}"
+    "query": "extension in -i {swift}"
   },
   {
     "name": "t4",
-    "query": "extension in {tt, ttinclude}"
+    "query": "extension in -i {tt, ttinclude}"
   },
   {
     "name": "tableau",
-    "query": "extension in {twb, twbx}"
+    "query": "extension in -i {twb, twbx}"
   },
   {
     "name": "tcl/tk",
-    "query": "extension in {tcl}"
+    "query": "extension in -i {tcl}"
   },
   {
     "name": "templates",
-    "query": "extension in {liquid}"
+    "query": "extension in -i {liquid}"
   },
   {
     "name": "terraform",
-    "query": "extension in {tf, tfvars}"
+    "query": "extension in -i {tf, tfvars}"
   },
   {
     "name": "testfiles",
-    "query": "extension in {tpp, txx, loadtest, webtestresult, webtest}"
+    "query": "extension in -i {tpp, txx, loadtest, webtestresult, webtest}"
   },
   {
     "name": "thrift",
-    "query": "extension in {thrift}"
+    "query": "extension in -i {thrift}"
   },
   {
     "name": "tools_boilerplate",
-    "query": "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties,coverity.conf,sonar.properties,lombok.config,descriptor.xml, override_java.security} or extension in {StyleCop,pmd} or name like *log4*"
+    "query": "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties,coverity.conf,sonar.properties,lombok.config,descriptor.xml, override_java.security} or extension in -i {StyleCop,pmd} or name like *log4*"
   },
   {
     "name": "twig",
-    "query": "extension in {twig}"
+    "query": "extension in -i {twig}"
   },
   {
     "name": "twing",
-    "query": "extension in {twing}"
+    "query": "extension in -i {twing}"
   },
   {
     "name": "typescript",
-    "query": "extension in {ts}"
+    "query": "extension in -i {ts}"
   },
   {
     "name": "vagrant",
-    "query": "extension like *vagrant* or name like insensitive *vagrant* "
+    "query": "extension like -i *vagrant* or name like insensitive *vagrant* "
   },
   {
     "name": "velocity",
-    "query": "extension in {VM, vm}"
+    "query": "extension in -i {VM, vm}"
   },
   {
     "name": "visual-paradigm",
-    "query": "extension in {swagger-codegen/VERSION, vpp}"
+    "query": "extension in -i {swagger-codegen/VERSION, vpp}"
   },
   {
     "name": "visualbasic",
-    "query": "extension in {vb,vbs}"
+    "query": "extension in -i {vb,vbs}"
   },
   {
     "name": "visualstudio_boilerplate",
-    "query": "extension in {vsext, sln, nupkg, nswag, nuspec, resx, datasource, myapp, licx, rsd, xsc, xsx, ssmssln, vsmdi, webinfo}"
+    "query": "extension in -i {vsext, sln, nupkg, nswag, nuspec, resx, datasource, myapp, licx, rsd, xsc, xsx, ssmssln, vsmdi, webinfo}"
   },
   {
     "name": "vue",
-    "query": "extension in {vue}"
+    "query": "extension in -i {vue}"
   },
   {
     "name": "webservices",
-    "query": "extension in {wsdl, xjb, disco}"
+    "query": "extension in -i {wsdl, xjb, disco}"
   },
   {
     "name": "xliff",
-    "query": "extension in {xlf}"
+    "query": "extension in -i {xlf}"
   },
   {
     "name": "xml",
-    "query": "extension in {xml, xsd, dtd, xhtml, axml, xslt, XML, dacpac, xmi} and not name in {feature.xml, release.xml, descriptor.xml, pom.xml, DatabaseSettings.xml}"
+    "query": "extension in -i {xml, xsd, dtd, xhtml, axml, xslt, XML, dacpac, xmi} and not name in {feature.xml, release.xml, descriptor.xml, pom.xml, DatabaseSettings.xml}"
   },
   {
     "name": "xquery",
-    "query": "extension in {xqy}"
+    "query": "extension in -i {xqy}"
   },
   {
     "name": "yaml",
-    "query": "extension in {yml, yaml}"
+    "query": "extension in -i {yml, yaml}"
   },
   {
     "name": "diagrams-as-code",
-    "query": "extension in {dot, puml}"
+    "query": "extension in -i {dot, puml}"
   },
   {
     "name": "diagrams",
-    "query": "extension in {drawio, diagram}"
+    "query": "extension in -i {drawio, diagram}"
   }
 ]
