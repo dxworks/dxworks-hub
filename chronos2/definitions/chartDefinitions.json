@@ -1627,9 +1627,10 @@
     ]
   },
   {
-    "name": "Evolution - Commits (by developer tenure)",
-    "slug": "knowledge-continuity",
+    "name": "Evolution - Commits (by developer tenure) - and authors",
+    "slug": "evolution-commits-by-developer-tenure-and-authors",
     "chartTypeOy1": "bar-chart",
+    "chartTypeOy2": "line-chart",
     "ox": {
       "entity": "period",
       "label": "",
@@ -1648,6 +1649,10 @@
         "colorScheme": "tenure"
       }
     },
+    "oy2": {
+      "query": "count authors having not name starts with _ for commits",
+      "label": "Developers"
+    },
     "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced developers?",
     "sort": {
       "by": "ox",
@@ -1663,6 +1668,7 @@
       "sortLabels": false,
       "width": 210
     },
+    "showAbsoluteValues": true,
     "formatNumericValues": {
       "axis": true,
       "points": true
