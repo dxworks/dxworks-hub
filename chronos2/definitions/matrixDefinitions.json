@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Volume of change per developer per month during last year",
+    "slug": "volume-of-change-per-developer-per-month-during-last-year",
+    "rowsDefinition": {
+      "entity": {
+        "name": "author",
+        "filter": "has commits during last year"
+      },
+      "defaultSort": {
+        "type": "date",
+        "query": "date of first commit",
+        "order": "ascending"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Developer",
+          "query": "name"
+        },
+        {
+          "type": "date",
+          "label": "First Commit",
+          "query": "date of first commit",
+          "sort": "ascending"
+        }
+      ],
+      "pageSize": 100
+    },
+    "columnsDefinition": {
+      "entity": {
+        "name": "period",
+        "filter": "during last year",
+        "momentOfTime": "now"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Period",
+          "query": "name",
+          "sort": "ascending"
+        }
+      ],
+      "pageSize": 100
+    },
+    "function": {
+      "type": "numeric",
+      "query": "sum churn of changes",
+      "format": {
+        "data": {
+          "thousandSeparator": true,
+          "notDisplayZeros": true
+        },
+        "conditional": [
+          {
+            "query": "${value} between 1 and 99",
+            "style": "background-color: #d62728; font-weight: bold; color: #fbfbfb"
+          }
+        ]
+      }
+    },
+    "section": "knowledge",
+    "traits": [
+      "aspect.cohesive-changes"
+    ]
+  },
+  {
+    "name": "Commits per developer per month during last year",
+    "slug": "commits-per-developer-per-month-during-last-year",
+    "rowsDefinition": {
+      "entity": {
+        "name": "author",
+        "filter": "has commits during last year"
+      },
+      "defaultSort": {
+        "type": "date",
+        "query": "date of first commit",
+        "order": "ascending"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Developer",
+          "query": "name"
+        },
+        {
+          "type": "date",
+          "label": "First Commit",
+          "query": "date of first commit",
+          "sort": "ascending"
+        }
+      ],
+      "pageSize": 100
+    },
+    "columnsDefinition": {
+      "entity": {
+        "name": "period",
+        "filter": "during last year",
+        "momentOfTime": "now"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Period",
+          "query": "name",
+          "sort": "ascending"
+        }
+      ],
+      "pageSize": 100
+    },
+    "function": {
+      "type": "numeric",
+      "query": "count commits",
+      "format": {
+        "data": {
+          "thousandSeparator": true,
+          "notDisplayZeros": true
+        },
+        "conditional": [
+          {
+            "query": "${value} between 1 and 2",
+            "style": "background-color: #d62728; font-weight: bold; color: #fbfbfb"
+          }
+        ]
+      }
+    },
+    "section": "knowledge",
+    "traits": [
+      "aspect.cohesive-changes"
+    ]
+  }
+]
