@@ -130,12 +130,122 @@
     ]
   },
   {
-    "name": "Compopnent-Developer-Matrix",
-    "slug": "developer-organic-churn-by-component",
+    "name": "Developer Gantt",
+    "slug": "developer-gantt",
     "rowsDefinition": {
       "entity": {
-        "name": "component@change",
-        "filter": "label not is @"
+        "name": "author",
+        "filter": "((sum churn of commits having volume.* in {focused, medium}) >= 5000) or (first commit since 2023)"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Name",
+          "query": "name"
+        },
+        {
+          "type": "date",
+          "label": "First Commit",
+          "query": "date of first commit having volume.* in {focused, medium}",
+          "sort": "ascending"
+        },
+        {
+          "type": "numeric",
+          "label": "Organic Churn",
+          "query": "sum churn of commits having volume.* in {focused, medium}",
+          "format": {
+            "data": {
+              "thousandSeparator": true
+            }
+          }
+        }
+      ],
+      "rows": {
+        "format": {
+          "conditional": [
+            {
+              "query": "status.active and ((sum churn of commits having volume.* in {focused, medium}) >= 50000)",
+              "style": "color: #2ca02c; font-weight: bold"
+            },
+            {
+              "query": "(not status.active) and ((sum churn of commits having volume.* in {focused, medium}) >= 50000)",
+              "style": "color: #1f77b4; font-weight: bold"
+            },
+            {
+              "query": "status.active",
+              "style": "color: #2ca02c"
+            },
+            {
+              "query": "not status.active",
+              "style": "color: #1f77b4"
+            }
+          ]
+        }
+      },
+      "pageSize": 100
+    },
+    "columnsDefinition": {
+      "entity": {
+        "name": "period",
+        "momentOfTime": "now"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Name",
+          "query": "name",
+          "sort": "ascending"
+        }
+      ],
+      "pageSize": 50
+    },
+    "function": {
+      "type": "numeric",
+      "query": "sum churn of commits having volume.* in {focused, medium} ",
+      "format": {
+        "data": {
+          "thousandSeparator": true,
+          "notDisplayZeros": true
+        },
+        "conditional": [
+          {
+            "query": "(${value} >= 5000) and the author has status.active",
+            "style": "background-color: #006f01; color: #ffffff; vertical-align: center; text-align: center; font-weight: bold"
+          },
+          {
+            "query": "(${value} >= 500) and the author has status.active",
+            "style": "background-color: #9ce159; vertical-align: center; text-align: center"
+          },
+          {
+            "query": "(${value} >= 1) and the author has status.active",
+            "style": "background-color: #ecf9e0; vertical-align: center; text-align: center"
+          },
+          {
+            "query": "${value} >= 5000",
+            "style": "background-color: #0557a0; color: #ffffff; vertical-align: center; text-align: center; font-weight: bold"
+          },
+          {
+            "query": "${value} >= 500",
+            "style": "background-color: #6db7ff; vertical-align: center; text-align: center"
+          },
+          {
+            "query": "${value} >= 1",
+            "style": "background-color: #dfeffe; vertical-align: center; text-align: center"
+          }
+        ]
+      }
+    },
+    "section": "overview",
+    "traits": [
+      "aspect.knowledge-continuity"
+    ]
+  },
+  {
+    "name": "Component-Developer Matrix",
+    "slug": "component-developer-matrix",
+    "rowsDefinition": {
+      "entity": {
+        "name": "component@change"
       },
       "defaultSort": {
         "type": "numeric",
@@ -150,7 +260,7 @@
         },
         {
           "type": "numeric",
-          "label": "Size %",
+          "label": "% Size",
           "query": "(sum size of files for changes) / (sum size of project's files)",
           "format": {
             "data": {
@@ -212,11 +322,11 @@
         },
         {
           "type": "numeric",
-          "label": "Organic Churn",
-          "query": "sum churn of commits having volume.* in {focused, medium} ",
+          "label": "KPS %",
+          "query": "((sum churn of commits having volume.* in {focused, medium}) * 100) / (sum churn of project's commits having volume.* in {focused, medium})",
           "format": {
             "data": {
-              "thousandSeparator": true
+              "nrOfDecimals": 1
             }
           }
         },
@@ -239,19 +349,19 @@
           "conditional": [
             {
               "query": "((sum churn of commits having volume.* in {focused, medium}) > 50000) and status.active",
-              "style": "background-color: #2ca02c; vertical-align: center; text-align: center; font-weight: bold; color: #ffffff"
+              "style": "vertical-align: center; text-align: center; font-weight: bold; color: #2ca02c"
             },
             {
               "query": "((sum churn of commits having volume.* in {focused, medium}) > 50000) and not status.active",
-              "style": "background-color: #1f77b4; vertical-align: center; text-align: center; font-weight: bold; color: #fffefe"
+              "style": "vertical-align: center; text-align: center; font-weight: bold; color: #1f77b4"
             },
             {
               "query": "status.active",
-              "style": "background-color: #c8e5c9; vertical-align: center; text-align: center"
+              "style": "vertical-align: center; text-align: center; color: #2ca02c"
             },
             {
               "query": "not status.active",
-              "style": "background-color: #bbdefa; vertical-align: center; text-align: center"
+              "style": "vertical-align: center; text-align: center; color: #1f77b4"
             }
           ]
         }
@@ -269,28 +379,156 @@
         "general": "vertical-align: center; text-align: center",
         "conditional": [
           {
-            "query": "${value} >= 10 and the author has status.active",
-            "style": "font-weight: bold; background-color: #2ca02c; color: #f6f0f0"
+            "query": "${value} >= 20 and the author has status.active",
+            "style": "font-weight: bold; background-color: #2f6d1c; color: #f6f0f0"
           },
           {
-            "query": "${value} between 0.1 and 10 and the author has status.active",
-            "style": "background-color: #cbeacc"
+            "query": "${value} >= 5 and the author has status.active",
+            "style": "background-color: #abdf6c"
+          },
+          {
+            "query": "${value} between 0.01 and 5 and the author has status.active",
+            "style": "background-color: #eef9e2"
           },
           {
             "query": "${value} >= 10 and the author not has status.active",
-            "style": "background-color: #1f77b4; color: #fcfafa; font-weight: bold"
+            "style": "background-color: #24569b; color: #fcfafa; font-weight: bold"
           },
           {
-            "query": "${value} between 0.01 and 10 and the author not has status.active",
-            "style": "background-color: #bbdefa; color: #0d0000"
+            "query": "${value} >= 5 and the author not has status.active",
+            "style": "background-color: #6ea6ef"
+          },
+          {
+            "query": "${value} between 0.01 and 5 and the author not has status.active",
+            "style": "background-color: #e2eefc; color: #0d0000"
           }
         ]
       }
     },
     "section": "knowledge",
     "traits": [
-      "aspect.developer-contribution",
-      "aspect.churn-analysis"
+      "aspect.knowledge-availability"
+    ]
+  },
+  {
+    "name": "Component Gantt",
+    "slug": "component-gantt",
+    "rowsDefinition": {
+      "entity": {
+        "name": "component@change"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Name",
+          "query": "label"
+        },
+        {
+          "type": "date",
+          "label": "First Organic Commit",
+          "query": "date of first commit having volume.* in {focused, medium} for changes",
+          "sort": "ascending"
+        },
+        {
+          "type": "numeric",
+          "label": "Organic Churn",
+          "query": "sum churn of commits having volume.* in {focused, medium} for changes",
+          "format": {
+            "data": {
+              "thousandSeparator": true
+            }
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "% Size",
+          "query": "(sum size of files for changes) / (sum size of project's files)",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 1
+            }
+          }
+        }
+      ],
+      "rows": {
+        "format": {
+          "conditional": [
+            {
+              "query": "(files having status.active for changes) and ((sum churn of change having commits having volume.* in {focused, medium}) >= 50000)",
+              "style": "color: #2ca02c; font-weight: bold"
+            },
+            {
+              "query": "(not files having status.active for changes) and ((sum churn of change having commits having volume.* in {focused, medium}) >= 50000)",
+              "style": "color: #1f77b4; font-weight: bold"
+            },
+            {
+              "query": "files having status.active for changes",
+              "style": "color: #2ca02c"
+            },
+            {
+              "query": "not files having status.active for changes",
+              "style": "color: #1f77b4"
+            }
+          ]
+        }
+      },
+      "pageSize": 100
+    },
+    "columnsDefinition": {
+      "entity": {
+        "name": "period",
+        "momentOfTime": "now"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Name",
+          "query": "name",
+          "sort": "ascending"
+        }
+      ],
+      "pageSize": 50
+    },
+    "function": {
+      "type": "numeric",
+      "query": "sum churn of commits having volume.* in {focused, medium} for changes ",
+      "format": {
+        "data": {
+          "thousandSeparator": true,
+          "notDisplayZeros": true
+        },
+        "conditional": [
+          {
+            "query": "(${value} >= 10000) and (files having status.active for changes)",
+            "style": "background-color: #006f01; color: #ffffff; vertical-align: center; text-align: center; font-weight: bold"
+          },
+          {
+            "query": "(${value} >= 1000) and (files having status.active for changes)",
+            "style": "background-color: #9ce159; vertical-align: center; text-align: center"
+          },
+          {
+            "query": "(${value} >= 1) and (files having status.active for changes)",
+            "style": "background-color: #ecf9e0; vertical-align: center; text-align: center"
+          },
+          {
+            "query": "(${value} >= 10000)",
+            "style": "background-color: #0557a0; color: #ffffff; vertical-align: center; text-align: center; font-weight: bold"
+          },
+          {
+            "query": "(${value} >= 1000)",
+            "style": "background-color: #6db7ff; vertical-align: center; text-align: center"
+          },
+          {
+            "query": "(${value} >= 1)",
+            "style": "background-color: #dfeffe; vertical-align: center; text-align: center"
+          }
+        ]
+      }
+    },
+    "section": "overview",
+    "traits": [
+      "aspect.code-evolution"
     ]
   }
 ]
