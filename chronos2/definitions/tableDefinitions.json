@@ -98,93 +98,244 @@
             "aspect.testing-efficacy"
         ]
     },
-  {
-    "name": "Developers table",
-    "slug": "developers-table",
-    "entity": {
-      "name": "author",
-      "filter": "not name starts with _"
-    },
-    "columns": [
-      {
-        "type": "string",
-        "label": "Name",
-        "query": "name",
-        "sort": "ascending",
-        "format": {}
+    {
+      "name": "Developers table (last year)",
+      "slug": "developers-table-last-year",
+      "entity": {
+        "name": "author",
+        "filter": "not name starts with _ and has changes during last year"
       },
-      {
-        "type": "numeric",
-        "label": "Commits",
-        "query": "count commits",
-        "format": {}
+      "columns": [
+        {
+          "type": "string",
+          "label": "Name",
+          "query": "name"
+        },
+        {
+          "type": "boolean",
+          "label": "Active",
+          "query": "status.active"
+        },
+        {
+          "type": "numeric",
+          "label": "Commits",
+          "query": "count commits"
+        },
+        {
+          "type": "date",
+          "label": "First commit",
+          "query": "date of first commit",
+          "sort": "descending",
+          "format": {
+            "conditional": [
+              {
+                "query": "date of first commit during last year",
+                "style": "font-weight: bold"
+              },
+              {
+                "query": "date of first commit not during last 3 years",
+                "style": "font-weight: lighter;"
+              }
+            ]
+          }
+        },
+        {
+          "type": "date",
+          "label": "Last commit",
+          "query": "date of last commit"
+        },
+        {
+          "type": "numeric",
+          "label": "Changes",
+          "query": "count changes"
+        },
+        {
+          "type": "numeric",
+          "label": "Volume of change",
+          "query": "sum churn of changes"
+        },
+        {
+          "type": "numeric",
+          "label": "% Volume of change",
+          "query": "(sum churn of changes) / (sum churn of project's changes)",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 0
+            },
+            "conditional": [
+              {
+                "query": "(sum churn of changes) / (sum churn of project's changes) <  0.01",
+                "style": "font-weight: lighter;"
+              },
+              {
+                "query": "(sum churn of changes) / (sum churn of project's changes) >  0.1",
+                "style": "font-weight: bold"
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "Growth",
+          "query": "sum growth of changes having growth > 0"
+        },
+        {
+          "type": "numeric",
+          "label": "Volume of change (last year)",
+          "query": "sum churn of commits having (date during last year)"
+        },
+        {
+          "type": "numeric",
+          "label": "% Volume of change (last year)",
+          "query": "(sum churn of commits having (date during last year)) / (sum churn of project's commits having (date during last year))",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 0
+            },
+            "conditional": [
+              {
+                "query": "(sum churn of commits having (date during last year)) / (sum churn of project's commits having (date during last year)) <  0.01",
+                "style": "font-weight: lighter;"
+              },
+              {
+                "query": "(sum churn of commits having (date during last year)) / (sum churn of project's commits having (date during last year)) >  0.1",
+                "style": "font-weight: bold"
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "Volume of change (last year, organic)",
+          "query": "sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import)"
+        },
+        {
+          "type": "numeric",
+          "label": "% Volume of change (last year, organic)",
+          "query": "(sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import)) / (sum churn of project's commits having (date during last year and not volume.*.bulk and not volume.*.import))",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 0
+            },
+            "conditional": [
+              {
+                "query": "(sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import)) / (sum churn of project's commits having (date during last year and not volume.*.bulk and not volume.*.import)) <  0.01",
+                "style": "font-weight: lighter;"
+              },
+              {
+                "query": "(sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import)) / (sum churn of project's commits having (date during last year and not volume.*.bulk and not volume.*.import)) >  0.1",
+                "style": "font-weight: bold"
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "Volume of change (last year, source-code)",
+          "query": "sum churn of changes since last year for files having technology.code"
+        },
+        {
+          "type": "numeric",
+          "label": "% Volume of change (last year, source-code)",
+          "query": "(sum churn of changes since last year for files having technology.code) / (sum churn of project's changes since last year for project's files having technology.code)",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 0
+            },
+            "conditional": [
+              {
+                "query": "(sum churn of changes since last year for files having technology.code) / (sum churn of project's changes since last year for project's files having technology.code) <  0.01",
+                "style": "font-weight: lighter;"
+              },
+              {
+                "query": "(sum churn of changes since last year for files having technology.code) / (sum churn of project's changes since last year for project's files having technology.code) >  0.1",
+                "style": "font-weight: bold"
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "Volume of change (last year, organic, source-code)",
+          "query": "sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import) for files having technology.code"
+        },
+        {
+          "type": "numeric",
+          "label": "% Volume of change (last year, organic, source-code)",
+          "query": "(sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import) for files having technology.code) / (sum churn of project's commits having (date during last year and not volume.*.bulk and not volume.*.import) for project's files having technology.code)",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 0
+            },
+            "conditional": [
+              {
+                "query": "(sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import) for files having technology.code) / (sum churn of project's commits having (date during last year and not volume.*.bulk and not volume.*.import) for project's files having technology.code) <  0.01",
+                "style": "font-weight: lighter;"
+              },
+              {
+                "query": "(sum churn of commits having (date during last year and not volume.*.bulk and not volume.*.import) for files having technology.code) / (sum churn of project's commits having (date during last year and not volume.*.bulk and not volume.*.import) for project's files having technology.code) >  0.1",
+                "style": "font-weight: bold"
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "Growth (last year, source-code)",
+          "query": "sum growth of changes having (date since last year and growth > 0) for files having technology.code"
+        },
+        {
+          "type": "numeric",
+          "label": "% Growth (last year, source-code)",
+          "query": "(sum growth of changes having (date since last year and growth > 0) for files having technology.code) / (sum growth of project's changes having (date since last year and growth > 0) for project's files having technology.code)",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 0
+            },
+            "conditional": [
+              {
+                "query": "(sum growth of changes having (date since last year and growth > 0) for files having technology.code) / (sum growth of project's changes having (date since last year and growth > 0) for project's files having technology.code) <  0.01",
+                "style": "font-weight: lighter;"
+              },
+              {
+                "query": "(sum growth of changes having (date since last year and growth > 0) for files having technology.code) / (sum growth of project's changes having (date since last year and growth > 0) for project's files having technology.code) >  0.1",
+                "style": "font-weight: bold"
+              }
+            ]
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "Last Year Files",
+          "query": "count files for changes having date since last year"
+        }
+      ],
+      "rows": {
+        "format": {
+          "conditional": [
+            {
+              "query": "status.active",
+              "style": "color: #2ca02c;"
+            },
+            {
+              "query": "not status.active",
+              "style": "color: #1f77b4"
+            }
+          ]
+        }
       },
-      {
-        "type": "date",
-        "label": "First commit",
-        "query": "date of first commit",
-        "format": {}
-      },
-      {
-        "type": "date",
-        "label": "Last commit",
-        "query": "date of last commit",
-        "format": {}
-      },
-      {
-        "type": "boolean",
-        "label": "Active",
-        "query": "status.active",
-        "format": {}
-      },
-      {
-        "type": "numeric",
-        "label": "Changes",
-        "query": "count changes",
-        "format": {}
-      },
-      {
-        "type": "numeric",
-        "label": "Volume of change",
-        "query": "sum churn of changes",
-        "format": {}
-      },
-      {
-        "type": "numeric",
-        "label": "Growth",
-        "query": "sum growth of changes having growth > 0",
-        "format": {}
-      },
-      {
-        "type": "numeric",
-        "label": "Volume of recent source-code non bulk changes",
-        "query": "sum churn of commits having (date since 2023 and not volume.*.bulk and not volume.*.import) for files having technology.code",
-        "format": {}
-      },
-      {
-        "type": "numeric",
-        "label": "Volume of recent source-code changes",
-        "query": "sum churn of changes since 2023 for files having technology.code",
-        "format": {}
-      },
-      {
-        "type": "numeric",
-        "label": "Recent source-code growth",
-        "query": "sum growth of changes having (date since 2023 and growth > 0) for files having technology.code",
-        "format": {}
-      },
-      {
-        "type": "numeric",
-        "label": "Recent Files Count",
-        "query": "count files for changes having date since 2023",
-        "format": {}
-      }
-    ],
-    "pageSize": 10,
-    "notes": "",
-    "section": "knowledge",
-    "traits": [
-      "aspect.team-evolution"
-    ]
-  }
+      "pageSize": 10,
+      "notes": "This table contains many columns (all changes/organic/source-code). Not all are useful, so remove the ones that are not. Also, remove the status.active filter if you want to see data about all developers.",
+      "section": "knowledge",
+      "traits": [
+        "aspect.team-evolution",
+        "aspect.knowledge-sharing"
+      ]
+    }
 ]
