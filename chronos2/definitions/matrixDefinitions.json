@@ -530,5 +530,176 @@
     "traits": [
       "aspect.code-evolution"
     ]
+  },
+  {
+    "name": "Developers commits on multiple components - Matrix",
+    "slug": "developers-commits-on-multiple-components-matrix",
+    "rowsDefinition": {
+      "entity": {
+        "name": "author",
+        "filter": "count component.* for files > 1"
+      },
+      "defaultSort": {
+        "type": "numeric",
+        "query": "count commits",
+        "order": "descending"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Developer",
+          "query": "name"
+        },
+        {
+          "type": "numeric",
+          "label": "Components",
+          "query": "count component.* for files"
+        },
+        {
+          "type": "date",
+          "label": "Last Change",
+          "query": "date of last change"
+        },
+        {
+          "type": "numeric",
+          "label": "Commits",
+          "query": "count commits",
+          "format": {
+            "data": {
+              "nrOfDecimals": 0
+            }
+          }
+        }
+      ],
+      "header": {
+        "format": "vertical-align: center; text-align: left"
+      },
+      "rows": {
+        "format": {
+          "conditional": [
+            {
+              "query": "((sum churn of commits) > 50000) and status.active",
+              "style": "vertical-align: center; text-align: center; font-weight: bold; color: #2ca02c"
+            },
+            {
+              "query": "((sum churn of commit) > 50000) and not status.active",
+              "style": "vertical-align: center; text-align: center; font-weight: bold; color: #1f77b4"
+            },
+            {
+              "query": "status.active",
+              "style": "vertical-align: center; text-align: center; color: #2ca02c"
+            },
+            {
+              "query": "not status.active",
+              "style": "vertical-align: center; text-align: center; color: #1f77b4"
+            }
+          ]
+        }
+      },
+      "pageSize": 25
+    },
+    "columnsDefinition": {
+      "entity": {
+        "name": "component@change"
+      },
+      "defaultSort": {
+        "type": "numeric",
+        "query": "((sum size of files for changes) * 100) / (sum size of project's files)",
+        "order": "descending"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "System",
+          "query": "label"
+        },
+        {
+          "type": "numeric",
+          "label": "% Size",
+          "query": "(sum size of files for changes) / (sum size of project's files)",
+          "format": {
+            "data": {
+              "percent": true,
+              "nrOfDecimals": 0
+            }
+          }
+        },
+        {
+          "type": "numeric",
+          "label": "Commits",
+          "query": "count commits for changes",
+          "format": {
+            "data": {
+              "thousandSeparator": true
+            }
+          }
+        }
+      ],
+      "rows": {
+        "format": {
+          "conditional": [
+            {
+              "query": "((sum size of files for changes) / (sum size of project's files)) >= 0.05 and files having status.active for changes",
+              "style": "font-weight: bold; color: #2ca02c"
+            },
+            {
+              "query": "files having status.active for changes",
+              "style": "color: #2ca02c"
+            },
+            {
+              "query": "((sum size of files for changes) / (sum size of project's files)) >= 0.05 and not files having status.active for changes",
+              "style": "font-weight: bold; color: #1f77b4"
+            },
+            {
+              "query": "not files having status.active for changes",
+              "style": "color: #1f77b4"
+            }
+          ]
+        }
+      },
+      "pageSize": 25
+    },
+    "function": {
+      "type": "numeric",
+      "query": "count commits for changes",
+      "format": {
+        "data": {
+          "nrOfDecimals": 0,
+          "notDisplayZeros": true
+        },
+        "general": "vertical-align: center; text-align: center",
+        "conditional": [
+          {
+            "query": "${value} >= 50 and the author has status.active",
+            "style": "font-weight: bold; background-color: #2f6d1c; color: #f6f0f0"
+          },
+          {
+            "query": "${value} >=  20 and the author has status.active",
+            "style": "background-color: #abdf6c"
+          },
+          {
+            "query": "${value} between 1 and 20 and the author has status.active",
+            "style": "background-color: #eef9e2"
+          },
+          {
+            "query": "${value} >= 50 and the author not has status.active",
+            "style": "background-color: #24569b; color: #fcfafa; font-weight: bold"
+          },
+          {
+            "query": "${value} >= 20 and the author not has status.active",
+            "style": "background-color: #6ea6ef"
+          },
+          {
+            "query": "${value} between 1 and 20 and the author not has status.active",
+            "style": "background-color: #e2eefc; color: #0d0000"
+          }
+        ]
+      }
+    },
+    "section": "knowledge",
+    "traits": [
+      "aspect.knowledge-availability",
+      "aspect.cognitive-load"
+    ]
   }
 ]
