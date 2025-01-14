@@ -274,11 +274,10 @@
     ],
     "section": "separation-of-concerns",
     "traits": [
+      "report-section.maintainability-code-complexity",
       "aspect.responsibility-balance",
       "aspect.cognitive-load",
       "aspect.current-activity-hotspots",
-      "assessment.cqr",
-      "cqr-perspective.complexity",
       "aspect.clean-code",
       "aspect.testing-coverage"
     ]
@@ -344,10 +343,8 @@
     ],
     "section": "feature-encapsulation",
     "traits": [
-      "aspect.duplication",
-      "assessment.cqr",
-      "cqr-perspective.duplication",
-      "report.include"
+      "report-section.maintainability-duplication",
+      "aspect.duplication"
     ]
   },
   {
@@ -410,10 +407,8 @@
     ],
     "section": "test-automation",
     "traits": [
-      "aspect.testing-coverage",
-      "assessment.cqr",
-      "cqr-perspective.overview",
-      "report.include"
+      "report-section.test-automation",
+      "aspect.testing-coverage"
     ]
   },
   {
@@ -475,12 +470,11 @@
     ],
     "section": "overview",
     "traits": [
-      "assessment.cqr",
+      "report-section.development-patterns",
       "aspect.code-evolution",
       "aspect.current-activity-hotspots",
       "aspect.freshness",
-      "aspect.locality-of-changes",
-      "cqr-perspective.structuring"
+      "aspect.locality-of-changes"
     ]
   },
   {
@@ -543,11 +537,9 @@
     ],
     "section": "overview",
     "traits": [
-      "assessment.cqr",
+      "report-section.development-patterns",
       "aspect.current-activity-hotspots",
       "aspect.freshness",
-      "cqr-perspective.structuring",
-      "report.include",
       "aspect.recent-activity-patterns",
       "aspect.locality-of-changes"
     ]
@@ -611,12 +603,11 @@
     ],
     "section": "overview",
     "traits": [
-      "assessment.cqr",
+      "report-section.development-patterns",
       "aspect.code-evolution",
       "aspect.current-activity-hotspots",
       "aspect.freshness",
-      "aspect.locality-of-changes",
-      "cqr-perspective.structuring"
+      "aspect.locality-of-changes"
     ]
   },
   {
@@ -695,9 +686,7 @@
     },
     "section": "code-organisation",
     "traits": [
-      "assessment.cqr",
-      "cqr-perspective.structuring",
-      "report.include",
+      "report-section.maintainability-code-organisation",
       "aspect.cognitive-load",
       "aspect.responsibility-balance"
     ]
@@ -713,9 +702,7 @@
     },
     "section": "code-organisation",
     "traits": [
-      "assessment.cqr",
-      "cqr-perspective.structuring",
-      "report.include",
+      "report-section.maintainability-code-organisation",
       "aspect.cognitive-load",
       "aspect.responsibility-balance"
     ]
@@ -736,6 +723,7 @@
     },
     "section": "code-organisation",
     "traits": [
+      "report-section.maintainability-code-organisation",
       "aspect.responsibility-balance"
     ]
   },
@@ -758,6 +746,7 @@
     "notes": "An ungrouped (orphaned) class is one that exists in a root namespace. A root namespace is defined as any namespace that is extended by another element in that namespace.",
     "section": "code-organisation",
     "traits": [
+      "report-section.maintainability-code-organisation",
       "aspect.responsibility-balance",
       "aspect.uniformity"
     ]

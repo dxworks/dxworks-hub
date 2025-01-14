@@ -61,6 +61,7 @@
     },
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.cohesive-changes"
     ]
   },
@@ -126,6 +127,7 @@
     },
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.cohesive-changes"
     ]
   },
@@ -237,6 +239,7 @@
     },
     "section": "overview",
     "traits": [
+      "report-section.knowledge",
       "aspect.knowledge-continuity"
     ]
   },
@@ -528,6 +531,7 @@
     },
     "section": "overview",
     "traits": [
+      "report-section.development-patterns",
       "aspect.code-evolution"
     ]
   },
@@ -698,6 +702,7 @@
     },
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.knowledge-availability",
       "aspect.cognitive-load"
     ]

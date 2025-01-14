@@ -243,7 +243,7 @@
     "orientation": "vertical",
     "section": "technology-stack",
     "traits": [
-      "assessment.cqr",
+      "report-section.technology-stack",
       "aspect.freshness"
     ]
   },
@@ -291,9 +291,7 @@
     "orientation": "horizontal",
     "section": "technology-stack",
     "traits": [
-      "assessment.cqr",
-      "cqr-perspective.structuring",
-      "report.include",
+      "report-section.technology-stack",
       "aspect.freshness",
       "aspect.code-evolution",
       "aspect.technology-coherence",
@@ -349,8 +347,7 @@
     "orientation": "vertical",
     "section": "technology-stack",
     "traits": [
-      "assessment.cqr",
-      "cqr-perspective.structuring",
+      "report-section.technology-stack",
       "aspect.technology-coherence",
       "aspect.technology-freshness"
     ]
@@ -440,6 +437,7 @@
     "orientation": "vertical",
     "section": "separation-of-concerns",
     "traits": [
+      "report-section.maintainability-code-complexity",
       "aspect.clean-code",
       "aspect.cognitive-load",
       "aspect.code-evolution"
@@ -486,6 +484,7 @@
     "orientation": "vertical",
     "section": "separation-of-concerns",
     "traits": [
+      "report-section.maintainability-code-complexity",
       "aspect.clean-code",
       "aspect.cognitive-load",
       "aspect.current-activity-hotspots"
@@ -532,6 +531,7 @@
     "orientation": "vertical",
     "section": "separation-of-concerns",
     "traits": [
+      "report-section.maintainability-code-complexity",
       "aspect.clean-code",
       "aspect.cognitive-load",
       "aspect.current-activity-hotspots"
@@ -581,6 +581,7 @@
     "orientation": "vertical",
     "section": "feature-traceability",
     "traits": [
+      "report-section.development-patterns",
       "aspect.code-evolution",
       "aspect.current-activity-hotspots",
       "aspect.traceable-changes",
@@ -636,12 +637,10 @@
     "orientation": "vertical",
     "section": "nature-of-changes",
     "traits": [
-      "assessment.cqr",
       "aspect.code-evolution",
       "aspect.stage-of-evolution",
       "aspect.current-activity-hotspots",
-      "aspect.freshness",
-      "cqr-perspective.overview"
+      "aspect.freshness"
     ]
   },
   {
@@ -693,12 +692,11 @@
     "orientation": "vertical",
     "section": "nature-of-changes",
     "traits": [
-      "assessment.cqr",
+      "report-section.development-patterns",
       "aspect.code-evolution",
       "aspect.stage-of-evolution",
       "aspect.current-activity-hotspots",
-      "aspect.freshness",
-      "cqr-perspective.overview"
+      "aspect.freshness"
     ]
   },
   {
@@ -794,6 +792,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.knowledge",
       "aspect.knowledge-continuity",
       "aspect.team-evolution"
     ]
@@ -839,6 +838,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.knowledge",
       "aspect.knowledge-continuity",
       "aspect.team-evolution"
     ]
@@ -888,6 +888,7 @@
     "orientation": "vertical",
     "section": "overview",
     "traits": [
+      "report-section.development-patterns",
       "aspect.code-evolution",
       "aspect.freshness"
     ]
@@ -936,6 +937,7 @@
     "orientation": "vertical",
     "section": "test-automation",
     "traits": [
+      "report-section.test-automation",
       "aspect.testing-coverage"
     ]
   },
@@ -1100,6 +1102,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.cohesive-changes",
       "aspect.cognitive-load"
     ]
@@ -1160,6 +1163,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.cohesive-changes",
       "aspect.cognitive-load"
     ]
@@ -1219,9 +1223,8 @@
     "orientation": "vertical",
     "section": "feature-traceability",
     "traits": [
-      "aspect.traceable-changes",
-      "assessment.cqr",
-      "cqr-perspective.overview"
+      "report-section.development-patterns",
+      "aspect.traceable-changes"
     ]
   },
   {
@@ -1274,6 +1277,7 @@
     "orientation": "vertical",
     "section": "nature-of-changes",
     "traits": [
+      "report-section.development-patterns",
       "aspect.clean-code",
       "aspect.team-evolution"
     ]
@@ -1428,7 +1432,6 @@
     "orientation": "vertical",
     "section": "overview",
     "traits": [
-      "assessment.cqr",
       "aspect.code-evolution",
       "aspect.current-activity-hotspots"
     ]
@@ -1477,7 +1480,7 @@
     "orientation": "vertical",
     "section": "overview",
     "traits": [
-      "assessment.cqr",
+      "report-section.development-patterns",
       "aspect.code-evolution",
       "aspect.current-activity-hotspots"
     ]
@@ -1526,6 +1529,7 @@
     "orientation": "vertical",
     "section": "nature-of-changes",
     "traits": [
+      "report-section.development-patterns",
       "aspect.clean-code",
       "aspect.team-evolution"
     ]
@@ -1574,6 +1578,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.team-evolution",
       "aspect.knowledge-continuity"
     ]
@@ -1676,6 +1681,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.knowledge",
       "aspect.knowledge-continuity"
     ]
   },
@@ -1823,11 +1829,9 @@
     "orientation": "vertical",
     "section": "test-automation",
     "traits": [
+      "report-section.test-automation",
       "aspect.testing-coverage",
-      "aspect.testing-efficacy",
-      "assessment.cqr",
-      "cqr-perspective.overview",
-      "report.include"
+      "aspect.testing-efficacy"
     ]
   },
   {
@@ -1873,6 +1877,7 @@
     "orientation": "vertical",
     "section": "test-automation",
     "traits": [
+      "report-section.test-automation",
       "aspect.testing-efficacy"
     ]
   },
@@ -1925,11 +1930,9 @@
     "orientation": "vertical",
     "section": "overview",
     "traits": [
-      "assessment.cqr",
+      "report-section.development-patterns",
       "aspect.code-evolution",
-      "aspect.current-activity-hotspots",
-      "cqr-perspective.overview",
-      "report.include"
+      "aspect.current-activity-hotspots"
     ]
   },
   {
@@ -1973,6 +1976,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.knowledge",
       "aspect.cognitive-load",
       "aspect.team-evolution",
       "aspect.code-evolution"
@@ -2027,6 +2031,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.knowledge",
       "aspect.cognitive-load"
     ]
   },
@@ -2127,8 +2132,6 @@
     "traits": [
       "aspect.knowledge-sharing",
       "aspect.knowledge-availability",
-      "assessment.cqr",
-      "cqr-perspective.overview",
       "aspect.cognitive-load"
     ]
   },
@@ -2176,10 +2179,9 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.knowledge-sharing",
       "aspect.knowledge-availability",
-      "assessment.cqr",
-      "cqr-perspective.overview",
       "aspect.cognitive-load"
     ]
   },
@@ -2228,10 +2230,9 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.knowledge-availability",
-      "aspect.author-skills",
-      "assessment.cqr",
-      "viewset.default"
+      "aspect.author-skills"
     ]
   },
   {
@@ -2279,11 +2280,9 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.knowledge",
       "aspect.knowledge-sharing",
-      "aspect.knowledge-availability",
-      "assessment.cqr",
-      "cqr-perspective.overview",
-      "report.include"
+      "aspect.knowledge-availability"
     ]
   },
   {
@@ -2331,11 +2330,9 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.knowledge",
       "aspect.knowledge-sharing",
-      "aspect.knowledge-availability",
-      "assessment.cqr",
-      "cqr-perspective.overview",
-      "report.include"
+      "aspect.knowledge-availability"
     ]
   },
   {
@@ -2477,6 +2474,7 @@
     "orientation": "horizontal",
     "section": "test-automation",
     "traits": [
+      "report-section.test-automation",
       "aspect.testing-coverage"
     ]
   },
@@ -2529,9 +2527,8 @@
     "orientation": "vertical",
     "section": "overview",
     "traits": [
-      "assessment.cqr",
-      "aspect.freshness",
-      "cqr-perspective.structuring"
+      "report-section.development-patterns",
+      "aspect.freshness"
     ]
   },
   {
@@ -2577,6 +2574,7 @@
     "orientation": "vertical",
     "section": "knowledge",
     "traits": [
+      "report-section.development-patterns",
       "aspect.cognitive-load",
       "aspect.knowledge-continuity",
       "aspect.coordination-costs"
@@ -2625,6 +2623,7 @@
     "orientation": "horizontal",
     "section": "separation-of-concerns",
     "traits": [
+      "report-section.maintainability-code-complexity",
       "aspect.clean-code",
       "aspect.responsibility-balance"
     ]
@@ -2669,6 +2668,7 @@
     "orientation": "vertical",
     "section": "nature-of-changes",
     "traits": [
+      "report-section.development-patterns",
       "aspect.code-evolution"
     ]
   }
