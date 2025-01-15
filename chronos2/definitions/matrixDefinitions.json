@@ -248,7 +248,8 @@
     "slug": "component-developer-matrix",
     "rowsDefinition": {
       "entity": {
-        "name": "component@change"
+        "name": "component@change",
+        "filter": "not name in {component.@}"
       },
       "defaultSort": {
         "type": "numeric",
@@ -258,7 +259,7 @@
       "columns": [
         {
           "type": "string",
-          "label": "Label",
+          "label": "Component",
           "query": "label"
         },
         {
@@ -310,7 +311,7 @@
     "columnsDefinition": {
       "entity": {
         "name": "author",
-        "filter": "(sum churn of commits having volume.* in {focused, medium}) > 10000"
+        "filter": "(sum churn of commits having volume.* in {focused, medium}) > 10000 and not name starts with _"
       },
       "defaultSort": {
         "type": "numeric",
@@ -318,6 +319,11 @@
         "order": "descending"
       },
       "columns": [
+        {
+          "type": "date",
+          "label": "First Change",
+          "query": "date of first change"
+        },
         {
           "type": "date",
           "label": "Last Change",
@@ -382,7 +388,7 @@
         "general": "vertical-align: center; text-align: center",
         "conditional": [
           {
-            "query": "${value} >= 20 and the author has status.active",
+            "query": "${value} >= 30 and the author has status.active",
             "style": "font-weight: bold; background-color: #2f6d1c; color: #f6f0f0"
           },
           {
@@ -410,6 +416,167 @@
     },
     "section": "knowledge",
     "traits": [
+      "aspect.knowledge-availability"
+    ]
+  },
+  {
+    "name": "Component-Developer Matrix - last year",
+    "slug": "component-developer-matrix-last-year",
+    "rowsDefinition": {
+      "entity": {
+        "name": "component@change",
+        "filter": "not name in {component.@}"
+      },
+      "defaultSort": {
+        "type": "numeric",
+        "query": "((sum size of files for changes) * 100) / (sum size of project's files)",
+        "order": "descending"
+      },
+      "columns": [
+        {
+          "type": "string",
+          "label": "Component",
+          "query": "label"
+        },
+        {
+          "type": "numeric",
+          "label": "Organic Churn (recent)",
+          "query": "sum churn of changes having commits having (volume.* in {focused, medium} and date since last year)",
+          "format": {
+            "data": {
+              "thousandSeparator": true
+            }
+          }
+        }
+      ],
+      "rows": {
+        "format": {
+          "conditional": [
+            {
+              "query": "((sum size of files for changes) / (sum size of project's files)) >= 0.05 and files having status.active for changes",
+              "style": "font-weight: bold; color: #2ca02c"
+            },
+            {
+              "query": "files having status.active for changes",
+              "style": "color: #2ca02c"
+            },
+            {
+              "query": "((sum size of files for changes) / (sum size of project's files)) >= 0.05 and not files having status.active for changes",
+              "style": "font-weight: bold; color: #1f77b4"
+            },
+            {
+              "query": "not files having status.active for changes",
+              "style": "color: #1f77b4"
+            }
+          ]
+        }
+      },
+      "pageSize": 25
+    },
+    "columnsDefinition": {
+      "entity": {
+        "name": "author",
+        "filter": "not name starts with _ and has commits since 2023-06"
+      },
+      "defaultSort": {
+        "type": "numeric",
+        "query": "sum churn of commits having (volume.* in {focused, medium} and date since 2023-06)",
+        "order": "descending"
+      },
+      "columns": [
+        {
+          "type": "date",
+          "label": "First Change",
+          "query": "date of first change"
+        },
+        {
+          "type": "date",
+          "label": "Last Change",
+          "query": "date of last change"
+        },
+        {
+          "type": "numeric",
+          "label": "KPS % (recent)",
+          "query": "((sum churn of commits having (volume.* in {focused, medium} and date since 2023-06)) * 100) / (sum churn of project's commits having (volume.* in {focused, medium} and date since 2023-06))",
+          "format": {
+            "data": {
+              "nrOfDecimals": 1
+            }
+          }
+        },
+        {
+          "type": "string",
+          "label": "Developer",
+          "query": "name"
+        }
+      ],
+      "header": {
+        "format": "vertical-align: center; text-align: left"
+      },
+      "rows": {
+        "format": {
+          "conditional": [
+            {
+              "query": "((sum churn of commits having volume.* in {focused, medium}) > 50000) and status.active",
+              "style": "vertical-align: center; text-align: center; font-weight: bold; color: #2ca02c"
+            },
+            {
+              "query": "((sum churn of commits having volume.* in {focused, medium}) > 50000) and not status.active",
+              "style": "vertical-align: center; text-align: center; font-weight: bold; color: #1f77b4"
+            },
+            {
+              "query": "status.active",
+              "style": "vertical-align: center; text-align: center; color: #2ca02c"
+            },
+            {
+              "query": "not status.active",
+              "style": "vertical-align: center; text-align: center; color: #1f77b4"
+            }
+          ]
+        }
+      },
+      "pageSize": 25
+    },
+    "function": {
+      "type": "numeric",
+      "query": "((sum churn of changes having commits having (volume.* in {focused, medium} and date since 2023-06)) * 100) / (sum churn of component's changes having commits having (volume.* in {focused, medium} and date since 2023-06)) ",
+      "format": {
+        "data": {
+          "nrOfDecimals": 1,
+          "notDisplayZeros": true
+        },
+        "general": "vertical-align: center; text-align: center",
+        "conditional": [
+          {
+            "query": "${value} >= 30 and the author has status.active",
+            "style": "font-weight: bold; background-color: #2f6d1c; color: #f6f0f0"
+          },
+          {
+            "query": "${value} >= 5 and the author has status.active",
+            "style": "background-color: #abdf6c"
+          },
+          {
+            "query": "${value} between 0.01 and 5 and the author has status.active",
+            "style": "background-color: #eef9e2"
+          },
+          {
+            "query": "${value} >= 10 and the author not has status.active",
+            "style": "background-color: #24569b; color: #fcfafa; font-weight: bold"
+          },
+          {
+            "query": "${value} >= 5 and the author not has status.active",
+            "style": "background-color: #6ea6ef"
+          },
+          {
+            "query": "${value} between 0.01 and 5 and the author not has status.active",
+            "style": "background-color: #e2eefc; color: #0d0000"
+          }
+        ]
+      }
+    },
+    "section": "knowledge",
+    "traits": [
+      "report-section.knowledge",
       "aspect.knowledge-availability"
     ]
   },
