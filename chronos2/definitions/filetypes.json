@@ -116,7 +116,7 @@
     "query": "extension in -i {erl, hrl}"
   },
   {
-    "name": "extendscript",
+    "name": "react-components",
     "query": "extension in -i {jsx, tsx}"
   },
   {
