@@ -59,12 +59,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2019",
-        "query": "first change before 2020"
-      },
-      {
-        "label": "2020",
-        "query": "first change during 2020"
+        "label": "<=2020",
+        "query": "first change before 2021"
       },
       {
         "label": "2021",
@@ -81,6 +77,10 @@
       {
         "label": "2024",
         "query": "first change during 2024"
+      },
+      {
+        "label": "2025",
+        "query": "first change during 2025"
       }
     ]
   },
@@ -122,11 +122,7 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2019",
-        "query": "last change before 2020"
-      },
-      {
-        "label": "2020",
+        "label": "<=2020",
         "query": "last change before 2021"
       },
       {
@@ -144,6 +140,10 @@
       {
         "label": "2024",
         "query": "last change before 2025"
+      },
+      {
+        "label": "2025",
+        "query": "last change before 2026"
       }
     ]
   },
@@ -154,12 +154,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2019",
-        "query": "files having first change before 2020"
-      },
-      {
-        "label": "2020",
-        "query": "files having first change during 2020"
+        "label": "<=2020",
+        "query": "files having first change before 2021"
       },
       {
         "label": "2021",
@@ -176,6 +172,10 @@
       {
         "label": "2024",
         "query": "files having first change during 2024"
+      },
+      {
+        "label": "2025",
+        "query": "files having first change during 2025"
       }
     ]
   },
@@ -580,12 +580,8 @@
     "domain": "startYear",
     "groups": [
       {
-        "label": "<=2019",
-        "query": "first change before 2020"
-      },
-      {
-        "label": "2020",
-        "query": "first change during 2020"
+        "label": "<=2020",
+        "query": "first change before 2021"
       },
       {
         "label": "2021",
@@ -602,6 +598,10 @@
       {
         "label": "2024",
         "query": "first change during 2024"
+      },
+      {
+        "label": "2025",
+        "query": "first change during 2025"
       }
     ]
   },
@@ -611,12 +611,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2019",
-        "query": "has date before 2020"
-      },
-      {
-        "label": "2020",
-        "query": "has date during 2020"
+        "label": "<=2020",
+        "query": "has date before 2021"
       },
       {
         "label": "2021",
@@ -633,6 +629,10 @@
       {
         "label": "2024",
         "query": "has date during 2024"
+      },
+      {
+        "label": "2025",
+        "query": "has date during 2025"
       }
     ]
   },
@@ -642,12 +642,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2019",
-        "query": "has date before 2020"
-      },
-      {
-        "label": "2020",
-        "query": "has date during 2020"
+        "label": "<=2020",
+        "query": "has date before 2021"
       },
       {
         "label": "2021",
@@ -664,6 +660,10 @@
       {
         "label": "2024",
         "query": "has date during 2024"
+      },
+      {
+        "label": "2025",
+        "query": "has date during 2025"
       }
     ]
   },
