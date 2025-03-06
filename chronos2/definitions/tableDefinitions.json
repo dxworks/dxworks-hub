@@ -337,5 +337,122 @@
         "aspect.team-evolution",
         "aspect.knowledge-sharing"
       ]
-    }
+    },
+    {
+      "name": "FilesExport",
+      "slug": "filesexport",
+      "entity": {
+          "name": "file"
+      },
+      "columns": [
+          {
+              "type": "string",
+              "label": "path",
+              "query": "path",
+              "sort": "ascending"
+          },
+          {
+              "type": "list of strings",
+              "label": "Component",
+              "query": "label of component.*"
+          },
+          {
+              "type": "string",
+              "label": "extension",
+              "query": "extension"
+          },
+          {
+              "type": "date",
+              "label": "firstCommitDate",
+              "query": "date of first commit"
+          },
+          {
+              "type": "date",
+              "label": "lastCommitDate",
+              "query": "date of last commit"
+          },
+          {
+              "type": "numeric",
+              "label": "numberOfCommits",
+              "query": "count commits"
+          },
+          {
+              "type": "numeric",
+              "label": "numberOfLastYearCommits",
+              "query": "count commits during last year"
+          },
+          {
+              "type": "numeric",
+              "label": "size",
+              "query": "size"
+          },
+          {
+              "type": "numeric",
+              "label": "aggregateTypeComplexity",
+              "query": "strength of metric.atc"
+          },
+          {
+              "type": "numeric",
+              "label": "sumOfCoChangeCoupling",
+              "query": "strength of metric.sumOfCoupling"
+          },
+          {
+              "type": "list of strings",
+              "label": "role",
+              "query": "label of role.*"
+          }
+      ],
+      "pageSize": 10,
+      "notes": "This table is used as a File export for integration with other tools.",
+      "section": "export"
+  },
+  {
+      "name": "DevelopersExport",
+      "slug": "developersexport",
+      "entity": {
+          "name": "author",
+          "filter": "not name starts with _"
+      },
+      "columns": [
+          {
+              "type": "string",
+              "label": "name",
+              "query": "name"
+          },
+          {
+              "type": "string",
+              "label": "email",
+              "query": "email"
+          },
+          {
+              "type": "boolean",
+              "label": "active",
+              "query": "status.active"
+          },
+          {
+              "type": "numeric",
+              "label": "numberOfCommits",
+              "query": "count commits"
+          },
+          {
+              "type": "numeric",
+              "label": "numberOfCommitsDuringLastYear",
+              "query": "count commits during last year"
+          },
+          {
+              "type": "date",
+              "label": "firstCommitDate",
+              "query": "date of first commit",
+              "sort": "descending"
+          },
+          {
+              "type": "date",
+              "label": "lastCommitDate",
+              "query": "date of last commit"
+          }
+      ],
+      "pageSize": 10,
+      "notes": "This table is used as an Author export for integration with other tools.",
+      "section": "export"
+  }
 ]
