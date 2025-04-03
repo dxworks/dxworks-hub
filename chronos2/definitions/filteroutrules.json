@@ -9,14 +9,14 @@
   },
   {
     "name": "Binaries or Noise",
-    "query": "dependencies.external.packagemanager* or noise.boilerplate or filetype.archive or filetype.binaries or filetype.font or filetype.image or filetype.noise or noise.negativeFileSize"
+    "query": "filetype.archive or filetype.binaries or filetype.font or filetype.image or filetype.noise or noise.negativeFileSize"
+  },
+  {
+    "name": "External Dependencies and Boilerplate",
+    "query": "dependencies.external.packagemanager* or noise.boilerplate"
   },
   {
     "name": "Build",
     "query": "filetype.build"
-  },
-  {
-    "name": "Unchanged Non-Code Files",
-    "query": "changes = 1 and not programming and status.idle"
   }
 ]
