@@ -420,8 +420,8 @@
     ]
   },
   {
-    "name": "Component-Developer Matrix - last year",
-    "slug": "component-developer-matrix-last-year",
+    "name": "Component-Developer Matrix - last 18 months",
+    "slug": "component-developer-matrix-last-18-months",
     "rowsDefinition": {
       "entity": {
         "name": "component@change",
@@ -441,7 +441,7 @@
         {
           "type": "numeric",
           "label": "Organic Churn (recent)",
-          "query": "sum churn of changes having commits having (volume.* in {focused, medium} and date since last year)",
+          "query": "sum churn of changes having commits having (volume.* in {focused, medium} and date since last 18 months)",
           "format": {
             "data": {
               "thousandSeparator": true
@@ -476,11 +476,11 @@
     "columnsDefinition": {
       "entity": {
         "name": "author",
-        "filter": "not name starts with _ and has commits since 2023-06"
+        "filter": "not name starts with _ and has commits since last 18 months"
       },
       "defaultSort": {
         "type": "numeric",
-        "query": "sum churn of commits having (volume.* in {focused, medium} and date since 2023-06)",
+        "query": "sum churn of commits having (volume.* in {focused, medium} and date since last 18 months)",
         "order": "descending"
       },
       "columns": [
@@ -497,7 +497,7 @@
         {
           "type": "numeric",
           "label": "KPS % (recent)",
-          "query": "((sum churn of commits having (volume.* in {focused, medium} and date since 2023-06)) * 100) / (sum churn of project's commits having (volume.* in {focused, medium} and date since 2023-06))",
+          "query": "((sum churn of commits having (volume.* in {focused, medium} and date since last 18 months)) * 100) / (sum churn of project's commits having (volume.* in {focused, medium} and date since last 18 months))",
           "format": {
             "data": {
               "nrOfDecimals": 1
