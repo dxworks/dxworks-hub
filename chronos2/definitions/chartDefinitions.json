@@ -21,7 +21,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "Analyse the impact of scattered tasks. Do they affect multiple components (in which case they could increase the team's cognitive load)? Does implementing tasks require changes to components owned by different teams (in which case they would require high coordination costs?",
+    "notes": "This chart shows high-impact tasks—those with at least 50 changed files and 3 or more commits—by counting how many files they touch in each component.\n\nIt helps answer questions like:\n- Do individual tasks affect many components?\n- Are some tasks more scattered across the architecture than others?\n- Which components are involved in the most cross-cutting tasks?\n\nThis view is useful for identifying tasks that drive architectural entanglement, increase cognitive load, and demand cross-team coordination, suggesting areas for improving feature modularity and ownership.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -76,7 +76,7 @@
       "query": "count commits not having taskprefix.@",
       "label": "Commits (w. task references)"
     },
-    "notes": "Get an overview of task prefixes and their usage across the various repositories",
+    "notes": "This chart displays both the number of files and commits associated with each task prefix, grouped by repository. It helps assess how task references are distributed and whether they are used consistently across repositories.\n\nIt helps answer questions like:\n- Which task prefixes are most frequently used in each repository?\n- Are some repositories tightly coupled to specific prefixes?\n- Do task references align well with repository boundaries?\n\nThis view is useful for evaluating traceability, detecting inconsistencies in task labeling, and understanding how work is split across codebases.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -124,7 +124,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
+    "notes": "This chart shows the number of commits per repository, grouped by task prefix. It reflects how different task references are distributed across repositories and how strongly they are associated with specific areas of the codebase.\n\nIt helps answer questions like:\n- Are certain repositories tightly linked to specific task prefixes?\n- Do task references span across multiple repositories or stay localized?\n- Is there a clear separation of work by task prefix, or are changes spread?\n\nThis view is useful for understanding traceability, coordination boundaries, and cognitive load in systems where multiple features or teams interact across repositories.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -173,7 +173,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "What is the relation between repositories and task prefixes? Are task prefixes used across repositories?",
+    "notes": "This chart shows the number of commits per repository, grouped by task prefix. It reflects how different task references are distributed across repositories and how strongly they are associated with specific areas of the codebase.\n\nIt helps answer questions like:\n- Are certain repositories tightly linked to specific task prefixes?\n- Do task references span across multiple repositories or stay localized?\n- Is there a clear separation of work by task prefix, or are changes spread?\n\nThis view is useful for understanding traceability, coordination boundaries, and cognitive load in systems where multiple features or teams interact across repositories.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -220,7 +220,7 @@
       "label": "Source-files created last year",
       "equalizeRanges": true
     },
-    "notes": "What are the filetypes that concentrate most of the recent changes? Is the ratio of recently changed files over all files consistent across technologies or is there a filetype that has been changed disproportionally (e.g. changes across most of the js files, perhaps signaling a major framework version upgrade)?",
+    "notes": "This chart compares the total number of source files per language with those that were changed or created in the last year. It helps identify recent trends in technology usage and code activity.\n\nIt helps answer questions like:\n- Which languages are actively maintained or recently adopted?\n- Are some file types being phased out or replaced?\n- Is the development effort concentrated on specific technologies (potentially showing technology upgrades)?\n\nThis view is useful for understanding the evolution of the technology stack, detecting modernization efforts, and identifying technologies that may need attention.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -268,7 +268,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Understand the main technologies used in the project. The file creation year can help you understand the phase of development. We also recommend grouping by latestChangeYear, to understand the change patterns.",
+    "notes": "This chart shows how different file types are distributed by their creation year, helping to reveal the age and evolution of technologies in the codebase.\n\nIt helps answer questions like:\n- Which technologies were introduced recently versus earlier in the project?\n- Are older technologies still present, or have they been phased out?\n- What does the creation timeline tell us about the project's evolution and architectural shifts?\n\nThis view is useful for understanding the lifecycle of technologies, detecting modernization trends, and identifying legacy areas within the system. We also recommend grouping by latestChangeYear, to understand the change patterns.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -324,7 +324,7 @@
       "query": "sum size of files",
       "label": "Lines of code"
     },
-    "notes": "Understand in what component each technology is used.",
+    "notes": "This chart shows how different file types are distributed across components, along with their total lines of code. It helps reveal how technologies are used and concentrated in various parts of the system.\n\nIt helps answer questions like:\n- Which components use which technologies?\n- Are some components tightly coupled to specific file types?\n- Is technology usage consistent across the system or fragmented?\n\nThis view is useful for assessing architectural coherence, detecting siloed technology use, and informing modernization or consolidation efforts.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -370,7 +370,7 @@
       }
     },
     "target": 25,
-    "notes": "Does the current team have enough experience on the most complex files?",
+    "notes": "This chart shows the percentage of recent change activity on complex files that comes from currently active developers. Complex files are identified by high complexity, large size, and frequent changes.\n\nIt helps answer questions like:\n- Are complexity hotspots being actively maintained by current team members?\n- Is critical knowledge of complex areas concentrated or at risk?\n- Could any of these files become bottlenecks due to lack of active expertise?\n\nThis view is useful for assessing risk in high-complexity areas, ensuring responsibility balance, and supporting onboarding or knowledge transfer planning.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -415,7 +415,7 @@
       "label": "Lines of code in complexity hotspots",
       "equalizeRanges": true
     },
-    "notes": "How does the growth of the complexity hotsptos compare with the overall source-code growth? Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
+    "notes": "This chart compares the total lines of code in the system with the subset located in complexity hotspots over time. Hotspots are defined by high complexity, frequent changes, and large file size.\n\nIt helps answer questions like:\n- Is the system’s complexity growing proportionally with its size?\n- Are complexity hotspots expanding faster than the overall codebase?\n- Could the team benefit from refactoring or better containment of complex logic?\n\nThis view is useful for tracking technical debt, identifying high-risk growth areas, and evaluating the long-term impact of development patterns. Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -462,7 +462,7 @@
       "query": "(count commits for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500) * 100) / (count commits)",
       "label": "% Commits on complexity hotspots"
     },
-    "notes": "Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
+    "notes": "This chart shows the total number of commits per period, highlighting those that modified complexity hotspots, along with the percentage of all commits that touched such areas. Complexity hotspots are defined by size, change frequency, and high ATC values.\n\nIt helps answer questions like:\n- How much development activity is focused on complex parts of the codebase?\n- Are complexity hotspots actively maintained or avoided?\n- Is the proportion of commits on hotspots increasing over time?\n\nThis view is useful for monitoring development effort on risky areas, identifying maintenance bottlenecks, and tracking potential increases in cognitive load. Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -509,7 +509,7 @@
       "query": "((sum churn of changes for files having (technology.code and strength of metric.atc >= 1 and changes >= 20 and size >= 500)) * 100) / (sum churn of changes for files having technology.code)",
       "label": "% Change on complexity hotspots"
     },
-    "notes": "This chart helps to see how much of the volume of change is in the complexity hotspots. Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
+    "notes": "This chart tracks the total volume of code changes over time, highlighting changes made to complexity hotspots, and showing the percentage of total churn that occurred in those areas. Hotspots are defined by size, change frequency, and complexity.\n\nIt helps answer questions like:\n- How much of the total change effort targets complexity hotspots?\n- Are complex areas receiving disproportionate development attention?\n- Is the system accumulating or resolving technical debt in its most critical files?\n\nThis view is useful for monitoring long-term maintenance costs, identifying code areas under pressure, and assessing the impact of refactoring or architectural improvements. Note: ATC is a static value (i.e., we only have the value at the time the data was extracted).",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -559,7 +559,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "How has the usage of task prefixes evolved? This can correlate to changes in project priorities (e.g if there is a task prefixes per product). This could also indicate a team with a high cognitive load that is spread too thin (e.g. working on many projects/task prefixes in parallel).",
+    "notes": "This chart shows how task prefixes are used over time, based on the number of commits grouped by prefix. It helps identify how work is distributed across features, products, or initiatives.\n\nIt helps answer questions like:\n- Which task prefixes are actively in use over time?\n- Are there periods of increased focus on specific prefixes?\n- Is the team working on many initiatives in parallel, or focusing on a few?\n\nThis view is useful for understanding development priorities, workload distribution, and potential cognitive load due to multitasking or scattered focus.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -615,7 +615,7 @@
       "query": "sum size of files",
       "label": "Sum size of files"
     },
-    "notes": "You can spot: (1) how old the codebase is; (2) the oldest and newest repos; (3) the repos with the highest recent growth, and repos that are inactive; (4) months with abrupt growth; (5) periods of standstill. Based on the duration of the project and the growth patterns you can get a solid indication on the project's current development phase: has the project started recently? or is it in vibrant growth? or in consolidation phase? or in maintenance? or close to standstill?",
+    "notes": "This chart shows the monthly growth in code changes per repository, along with the total system size over time. It helps track how different repositories evolve and how actively they are maintained.\n\nIt helps answer questions like:\n- Which repositories are growing the fastest, and which are stagnant or inactive?\n- Are there phases of rapid expansion, consolidation, maintenance, or standstill?\n- Are there months with sudden spikes in growth that could signal imports or major deliveries?\n\nYou can spot:\n- How old the codebase is based on earliest activity\n- The oldest and newest repositories\n- Periods of intense development vs. quiet phases\n\nThis view is useful for identifying development trends, understanding the project's current stage (e.g. early build-up, active development, or maintenance), and spotting repositories that may need attention due to inactivity or sudden growth.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -670,7 +670,7 @@
       "query": "sum size of files",
       "label": "Lines of code"
     },
-    "notes": "You can spot: (1) how old the codebase is; (2) the oldest and newest repos; (3) the repos with the highest recent growth, and repos that are inactive; (4) months with abrupt growth; (5) periods of standstill. Based on the duration of the project and the growth patterns you can get a solid indication on the project's current development phase: has the project started recently? or is it in vibrant growth? or in consolidation phase? or in maintenance? or close to standstill?",
+    "notes": "This chart shows the monthly growth in code changes per repository, along with the total system size over time. It helps track how different repositories evolve and how actively they are maintained.\n\nIt helps answer questions like:\n- Which repositories are growing the fastest, and which are stagnant or inactive?\n- Are there phases of rapid expansion, consolidation, maintenance, or standstill?\n- Are there months with sudden spikes in growth that could signal imports or major deliveries?\n\nYou can spot:\n- How old the codebase is based on earliest activity\n- The oldest and newest repositories\n- Periods of intense development vs. quiet phases\n\nThis view is useful for identifying development trends, understanding the project's current stage (e.g. early build-up, active development, or maintenance), and spotting repositories that may need attention due to inactivity or sudden growth.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -730,7 +730,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "This view can help you understand if duplication is systematic and if it's an ongoing practice. For example, are new duplicate files created every year? Do they evolve after they are initially developed?",
+    "notes": "This chart shows newly added files flagged with duplication issues, grouped by how much they were modified after creation. It helps assess whether code duplication is an isolated event or a recurring development pattern.\n\nIt helps answer questions like:\n- Are new duplicate files being introduced regularly?\n- Do these files evolve over time or remain untouched after creation?\n- Is duplication a symptom of rushed delivery, lack of reuse, or architectural shortcuts?\n\nThis view is useful for identifying systematic duplication practices and assessing long-term maintainability risks.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -769,7 +769,7 @@
       "label": "All Developers (in red new developers)",
       "highlight": "first commit during period"
     },
-    "notes": "What's the ratio of new developers to existing developers? Is there a constant flux of new developers? Was there a complete team swap?",
+    "notes": "This chart shows the number of developers active in each period, with new developers (those making their first commit) highlighted. It offers a timeline of team expansion and onboarding activity.\n\nIt helps answer questions like:\n- When did new developers join the project?\n- Is there a constant influx of new developers, or did the team grow in waves?\n- Was there a complete team swap at any point?\n- What’s the ratio of new developers to existing ones over time?\n\nThis view is useful for assessing team evolution, onboarding dynamics, and knowledge continuity. Sudden spikes in new joiners may signal scaling efforts, while an absence of new developers could point to stagnation or a stable mature team.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -816,7 +816,7 @@
       "label": "Developers with last commit in period",
       "equalizeRanges": true
     },
-    "notes": "Look at the pattern of developers joining and leaving. Disregard at least the last 2-3 month.",
+    "notes": "This chart shows the number of developers joining (first commit) and leaving (last commit) the project in each period. It helps visualize onboarding, departures, and overall team stability over time.\n\nIt helps answer questions like:\n- Are there spikes in team growth or attrition?\n- Is the team expanding, shrinking, or stable?\n- Are new joiners retained over time, or is turnover high?\n\nTip: Disregard the last 2–3 months of data, as recent commit inactivity may not yet indicate a departure.\n\nThis view is useful for analyzing team evolution, detecting high-risk transition periods, and evaluating risks to knowledge continuity.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -866,7 +866,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "This view helps you see if over the last year the files that were under active development represent new code, or changes to old files. This in turn helps you understand what type of development activity is happening.",
+    "notes": "This chart shows the distribution of changes made over the past year, grouped by the creation year of the affected files. It helps differentiate between work on legacy code and newly created files.\n\nIt helps answer questions like:\n- Are recent changes focused on new code or modifications to older files?\n- Is the team building new functionality or maintaining existing systems?\n- What does the balance between old and new code changes say about the project's current phase?\n\nThis view is useful for identifying modernization efforts, assessing maintenance load, and understanding where development capacity is being spent.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -915,7 +915,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "Is the number of changed test files proportional to changed production files? Are test files updated each month or in batches? This indicates if automated testing is part of daily development work or something done infrequently.",
+    "notes": "This chart tracks how many test and production files have been changed over time, helping assess the balance and consistency of test maintenance alongside code development.\n\nIt helps answer questions like:\n- Is test code being updated in parallel with production code?\n- Are tests maintained regularly or only in batches?\n- Are some periods lacking test updates?\n\nThis view is useful for evaluating testing discipline, and determining whether automated tests are an integral part of ongoing development.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -963,7 +963,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "If the codebase uses many technologies, this view helps you spot any change in development patterns (e.g. from code to web). Use the principle of surprise (e.g. are there many configuration files updated each month?).",
+    "notes": "This chart shows the number of files changed each month, grouped by the technology they belong to (e.g., code, web, config). It highlights how different parts of the stack are evolving over time.\n\nIt helps answer questions like:\n- Which technologies are most actively modified over time?\n- Are we seeing shifts in development patterns (e.g., from backend to frontend or config)?\n- Are any technologies unusually active or surprisingly untouched?\n\nUse the principle of surprise: are many configuration files being changed unexpectedly? Is there a sudden spike in UI code changes?\n\nThis view is useful for spotting architectural shifts, tracking modernization, and identifying areas that may warrant deeper investigation due to unexpected change volume.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1021,7 +1021,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Are there \"satellite\" developers that make few overall changes? If there are many such developers, the conceptual integrity of the code base could suffer.",
+    "notes": "This chart groups developers by their total number of commits, using thresholds to distinguish levels of involvement—from accidental contributors to core developers. It provides insight into team structure and contributor distribution.\n\nIt helps answer questions like:\n- Is the codebase driven by a few core developers or broadly shared?\n- Are there many occasional contributors, and what role do they play?\n- Could knowledge loss become a risk if certain contributors leave?\n\nThis view is useful for understanding long-term involvement, identifying key team members, and evaluating risks related to knowledge continuity and team composition.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1079,7 +1079,7 @@
         "colorScheme": "authorinvolvement"
       }
     },
-    "notes": "This view is useful when there are many developers with few monthly commits. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase.",
+    "notes": "This chart shows how many developers fall into different groups based on the number of commits they made in each month. It reveals patterns in contributor activity levels and how they change over time.\n\nIt helps answer questions like:\n- How many developers are highly active versus only occasionally contributing?\n- Are there trends in overall engagement—e.g., increasing, stable, or declining activity?\n- Is there a healthy mix of contribution levels, or signs of dependency on a few developers?\n\nThis view is useful for understanding the distribution of developer activity, assessing team sustainability, and identifying shifts in engagement across the team.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1140,7 +1140,7 @@
         "colorScheme": "authorinvolvement"
       }
     },
-    "notes": "This view is useful when there are many developers a low volume of change. This low level of involvement raises the potential risk that it will take a long time for developers to become proficient on the codebase. Since this view is based on volume of change, it should be oblivious to each author's commit patterns. Also, if there is a very small volume of change, it could be useful to group by quarter or year.'",
+    "notes": "This chart shows how many developers fall into different categories based on the volume of code they changed each month (measured in lines of churn). It focuses on the distribution of contributor activity levels, not individual authors.\n\nIt helps answer questions like:\n- How many developers are making small vs. large contributions each month?\n- Are there sustained groups of high-impact contributors?\n- Do we observe a long tail of low-involvement developers?\n\nThis view is useful for understanding engagement patterns, assessing team productivity distribution, and spotting signs of concentrated effort or widespread participation.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1195,7 +1195,7 @@
       }
     },
     "target": 90,
-    "notes": "Is the team consistently using smart commits and literate commits?",
+    "notes": "This chart shows the monthly percentage of smart commits (those with structured task references) and literate commits (those with medium or long descriptive messages). It reflects the team's discipline in writing traceable and informative commit messages.\n\nIt helps answer questions like:\n- Is the team consistently using smart commit formats?\n- Are commit messages detailed enough to provide context and rationale?\n- Are there periods where commit quality drops, possibly due to deadlines or rushed work?\n\nThis view is useful for assessing traceability, communication clarity, and alignment with development standards over time.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1254,7 +1254,7 @@
       "query": "((count commits having (weekday.saturday or weekday.sunday)) * 100) / (count commits)",
       "label": "% Commits during weekend"
     },
-    "notes": "Is the team frequently committing during weekends? Is the team frequently committing more at the end of the sprint (e.g. on Fridays) - this could lead to a drop in code quality.",
+    "notes": "This chart shows the distribution of commits by weekday, along with the percentage of commits made during weekends. It helps identify working patterns and potential issues related to delivery pressure or irregular workflows.\n\nIt helps answer questions like:\n- Are developers committing heavily on Fridays or weekends?\n- Does activity suggest end-of-sprint rushes or poor work-life balance?\n- Are there consistent working habits across the team?\n\nThis view is useful for spotting unhealthy delivery patterns, evaluating sprint dynamics, and understanding team behavior in terms of code delivery timing.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1309,7 +1309,7 @@
       "query": "count authors having not name starts with _ for commits",
       "label": "Developers"
     },
-    "notes": "Is there any correlation between the number of developers and the number of commits (or churn) over the codebase's history?",
+    "notes": "This chart shows the number of commits per repository alongside the number of developers contributing during each time period. It captures fluctuations in repository activity and team size over time.\n\nIt helps answer questions like:\n- Which repositories have seen the most activity in recent months?\n- Are periods of intense development linked to increased team size?\n- Is overall contribution growing, shrinking, or remaining stable?\n\nThis view is useful for tracking activity trends across repositories and understanding how development effort evolves over time.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1362,7 +1362,7 @@
       "query": "count authors having not name starts with _ for commits",
       "label": "Developers"
     },
-    "notes": "Is there any correlation between the number of developers and the number of commits (or churn) over the codebase's history?",
+    "notes": "This chart shows the number of commits per repository alongside the number of developers contributing during each time period. It captures fluctuations in repository activity and team size over time.\n\nIt helps answer questions like:\n- Which repositories have seen the most activity in recent months?\n- Are periods of intense development linked to increased team size?\n- Is overall contribution growing, shrinking, or remaining stable?\n\nThis view is useful for tracking activity trends across repositories and understanding how development effort evolves over time.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1410,7 +1410,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
+    "notes": "This chart shows the number of commits per repository over time. It reflects how active each repository is during each period, based on the volume of recorded commits.\n\nIt helps answer questions like:\n- Which repositories are most actively worked on?\n- Are there bursts of activity in specific parts of the system?\n- How does repository-level change activity evolve over time?\n\nThis view is useful for identifying hotspots of development activity and tracking how work is distributed across repositories over time.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1458,7 +1458,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "This shows the activity timeline using commits. Used together with Growth and Churn charts, to understand the codebase's history.",
+    "notes": "This chart shows the number of commits per repository over time. It reflects how active each repository is during each period, based on the volume of recorded commits.\n\nIt helps answer questions like:\n- Which repositories are most actively worked on?\n- Are there bursts of activity in specific parts of the system?\n- How does repository-level change activity evolve over time?\n\nThis view is useful for identifying hotspots of development activity and tracking how work is distributed across repositories over time.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1507,7 +1507,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Is there a significant number of commits outside of working hours? What's the pattern (e.g., constant, every X months, sporadic)? Does it correlate with any important events (e.g. big release, started working from home because of Covid)?",
+    "notes": "This chart shows when commits are made throughout the day, grouped into parts of the day (e.g., morning, afternoon, evening, night). It reveals work schedule patterns and temporal coding habits.\n\nIt helps answer questions like:\n- Are developers consistently working within standard hours?\n- Is there a significant amount of activity outside regular working times?\n- Do certain timeframes correlate with spikes in delivery activity?\n\nThis view is useful for identifying late-night coding habits, sprint-end rushes, or signs of overtime that may impact code quality and team well-being.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1556,7 +1556,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "This chart helps you understand where is the team based. Was there a switch from one geozone to another? Are commits from two geozones done at the same time?",
+    "notes": "This chart shows the number of commits made over time, grouped by geozone (e.g., region or time zone). It highlights the geographic distribution of development activity across the project timeline.\n\nIt helps answer questions like:\n- Which regions are contributing the most over time?\n- Are there shifts in the primary development locations?\n- Is collaboration happening across multiple geographies concurrently?\n\nThis view is useful for understanding team distribution, assessing coordination challenges, and tracking the evolution of global development effort.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1605,7 +1605,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Is there a large percentage of commits done by developers with a weak involvement (i.e. less than 20 commits) in the codebase (up to that point)?",
+    "notes": "This chart shows how many commits were made each month, grouped by the level of developer involvement in the project at the time (e.g., core, major, minor contributors). It reflects how development activity is distributed across levels of project familiarity.\n\nIt helps answer questions like:\n- How much activity comes from highly involved vs. peripheral contributors?\n- Are less-involved developers contributing more over time?\n- Is there a healthy balance between core and occasional contributors?\n\nThis view is useful for tracking the evolving structure of the development team and assessing risks related to knowledge continuity and onboarding effectiveness.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1658,7 +1658,7 @@
       "query": "count authors having not name starts with _ for commits",
       "label": "Developers"
     },
-    "notes": "The view helps to spot (at least) the following patterns: (1) periods with spikes in the number of active developers; (2) the balance between devs who worked longer on the project (veteran, senior) versus those who started working more recently (established, newcomer). Regarding the second point, check if in the latest months there is a trend of newer devs dominating the activity, while more experience devs slowing down. Note that the activity status is dynamic: in their first months of activity developers developers are 'newcomers', and over time they switch their status. Therefore, in the first months of the project all developers working on the project are 'newcomers'. Also check to see if (1) is there constant on-boarding of new developers? (2) has the team completely changed over its history? (3) is there a significant drop in the number of commits made by experienced developers?",
+    "notes": "This chart shows the number of commits per month grouped by developer tenure (e.g., newcomers, established, senior), along with the total number of active developers in each period. It highlights how different experience levels contribute over time.\n\nIt helps answer questions like:\n- Are newcomers or experienced developers driving most of the change in recent months?\n- Are there periods with spikes in the number of active contributors?\n- Is there a shift in balance from senior to junior contributors?\n\nNote: Tenure is dynamic — developers start as 'newcomers' and transition over time. Early in the project, all contributors will naturally appear as newcomers.\n\nThis view is useful for:\n- Spotting onboarding waves and drop-offs in experienced contributors\n- Evaluating team continuity and turnover\n- Understanding how team composition evolves, and whether the team has fully rotated over the project’s lifetime",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1707,7 +1707,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "The view indicates the number of commits, in order to see how many bulk commits are done monthly. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "notes": "This chart shows how many commits were made in each time period, grouped by their change volume (i.e., how large the commits were in terms of churned lines of code). It reflects the distribution of commit sizes across time.\n\nIt helps answer questions like:\n- Are bulk commits frequent or rare?\n- Has the team shifted toward smaller, more incremental commits?\n- Are there trends in delivery practices that impact reviewability or traceability?\n\nThis view is useful for evaluating commit hygiene, identifying risk-prone delivery patterns, and understanding how code is being introduced or modified across time.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1754,7 +1754,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "The view indicates the impact that bulk commits have on the overall volume of change per month. Remember that 'bulk commits' refers to those commits with a very large change-set or a very large volume of change. ",
+    "notes": "This chart shows the total volume of code churn (lines added and removed) per period, grouped by commit size. It highlights how much of the overall change comes from small, medium, or bulk commits.\n\nIt helps answer questions like:\n- Are large commits responsible for most of the code churn?\n- Has the team adopted more incremental or more sweeping change patterns?\n- Are bulk changes growing or declining over time?\n\nThis view is useful for understanding delivery practices, identifying periods of architectural shifts or rework, and assessing the maintainability impact of large-scale changes.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1807,7 +1807,7 @@
       "query": "((count commits having message.nature.bugfix) * 100) / (count commits)",
       "label": "% Bug-Fix"
     },
-    "notes": "How has the Bug-fix percentage evolved over time? Does this correlate with an increase/decrease in test code changes?",
+    "notes": "This chart tracks the number of changes made to files by their role (e.g., production, test) and overlays the percentage of commits identified as bug fixes. It connects file-level change activity with defect resolution trends.\n\nIt helps answer questions like:\n- Is the bug-fix rate increasing or decreasing over time?\n- Does increased change activity correlate with higher bug-fixing effort?\n\nThis view is useful for evaluating testing effectiveness, and tracking how the team balances new development with defect resolution.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1854,7 +1854,7 @@
       "label": "% Volume of change in Bug-Fix commits",
       "equalizeRanges": true
     },
-    "notes": "It's useful to see how does the percentage of bug-fixing commits compares to the percentage of volume of change in these commits. There might be cases when there are many small bug-fixing commits after a large feature commit.",
+    "notes": "This chart shows two metrics over time: the percentage of commits that are classified as bug fixes, and the percentage of total churn (lines changed) that those bug-fix commits represent. It distinguishes between how often bugs are fixed and how much code is involved in fixing them.\n\nIt helps answer questions like:\n- Is the team fixing many small bugs or fewer but larger ones?\n- Are bug fixes becoming more or less frequent?\n- Are bug-fix efforts increasing in scope or staying minimal?\n\nThis view is useful for evaluating the effectiveness and cost of bug-fixing activity, tracking quality trends, and identifying periods of heightened defect resolution effort.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1908,7 +1908,7 @@
       "query": "sum size of files",
       "label": "Lines of code"
     },
-    "notes": "How has the codebase grown over time: (i) is there a low or a high growth rate? (ii) has the growth rate changed over the codebase's history (e.g. signaling a change from development to maintenance)? \nNOTE: Look for extremely high growth in a single period. This can signal an import event, which could be marked on the chart.",
+    "notes": "This chart shows the volume of code changes per component over time alongside the total size of the codebase. It highlights where changes are concentrated and how components evolve relative to overall system growth.\n\nIt helps answer questions like:\n- Which components are undergoing the most frequent or substantial changes?\n- Are there periods of intense activity focused on specific areas?\n- How does the size of each component relate to its change volume?\n\nThis view is useful for identifying development hotspots, assessing stability across components, and detecting shifts in architectural focus or maintenance load.\nNOTE: Look for extremely high growth in a single period. This can signal an import event, which could be marked on the chart.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -1954,7 +1954,7 @@
       "label": "Growth / Developer (only non-bulk commits)",
       "equalizeRanges": true
     },
-    "notes": "Many times, the output per developer decreases as the time evolves (because of the increasing technical debt and architecture viscosity). Is this the case here? Were there any software modernisation efforts? Did they pay off (note: many times modernisation efforts make things worse before they get better, so be sure to look over a longer time horizon)",
+    "notes": "This chart shows the average volume of change and growth per active developer over time, excluding bulk and import commits. It highlights how individual developer output trends evolve as the system matures.\n\nIt helps answer questions like:\n- Is the average output per developer increasing, stable, or declining?\n- Are we seeing signs of architectural friction, such as decreased throughput due to technical debt or viscosity?\n- Have modernization efforts impacted productivity — and if so, did things get worse before improving?\n\nThis view is useful for evaluating delivery efficiency, understanding the impact of codebase complexity, and interpreting the effectiveness of cleanup or modernization initiatives. It is especially insightful when aggregated over longer periods (e.g., quarters or years).",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -2009,7 +2009,7 @@
       "query": "sum churn of changes during last 2 years for files having technology.code",
       "label": "Volume of recent change"
     },
-    "notes": "This view aims at estimating the cognitive load of developers: How much code do they need understand in order to make a change?",
+    "notes": "This chart shows, for each developer, the size of files they recently changed (grouped by programming language) and the overall volume of those changes over the last two years. It highlights how broadly and how intensely developers are working across the technology stack.\n\nIt helps answer questions like:\n- Are developers working across multiple languages or specializing in specific ones?\n- Who has been most active in the recent past?\n- Does recent contribution suggest increasing cognitive load or broad involvement?\n\nThis view is useful for estimating developer workload, assessing skill distribution across technologies, and understanding the team's exposure to different parts of the codebase.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2057,7 +2057,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "How are task prefixes assigned to developers/teams? ",
+    "notes": "This chart shows how many commits each developer made, grouped by task prefix. It helps identify which developers are working on which task streams or products, based on structured commit references.\n\nIt helps answer questions like:\n- Are task prefixes cleanly distributed across developers?\n- Do certain developers focus on specific task areas, or work across multiple?\n- How well can we trace developer contributions to business-level efforts?\n\nThis view is useful for analyzing traceability, assessing cognitive load, and understanding how tasks are distributed across the team.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2108,7 +2108,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "Do developers work across repositories? Are there any repositories with polarised ownership? Are the most prolific developers still active?",
+    "notes": "This chart shows the number of commits each developer made, grouped by repository. It highlights how developers are distributed across codebases and whether their work is focused or spread out.\n\nIt helps answer questions like:\n- Do developers contribute to multiple repositories or specialize in one?\n- Are there repositories with concentrated ownership?\n- How broadly is knowledge and activity spread across the team?\n\nThis view is useful for assessing knowledge distribution, understanding collaboration scope, and identifying areas of potential bottlenecks or silos.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -2157,7 +2157,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "Do developers work across repositories? Are there any repositories with polarised ownership? Are the most prolific developers still active?",
+    "notes": "This chart shows the number of commits each developer made, grouped by repository. It highlights how developers are distributed across codebases and whether their work is focused or spread out.\n\nIt helps answer questions like:\n- Do developers contribute to multiple repositories or specialize in one?\n- Are there repositories with concentrated ownership?\n- How broadly is knowledge and activity spread across the team?\n\nThis view is useful for assessing knowledge distribution, understanding collaboration scope, and identifying areas of potential bottlenecks or silos.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2208,7 +2208,7 @@
         "colorScheme": "tableau"
       }
     },
-    "notes": "Are developers full-stack? Or is there a clear separation between backend/frontend/test/infrastructure/db? If developers work across technologies, is there a preferred tech per developer or is it evenly spread? Also, if they do work across languages, investigate if this is a requirement (i.e. is there strong task or co-change coupling between files/components from different languages)?",
+    "notes": "This chart shows the volume of code churn (lines changed) per developer, grouped by programming language or technology. It provides insight into how individual contributors interact with different parts of the tech stack.\n\nIt helps answer questions like:\n- Are developers working across technologies or focusing on specific areas?\n- Are developers full-stack, or is there a clear backend/frontend/infrastructure split?\n- Does each developer have a preferred tech, or is activity evenly distributed?\n\nIf developers work across languages, investigate whether this is a sign of strong task or co-change coupling between files from different technologies. This view is useful for assessing skill diversity, estimating cognitive load, and identifying where cross-training, specialization, or architectural adjustments may be beneficial.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2258,7 +2258,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "Do developers work across components? Are there any components with polarised ownership? Are the most prolific developers still active?",
+    "notes": "This chart shows the volume of code churn per developer, grouped by component. It highlights how much change each developer has contributed and where in the system those changes occurred.\n\nIt helps answer questions like:\n- Are developers working across multiple components or focused on specific areas?\n- Which components see the most developer activity?\n- Is technical knowledge concentrated in a few individuals or broadly shared?\n\nThis view is useful for assessing knowledge distribution, identifying potential ownership gaps, and evaluating the balance of development effort across the architecture.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2308,7 +2308,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "Where there any shifts in development patterns during the last year? Also, is developer contribution long tailed?",
+    "notes": "This chart shows the volume of code churn made by each developer during the past year, grouped by component. It highlights where developers have been most active recently within the system architecture.\n\nIt helps answer questions like:\n- Which developers have contributed most actively in the last year?\n- Are recent contributions focused or spread across multiple components?\n- Has there been a shift in who is working on which parts of the system?\n\nThis view is useful for evaluating current knowledge distribution, assessing recent ownership trends, and identifying components with concentrated or rotating developer attention.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2356,7 +2356,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "Are important concepts spread over many components?",
+    "notes": "This chart shows how many files are associated with each concept, grouped by the component in which those files reside. It reveals how well domain concepts are encapsulated within architectural boundaries.\n\nIt helps answer questions like:\n- Are domain concepts scattered across multiple components?\n- Is there clear alignment between business concepts and technical structure?\n- Are any components overloaded with unrelated responsibilities?\n\nThis view is useful for evaluating functional cohesion, identifying cross-cutting concerns, and assessing how well the architecture reflects the domain model.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -2404,7 +2404,7 @@
         "colorScheme": "3-years"
       }
     },
-    "notes": "Are there many recently changed files with Weak Ownership? This poses the risk that the team does not have enough knowledge of these files, which in turn may lead to slower and more error-prone changes",
+    "notes": "This chart shows the number of source files with weak ownership in each component, grouped by the year of their last change. It highlights areas of the system that have been recently modified but lack consistent contributor ownership.\n\nIt helps answer questions like:\n- Which components contain recently changed files with weak ownership?\n- Are there high-risk areas where recent changes were made by unfamiliar contributors?\n- Is weak ownership concentrated in legacy code or present in actively maintained parts of the system?\n\nThis view is useful for identifying maintainability risks, planning knowledge transfer, and understanding where lack of ownership may slow down future development.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2451,7 +2451,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "",
+    "notes": "This chart shows the number of source files per component, grouped by their role (e.g., production vs. test). It provides insight into how testing efforts are distributed across the system's architecture.\n\nIt helps answer questions like:\n- Are test files present in all components or only a few?\n- Do some components lack automated tests?\n- Is the balance between test and production code consistent across the system?\n\nThis view is useful for assessing test coverage patterns, identifying under-tested areas, and evaluating whether testing practices are uniformly applied across components.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2504,7 +2504,7 @@
       "query": "((files having (not changes during last 2 years and technology.code)) * 100) / (count files having technology.code)",
       "label": "% Files unchanged for at least 2 years"
     },
-    "notes": "What are the components with the highest percentage of dormant code? Components that are completely dormant are less of an issue, since the data shows that there is a low probability of needing to change them. Notice components where a high percentage of code is dormant (e.g., over 95%), since changing them could be risky.",
+    "notes": "This chart shows, for each component, the number of source files grouped by the year of their last change and the percentage of files that have not been modified in at least two years. It helps identify areas of the codebase that are dormant or no longer actively maintained.\n\nIt helps answer questions like:\n- Which components contain the most dormant code?\n- Are there parts of the system that haven’t been touched in years?\n- Could changes to long-dormant components pose risk?\n\nNote: Components that are entirely dormant are often less risky, as there’s little likelihood of them being touched. Pay special attention to components where most (e.g., over 95%) but not all of the code is dormant—these may present high-risk maintenance zones due to lack of recent context.\n\nThis view is useful for identifying cleanup or deprecation opportunities, evaluating stability, and recognizing where reactivating dormant code could require extra caution.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2552,7 +2552,7 @@
         "colorScheme": "custom"
       }
     },
-    "notes": "Is a component developed in two Geozones? This can be problematic, as syncing across timezones is more difficult and the preferred approach is for a team to fully own a component.",
+    "notes": "This chart shows how source files in each component are distributed based on the primary geographic region (geozone) where they were developed. It helps identify which teams or regions are responsible for different parts of the codebase.\n\nIt helps answer questions like:\n- Are components owned by teams in a single region or split across geographies?\n- Is there a risk of coordination overhead due to distributed ownership?\n- Which geozones contribute most to each component?\n\nThis view is useful for assessing coordination needs, potential timezone-related friction, and alignment between team structure and system architecture.",
     "sort": {
       "by": "ox",
       "order": "ascending"
@@ -2601,7 +2601,7 @@
         "colorScheme": "main"
       }
     },
-    "notes": "What are the most widespread anomalies? What repositories to they affect?",
+    "notes": "This chart shows the number of files with code anomalies per repository. Anomalies can include weak ownership, high complexity, duplication, and other maintainability issues. It helps identify technical hotspots and areas that may require cleanup or closer review.\n\nIt helps answer questions like:\n- Which repositories have the highest concentration of code anomalies?\n- Are quality issues widespread or isolated to specific parts of the codebase?\n- Where might technical debt be accumulating?\n\nThis view is useful for prioritizing refactoring efforts, evaluating code health across repositories, and identifying where structural improvements could reduce long-term maintenance risks.",
     "sort": {
       "by": "oy",
       "order": "descending"
@@ -2646,7 +2646,7 @@
       "query": "sum size of files",
       "label": "Lines of code"
     },
-    "notes": "For this chart to work, make sure that the \"Keep only alive files\" checkbox in unchecked in config. This chart can help you investigate cases of deleted files. This is useful, for example, when checking if functionality has been migrated.",
+    "notes": "This chart shows the number of deleted files per period alongside the total size of the codebase (measured in lines of code). It helps track structural changes such as cleanup, deprecation, or system consolidation efforts.\n\nIt helps answer questions like:\n- Are deletions occurring gradually or in bursts?\n- Is the overall size of the codebase shrinking, growing, or stabilizing?\n- Do spikes in deletions correlate with migrations or modernization phases?\n\nThis view is especially useful for identifying cleanup initiatives, assessing their impact on system size, and detecting large-scale restructuring events.\n\n**Note:** To ensure deletions are visible, disable the \"Keep only alive files\" setting in the Config/Settings panel. This is critical when investigating whether functionality has been removed, migrated, or replaced.",
     "sort": {
       "by": "ox",
       "order": "ascending"

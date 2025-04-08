@@ -13,7 +13,7 @@
         10
       ]
     },
-    "notes": "Are Bug Magnets also affected by duplication?",
+    "notes": "This system map highlights files affected by both Bug Magnet and Duplication anomalies. The highlight helps identify overlapping problem areas where test fragility and code duplication co-occur.\n\nThe color gradient represents change frequency, divided into three tiers.\n\nIt helps answer questions like:\n- Are Bug Magnet files also suffering from duplication?\n- Are specific modules more prone to both kinds of issues?\n- Where should we prioritize cleanup or refactoring to improve maintainability and testability?\n\nUse this view to locate structural hotspots that combine testing challenges with code duplication.",
     "tableColumns": [
       {
         "type": "property",
@@ -145,7 +145,7 @@
         10
       ]
     },
-    "notes": "What are the most complex files in the codebase? What other anomalies do the complex files have? Do complex files also have many collaborators (i.e., are also DataHubs and/or CallHubs)?",
+    "notes": "This system map highlights complexity hotspots (large, frequently changed, and complex source files with recent activity). It helps answer questions like:\n- Which files are the most complex and active?\n- Are complex files also tangling responsibilities or showing testing anomalies?\n- Where is high complexity correlated with change frequency?\n\nUse this view to identify high-maintenance, high-risk parts of the codebase.",
     "tableColumns": [
       {
         "type": "property",
@@ -297,7 +297,7 @@
         10
       ]
     },
-    "notes": "How many files with duplicate code are there? Are there also many new files?",
+    "notes": "This system map highlights files with duplication anomalies. It helps answer:\n- How widespread is code duplication?\n- Are newer files more prone to duplication?\n- Do certain modules have concentrated duplication issues?\n\nUse this view to locate duplication patterns that may impact maintainability and readability.",
     "tableColumns": [
       {
         "type": "property",
@@ -361,7 +361,7 @@
         10
       ]
     },
-    "notes": "Is the test code proportional to the production code?",
+    "notes": "This map compares test vs. production source code distribution. It helps answer:\n- Is test code proportionate to production code?\n- Are some modules under-tested?\n- Does testing coverage vary across components?\n\nUse this view to assess test coverage patterns and testing investment.",
     "tableColumns": [
       {
         "type": "property",
@@ -424,7 +424,7 @@
         10
       ]
     },
-    "notes": "When were most of the files created? Are there many new files created every year? Are there patterns in the file creation year (e.g. focusing on set of components/modules each year)?",
+    "notes": "This map shows when files were first created, grouped by creation year. It helps answer:\n- What is the age distribution of the codebase?\n- Are new files being added consistently?\n- Are there architectural patterns in yearly additions?\n\nUse this view to analyze growth trends and focus areas over time.",
     "tableColumns": [
       {
         "type": "property",
@@ -491,7 +491,7 @@
         10
       ]
     },
-    "notes": "How many files were touched in the last year? Was activity focused on some components or scattered across the codebase? How old are the changed files?",
+    "notes": "This map highlights files that have changed in the last year, grouped by creation year. It helps answer:\n- Are recent changes focused on older files or newer ones?\n- Which parts of the codebase are currently under active maintenance?\n\nUse this view to understand activity trends across old and new parts of the system.",
     "tableColumns": [
       {
         "type": "property",
@@ -557,7 +557,7 @@
         10
       ]
     },
-    "notes": "How does the creation year compare to the latest change year? Are many old files updated? ",
+    "notes": "This view compares file creation year with the latest change year. It helps answer:\n- Are older files still being modified?\n- Are newly created files actively maintained?\n\nUse this map to detect maintenance activity patterns and legacy code engagement.",
     "tableColumns": [
       {
         "type": "property",
@@ -625,7 +625,7 @@
         3
       ]
     },
-    "notes": "How well covered is the codebase? Do large and complex files have better coverage than smaller ones? Are newer files better covered than old files?",
+    "notes": "This map shows test coverage strength across production files. It helps answer:\n- Which files are well-covered by tests?\n- Are large or complex files adequately tested?\n- Are newer files better tested than older ones?\n\nUse this view to evaluate the distribution and strength of test coverage.",
     "tableColumns": [
       {
         "type": "property",
@@ -689,7 +689,8 @@
       "report-section.maintainability-code-organisation",
       "aspect.cognitive-load",
       "aspect.responsibility-balance"
-    ]
+    ],
+    "notes": "This map shows the structural organization of the codebase by repository. Use it to:\n- Understand repo boundaries and distribution\n- Spot repo ownership and cohesion issues\n- Navigate the system from a repository-centric perspective"
   },
   {
     "name": "Files (by component)",
@@ -705,7 +706,8 @@
       "report-section.maintainability-code-organisation",
       "aspect.cognitive-load",
       "aspect.responsibility-balance"
-    ]
+    ],
+    "notes": "This map visualizes code grouped by logical components. It helps answer:\n- How is code distributed across components?\n- Are component boundaries respected structurally?\n\nUse this view for system decomposition and component ownership analysis."
   },
   {
     "name": "Files - Flat Structures",
@@ -725,7 +727,8 @@
     "traits": [
       "report-section.maintainability-code-organisation",
       "aspect.responsibility-balance"
-    ]
+    ],
+    "notes": "This map highlights folders with flat structures (i.e., many direct children). It helps answer:\n- Where is folder hierarchy shallow or overloaded?\n- Are some modules overly crowded?\n\nUse this view to detect organization issues that hinder navigation and modularity."
   },
   {
     "name": "Files - Ungrouped (Orphaned) classes",
@@ -743,7 +746,7 @@
         10
       ]
     },
-    "notes": "An ungrouped (orphaned) class is one that exists in a root namespace. A root namespace is defined as any namespace that is extended by another element in that namespace.",
+    "notes": "This map highlights ungrouped (orphaned) backend classes. It helps answer:\n- Are there backend files not grouped under clear modules?\n- Do any root folders contain unstructured class files?\n\nUse this view to assess structural organization and modular cohesion.",
     "section": "code-organisation",
     "traits": [
       "report-section.maintainability-code-organisation",

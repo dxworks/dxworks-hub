@@ -40,7 +40,7 @@
             }
         ],
         "pageSize": 10,
-        "notes": "",
+        "notes": "This table lists bulk commits, defined as commits affecting many files or involving high code churn. It includes the date, commit message, number of files changed, total volume of change, revision ID, and involved developers.\n\nIt helps answer questions like:\n- Which commits introduced unusually large changes?\n- Who tends to make high-volume commits?\n- Are bulk or import-style commits common in this repository?\n\nThis view is useful for identifying squashed commits, large-scale imports, or sweeping changes that may obscure fine-grained history or increase review risk.",
         "section": "nature-of-changes",
         "traits": [
             "aspect.cohesive-changes"
@@ -92,7 +92,7 @@
             }
         ],
         "pageSize": 10,
-        "notes": "",
+        "notes": "This table shows commits that appear to be bug fixes, based on commit message heuristics. Each entry includes the commit date, message, files changed, volume of change, developers, and revision ID.\n\nIt helps answer questions like:\n- Which commits were identified as bug-fixes ?\n- Who is most involved in fixing bugs?\n\nThis view is useful for reviewing the accuracy of bug-fix detection heuristics, and understanding the relationship between code changes and defect resolution.",
         "section": "test-automation",
         "traits": [
             "aspect.testing-efficacy"
@@ -331,7 +331,7 @@
         }
       },
       "pageSize": 10,
-      "notes": "This table contains many columns (all changes/organic/source-code). Not all are useful, so remove the ones that are not. Also, remove the status.active filter if you want to see data about all developers.",
+      "notes": "This table summarizes developer activity over the last year, including commit volume, code churn, file coverage, and growth metrics. It presents both absolute and relative (% of project) values across different scopes:\n- All changes\n- Organic changes (excluding bulk/import)\n- Source-code changes\n\nIt helps answer questions like:\n- Who are the most active developers over the last year?\n- What share of meaningful change (e.g., organic or source-code) does each developer contribute?\n- Are any developers dominating the change volume?\n- Which developers are likely recent joiners or inactive contributors?\n\nThe 'Active' flag indicates if the developer made recent changes. Use this view to assess team evolution, contribution balance, and potential knowledge silos.\n\nNot all columns are equally relevant for every analysis. Remove unused ones based on context. To include all developers (not just active), disable the 'active' filter in the entity.",
       "section": "knowledge",
       "traits": [
         "aspect.team-evolution",
@@ -403,7 +403,7 @@
           }
       ],
       "pageSize": 10,
-      "notes": "This table is used as a File export for integration with other tools.",
+      "notes": "This table is used as a File export for integration with other tools, so it's too generic to be useful in most other contexts.",
       "section": "export"
   },
   {
@@ -452,7 +452,7 @@
           }
       ],
       "pageSize": 10,
-      "notes": "This table is used as an Author export for integration with other tools.",
+      "notes": "This table is used as an Author export for integration with other tools, so it's too generic to be useful in most other contexts.",
       "section": "export"
   }
 ]

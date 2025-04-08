@@ -59,6 +59,7 @@
         ]
       }
     },
+    "notes": "This matrix shows the volume of code churn (i.e., lines added or removed) per developer per month during the last year. Each cell represents the total churn by a developer in a specific month.\n\nIt helps answer questions like:\n- Who were the most active developers in each month?\n- When did specific developers start or stop contributing?\n- Are there consistent contributors, or does activity vary significantly?\n\nThis view is useful for identifying onboarding periods, tracking team dynamics, and understanding temporal contribution patterns across the team.",
     "section": "knowledge",
     "traits": [
       "report-section.development-patterns",
@@ -125,6 +126,7 @@
         ]
       }
     },
+    "notes": "This matrix shows the number of commits made by each developer per month during the last year. Each cell represents the total number of commits for a developer in a given month.\n\nIt helps answer questions like:\n- How frequently does each developer commit code?\n- Are there consistent contributors or irregular committers?\n- When do activity spikes or drop-offs occur for specific developers?\n\nThis view is useful for understanding development cadence, detecting inconsistent participation, and assessing the cohesion of the development workflow over time.",
     "section": "knowledge",
     "traits": [
       "report-section.development-patterns",
@@ -237,6 +239,7 @@
         ]
       }
     },
+    "notes": "This matrix shows when each developer was active, based on their organic code contributions over time. It highlights developers who either joined recently or have made substantial organic contributions (excluding bulk/import changes).\n\nIt helps answer questions like:\n- When did each developer start contributing significantly?\n- Who are the long-term vs. short-term contributors?\n- Are active contributors still engaged, or have they stopped?\n\nThis Gantt-style view is useful for assessing knowledge continuity, tracking onboarding patterns, and identifying potential gaps in sustained code ownership.",
     "section": "overview",
     "traits": [
       "report-section.knowledge",
@@ -414,6 +417,7 @@
         ]
       }
     },
+    "notes": "This matrix shows how much of each component's organic change is contributed by each developer. Rows represent components, columns represent developers, and each cell shows the percentage of organic churn attributed to that developer within the component.\n\nIt helps answer questions like:\n- Who are the primary contributors to each component?\n- Are there components with too few (or too many) contributors?\n- Is ownership concentrated or distributed?\n- Which components may lack active maintainers?\n\nThis view is useful for assessing knowledge silos, identifying areas with potential bus factor risks, and planning for knowledge transfer or team realignment.",
     "section": "knowledge",
     "traits": [
       "aspect.knowledge-availability"
@@ -575,6 +579,7 @@
       }
     },
     "section": "knowledge",
+    "notes": "This matrix shows how much of each component's organic change (focused or medium commits) over the last 18 months was contributed by each developer. Rows represent components, columns represent developers, and each cell shows the percentage of recent organic churn attributed to that developer within the component.\n\nIt helps answer questions like:\n- Who currently maintains each component?\n- Have ownership patterns shifted recently?\n- Are there components with little or no recent stewardship?\n\nThis view is useful for assessing active ownership, detecting knowledge drift, and supporting transition planning or architectural reviews based on recent developer activity.",
     "traits": [
       "report-section.knowledge",
       "aspect.knowledge-availability"
@@ -696,6 +701,7 @@
         ]
       }
     },
+    "notes": "This matrix shows when each component became active, based on its first organic commit, and tracks its cumulative organic churn over time. Rows represent components, and each column reflects monthly activity volume.\n\nIt helps answer questions like:\n- When did each component start accumulating meaningful changes?\n- Which components have grown the most over time?\n- Are there legacy components no longer actively maintained?\n\nThis Gantt-style view is useful for visualizing codebase evolution, identifying architectural growth phases, and assessing which parts of the system are still under active development versus those that are stable or dormant.",
     "section": "overview",
     "traits": [
       "report-section.development-patterns",
@@ -867,6 +873,7 @@
         ]
       }
     },
+    "notes": "This matrix shows how many commits each developer has made to different components. It includes only developers who have contributed to more than one component. Rows represent developers, columns represent components, and each cell shows the number of commits made by a developer to a component.\n\nIt helps answer questions like:\n- Which developers contribute across multiple components?\n- Are there specialists focused on one area or generalists working broadly?\n- Who holds knowledge of multiple parts of the system?\n\nThis view is useful for identifying cross-cutting contributors, understanding potential cognitive load, and evaluating the distribution of knowledge across components for onboarding, mentoring, or risk mitigation.",
     "section": "knowledge",
     "traits": [
       "report-section.development-patterns",
