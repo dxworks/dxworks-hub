@@ -164,7 +164,7 @@
     "query": "extension in -i {ipa, ipsw, vcf, icns, plist, webarchive, scpt, pbxproj, strings, xib, storyboard, nib, entitlements, xcscheme, xcconfig}"
   },
   {
-    "name": "ipython",
+    "name": "jupyter_notebook",
     "query": "extension in -i {ipynb}"
   },
   {
