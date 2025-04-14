@@ -186,7 +186,7 @@
     "groups": [
       {
         "label": "code",
-        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml, kt, rb, erb, swift,vue, go, scala}"
+        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps, vb, fs, aspx, cshtml, kt, rb, erb, swift,vue, go, scala, ipynb}"
       },
       {
         "label": "web",
@@ -225,7 +225,7 @@
       },
       {
         "label": "scripting",
-        "query": "extension in {py, pl, cmd, sh, bat, ps1, vbs}"
+        "query": "extension in {py, pl, cmd, sh, bat, ps1, vbs, ipynb}"
       },
       {
         "label": "bdd",
