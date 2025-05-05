@@ -543,7 +543,7 @@
     },
     "function": {
       "type": "numeric",
-      "query": "((sum churn of changes having commits having (volume.* in {focused, medium} and date since 2023-06)) * 100) / (sum churn of component's changes having commits having (volume.* in {focused, medium} and date since 2023-06)) ",
+      "query": "((sum churn of changes having commits having (volume.* in {focused, medium} and date since last 18 months)) * 100) / (sum churn of component's changes having commits having (volume.* in {focused, medium} and date since last 18 months)) ",
       "format": {
         "data": {
           "nrOfDecimals": 1,
