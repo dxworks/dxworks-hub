@@ -306,8 +306,8 @@
         "query": "has filetype.typescript*"
       },
       {
-        "label": "tsx",
-        "query": "has filetype.extendscript*"
+        "label": "react-components",
+        "query": "has filetype.react-components*"
       },
       {
         "label": "vue",
@@ -461,8 +461,8 @@
         "query": "files having filetype.typescript*"
       },
       {
-        "label": "tsx",
-        "query": "files having filetype.extendscript*"
+        "label": "react-components",
+        "query": "files having filetype.react-components*"
       },
       {
         "label": "vue",
