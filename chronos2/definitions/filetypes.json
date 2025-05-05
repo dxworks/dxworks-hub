@@ -256,10 +256,6 @@
     "query": "extension in -i {pc, pcpp}"
   },
   {
-    "name": "proj_boilerplate",
-    "query": "extension like -i *proj or extension is -i iml"
-  },
-  {
     "name": "properties",
     "query": "extension in -i {properties, prefs, props, Properties}"
   },
@@ -345,7 +341,7 @@
   },
   {
     "name": "tools_boilerplate",
-    "query": "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties,coverity.conf,sonar.properties,lombok.config,descriptor.xml, override_java.security} or extension in -i {StyleCop,pmd} or name like *log4*"
+    "query": "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties,coverity.conf,sonar.properties,lombok.config,descriptor.xml, override_java.security} or extension in -i {StyleCop,pmd,iml} or name like *log4*"
   },
   {
     "name": "twig",
@@ -377,7 +373,7 @@
   },
   {
     "name": "visualstudio_boilerplate",
-    "query": "extension in -i {vsext, sln, nupkg, nswag, nuspec, resx, datasource, myapp, licx, rsd, xsc, xsx, ssmssln, vsmdi, webinfo}"
+    "query": "extension in -i {vsext, sln, nupkg, nswag, nuspec, resx, datasource, myapp, licx, rsd, xsc, xsx, ssmssln, vsmdi, webinfo} or extension like -i *proj"
   },
   {
     "name": "vue",
