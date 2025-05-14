@@ -345,62 +345,67 @@
           "name": "file"
       },
       "columns": [
-          {
-              "type": "string",
-              "label": "path",
-              "query": "path",
-              "sort": "ascending"
-          },
-          {
-              "type": "list of strings",
-              "label": "Component",
-              "query": "label of component.*"
-          },
-          {
-              "type": "string",
-              "label": "extension",
-              "query": "extension"
-          },
-          {
-              "type": "date",
-              "label": "firstCommitDate",
-              "query": "date of first commit"
-          },
-          {
-              "type": "date",
-              "label": "lastCommitDate",
-              "query": "date of last commit"
-          },
-          {
-              "type": "numeric",
-              "label": "numberOfCommits",
-              "query": "count commits"
-          },
-          {
-              "type": "numeric",
-              "label": "numberOfLastYearCommits",
-              "query": "count commits during last year"
-          },
-          {
-              "type": "numeric",
-              "label": "size",
-              "query": "size"
-          },
-          {
-              "type": "numeric",
-              "label": "aggregateTypeComplexity",
-              "query": "strength of metric.atc"
-          },
-          {
-              "type": "numeric",
-              "label": "sumOfCoChangeCoupling",
-              "query": "strength of metric.sumOfCoupling"
-          },
-          {
-              "type": "list of strings",
-              "label": "role",
-              "query": "label of role.*"
-          }
+        {
+          "type": "string",
+          "label": "path",
+          "query": "path",
+          "sort": "ascending"
+        },
+        {
+          "type": "list of strings",
+          "label": "ComponentHierarchy",
+          "query": "label of component-hierarchy.*"
+        },
+        {
+          "type": "list of strings",
+          "label": "Component",
+          "query": "label of component.*"
+        },
+        {
+          "type": "string",
+          "label": "extension",
+          "query": "extension"
+        },
+        {
+          "type": "date",
+          "label": "firstCommitDate",
+          "query": "date of first commit"
+        },
+        {
+          "type": "date",
+          "label": "lastCommitDate",
+          "query": "date of last commit"
+        },
+        {
+          "type": "numeric",
+          "label": "numberOfCommits",
+          "query": "count commits"
+        },
+        {
+          "type": "numeric",
+          "label": "numberOfLastYearCommits",
+          "query": "count commits during last year"
+        },
+        {
+          "type": "numeric",
+          "label": "size",
+          "query": "size"
+        },
+        {
+          "type": "numeric",
+          "label": "aggregateTypeComplexity",
+          "query": "strength of metric.atc"
+        },
+        {
+          "type": "numeric",
+          "label": "sumOfCoChangeCoupling",
+          "query": "strength of metric.sumOfCoupling"
+        },
+        {
+          "type": "list of strings",
+          "label": "role",
+          "query": "label of role.*"
+        }
       ],
       "pageSize": 10,
       "notes": "This table is used as a File export for integration with other tools, so it's too generic to be useful in most other contexts.",
