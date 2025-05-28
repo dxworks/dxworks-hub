@@ -37,11 +37,11 @@
   },
   {
     "name": "dependencies.external.packagemanager.node",
-    "query": "name in -i {package.json, package-lock.json, yarn.lock, pnpm-lock.yaml}"
+    "query": "name in -i {package.json, package-lock.json, yarn.lock, pnpm-lock.yaml, npm-shrinkwrap.json}"
   },
   {
-    "name": "dependencies.external.packagemanager.pip",
-    "query": "name in -i {Pipfile, Pipfile.lock, requirements.txt}"
+    "name": "dependencies.external.packagemanager.python",
+    "query": "name in -i {Pipfile, Pipfile.lock, requirements.txt} or extension in -i {toml}"
   },
   {
     "name": "dependencies.external.packagemanager.composer",
