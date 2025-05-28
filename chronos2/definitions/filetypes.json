@@ -53,7 +53,7 @@
   },
   {
     "name": "build",
-    "query": "extension in -i {gradle, sbt} or name contains gradle or name in {Jenkinsfile, pom.xml, buildconfig.yml, version.properties, hosts.yml, log-messages.xml, web.xml, features.json, buildconfig.yml, version.properties, build.xml, site.xml, maven_settings_sample.xml}"
+    "query": "extension in -i {gradle, sbt} or name contains gradle or name in {pom.xml, buildconfig.yml, version.properties, hosts.yml, log-messages.xml, web.xml, features.json, buildconfig.yml, version.properties, build.xml, site.xml, maven_settings_sample.xml}"
   },
   {
     "name": "businesrules",
@@ -101,7 +101,11 @@
   },
   {
     "name": "docker",
-    "query": "name in {Dockerfile,docker-env-vars}"
+    "query": "name starts with -i {Dockerfile,docker-env-vars} and extension is ''"
+  },
+  {
+    "name": "jenkins",
+    "query": "name starts with -i {jenkinsfile} and extension is ''"
   },
   {
     "name": "document",
@@ -233,7 +237,7 @@
   },
   {
     "name": "noise",
-    "query": "extension in -i {24px,betwixt,common,content,contrib,cpy,dat,enc,fmt,gen,hsp,hsw,in,index,jfm,log,Logger,lst,mako,md5,mex,mf,migration,msc,msg,multi,mymetadata,mystrutsdata,name,old,order,permutations,pkl,pklz,pp,Processor,refactorlog,rep,resources,rnc,rng,rsp,sas,sch,ser,service,template,tests,tmp,uat,user,wsgi,xdt} or extension like -i *javadoc* or extension like -i *core* or extension like -i *backup* or extension like -i js_* or extension like -i part* or extension like -i orig* or extension like -i pkl* or extension like -i *bak* or extension like insensitive *bak* or extension like -i *backup* or extension like insensitive *log*"
+    "query": "extension in -i {24px,betwixt,common,content,contrib,cpy,dat,enc,fmt,gen,hsp,hsw,in,index,jfm,log,Logger,lst,md5,mex,mf,migration,msc,msg,multi,mymetadata,mystrutsdata,name,old,order,permutations,pkl,pklz,pp,Processor,refactorlog,rep,resources,rnc,rng,rsp,sas,sch,ser,service,template,tests,tmp,uat,user,wsgi,xdt} or extension like -i *javadoc* or extension like -i *core* or extension like -i *backup* or extension like -i js_* or extension like -i part* or extension like -i orig* or extension like -i pkl* or extension like -i *bak* or extension like insensitive *bak* or extension like -i *backup* or extension like insensitive *log*"
   },
   {
     "name": "objectivec/c++",
@@ -268,6 +272,10 @@
     "query": "extension in -i {rds}"
   },
   {
+    "name": "robot",
+    "query": "extension in -i {robot}"
+  },
+  {
     "name": "rc_boilerplate",
     "query": "extension like -i *rc"
   },
@@ -282,6 +290,10 @@
   {
     "name": "scripts",
     "query": "extension in -i {sh, bat, ksh, bsh, cmd, ps1, script}"
+  },
+  {
+    "name": "cake",
+    "query": "extension in -i {cake}"
   },
   {
     "name": "simulink",
