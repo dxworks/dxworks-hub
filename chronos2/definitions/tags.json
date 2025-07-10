@@ -13,7 +13,7 @@
   },
   {
     "name": "noise.hidden",
-    "query": "(name like .* or path like */.*) and not path contains -i {'.github/', '.circleci/'}"
+    "query": "(name like .* or path like */.*) and not path contains -i {'.github/', '.circleci/', '.gitlab/', '.devcontainer/'}"
   },
   {
     "name": "noise.negativeFileSize",
@@ -25,7 +25,7 @@
   },
   {
     "name": "noise.generated",
-    "query": "name like -i *.Designer* or name like -i *AssemblyInfo* or name like -i *.min.js or name like -i *.min.css or name like -i *.d.ts or name is -i Reference.cs or name is -i Reference.vb"
+    "query": "name like -i *.Designer* or name like -i *AssemblyInfo* or name like -i *.min.js or name like -i *.min.css or name like -i *.d.ts or name is -i Reference.cs or name is -i Reference.vb or path contains -i __generated__"
   },
   {
     "name": "real",
