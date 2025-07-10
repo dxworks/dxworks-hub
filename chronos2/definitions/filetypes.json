@@ -348,6 +348,10 @@
     "query": "extension in -i {tpp, txx, loadtest, webtestresult, webtest}"
   },
   {
+    "name": "test-snapshots",
+    "query": "extension in -i {snap}"
+  },
+  {
     "name": "thrift",
     "query": "extension in -i {thrift}"
   },
