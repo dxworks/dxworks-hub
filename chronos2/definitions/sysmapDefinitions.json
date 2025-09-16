@@ -611,6 +611,72 @@
     ]
   },
   {
+    "name": "Folders created recently (files - by latest change year)",
+    "slug": "folders-created-recently-files-by-latest-change-year",
+    "foldersHighlight": "not has file having first change before last two years",
+    "domain": "latestChangeYear",
+    "colorScheme": "default",
+    "perspective": {
+      "query": "changes",
+      "numberOfGroups": 2,
+      "thresholds": [
+        10
+      ]
+    },
+    "notes": "This system map highlight folders created in the past two years. It helps answer:\n- Is functionality added in new modules? Or is it spread around in existing modules?\n\nUse this map to detect new features/modules being added to the codebase.",
+    "tableColumns": [
+      {
+        "type": "property",
+        "value": "name"
+      },
+      {
+        "type": "property",
+        "value": "path"
+      },
+      {
+        "type": "property",
+        "value": "extension"
+      },
+      {
+        "type": "property",
+        "value": "size"
+      },
+      {
+        "type": "metric",
+        "query": "count changes",
+        "label": "Changes",
+        "value": "fileChanges"
+      },
+      {
+        "type": "property",
+        "value": "first change"
+      },
+      {
+        "type": "property",
+        "value": "last change"
+      },
+      {
+        "type": "classifier",
+        "label": "Domain",
+        "value": "domainValue"
+      },
+      {
+        "type": "metric",
+        "query": "changes",
+        "label": "Perspective",
+        "value": "perspectiveValue"
+      }
+    ],
+    "section": "overview",
+    "traits": [
+      "report-section.development-patterns",
+      "aspect.code-evolution",
+      "aspect.current-activity-hotspots",
+      "aspect.freshness",
+      "aspect.locality-of-changes"
+    ]
+  },
+  {
     "name": "Files - Distribution of test coverage ",
     "slug": "test-coverage",
     "highlight": "strength of metric.testReferences > 0",
