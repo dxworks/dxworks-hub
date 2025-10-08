@@ -278,6 +278,10 @@
         "query": "has filetype.python*"
       },
       {
+        "label": "ruby",
+        "query": "has filetype.ruby*"
+      },
+      {
         "label": "go",
         "query": "has filetype.go*"
       },
@@ -395,6 +399,10 @@
       {
         "label": "python",
         "query": "files having filetype.python*"
+      },
+      {
+        "label": "ruby",
+        "query": "files having filetype.ruby*"
       },
       {
         "label": "php",
