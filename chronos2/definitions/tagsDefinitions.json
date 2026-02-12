@@ -59,12 +59,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2020",
-        "query": "first change before 2021"
-      },
-      {
-        "label": "2021",
-        "query": "first change during 2021"
+        "label": "<=2021",
+        "query": "first change before 2022"
       },
       {
         "label": "2022",
@@ -81,6 +77,10 @@
       {
         "label": "2025",
         "query": "first change during 2025"
+      },
+      {
+        "label": "2026",
+        "query": "first change during 2026"
       }
     ]
   },
@@ -122,11 +122,7 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2020",
-        "query": "last change before 2021"
-      },
-      {
-        "label": "2021",
+        "label": "<=2021",
         "query": "last change before 2022"
       },
       {
@@ -144,6 +140,10 @@
       {
         "label": "2025",
         "query": "last change before 2026"
+      },
+      {
+        "label": "2026",
+        "query": "last change before 2026"
       }
     ]
   },
@@ -154,12 +154,8 @@
     "colorScheme": "6-years",
     "groups": [
       {
-        "label": "<=2020",
-        "query": "files having first change before 2021"
-      },
-      {
-        "label": "2021",
-        "query": "files having first change during 2021"
+        "label": "<=2021",
+        "query": "files having first change before 2022"
       },
       {
         "label": "2022",
@@ -176,6 +172,10 @@
       {
         "label": "2025",
         "query": "files having first change during 2025"
+      },
+      {
+        "label": "2026",
+        "query": "files having first change during 2026"
       }
     ]
   },
@@ -186,7 +186,7 @@
     "groups": [
       {
         "label": "code",
-        "query": "extension in -i {c, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps,robot, vb, fs, aspx, cshtml, kt, rb, erb, swift,vue, go, scala, ipynb}"
+        "query": "extension in -i {c, m, h, cc, hh, cpp, hpp, cs,java,dart,sql,cql,kt,groovy,erl,hrl,js,angular,jsx,ts,tsx,jsp, py, php, pl, cmd, sh, bat, ps1, vbs, feature, story, Feature, steps,robot, vb, fs, aspx, cshtml, kt, rb, erb, swift,vue, go, scala, ipynb}"
       },
       {
         "label": "web",
@@ -217,7 +217,7 @@
     "groups": [
       {
         "label": "backend",
-        "query": "extension in -i {cs,fs,vb,java,dart,sql,cql,kt,groovy,erl,hrl,swift,rb,go,scala}"
+        "query": "extension in -i {c,m,cs,fs,vb,java,dart,sql,cql,kt,groovy,erl,hrl,swift,rb,go,scala}"
       },
       {
         "label": "frontend",
@@ -242,13 +242,13 @@
     "entity": "file",
     "domain": "role",
     "groups": [
-      {
+{
         "label": "production",
-        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.js or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__ or path contains -i {mocks, /mock})"
+        "query": "not (path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts* or name ends with -i .test.js* or path contains /src/it/ or path contains __tests__ or path contains -i /e2e/ or path contains -i {mocks, /mock})"
       },
       {
         "label": "test",
-        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts or name ends with -i .test.js or name ends with -i .test.tsx or path contains /src/it/ or path contains __tests__) and (path contains not -i {mocks, /mock})"
+        "query": "(path like insensitive *.spec.ts or path like insensitive *.spec.js or path like insensitive *test/* or path like insensitive *tests/* or name like insensitive test* or name contains {Test, TEST, _test} or name ends with -i .test.ts* or name ends with -i .test.js* or path contains /src/it/ or path contains __tests__ or path contains -i /e2e/) and (path contains not -i {mocks, /mock})"
       },
       {
         "label": "mock",
@@ -588,12 +588,8 @@
     "domain": "startYear",
     "groups": [
       {
-        "label": "<=2020",
-        "query": "first change before 2021"
-      },
-      {
-        "label": "2021",
-        "query": "first change during 2021"
+        "label": "<=2021",
+        "query": "first change before 2022"
       },
       {
         "label": "2022",
@@ -610,6 +606,10 @@
       {
         "label": "2025",
         "query": "first change during 2025"
+      },
+      {
+        "label": "2026",
+        "query": "first change during 2026"
       }
     ]
   },
@@ -619,12 +619,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2020",
-        "query": "has date before 2021"
-      },
-      {
-        "label": "2021",
-        "query": "has date during 2021"
+        "label": "<=2021",
+        "query": "has date before 2022"
       },
       {
         "label": "2022",
@@ -641,6 +637,10 @@
       {
         "label": "2025",
         "query": "has date during 2025"
+      },
+      {
+        "label": "2026",
+        "query": "has date during 2026"
       }
     ]
   },
@@ -650,12 +650,8 @@
     "domain": "year",
     "groups": [
       {
-        "label": "<=2020",
-        "query": "has date before 2021"
-      },
-      {
-        "label": "2021",
-        "query": "has date during 2021"
+        "label": "<=2021",
+        "query": "has date before 2022"
       },
       {
         "label": "2022",
@@ -672,6 +668,10 @@
       {
         "label": "2025",
         "query": "has date during 2025"
+      },
+      {
+        "label": "2026",
+        "query": "has date during 2026"
       }
     ]
   },
