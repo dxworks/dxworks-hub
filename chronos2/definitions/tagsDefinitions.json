@@ -143,7 +143,7 @@
       },
       {
         "label": "2026",
-        "query": "last change before 2026"
+        "query": "last change before 2027"
       }
     ]
   },
@@ -725,7 +725,7 @@
       {
         "label": "refactoring",
         "query": "message containing ins {aufräumen, aufgeräumt, sanitize, sanitise, refact, restructur, clean, cleanup, rename, rework, umbennant, formatierung, reorgani, reinig}"
-      },
+      },2
       {
         "label": "refinement",
         "query": "message containing ins {improve, update, remove, review, angepasst, aktualisiert, anpassung, entfernt, modifi, geändert, adapt, improved, adjust, performance, refin, hack, work-around}"
