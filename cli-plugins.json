@@ -2,12 +2,8 @@
   "plugins": [
     "@dxworks/voyenv",
     "@dxworks/dx",
-    "@dxworks/honeydew",
-    "@dxworks/jafax",
-    "@dxworks/tables",
     "@dxworks/studio",
     "@dxworks/insider",
-    "@dxworks/vis-puppet",
     "@dxworks/depminer",
     "@dxworks/depinder",
     "@dxworks/inspector-git"
