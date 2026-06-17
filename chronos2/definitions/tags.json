@@ -41,7 +41,7 @@
   },
   {
     "name": "dependencies.external.packagemanager.python",
-    "query": "name in -i {Pipfile, Pipfile.lock, requirements.txt} or extension in -i {toml}"
+    "query": "name in -i {Pipfile, Pipfile.lock, requirements.txt, uv.lock} or extension in -i {toml}"
   },
   {
     "name": "dependencies.external.packagemanager.composer",
