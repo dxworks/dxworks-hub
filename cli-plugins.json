@@ -8,6 +8,7 @@
     "@dxworks/depinder",
     "@dxworks/inspector-git",
     "@dxworks/tables",
-    "@dxworks/honeydew"
+    "@dxworks/honeydew",
+    "@dxworks/jafax"
   ]
 }
