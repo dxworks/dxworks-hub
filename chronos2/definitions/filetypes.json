@@ -45,7 +45,7 @@
   },
   {
     "name": "bicep",
-    "query": "extension in -i {bicep}"
+    "query": "extension in -i {bicep, bicepparam}"
   },
   {
     "name": "binaries",
@@ -101,7 +101,7 @@
   },
   {
     "name": "docker",
-    "query": "name starts with -i {Dockerfile,docker-env-vars} and extension is ''"
+    "query": "(name starts with -i {Dockerfile,docker-env-vars} or name ends with -i {Dockerfile}) and extension is ''"
   },
   {
     "name": "jenkins",
@@ -193,7 +193,7 @@
   },
   {
     "name": "javascript",
-    "query": "extension in -i {js, angular}"
+    "query": "extension in -i {js, angular, mjs, cjs}"
   },
   {
     "name": "jboss",
@@ -385,7 +385,7 @@
   },
   {
     "name": "visualbasic",
-    "query": "extension in -i {vb,vbs}"
+    "query": "extension in -i {vb,vbs,cls,bas}"
   },
   {
     "name": "visualstudio_boilerplate",
@@ -394,6 +394,10 @@
   {
     "name": "vue",
     "query": "extension in -i {vue}"
+  },
+  {
+    "name": "svelte",
+    "query": "extension in -i {svelte}"
   },
   {
     "name": "webservices",

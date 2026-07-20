@@ -13,7 +13,7 @@
   },
   {
     "name": "noise.hidden",
-    "query": "(name like .* or path like */.*) and not path contains -i {'.github', '.circleci', '.gitlab', '.devcontainer/'}"
+    "query": "path contains -i {'/.git/','/.svn/','/.hg/','/.idea/','/.vs/','/.gradle/','/.cache/','/.sass-cache/','/.parcel-cache/','/.turbo/','/.pnpm-store/'} or name in {'.DS_Store','Thumbs.db'}"
   },
   {
     "name": "noise.negativeFileSize",
@@ -54,6 +54,14 @@
   {
     "name": "patterns.mvc",
     "query": "path like -i *controller* or path like -i *view*"
+  },
+  {
+    "name": "agentic.dev.tools",
+    "query": "path contains -i {.claude,.agent,,.copilot,.cursor,.cline,.continue,.aider,.roo,.windsurf,.kiro,.amazonq,.skills,.github/agents,.github/prompts,.github/instructions} or name in -i {agents.md,agent.md,claude.md,copilot-instructions.md,.cursorrules,cursor-rules.md,.clinerules,.windsurfrules,.aider.conf.yml,.aider.conf.yaml,continue.yaml,mcp.json,.mcp.json}"
+  },
+  {
+  "name": "agentic.dev.sdd",
+  "query": "path contains -i {.specify,.bmad,_bmad,bmad-core,bmad-method} or name in -i {constitution.md,spec-template.md,plan-template.md,tasks-template.md,requirements-template.md,design-template.md,bmad-config.yaml,bmad-config.yml}"
   },
   {
     "name": "patterns.messaging",
