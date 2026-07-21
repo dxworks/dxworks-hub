@@ -6,6 +6,9 @@
     "@dxworks/insider",
     "@dxworks/depminer",
     "@dxworks/depinder",
-    "@dxworks/inspector-git"
+    "@dxworks/inspector-git",
+    "@dxworks/tables",
+    "@dxworks/honeydew",
+    "@dxworks/jafax"
   ]
 }
