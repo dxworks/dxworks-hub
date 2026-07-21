@@ -57,7 +57,7 @@
   },
   {
     "name": "agentic.dev.tools",
-    "query": "path contains -i {.claude,.agent,,.copilot,.cursor,.cline,.continue,.aider,.roo,.windsurf,.kiro,.amazonq,.skills,.github/agents,.github/prompts,.github/instructions} or name in -i {agents.md,agent.md,claude.md,copilot-instructions.md,.cursorrules,cursor-rules.md,.clinerules,.windsurfrules,.aider.conf.yml,.aider.conf.yaml,continue.yaml,mcp.json,.mcp.json}"
+    "query": "path contains -i {.claude,.agent,.copilot,.cursor,.cline,.continue,.aider,.roo,.windsurf,.kiro,.amazonq,.skills,.github/agents,.github/prompts,.github/instructions} or name in -i {agents.md,agent.md,claude.md,copilot-instructions.md,.cursorrules,cursor-rules.md,.clinerules,.windsurfrules,.aider.conf.yml,.aider.conf.yaml,continue.yaml,mcp.json,.mcp.json}"
   },
   {
   "name": "agentic.dev.sdd",
