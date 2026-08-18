@@ -13,7 +13,7 @@
   },
   {
     "name": "noise.hidden",
-    "query": "path contains -i {'/.git/','/.svn/','/.hg/','/.idea/','/.vs/','/.gradle/','/.cache/','/.sass-cache/','/.parcel-cache/','/.turbo/','/.pnpm-store/'} or name in {'.DS_Store','Thumbs.db'}"
+    "query": "path contains -i {'/.git/','/.svn/','/.hg/','/.idea/','/.vs/','/.gradle/','/.cache/','/.sass-cache/','/.parcel-cache/','/.turbo/','/.pnpm-store/', '/.terraform/'} or name in {'.DS_Store','Thumbs.db'} or extension contains -i {tfstate, xsession}"
   },
   {
     "name": "noise.negativeFileSize",
