@@ -57,11 +57,11 @@
   },
   {
     "name": "agentic.dev.tools",
-    "query": "path contains -i {.claude,.agent,.copilot,.cursor,.cline,.continue,.aider,.roo,.windsurf,.kiro,.amazonq,.skills,.github/agents,.github/prompts,.github/instructions} or name in -i {agents.md,agent.md,claude.md,copilot-instructions.md,.cursorrules,cursor-rules.md,.clinerules,.windsurfrules,.aider.conf.yml,.aider.conf.yaml,continue.yaml,mcp.json,.mcp.json}"
+    "query": "path contains -i {.claude,.agent,.agents,.copilot,.cursor,.cline,.continue,.aider,.roo,.windsurf,.kiro,.amazonq,.skills,/skills/,.github/agents,.github/prompts,.github/instructions,.github/skills,.vscode/prompts,.vscode/instructions,.gemini,.junie,.goose,.opencode} or name in -i {agents.md,agent.md,claude.md,gemini.md,skill.md,skills.md,copilot-instructions.md,.cursorrules,cursor-rules.md,.clinerules,.windsurfrules,.aider.conf.yml,.aider.conf.yaml,continue.yaml,mcp.json,.mcp.json,opencode.json}"
   },
   {
   "name": "agentic.dev.sdd",
-  "query": "path contains -i {.specify,.bmad,_bmad,bmad-core,bmad-method} or name in -i {constitution.md,spec-template.md,plan-template.md,tasks-template.md,requirements-template.md,design-template.md,bmad-config.yaml,bmad-config.yml}"
+  "query": "path contains -i {.specify,.bmad,_bmad,bmad-core,bmad-method,spec-kit,speckit} or name in -i {constitution.md,spec-template.md,plan-template.md,tasks-template.md,requirements-template.md,design-template.md,bmad-config.yaml,bmad-config.yml}"
   },
   {
     "name": "patterns.messaging",
