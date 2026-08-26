@@ -417,7 +417,7 @@
         ]
       }
     },
-    "notes": "This matrix shows how much of each component's organic change is contributed by each developer. Rows represent components, columns represent developers, and each cell shows the percentage of organic churn attributed to that developer within the component.\n\nIt helps answer questions like:\n- Who are the primary contributors to each component?\n- Are there components with too few (or too many) contributors?\n- Is ownership concentrated or distributed?\n- Which components may lack active maintainers?\n\nThis view is useful for assessing knowledge silos, identifying areas with potential bus factor risks, and planning for knowledge transfer or team realignment.",
+    "notes": "This matrix shows how much of each component's organic change is contributed by each developer. Rows represent components, columns represent developers, and each cell shows the percentage of organic churn attributed to that developer within the component.\n\nIt helps answer questions like:\n- Who are the primary contributors to each component?\n- Are there components with too few (or too many) contributors?\n- Is ownership concentrated or distributed?\n- Which components may lack active maintainers?\n\nThis view is useful for assessing knowledge silos, identifying areas with potential bus factor risks, and planning for knowledge transfer or team realignment. When interpreting it, ensure you take into consideration the size of the components (as low active knowledge or polarised knowledge on very small components is less of an issue).",
     "section": "knowledge",
     "traits": [
       "aspect.knowledge-availability"
@@ -579,7 +579,7 @@
       }
     },
     "section": "knowledge",
-    "notes": "This matrix shows how much of each component's organic change (focused or medium commits) over the last 18 months was contributed by each developer. Rows represent components, columns represent developers, and each cell shows the percentage of recent organic churn attributed to that developer within the component.\n\nIt helps answer questions like:\n- Who currently maintains each component?\n- Have ownership patterns shifted recently?\n- Are there components with little or no recent stewardship?\n\nThis view is useful for assessing active ownership, detecting knowledge drift, and supporting transition planning or architectural reviews based on recent developer activity.",
+    "notes": "This matrix shows how much of each component's organic change (focused or medium commits) over the last 18 months was contributed by each developer. Rows represent components, columns represent developers, and each cell shows the percentage of recent organic churn attributed to that developer within the component.\n\nIt helps answer questions like:\n- Who currently maintains each component?\n- Have ownership patterns shifted recently?\n- Are there components with little or no recent stewardship?\n\nThis view is useful for assessing active ownership, detecting knowledge drift, and supporting transition planning or architectural reviews based on recent developer activity. When interpreting it, ensure you take into consideration the size of the components (as low active knowledge or polarised knowledge on very small components is less of an issue).",
     "traits": [
       "report-section.knowledge",
       "aspect.knowledge-availability"
