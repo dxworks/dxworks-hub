@@ -56,7 +56,7 @@
     "query": "extension in -i {gradle, sbt} or name contains gradle or name in {pom.xml, buildconfig.yml, version.properties, hosts.yml, log-messages.xml, web.xml, features.json, buildconfig.yml, version.properties, build.xml, site.xml, maven_settings_sample.xml}"
   },
   {
-    "name": "businesrules",
+    "name": "businessrules",
     "query": "extension in -i {drl, bom, voc, brl, dta, dtr, fct, rfl, trl, dep, dop, qry, b2x, rulepackage, irl, syncEntries, ruleproject}"
   },
   {
@@ -92,12 +92,12 @@
     "query": "extension in -i {feature, story, Feature, steps}"
   },
   {
-    "name": "database",
-    "query": "extension in -i {sql, cql, usql, sqlt, esql, sql', SQL}"
+    "name": "database_boilerplate_keep",
+    "query": "extension in -i {hbase, database}"
   },
   {
     "name": "database_boilerplate",
-    "query": "extension in -i {hbase, database,sqlite, db}"
+    "query": "extension in -i {sqlite, db}"
   },
   {
     "name": "docker",
@@ -157,7 +157,7 @@
   },
   {
     "name": "ignore_boilerplate",
-    "query": "extension like insenitive:*ignore"
+    "query": "extension like -i *ignore"
   },
   {
     "name": "image",
@@ -184,8 +184,12 @@
     "query": "extension in -i {jar}"
   },
   {
+    "name": "java_boilerplate_keep",
+    "query": "name is -i package-info.java"
+  },
+  {
     "name": "java_boilerplate",
-    "query": "extension is -i classpath or name is -i package-info.java"
+    "query": "extension is -i classpath"
   },
   {
     "name": "javakeystore",
@@ -305,7 +309,11 @@
   },
   {
     "name": "sourcecontrol_boilerplate",
-    "query": "extension in -i {svcinfo, svcmap, vssscc, vspscc, gitattributes, gitignore, gitkeep, gitmodules, scc} or name is -i gitattributes or extension like -i *svn*"
+    "query": "extension in -i {gitignore, gitkeep, vssscc, vspscc, scc} or name in -i {.gitignore, .gitkeep} or extension like -i *svn*"
+  },
+  {
+    "name": "sourcecontrol_boilerplate_keep",
+    "query": "extension in -i {gitattributes, gitmodules, svcmap, svcinfo} or name in -i {.gitattributes, .gitmodules}"
   },
   {
     "name": "sqlserver",
@@ -356,8 +364,12 @@
     "query": "extension in -i {thrift}"
   },
   {
+    "name": "tools_boilerplate_keep",
+    "query": "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties, coverity.conf, sonar.properties, lombok.config, descriptor.xml, override_java.security} or extension in -i {StyleCop, pmd}"
+  },
+  {
     "name": "tools_boilerplate",
-    "query": "path like *checkstyle* or path like *pmd* or name in {sonar-project.properties,coverity.conf,sonar.properties,lombok.config,descriptor.xml, override_java.security} or extension in -i {StyleCop,pmd,iml} or name like *log4*"
+    "query": "extension in -i {iml}  or name like *log4*"
   },
   {
     "name": "twig",
@@ -389,7 +401,11 @@
   },
   {
     "name": "visualstudio_boilerplate",
-    "query": "extension in -i {vsext, sln, nupkg, nswag, nuspec, resx, datasource, myapp, licx, rsd, xsc, xsx, ssmssln, vsmdi, webinfo} or extension like -i *proj"
+    "query": "extension in -i {vsext, nupkg, licx, ssmssln, vsmdi, webinfo, datasource, rsd, xsc, xsx}"
+  },
+  {
+    "name": "visualstudio_boilerplate_keep",
+    "query": "extension in -i {sln, nswag, nuspec, resx, myapp} or extension like -i *proj"
   },
   {
     "name": "vue",

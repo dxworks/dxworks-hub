@@ -20,10 +20,6 @@
     "query": "size <= 0"
   },
   {
-    "name": "noise.boilerplate",
-    "query": "filetype.*boilerplate"
-  },
-  {
     "name": "noise.generated",
     "query": "name like -i *.Designer* or name like -i *AssemblyInfo* or name like -i *.min.js or name like -i *.min.css or name like -i *.d.ts or name is -i Reference.cs or name is -i Reference.vb or path contains -i __generated__ or name ends with -i .feature.cs or name ends with -i .feature.vb"
   },

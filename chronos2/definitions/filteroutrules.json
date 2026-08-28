@@ -13,6 +13,10 @@
   },
   {
     "name": "External Dependencies or Boilerplate or Build",
-    "query": "dependencies.external.packagemanager* or noise.boilerplate or filetype.build"
+    "query": "dependencies.external.packagemanager* or filetype.*boilerplate_keep or filetype.build"
+  },
+  {
+    "name": "Ignorable Boilerplate",
+    "query": "filetype.*boilerplate"
   }
 ]
