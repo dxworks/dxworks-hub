@@ -92,6 +92,10 @@
     "query": "extension in -i {feature, story, Feature, steps}"
   },
   {
+    "name": "database",
+    "query": "extension in -i {sql, cql, usql, sqlt, esql, sql', SQL}"
+  },
+  {
     "name": "database_boilerplate_keep",
     "query": "extension in -i {hbase, database}"
   },
